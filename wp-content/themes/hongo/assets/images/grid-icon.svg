@@ -1,0 +1,14 @@
+<svg width="10" height="10" xmlns="http://www.w3.org/2000/svg">
+ <title/>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="12" width="12" y="-1" x="-1"/>
+ </g>
+ <g>
+  <rect stroke="null" id="svg_15" height="4" width="4.13063" y="-0.049394" x="-0.042257" stroke-opacity="null" stroke-width="null" fill="#cecece"/>
+  <rect stroke="null" id="svg_14" height="4" width="4.13063" y="6.009879" x="-0.042257" stroke-opacity="null" stroke-width="null" fill="#cecece"/>
+  <rect stroke="null" id="svg_16" height="4" width="4.13063" y="-0.049394" x="5.883642" stroke-opacity="null" stroke-width="null" fill="#cecece"/>
+  <rect stroke="null" id="svg_11" height="4" width="4.13063" y="6.009879" x="5.883642" stroke-opacity="null" stroke-width="null" fill="#cecece"/>
+ </g>
+</svg>

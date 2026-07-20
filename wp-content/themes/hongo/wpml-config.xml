@@ -1,0 +1,904 @@
+<wpml-config>
+    <custom-types>
+        <custom-type translate="1">hongobuilder</custom-type>
+    </custom-types>
+    <admin-texts>
+        <key name ="widget_hongo_search_widget">
+            <key name ="*"/></key>
+        <key name="theme_mods_hongo">
+            <key name="blogname"/>
+            <key name="blogdescription"/>
+            <key name="hongo_single_post_title_color"/>
+            <key name="hongo_page_not_found_main_title"/>
+            <key name="hongo_page_not_found_title"/>
+            <key name="hongo_page_not_found_subtitle"/>
+            <key name="hongo_page_not_found_button_text"/>
+            <key name="hongo_search_label_text"/>
+            <key name="hongo_search_placeholder_text"/>
+            <key name="hongo_scroll_to_top_text"/>
+            <key name="hongo_gdpr_text"/>
+            <key name="hongo_gdpr_button_text"/>
+            <key name="hongo_author_box_button_title"/>
+            <key name="hongo_related_posts_title"/>
+            <key name="hongo_page_title_subtitle"/>
+            <key name="hongo_single_post_title_subtitle"/>
+            <key name="hongo_archive_title_subtitle"/>
+            <key name="hongo_default_title_subtitle"/>
+            <key name="hongo_single_product_title_subtitle"/>
+            <key name="hongo_product_archive_title_subtitle"/>
+            <key name="hongo_single_product_cross_sells_title"/>
+            <key name="hongo_mini_cart_usp_text"/>
+            <key name="hongo_single_product_sold_text"/>
+            <key name="hongo_single_product_new_text"/>
+            <key name="hongo_single_product_wishlist_text"/>
+            <key name="hongo_single_product_compare_text"/>
+            <key name="hongo_single_product_share_title"/>
+            <key name="hongo_single_product_related_title"/>
+            <key name="hongo_single_product_up_sells_title"/>
+            <key name="hongo_product_archive_sold_text"/>
+            <key name="hongo_product_archive_new_text"/>
+            <key name="hongo_product_archive_quick_view_text"/>
+            <key name="hongo_product_archive_wishlist_text"/>
+            <key name="hongo_product_archive_compare_text"/>
+            <key name="hongo_quick_view_product_wishlist_text"/>
+            <key name="hongo_quick_view_product_compare_text"/>
+            <key name="hongo_compare_product_heading_text"/>
+            <key name="hongo_comment_title"/></key>
+    </admin-texts>
+    <custom-fields>
+        <!-- Layout Setting -->
+        <custom-field action="copy" label="Layout Setting">_hongo_page_layout_setting_single</custom-field>
+        <custom-field action="copy" label="Right Sidebar">_hongo_page_left_sidebar_single</custom-field>
+        <custom-field action="copy" label="Right Sidebar">_hongo_page_right_sidebar_single</custom-field>
+        <custom-field action="copy" label="Container Style">_hongo_page_container_style_single</custom-field>
+        <custom-field action="copy" label="Padding style">_hongo_page_container_fluid_with_padding_single</custom-field>
+        <custom-field action="copy" label="Body bg color">_hongo_body_background_color_single</custom-field>
+        <custom-field action="copy" label="Box layout">_hongo_enable_box_layout_single</custom-field>
+        <!-- Mini Header -->
+        <custom-field action="copy" label="Enable Mini header">_hongo_enable_mini_header_single</custom-field>
+        <custom-field action="copy" label="Mini header section">_hongo_mini_header_section_single</custom-field>
+        <!-- Header -->
+        <custom-field action="copy" label="Enable header">_hongo_enable_header_single</custom-field>
+        <custom-field action="copy" label="Header top section">_hongo_header_top_section_single</custom-field>
+        <custom-field action="copy" label="Header section">_hongo_header_section_single</custom-field>
+        <custom-field action="copy" label="Header style">_hongo_header_type_single</custom-field>
+        <!-- Footer -->
+        <custom-field action="copy" label="Enable Footer">_hongo_enable_footer_single</custom-field>
+        <custom-field action="copy" label="Footer section">_hongo_footer_section_single</custom-field>
+        <!-- Title -->
+        <custom-field action="copy" label="Enable title">_hongo_page_enable_title_single</custom-field>
+        <custom-field action="copy" label="Container style">_hongo_page_title_container_style_single</custom-field>
+        <custom-field action="copy" label="Title Padding style">_hongo_page_title_container_fluid_with_padding_single</custom-field>
+        <custom-field action="copy" label="Title style">_hongo_page_title_style_single</custom-field>
+        <custom-field action="copy" label="Title heading">_hongo_page_enable_title_heading_single</custom-field>
+        <custom-field action="copy" label="Title text transform">_hongo_page_title_text_transform_single</custom-field>
+        <custom-field action="copy" label="Enable subtitle">_hongo_page_enable_subtitle_single</custom-field>
+        <!-- SubTitle start -->
+        <custom-field action="translate" label="Subtitle">_hongo_page_title_subtitle_single</custom-field>
+        <!-- SubTitle End -->
+        <custom-field action="copy" label="Font weight">_hongo_page_title_subtitle_text_transform_single</custom-field>
+        <custom-field action="copy" label="page title alignment">_hongo_page_title_subtitle_alignment_single</custom-field>
+        <custom-field action="copy" label="enable background image">_hongo_page_enable_title_image_single</custom-field>
+        <custom-field action="copy" label="Background image">_hongo_page_title_bg_image_single</custom-field>
+        <custom-field action="copy" label="Gallery image">_hongo_page_title_bg_multiple_image_single</custom-field>
+        <custom-field action="copy" label="Scroll to down">_hongo_page_title_scroll_to_down_single</custom-field>
+        <custom-field action="translate" label="Next section ID">_hongo_page_title_callto_section_id_single</custom-field>
+        <custom-field action="copy" label="Video type">_hongo_page_title_video_type_single</custom-field>
+        <custom-field action="translate" label="MP4">_hongo_page_title_video_mp4_single</custom-field>
+        <custom-field action="translate" label="OGG">_hongo_page_title_video_ogg_single</custom-field>
+        <custom-field action="translate" label="WEBM">_hongo_page_title_video_webm_single</custom-field>
+        <custom-field action="translate" label="External video url">_hongo_page_title_video_youtube_single</custom-field>
+        <custom-field action="copy" label="Parallax">_hongo_page_title_parallax_effect_single</custom-field>
+        <custom-field action="copy" label="Opacity">_hongo_page_title_opacity_single</custom-field>
+        <custom-field action="copy" label="Content height">_hongo_page_title_height_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb">_hongo_page_enable_breadcrumb_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb heading">_hongo_page_enable_breadcrumb_heading_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb position">_hongo_page_breadcrumb_position_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb alignment">_hongo_page_breadcrumb_alignment_single</custom-field>
+        <custom-field action="copy" label="Border">_hongo_page_title_enable_border_single</custom-field>
+        <custom-field action="copy" label="top space">_hongo_page_title_top_space_single</custom-field>
+        <custom-field action="copy" label="After header">_hongo_page_title_after_header_single</custom-field>
+        <custom-field action="copy" label="top space">_hongo_page_title_top_section_space_single</custom-field>
+        <custom-field action="copy" label="Bottom space">_hongo_page_title_bottom_section_space_single</custom-field>
+        <!-- Typography -->
+        <custom-field action="copy" label="Font size">_hongo_page_title_font_size_single</custom-field>
+        <custom-field action="copy" label="Line height">_hongo_page_title_line_height_single</custom-field>
+        <custom-field action="copy" label="Letter spacing">_hongo_page_title_letter_spacing_single</custom-field>
+        <custom-field action="copy" label="Font weight">_hongo_page_title_font_weight_single</custom-field>
+        <custom-field action="copy" label="Font size">_hongo_page_subtitle_font_size_single</custom-field>
+        <custom-field action="copy" label="Line height">_hongo_page_subtitle_line_height_single</custom-field>
+        <custom-field action="copy" label="Letter spacing">_hongo_page_subtitle_letter_spacing_single</custom-field>
+        <custom-field action="copy" label="Font weight">_hongo_page_subtitle_font_weight_single</custom-field>
+        <custom-field action="copy" label="Font size">_hongo_page_breadcrumb_font_size_single</custom-field>
+        <custom-field action="copy" label="line height">_hongo_page_breadcrumb_line_height_single</custom-field>
+        <custom-field action="copy" label="letter spacing">_hongo_page_breadcrumb_letter_spacing_single</custom-field>
+        <custom-field action="copy" label="Opacity color">_hongo_page_title_opacity_color_single</custom-field>
+        <custom-field action="copy" label="Background color">_hongo_page_title_bg_color_single</custom-field>
+        <custom-field action="copy" label="title color">_hongo_page_title_color_single</custom-field>
+        <custom-field action="copy" label="sub title color">_hongo_page_subtitle_color_single</custom-field>
+        <custom-field action="copy" label="subtitle bg color">_hongo_page_subtitle_bg_color_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb bg color">_hongo_page_title_breadcrumb_bg_color_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb border color">_hongo_page_title_breadcrumb_border_color_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb text color">_hongo_page_title_breadcrumb_color_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb text hover color">_hongo_page_title_breadcrumb_text_hover_color_single</custom-field>
+        <custom-field action="copy" label="Border color">_hongo_page_title_border_color_single</custom-field>
+        <custom-field action="copy" label="Icon background color">_hongo_page_title_icon_bg_color_single</custom-field>
+        <custom-field action="copy" label="Icon hover background color">_hongo_page_title_icon_hover_bg_color_single</custom-field>
+        <custom-field action="copy" label="Icon color">_hongo_page_title_icon_color_single</custom-field>
+        <custom-field action="copy" label="Icon Hover color">_hongo_page_title_icon_hover_color_single</custom-field>
+        <!-- Content. -->
+        <custom-field action="copy" label="Comments">_hongo_hide_page_comment_single</custom-field>
+        <!-- Section Builder -->
+        <custom-field action="copy" label="Section type">_hongo_builder_section_type</custom-field>
+        <custom-field action="copy" label="Sticky type">_hongo_header_sticky_type</custom-field>
+        <custom-field action="copy" label="Sticky type">_hongo_footer_sticky_type</custom-field>
+        <custom-field action="copy" label="Footer Style">_hongo_footer_style</custom-field>
+        <!-- Mini Header Section -->
+        <custom-field action="copy" label="Background color">_hongo_mini_header_bg</custom-field>
+        <custom-field action="copy" label="Text color">_hongo_mini_header_text_color</custom-field>
+        <custom-field action="copy" label="Text hover color">_hongo_mini_header_text_hover_color</custom-field>
+        <custom-field action="copy" label="Text hover bg color">_hongo_mini_header_text_hover_bg_color</custom-field>
+        <custom-field action="copy" label="font size">_hongo_mini_header_font_size</custom-field>
+        <custom-field action="copy" label="line height">_hongo_mini_header_line_height</custom-field>
+        <custom-field action="copy" label="letter spacing">_hongo_mini_header_letter_spacing</custom-field>
+        <custom-field action="copy" label="text transform">_hongo_mini_header_text_transform</custom-field>
+        <custom-field action="copy" label="mini header cart bg color">_hongo_mini_header_cart_bg_color</custom-field>
+        <custom-field action="copy" label="mini header cart text color">_hongo_mini_header_cart_text_color</custom-field>
+        <!-- Mini Header Sticky Section -->
+        <custom-field action="copy" label="Background color">_hongo_mini_header_sticky_bg</custom-field>
+        <custom-field action="copy" label="Text color">_hongo_sticky_mini_header_text_color</custom-field>
+        <custom-field action="copy" label="Text hover color">_hongo_sticky_mini_header_text_hover_color</custom-field>
+        <custom-field action="copy" label="Text hover bg color">_hongo_sticky_mini_header_text_hover_bg_color</custom-field>
+        <custom-field action="copy" label="mini header cart bg color">_hongo_sticky_mini_header_cart_bg_color</custom-field>
+        <custom-field action="copy" label="mini header cart text color">_hongo_sticky_mini_header_cart_text_color</custom-field>
+        <!-- Mini Header Sub Menu Section -->
+        <custom-field action="copy" label="Submenu bg color">_hongo_mini_header_submenu_bg_color</custom-field>
+        <custom-field action="copy" label="Submenu text color">_hongo_mini_header_submenu_text_color</custom-field>
+        <custom-field action="copy" label="Submenu text hover color">_hongo_mini_header_submenu_text_hover_color</custom-field>
+        <custom-field action="copy" label="Font size">_hongo_mini_header_submenu_font_size</custom-field>
+        <custom-field action="copy" label="Line height">_hongo_mini_header_submenu_line_height</custom-field>
+        <custom-field action="copy" label="Letter spacing">_hongo_mini_header_submenu_letter_spacing</custom-field>
+        <custom-field action="copy" label="Text transform">_hongo_mini_header_submenu_text_transform</custom-field>
+        <!-- Mini Header Mobile Menu Section -->
+        <custom-field action="copy" label="Mobile bg color">_hongo_mini_header_mobile_menu_bg_color</custom-field>
+        <custom-field action="copy" label="Mobile menu color">_hongo_mini_header_mobile_menu_color</custom-field>
+        <custom-field action="copy" label="Mobile menu hover color">_hongo_mini_header_mobile_menu_hover_color</custom-field>
+        <!-- Top header Section -->
+        <custom-field action="copy" label="Background color">_hongo_top_header_bg</custom-field>
+        <custom-field action="copy" label="Color">_hongo_top_header_text_color</custom-field>
+        <custom-field action="copy" label="Hover color">_hongo_top_header_text_hover_color</custom-field>
+        <custom-field action="copy" label="Font size">_hongo_top_header_font_size</custom-field>
+        <custom-field action="copy" label="Line height">_hongo_top_header_line_height</custom-field>
+        <custom-field action="copy" label="Letter spacing">_hongo_top_header_letter_spacing</custom-field>
+        <custom-field action="copy" label="Text transform">_hongo_top_header_text_transform</custom-field>
+        <custom-field action="copy" label="Cart bg color">_hongo_top_header_cart_bg_color</custom-field>
+        <custom-field action="copy" label="Cart text color">_hongo_top_header_cart_text_color</custom-field>
+        <!-- Top header sticky Section -->
+        <custom-field action="copy" label="Background color">_hongo_top_header_sticky_bg</custom-field>
+        <custom-field action="copy" label="Text color">_hongo_sticky_top_header_text_color</custom-field>
+        <custom-field action="copy" label="Text hover color">_hongo_sticky_top_header_text_hover_color</custom-field>
+        <custom-field action="copy" label="Cart bg color">_hongo_sticky_top_header_cart_bg_color</custom-field>
+        <custom-field action="copy" label="Cart text color">_hongo_sticky_top_header_cart_text_color</custom-field>
+        <!-- Top header sub menu Section -->
+        <custom-field action="copy" label="Background color">_hongo_top_header_submenu_bg_color</custom-field>
+        <custom-field action="copy" label="Text color">_hongo_top_header_submenu_text_color</custom-field>
+        <custom-field action="copy" label="Text hover color">_hongo_top_header_submenu_text_hover_color</custom-field>
+        <custom-field action="copy" label="Font size">_hongo_top_header_submenu_font_size</custom-field>
+        <custom-field action="copy" label="Line height">_hongo_top_header_submenu_line_height</custom-field>
+        <custom-field action="copy" label="Letter spacing">_hongo_top_header_submenu_letter_spacing</custom-field>
+        <custom-field action="copy" label="Text transform">_hongo_top_header_submenu_text_transform</custom-field>
+        <!-- Header Section -->
+        <custom-field action="copy" label="Background color">_hongo_header_bg</custom-field>
+        <custom-field action="copy" label="Text color">_hongo_header_text_color</custom-field>
+        <custom-field action="copy" label="Text hover color">_hongo_header_text_hover_color</custom-field>
+        <custom-field action="copy" label="Font size">_hongo_header_font_size</custom-field>
+        <custom-field action="copy" label="Line height">_hongo_header_line_height</custom-field>
+        <custom-field action="copy" label="Letter spacing">_hongo_header_letter_spacing</custom-field>
+        <custom-field action="copy" label="Text transform">_hongo_header_text_transform</custom-field>
+        <custom-field action="copy" label="Font size">_hongo_header_menu_icon_font_size</custom-field>
+        <custom-field action="copy" label="Cart bg color">_hongo_header_cart_bg_color</custom-field>
+        <custom-field action="copy" label="Cart text color">_hongo_header_cart_text_color</custom-field>
+        <custom-field action="copy" label="Box shadow enable">_hongo_header_box_shadow_enable</custom-field>
+        <custom-field action="copy" label="Box shadow">_hongo_header_box_shadow_color</custom-field>
+        <!-- Header Sticky Section -->
+        <custom-field action="copy" label="Background color">_hongo_header_sticky_bg</custom-field>
+        <custom-field action="copy" label="Text color">_hongo_sticky_header_text_color</custom-field>
+        <custom-field action="copy" label="Text hover color">_hongo_sticky_header_text_hover_color</custom-field>
+        <custom-field action="copy" label="Cart bg color">_hongo_sticky_header_cart_bg_color</custom-field>
+        <custom-field action="copy" label="Cart text color">_hongo_sticky_header_cart_text_color</custom-field>
+        <custom-field action="copy" label="Box shadow enable">_hongo_sticky_header_box_shadow_enable</custom-field>
+        <custom-field action="copy" label="Box shadow">_hongo_sticky_header_box_shadow_color</custom-field>
+        <!-- Header Sub menu Section -->
+        <custom-field action="copy" label="Background color">_hongo_header_submenu_bg_color</custom-field>
+        <custom-field action="copy" label="Text color">_hongo_header_submenu_text_color</custom-field>
+        <custom-field action="copy" label="Text hover color">_hongo_header_submenu_text_hover_color</custom-field>
+        <custom-field action="copy" label="Font size">_hongo_header_submenu_font_size</custom-field>
+        <custom-field action="copy" label="Line height">_hongo_header_submenu_line_height</custom-field>
+        <custom-field action="copy" label="Letter spacing">_hongo_header_submenu_letter_spacing</custom-field>
+        <custom-field action="copy" label="Text transform">_hongo_header_submenu_text_transform</custom-field>
+        <custom-field action="copy" label="Font weight">_hongo_header_submenu_font_weight</custom-field>
+        <custom-field action="copy" label="Font size">_hongo_header_submenu_icon_font_size</custom-field>
+        <!-- Header Sub menu heading Section -->
+        <custom-field action="copy" label="Text color">_hongo_header_submenu_heading_text_color</custom-field>
+        <custom-field action="copy" label="Text hover color">_hongo_header_submenu_heading_text_hover_color</custom-field>
+        <custom-field action="copy" label="Font size">_hongo_header_submenu_heading_font_size</custom-field>
+        <custom-field action="copy" label="Line height">_hongo_header_submenu_heading_line_height</custom-field>
+        <custom-field action="copy" label="Letter spacing">_hongo_header_submenu_heading_letter_spacing</custom-field>
+        <custom-field action="copy" label="Text transform">_hongo_header_submenu_heading_text_transform</custom-field>
+        <custom-field action="copy" label="Font size">_hongo_header_submenu_heading_icon_font_size</custom-field>
+        <!-- Header Mobile Breakpoint Section -->
+        <custom-field action="copy" label="Breakpoint">_hongo_header_mobile_menu_breakpoint</custom-field>
+        <custom-field action="copy" label="Background color">_hongo_header_mobile_menu_bg_color</custom-field>
+        <custom-field action="copy" label="Mobile Menu color">_hongo_header_mobile_menu_color</custom-field>
+        <custom-field action="copy" label="Mobile Menu hover color">_hongo_header_mobile_menu_hover_color</custom-field>
+        <!-- Mega menu Section -->
+        <custom-field action="copy" label="Background color">_hongo_megamenu_background_color</custom-field>
+        <custom-field action="copy" label="Background image">_hongo_megamenu_background_image</custom-field>
+        <custom-field action="copy" label="Background image position">_hongo_megamenu_background_image_position</custom-field>
+        <!-- Promo popup Section -->
+        <custom-field action="copy" label="Popup display">_hongo_display_promo_popup_after</custom-field>
+        <custom-field action="copy" label="Delay time">_hongo_delay_time_promo_popup</custom-field>
+        <custom-field action="copy" label="Scroll popup">_hongo_scroll_promo_popup</custom-field>
+        <custom-field action="copy" label="Cokkie popup">_hongo_promo_popup_cokkie_expire</custom-field>
+        <custom-field action="copy" label="Mobile enable popup">_hongo_enable_mobile_promo_popup</custom-field>
+        <!-- Footer Section -->
+        <custom-field action="copy" label="Widget text color">_hongo_footer_widget_text_color</custom-field>
+        <custom-field action="copy" label="Font size">_hongo_footer_widget_font_size</custom-field>
+        <custom-field action="copy" label="Line height">_hongo_footer_widget_line_height</custom-field>
+        <custom-field action="copy" label="Letter spacing">_hongo_footer_widget_letter_spacing</custom-field>
+        <custom-field action="copy" label="Text transform">_hongo_footer_widget_text_transform</custom-field>
+        <!-- Footer Typography Section -->
+        <custom-field action="copy" label="Text color">_hongo_footer_text_color</custom-field>
+        <custom-field action="copy" label="Text hover color">_hongo_footer_text_hover_color</custom-field>
+        <custom-field action="copy" label="Font size">_hongo_footer_font_size</custom-field>
+        <custom-field action="copy" label="Line height">_hongo_footer_line_height</custom-field>
+        <custom-field action="copy" label="Letter spacing">_hongo_footer_letter_spacing</custom-field>
+        <custom-field action="copy" label="Text transform">_hongo_footer_text_transform</custom-field>
+        <!-- Footer Newsletter Section -->
+        <custom-field action="copy" label="Background color">_hongo_footer_newsletter_background_color</custom-field>
+        <custom-field action="copy" label="Border color">_hongo_footer_newsletter_border_color</custom-field>
+        <custom-field action="copy" label="Text color">_hongo_footer_newsletter_place_text_color</custom-field>
+        <custom-field action="copy" label="Text color">_hongo_footer_newsletter_text_color</custom-field>
+        <custom-field action="copy" label="Button text color">_hongo_footer_newsletter_button_text_color</custom-field>
+        <custom-field action="copy" label="Icon Hover color">_hongo_footer_newsletter_button_hover_color</custom-field>
+        <!-- Post Layout Settings -->
+        <custom-field action="copy" label="Post Sidebar settings">_hongo_single_post_layout_setting_single</custom-field>
+        <custom-field action="copy" label="Left sidebar">_hongo_single_post_left_sidebar_single</custom-field>
+        <custom-field action="copy" label="Right sidebar">_hongo_single_post_right_sidebar_single</custom-field>
+        <custom-field action="copy" label="Container style">_hongo_single_post_container_style_single</custom-field>
+        <custom-field action="copy" label="Body background">_hongo_body_background_color_single</custom-field>
+        <custom-field action="copy" label="Box layout">_hongo_enable_box_layout_single</custom-field>
+        <!-- Post Page Title Settings -->
+        <custom-field action="copy" label="Title">_hongo_single_post_enable_title_single</custom-field>
+        <custom-field action="copy" label="Container style">_hongo_single_post_title_container_style_single</custom-field>
+        <custom-field action="copy" label="Full width padding">_hongo_single_post_title_container_fluid_with_padding_single</custom-field>
+        <custom-field action="copy" label="Style">_hongo_single_post_title_style_single</custom-field>
+        <custom-field action="copy" label="Title heading">_hongo_single_post_enable_title_heading_single</custom-field>
+        <custom-field action="copy" label="Content height">_hongo_single_post_title_height_single</custom-field>
+        <custom-field action="copy" label="Title text case">_hongo_single_post_title_text_transform_single</custom-field>
+        <custom-field action="copy" label="Subtitle">_hongo_single_post_enable_subtitle_single</custom-field>
+        <custom-field action="translate" label="Subtitle Text">_hongo_single_post_title_subtitle_single</custom-field>
+        <custom-field action="copy" label="Subtitle text case">_hongo_single_post_title_subtitle_text_transform</custom-field>
+        <custom-field action="copy" label="Title Subtitle alignment">_hongo_single_post_title_subtitle_alignment_single</custom-field>
+        <custom-field action="copy" label="Enable background image">_hongo_single_post_enable_title_image_single</custom-field>
+        <custom-field action="copy" label="Background image">_hongo_single_post_title_bg_image_single</custom-field>
+        <custom-field action="copy" label="Background gallery images">_hongo_single_post_title_bg_multiple_image_single</custom-field>
+        <custom-field action="copy" label="Scroll to down">_hongo_single_post_title_scroll_to_down_single</custom-field>
+        <custom-field action="translate" label="Next section ID">_hongo_single_post_title_callto_section_id_single</custom-field>
+        <custom-field action="copy" label="Video type">_hongo_single_post_title_video_type_single</custom-field>
+        <custom-field action="translate" label="MP4">_hongo_single_post_title_video_mp4_single</custom-field>
+        <custom-field action="translate" label="OGG">_hongo_single_post_title_video_ogg_single</custom-field>
+        <custom-field action="translate" label="WEBM">_hongo_single_post_title_video_webm_single</custom-field>
+        <custom-field action="translate" label="External video url">_hongo_single_post_title_video_youtube_single</custom-field>
+        <custom-field action="copy" label="Parallax effects">_hongo_single_post_title_parallax_effect_single</custom-field>
+        <custom-field action="copy" label="Opacity">_hongo_single_post_title_opacity_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb">_hongo_single_post_enable_breadcrumb_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb heading">_hongo_single_post_enable_breadcrumb_heading_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb position">_hongo_single_post_breadcrumb_position_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb alignment">_hongo_single_post_breadcrumb_alignment_single</custom-field>
+        <custom-field action="copy" label="Border">_hongo_single_post_title_enable_border_single</custom-field>
+        <custom-field action="copy" label="Add top space of header height">_hongo_single_post_title_top_space_single</custom-field>
+        <custom-field action="copy" label="After header">_hongo_single_post_title_after_header_single</custom-field>
+        <custom-field action="copy" label="Top space">_hongo_single_post_title_top_section_space_single</custom-field>
+        <custom-field action="copy" label="Bottom space">_hongo_single_post_title_bottom_section_space_single</custom-field>
+        <custom-field action="copy" label="Title font size">_hongo_single_post_title_font_size_single</custom-field>
+        <custom-field action="copy" label="Title line height">_hongo_single_post_title_line_height_single</custom-field>
+        <custom-field action="copy" label="Title letter spacing">_hongo_single_post_title_letter_spacing_single</custom-field>
+        <custom-field action="copy" label="Title font weight">_hongo_single_post_title_font_weight_single</custom-field>
+        <custom-field action="copy" label="Subtitle font size">_hongo_single_post_subtitle_font_size_single</custom-field>
+        <custom-field action="copy" label="Subtitle line height">_hongo_single_post_subtitle_line_height_single</custom-field>
+        <custom-field action="copy" label="Subtitle letter spacing">_hongo_single_post_subtitle_letter_spacing_single</custom-field>
+        <custom-field action="copy" label="Subtitle font weight">_hongo_single_post_subtitle_font_weight_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb font size">_hongo_single_post_breadcrumb_font_size_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb line height">_hongo_single_post_breadcrumb_line_height_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb letter spacing">_hongo_single_post_breadcrumb_letter_spacing_single</custom-field>
+        <custom-field action="copy" label="Title color">_hongo_single_post_title_color_single</custom-field>
+        <custom-field action="copy" label="Opacity color">_hongo_single_post_title_opacity_color_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb text color">_hongo_single_post_title_breadcrumb_color_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb text hover color">_hongo_single_post_title_breadcrumb_text_hover_color_single</custom-field>
+        <custom-field action="copy" label="Border color">_hongo_single_post_title_border_color_single</custom-field>
+        <custom-field action="copy" label="Title bg color">_hongo_single_post_title_bg_color_single</custom-field>
+        <custom-field action="copy" label="Subtitle color">_hongo_single_post_subtitle_color_single</custom-field>
+        <!-- Post Comments Settings -->
+        <custom-field action="copy" label="Comment">_hongo_enable_comment_single</custom-field>
+        <!-- Single Post Layout -->
+        <custom-field action="copy" label="Post layout style">_hongo_post_layout_style_single</custom-field>
+        <custom-field action="copy" label="Category">_hongo_enable_category_single</custom-field>
+        <custom-field action="copy" label="Date">_hongo_enable_date_single</custom-field>
+        <custom-field action="copy" label="Date format">_hongo_post_date_format_single</custom-field>
+        <custom-field action="copy" label="Author">_hongo_enable_author_single</custom-field>
+        <custom-field action="copy" label="Tags">_hongo_enable_tags_single</custom-field>
+        <custom-field action="copy" label="Navigation link">_hongo_enable_navigation_link_single</custom-field>
+        <custom-field action="copy" label="Like">_hongo_enable_like_single</custom-field>
+        <custom-field action="copy" label="Share">_hongo_enable_share_single</custom-field>
+        <custom-field action="copy" label="Author box">_hongo_enable_post_author_box_single</custom-field>
+        <custom-field action="copy" label="Post meta text case">_hongo_single_post_meta_text_transform_single</custom-field>
+        <custom-field action="copy" label="Related posts">_hongo_enable_related_posts_single</custom-field>
+        <custom-field action="copy" label="No. of columns">_hongo_no_of_related_posts_columns_single</custom-field>
+        <custom-field action="translate" label="Title">_hongo_related_posts_title_single</custom-field>
+        <custom-field action="copy" label="No. of posts">_hongo_no_of_related_posts_single</custom-field>
+        <custom-field action="copy" label="Post date">_hongo_related_posts_enable_date_single</custom-field>
+        <custom-field action="copy" label="Post date format">_hongo_related_posts_date_format_single</custom-field>
+        <custom-field action="copy" label="Post author">_hongo_related_posts_enable_author_single</custom-field>
+        <custom-field action="copy" label="Post separator">_hongo_related_posts_separator_single</custom-field>
+        <custom-field action="copy" label="Excerpt length">_hongo_related_post_excerpt_length_single</custom-field>
+        <custom-field action="copy" label="Post meta color">_hongo_single_post_meta_text_color_single</custom-field>
+        <custom-field action="copy" label="Post meta hover color">_hongo_single_post_meta_text_hover_color_single</custom-field>
+        <!-- Product Settings -->
+        <!-- Layout Settings -->
+        <custom-field action="copy" label="Sidebar settings">_hongo_single_product_layout_setting_single</custom-field>
+        <custom-field action="copy" label="Left sidebar">_hongo_single_product_left_sidebar_single</custom-field>
+        <custom-field action="copy" label="Right sidebar">_hongo_single_product_right_sidebar_single</custom-field>
+        <custom-field action="copy" label="Container style">_hongo_single_product_container_style_single</custom-field>
+        <custom-field action="copy" label="Full width padding">_hongo_single_product_container_fluid_with_padding_single</custom-field>
+        <custom-field action="copy" label="Body background">_hongo_body_background_color_single</custom-field>
+        <custom-field action="copy" label="Box layout">_hongo_enable_box_layout_single</custom-field>
+        <!-- Page Title Settings -->
+        <custom-field action="copy" label="Title">_hongo_single_product_enable_title_single</custom-field>
+        <custom-field action="copy" label="Container style">_hongo_single_product_title_container_style_single</custom-field>
+        <custom-field action="copy" label="Full width padding">_hongo_single_product_title_container_fluid_with_padding_single</custom-field>
+        <custom-field action="copy" label="Style">_hongo_single_product_title_style_single</custom-field>
+        <custom-field action="copy" label="Title heading">_hongo_single_product_enable_title_heading_single</custom-field>
+        <custom-field action="copy" label="Content height">_hongo_single_product_title_height_single</custom-field>
+        <custom-field action="copy" label="Title text case">_hongo_single_product_title_text_transform_single</custom-field>
+        <custom-field action="copy" label="Subtitle">_hongo_single_product_enable_subtitle_single</custom-field>
+        <custom-field action="translate" label="Subtitle Text">_hongo_single_product_title_subtitle_single</custom-field>
+        <custom-field action="copy" label="Subtitle text case">_hongo_single_product_title_subtitle_text_transform</custom-field>
+        <custom-field action="copy" label="Title Subtitle alignment">_hongo_single_product_title_subtitle_alignment_single</custom-field>
+        <custom-field action="copy" label="Enable background image">_hongo_single_product_enable_title_image_single</custom-field>
+        <custom-field action="copy" label="Background image">_hongo_single_product_title_bg_image_single</custom-field>
+        <custom-field action="copy" label="Background gallery images">_hongo_single_product_title_bg_multiple_image_single</custom-field>
+        <custom-field action="copy" label="Scroll to down">_hongo_single_product_title_scroll_to_down_single</custom-field>
+        <custom-field action="translate" label="Next section ID">_hongo_single_product_title_callto_section_id_single</custom-field>
+        <custom-field action="copy" label="Video type">_hongo_single_product_title_video_type_single</custom-field>
+        <custom-field action="translate" label="MP4">_hongo_single_product_title_video_mp4_single</custom-field>
+        <custom-field action="translate" label="OGG">_hongo_single_product_title_video_ogg_single</custom-field>
+        <custom-field action="translate" label="WEBM">_hongo_single_product_title_video_webm_single</custom-field>
+        <custom-field action="translate" label="External video url">_hongo_single_product_title_video_youtube_single</custom-field>
+        <custom-field action="copy" label="Parallax effects">_hongo_single_product_title_parallax_effect_single</custom-field>
+        <custom-field action="copy" label="Opacity">_hongo_single_product_title_opacity_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb">_hongo_single_product_enable_breadcrumb_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb heading">_hongo_single_product_enable_breadcrumb_heading_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb position">_hongo_single_product_breadcrumb_position_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb alignment">_hongo_single_product_breadcrumb_alignment_single</custom-field>
+        <custom-field action="copy" label="Border">_hongo_single_product_title_enable_border_single</custom-field>
+        <custom-field action="copy" label="Add top space of header height">_hongo_single_product_title_top_space_single</custom-field>
+        <custom-field action="copy" label="After header">_hongo_single_product_title_after_header_single</custom-field>
+        <custom-field action="copy" label="Top space">_hongo_single_product_title_top_section_space_single</custom-field>
+        <custom-field action="copy" label="Bottom space">_hongo_single_product_title_bottom_section_space_single</custom-field>
+        <custom-field action="copy" label="Title font size">_hongo_single_product_title_font_size_single</custom-field>
+        <custom-field action="copy" label="Title line height">_hongo_single_product_title_line_height_single</custom-field>
+        <custom-field action="copy" label="Title letter spacing">_hongo_single_product_title_letter_spacing_single</custom-field>
+        <custom-field action="copy" label="Title font weight">_hongo_single_product_title_font_weight_single</custom-field>
+        <custom-field action="copy" label="Subtitle font size">_hongo_single_product_subtitle_font_size_single</custom-field>
+        <custom-field action="copy" label="Subtitle line height">_hongo_single_product_subtitle_line_height_single</custom-field>
+        <custom-field action="copy" label="Subtitle letter spacing">_hongo_single_product_subtitle_letter_spacing_single</custom-field>
+        <custom-field action="copy" label="Subtitle font weight">_hongo_single_product_subtitle_font_weight_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb font size">_hongo_single_product_breadcrumb_font_size_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb line height">_hongo_single_product_breadcrumb_line_height_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb letter spacing">_hongo_single_product_breadcrumb_letter_spacing_single</custom-field>
+        <custom-field action="copy" label="Opacity color">_hongo_single_product_title_opacity_color_single</custom-field>
+        <custom-field action="copy" label="Background color">_hongo_single_product_title_bg_color_single</custom-field>
+        <custom-field action="copy" label="Title Text color">_hongo_single_product_title_color_single</custom-field>
+        <custom-field action="copy" label="Subtitle Text color">_hongo_single_product_subtitle_color_single</custom-field>
+        <custom-field action="copy" label="Subtitle text background color">_hongo_page_subtitle_bg_color_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb background color">_hongo_single_product_title_breadcrumb_bg_color_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb border color">_hongo_single_product_title_breadcrumb_border_color_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb text color">_hongo_single_product_title_breadcrumb_color_single</custom-field>
+        <custom-field action="copy" label="Breadcrumb text hover color">_hongo_single_product_title_breadcrumb_text_hover_color_single</custom-field>
+        <custom-field action="copy" label="Border color">_hongo_single_product_title_border_color_single</custom-field>
+        <custom-field action="copy" label="Icon background color">_hongo_single_product_title_icon_bg_color_single</custom-field>
+        <custom-field action="copy" label="Icon hover background color">_hongo_single_product_title_icon_hover_bg_color_single</custom-field>
+        <custom-field action="copy" label="Icon color">_hongo_single_product_title_icon_color_single</custom-field>
+        <custom-field action="copy" label="Icon Hover color">_hongo_single_product_title_icon_hover_color_single</custom-field>
+        <!-- Single Product Layout -->
+        <custom-field action="copy" label="Single product style">_hongo_product_single_premade_style_single</custom-field>
+        <custom-field action="copy" label="Background color">_hongo_single_product_bg_color_single</custom-field>
+        <custom-field action="copy" label="New product">_hongo_new_product_shop_single</custom-field>
+        <custom-field action="copy" label="Featured video type">_hongo_product_featured_video_type_single</custom-field>
+        <custom-field action="translate" label="Vimeo video URL">_hongo_product_featured_vimeo_video_single</custom-field>
+        <custom-field action="translate" label="Youtube video URL">_hongo_product_featured_youtube_video_single</custom-field>
+        <custom-field action="translate" label="MP4 video URL">_hongo_product_featured_mp4_video_single</custom-field>
+        <custom-field action="translate" label="OGG video URL">_hongo_product_featured_ogg_video_single</custom-field>
+        <custom-field action="translate" label="WEBM video URL">_hongo_product_featured_webm_video_single</custom-field>
+        <custom-field action="copy" label="Background image">_hongo_single_product_ed_bg_image_single</custom-field>
+        <custom-field action="copy" label="Content position">_hongo_single_product_content_position_single</custom-field>
+        <custom-field action="copy" label="Variation swatch style">_hongo_single_product_variation_swatch_style_single</custom-field>
+        <custom-field action="copy" label="Variation swatch tooltip">_hongo_single_product_variation_swatch_tooltip_single</custom-field>
+        <custom-field action="copy" label="Slider">_hongo_single_product_page_enable_slider_single</custom-field>
+        <custom-field action="copy" label="Image zoom effect">_hongo_single_product_page_enable_image_zoom_effect_single</custom-field>
+        <custom-field action="copy" label="Zoom icon">_hongo_single_product_page_enable_zoom_icon_single</custom-field>
+        <custom-field action="copy" label="Zoom icon background color">_hongo_single_product_zoom_icon_bg_color_single</custom-field>
+        <custom-field action="copy" label="Product list tab">_hongo_single_product_enable_product_list_tab_single</custom-field>
+        <custom-field action="copy" label="Product brand">_hongo_single_product_page_enable_brand_single</custom-field>
+        <custom-field action="copy" label="Product brand image">_hongo_single_product_page_enable_brand_image_single</custom-field>
+        <custom-field action="copy" label="Title">_hongo_single_product_page_enable_title_single</custom-field>
+        <custom-field action="copy" label="Product countdown deal">_hongo_single_product_page_enable_deal_single</custom-field>
+        <custom-field action="copy" label="Countdown number color">_hongo_single_product_deal_number_color_single</custom-field>
+        <custom-field action="copy" label="Countdown text color">_hongo_single_product_deal_text_color_single</custom-field>
+        <custom-field action="copy" label="Sale box">_hongo_single_product_page_enable_sale_box_single</custom-field>
+        <custom-field action="copy" label="New box">_hongo_single_product_page_enable_new_box_single</custom-field>
+        <custom-field action="copy" label="Short description">_hongo_single_product_enable_short_description_single</custom-field>
+        <custom-field action="copy" label="SKU">_hongo_single_product_enable_sku_single</custom-field>
+        <custom-field action="copy" label="Category">_hongo_single_product_enable_category_single</custom-field>
+        <custom-field action="copy" label="Tag">_hongo_single_product_enable_tag_single</custom-field>
+        <custom-field action="copy" label="Wishlist">_hongo_single_product_enable_wishlist_single</custom-field>
+        <custom-field action="copy" label="Compare">_hongo_single_product_enable_compare_single</custom-field>
+        <custom-field action="copy" label="Share">_hongo_single_product_enable_social_share_single</custom-field>
+        <custom-field action="translate" label="Share heading">_hongo_single_product_share_title_single</custom-field>
+        <custom-field action="copy" label="Tab content heading">_hongo_single_product_enable_tab_content_heading_single</custom-field>
+        <custom-field action="copy" label="Size guide">_hongo_single_product_enable_size_guide_single</custom-field>
+        <custom-field action="copy" label="Size guide position">_hongo_single_product_position_size_guide_single</custom-field>
+        <custom-field action="translate" label="Size guide text">_hongo_single_product_size_guide_text_single</custom-field>
+        <custom-field action="translate" label="Size guide title">_hongo_single_product_size_guide_title_single</custom-field>
+        <custom-field action="translate" label="Size guide content">_hongo_single_product_size_guide_content_single</custom-field>
+        <custom-field action="copy" label="Sticky add to cart">_hongo_single_product_enable_sticky_add_to_cart_single</custom-field>
+        <custom-field action="copy" label="Header top space">_hongo_single_product_header_top_spacing_single</custom-field>
+        <custom-field action="copy" label="Padding top">_hongo_single_product_padding_top_single</custom-field>
+        <custom-field action="copy" label="Padding bottom">_hongo_single_product_padding_bottom_single</custom-field>
+        <custom-field action="copy" label="Separator color">_hongo_single_product_separator_color_single</custom-field>
+        <!-- Related products settings -->
+        <custom-field action="copy" label="Related products">_hongo_single_product_enable_related_single</custom-field>
+        <custom-field action="translate" label="Related product heading">_hongo_single_product_related_title_single</custom-field>
+        <custom-field action="copy" label="Up sells product">_hongo_single_product_enable_up_sells_single</custom-field>
+        <custom-field action="translate" label="Up sells product heading">_hongo_single_product_up_sells_title_single</custom-field>
+        <custom-field action="copy" label="No. of products">_hongo_single_product_no_of_products_list_single</custom-field>
+        <custom-field action="copy" label="No. of columns">_hongo_single_product_no_of_columns_list_single</custom-field>
+        <custom-field action="copy" label="No. of columns mini desktop">_hongo_single_product_list_mini_desktop_column_single</custom-field>
+        <custom-field action="copy" label="No. of columns tablet">_hongo_single_product_list_tablet_column_single</custom-field>
+        <custom-field action="copy" label="No. of columns mobile">_hongo_single_product_list_mobile_column_single</custom-field>
+        <custom-field action="copy" label="Slider">_hongo_single_product_list_enable_slider_single</custom-field>
+        <custom-field action="copy" label="Mini desktop slide per view">_hongo_single_product_list_slides_per_view_mini_desktop_single</custom-field>
+        <custom-field action="copy" label="Tablet slide per view">_hongo_single_product_list_slides_per_view_tablet_single</custom-field>
+        <custom-field action="copy" label="Mobile slide per view">_hongo_single_product_list_slides_per_view_mobile_single</custom-field>
+        <custom-field action="copy" label="Pagination">_hongo_single_product_list_enable_pagination_single</custom-field>
+        <custom-field action="copy" label="Pagination color">_hongo_single_product_list_pagination_color_single</custom-field>
+        <custom-field action="copy" label="Active pagination color">_hongo_single_product_list_active_pagination_color_single</custom-field>
+        <custom-field action="copy" label="Navigation">_hongo_single_product_list_enable_navigation_single</custom-field>
+        <custom-field action="copy" label="Navigation color">_hongo_single_product_list_navigation_color_single</custom-field>
+        <custom-field action="copy" label="Loop">_hongo_single_product_list_enable_loop_single</custom-field>
+        <custom-field action="copy" label="Autoplay">_hongo_single_product_list_enable_autoplay_single</custom-field>
+        <custom-field action="copy" label="Slide delay">_hongo_single_product_list_enable_delay_single</custom-field>
+        <!-- Breadcrumb & Navigation box -->
+        <custom-field action="copy" label="Breadcrumb">_hongo_single_product_enable_title_after_breadcrumb_single</custom-field>
+        <custom-field action="copy" label="Navigation">_hongo_single_product_enable_title_after_navigation_single</custom-field>
+        <!-- Sale, New & Sold box typography -->
+        <custom-field action="copy" label="Font size">_hongo_single_product_sale_font_size_single</custom-field>
+        <custom-field action="copy" label="Line height">_hongo_single_product_sale_line_height_single</custom-field>
+        <custom-field action="copy" label="Letter spacing">_hongo_single_product_sale_letter_spacing_single</custom-field>
+        <custom-field action="copy" label="Font weight">_hongo_single_product_sale_font_weight_single</custom-field>
+        <custom-field action="copy" label="Sale box color">_hongo_single_product_sale_color_single</custom-field>
+        <custom-field action="copy" label="Sale box background color">_hongo_single_product_sale_bg_color_single</custom-field>
+        <custom-field action="copy" label="New box color">_hongo_single_product_new_color_single</custom-field>
+        <custom-field action="copy" label="New box background color">_hongo_single_product_new_bg_color_single</custom-field>
+        <custom-field action="copy" label="Sold box color">_hongo_single_product_soldout_color_single</custom-field>
+        <custom-field action="copy" label="Sold box background color">_hongo_single_product_soldout_bg_color_single</custom-field>
+        <!-- Title typography -->
+        <custom-field action="copy" label="Font size">_hongo_single_product_page_title_font_size_single</custom-field>
+        <custom-field action="copy" label="Line height">_hongo_single_product_page_title_line_height_single</custom-field>
+        <custom-field action="copy" label="Letter spacing">_hongo_single_product_page_title_letter_spacing_single</custom-field>
+        <custom-field action="copy" label="Font weight">_hongo_single_product_page_title_font_weight_single</custom-field>
+        <custom-field action="copy" label="Text case">_hongo_single_product_page_title_font_transform_single</custom-field>
+        <custom-field action="copy" label="Color">_hongo_single_product_page_title_color_single</custom-field>
+        <!-- Rating typography -->
+        <custom-field action="copy" label="Color">_hongo_single_product_rating_star_color_single</custom-field>
+        <!-- Price typography -->
+        <custom-field action="copy" label="Font size">_hongo_single_product_price_font_size_single</custom-field>
+        <custom-field action="copy" label="Line height">_hongo_single_product_price_line_height_single</custom-field>
+        <custom-field action="copy" label="Letter spacing">_hongo_single_product_price_letter_spacing_single</custom-field>
+        <custom-field action="copy" label="Font weight">_hongo_single_product_price_font_weight_single</custom-field>
+        <custom-field action="copy" label="Color">_hongo_single_product_price_color_single</custom-field>
+        <custom-field action="copy" label="Regular price color">_hongo_single_product_regular_price_color_single</custom-field>
+        <!-- Short description typography -->
+        <custom-field action="copy" label="Font size">_hongo_single_product_short_description_font_size_single</custom-field>
+        <custom-field action="copy" label="Line height">_hongo_single_product_short_description_line_height_single</custom-field>
+        <custom-field action="copy" label="Letter spacing">_hongo_single_product_short_description_letter_spacing_single</custom-field>
+        <custom-field action="copy" label="Font weight">_hongo_single_product_short_description_font_weight_single</custom-field>
+        <custom-field action="copy" label="Color">_hongo_single_product_short_description_color_single</custom-field>
+        <!-- Instock / Outstock typography -->
+        <custom-field action="copy" label="Font size">_hongo_single_product_stock_font_size_single</custom-field>
+        <custom-field action="copy" label="Line height">_hongo_single_product_stock_line_height_single</custom-field>
+        <custom-field action="copy" label="Letter spacing">_hongo_single_product_stock_letter_spacing_single</custom-field>
+        <custom-field action="copy" label="Font weight">_hongo_single_product_stock_font_weight_single</custom-field>
+        <custom-field action="copy" label="In Stock color">_hongo_single_product_stock_color_single</custom-field>
+        <custom-field action="copy" label="Out of Stock color">_hongo_single_product_out_of_stock_color_single</custom-field>
+        <!-- Button typography -->
+        <custom-field action="copy" label="Color">_hongo_single_product_button_color_single</custom-field>
+        <custom-field action="copy" label="Background color">_hongo_single_product_button_bg_color_single</custom-field>
+        <custom-field action="copy" label="Border color">_hongo_single_product_button_border_color_single</custom-field>
+        <custom-field action="copy" label="Hover color">_hongo_single_product_button_hover_color_single</custom-field>
+        <custom-field action="copy" label="Hover background color">_hongo_single_product_button_hover_bg_color_single</custom-field>
+        <custom-field action="copy" label="Hover border color">_hongo_single_product_button_hover_border_color_single</custom-field>
+        <!-- Product meta typography -->
+        <custom-field action="copy" label="Font size">_hongo_single_product_page_meta_font_size_single</custom-field>
+        <custom-field action="copy" label="Line height">_hongo_single_product_page_meta_line_height_single</custom-field>
+        <custom-field action="copy" label="Letter spacing">_hongo_single_product_page_meta_letter_spacing_single</custom-field>
+        <custom-field action="copy" label="Font weight">_hongo_single_product_page_meta_font_weight_single</custom-field>
+        <custom-field action="copy" label="Product color">_hongo_single_product_page_meta_color_single</custom-field>
+        <custom-field action="copy" label="Product link hover color">_hongo_single_product_page_meta_link_hover_color_single</custom-field>
+        <custom-field action="copy" label="Product heading color">_hongo_single_product_page_meta_heading_color_single</custom-field>
+        <custom-field action="copy" label="Product social icon color">_hongo_single_product_page_meta_social_icon_color_single</custom-field>
+        <custom-field action="copy" label="Product social icon hover color">_hongo_single_product_page_meta_social_icon_hover_color_single</custom-field>
+        <!-- Related products typography -->
+        <custom-field action="copy" label="Heading font size">_hongo_single_product_list_heading_font_size_single</custom-field>
+        <custom-field action="copy" label="Heading line height">_hongo_single_product_list_heading_line_height_single</custom-field>
+        <custom-field action="copy" label="Heading letter spacing">_hongo_single_product_list_heading_letter_spacing_single</custom-field>
+        <custom-field action="copy" label="Heading font weight">_hongo_single_product_list_heading_font_weight_single</custom-field>
+        <custom-field action="copy" label="Heading color">_hongo_single_product_list_heading_color_single</custom-field>
+        <custom-field action="copy" label="Heading Hover color">_hongo_single_product_list_heading_hover_color_single</custom-field>
+        <custom-field action="copy" label="Heading active color">_hongo_single_product_list_heading_active_color_single</custom-field>
+        <!-- Description tab typography -->
+        <custom-field action="copy" label="Font size">_hongo_single_product_page_tab_font_size_single</custom-field>
+        <custom-field action="copy" label="Line height">_hongo_single_product_page_tab_line_height_single</custom-field>
+        <custom-field action="copy" label="Letter spacing">_hongo_single_product_page_tab_letter_spacing_single</custom-field>
+        <custom-field action="copy" label="Font weight">_hongo_single_product_page_tab_font_weight_single</custom-field>
+        <custom-field action="copy" label="Color">_hongo_single_product_page_tab_color_single</custom-field>
+        <custom-field action="copy" label="Hover color">_hongo_single_product_page_tab_hover_color_single</custom-field>
+        <custom-field action="copy" label="Active color">_hongo_single_product_page_tab_active_color_single</custom-field>
+        <custom-field action="copy" label="Custom css">_hongo_custom_css</custom-field>
+        <custom-field action="copy" label="Custom css preview">_hongo_custom_css_preview</custom-field>
+    </custom-fields>
+    <shortcodes>
+        <shortcode>
+            <tag>hongo_accordion</tag>
+            <attributes>
+                <attribute type="area" encoding="urlencoded_json">hongo_accordion</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_alert_message</tag>
+            <attributes>
+                <attribute>hongo_highliget_title</attribute>
+                <attribute>hongo_subtitle</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_blockquote</tag>
+            <attributes>
+                <attribute>hongo_blockquote_author</attribute>
+                <attribute>content</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_button</tag>
+            <attributes>
+                <attribute type="link" encoding="vc_link">hongo_button_text</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_call_to_action</tag>
+            <attributes>
+                <attribute>hongo_title</attribute>
+                <attribute>hongo_subtitle</attribute>
+                <attribute>content</attribute>
+                <attribute type="link" encoding="vc_link">hongo_button_text</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_client_image_slider</tag>
+            <attributes>
+                <attribute type="area" encoding="urlencoded_json">hongo_image_slides</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_content_block</tag>
+            <attributes>
+                <attribute>hongo_block_title</attribute>
+                <attribute>hongo_offer_text</attribute>
+                <attribute>hongo_box_link_url</attribute>
+                <attribute>content</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_counter_or_skill</tag>
+            <attributes>
+                <attribute>title</attribute>
+                <attribute>number_postfix</attribute>
+                <attribute>hongo_link_url</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_pfeature_box</tag>
+            <attributes>
+                <attribute>hongo_feature_title</attribute>
+                <attribute>hongo_feature_subtitle</attribute>
+                <attribute>hongo_feature_hover_title</attribute>
+                <attribute>hongo_feature_content</attribute>
+                <attribute>hongo_feature_phone</attribute>
+                <attribute>hongo_feature_email</attribute>
+                <attribute>hongo_link_url</attribute>
+                <attribute type="link" encoding="vc_link">hongo_button_config</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_image_carousel</tag>
+            <attributes>
+                <attribute>zoom_text</attribute>
+                <attribute type="area" encoding="urlencoded_json">hongo_image_slides</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_instagram</tag>
+            <attributes>
+                <attribute>hongo_instagram_title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_lists</tag>
+            <attributes>
+                <attribute type="area" encoding="urlencoded_json">hongo_list_values</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_newsletter</tag>
+            <attributes>
+                <attribute>hongo_title</attribute>
+                <attribute>hongo_subtitle</attribute>
+                <attribute>content</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_popup</tag>
+            <attributes>
+                <attribute>hongo_popup_button_title</attribute>
+                <attribute>hongo_inside_popup_title</attribute>
+                <attribute>content</attribute>
+                <attribute>hongo_dismiss_text</attribute>
+                <attribute>hongo_popup_youtube_url</attribute>
+                <attribute>hongo_popup_vimeo_url</attribute>
+                <attribute>hongo_popup_google_map_url</attribute>
+                <attribute>hongo_mp4_video</attribute>
+                <attribute>hongo_webm_video</attribute>
+                <attribute>hongo_ogg_video</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_product_brand</tag>
+            <attributes>
+                <attribute>hongo_link_url</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_product_catagory</tag>
+            <attributes>
+                <attribute type="area" encoding="urlencoded_json">hongo_product_category_grid_slides</attribute>
+                <attribute>hongo_category_button</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_progress</tag>
+            <attributes>
+                <attribute type="area" encoding="urlencoded_json">hongo_progress_values</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_section_heading</tag>
+            <attributes>
+                <attribute>hongo_heading</attribute>
+                <attribute>hongo_link_url</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_shop_banner</tag>
+            <attributes>
+                <attribute>hongo_title</attribute>
+                <attribute>hongo_subtitle</attribute>
+                <attribute>hongo_highlight_text</attribute>
+                <attribute>hongo_content_title_text</attribute>
+                <attribute>content</attribute>
+                <attribute>hongo_regular_price</attribute>
+                <attribute>hongo_sale_price</attribute>
+                <attribute type="link" encoding="vc_link">hongo_button</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_shop_grid</tag>
+            <attributes>
+                <attribute type="area" encoding="urlencoded_json">hongo_shop_grid_slides</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_shop_slider</tag>
+            <attributes>
+                <attribute>hongo_social_text</attribute>
+                <attribute>hongo_fb_url</attribute>
+                <attribute>hongo_tw_url</attribute>
+                <attribute>hongo_db_url</attribute>
+                <attribute>hongo_li_url</attribute>
+                <attribute>hongo_ig_url</attribute>
+                <attribute>hongo_tb_url</attribute>
+                <attribute>hongo_pi_url</attribute>
+                <attribute>hongo_yt_url</attribute>
+                <attribute>hongo_vm_url</attribute>
+                <attribute>hongo_sc_url</attribute>
+                <attribute>hongo_fk_url</attribute>
+                <attribute>hongo_rss_url</attribute>
+                <attribute>hongo_rd_url</attribute>
+                <attribute>hongo_bh_url</attribute>
+                <attribute>hongo_vine_url</attribute>
+                <attribute>hongo_gh_url</attribute>
+                <attribute>hongo_xing_url</attribute>
+                <attribute>hongo_vk_url</attribute>
+                <attribute>hongo_yelp_url</attribute>
+                <attribute>hongo_discord_url</attribute>
+                <attribute>hongo_skype_url</attribute>
+                <attribute>hongo_email_url</attribute>
+                <attribute type="area" encoding="urlencoded_json">hongo_shop_slider_slide</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_single_image</tag>
+            <attributes>
+                <attribute>title</attribute>
+                <attribute>link</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_pricing_table</tag>
+            <attributes>
+                <attribute>sale_type</attribute>
+                <attribute>per_price</attribute>
+                <attribute>content</attribute>
+                <attribute type="link" encoding="vc_link">hongo_button_config</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_tabs</tag>
+            <attributes>
+                <attribute encoding="allow_html_tags">title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_team_member</tag>
+            <attributes>
+                <attribute>hongo_member_name</attribute>
+                <attribute>hongo_member_des</attribute>
+                <attribute>hongo_link_url</attribute>
+                <attribute>hongo_facebook_url</attribute>
+                <attribute>hongo_twitter_url</attribute>
+                <attribute>hongo_db_url</attribute>
+                <attribute>hongo_linkedin_url</attribute>
+                <attribute>hongo_instagram_url</attribute>
+                <attribute>hongo_tb_url</attribute>
+                <attribute>hongo_pinterest_url</attribute>
+                <attribute>hongo_yt_url</attribute>
+                <attribute>hongo_vm_url</attribute>
+                <attribute>hongo_sc_url</attribute>
+                <attribute>hongo_fk_url</attribute>
+                <attribute>hongo_rss_url</attribute>
+                <attribute>hongo_rd_url</attribute>
+                <attribute>hongo_behance_url</attribute>
+                <attribute>hongo_vine_url</attribute>
+                <attribute>hongo_gh_url</attribute>
+                <attribute>hongo_xing_url</attribute>
+                <attribute>hongo_vk_url</attribute>
+                <attribute>hongo_yelp_url</attribute>
+                <attribute>hongo_discord_url</attribute>
+                <attribute>hongo_skype_url</attribute>
+                <attribute>hongo_email_url</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_team_member_slider</tag>
+            <attributes>
+                <attribute type="area" encoding="urlencoded_json">hongo_team_member_slides</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_testimonial</tag>
+            <attributes>
+                <attribute>hongo_name</attribute>
+                <attribute>hongo_designation</attribute>
+                <attribute>hongo_content_title</attribute>
+                <attribute>content</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_testimonial_slider</tag>
+            <attributes>
+                <attribute type="area" encoding="urlencoded_json">hongo_testimonial_slides</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_text_slider</tag>
+            <attributes>
+                <attribute type="area" encoding="urlencoded_json">hongo_text_slides</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_timer</tag>
+            <attributes>
+                <attribute>hongo_day_text</attribute>
+                <attribute>hongo_hour_text</attribute>
+                <attribute>hongo_minute_text</attribute>
+                <attribute>hongo_second_text</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_video</tag>
+            <attributes>
+                <attribute>hongo_youtube_url</attribute>
+                <attribute>hongo_vimeo_url</attribute>
+                <attribute>mp4_video</attribute>
+                <attribute>ogg_video</attribute>
+                <attribute>webm_video</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_hamburger_navigation_menu</tag>
+            <attributes>
+                <attribute>hongo_hamburger_copyrighttext</attribute>
+                <attribute>hongo_mobile_menu_text</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_left_navigation_menu</tag>
+            <attributes>
+                <attribute>hongo_mobile_menu_text</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_navigation_links</tag>
+            <attributes>
+                <attribute>hongo_navigation_main_title</attribute>
+                <attribute>hongo_link_url</attribute>
+                <attribute type="area" encoding="urlencoded_json">hongo_navigation_links_slides</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_navigation_menu</tag>
+            <attributes>
+                <attribute>hongo_mobile_menu_text</attribute>
+                <attribute>hongo_mobile_menu_tab_text</attribute>
+                <attribute>hongo_category_menu_title</attribute>
+                <attribute>hongo_mobile_category_menu_tab_text</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_newsletter_popup</tag>
+            <attributes>
+                <attribute>hongo_lable</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_product_search</tag>
+            <attributes>
+                <attribute>hongo_product_search_placeholder_text</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_sfeature_box</tag>
+            <attributes>
+                <attribute>hongo_feature_title</attribute>
+                <attribute>hongo_feature_content</attribute>
+                <attribute>hongo_link_url</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>hongo_single_image</tag>
+            <attributes>
+                <attribute>hongo_image_size</attribute>
+            </attributes>
+        </shortcode>
+    </shortcodes>
+</wpml-config>

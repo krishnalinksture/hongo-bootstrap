@@ -1,0 +1,327 @@
+<?php
+/**
+ * Smart Section Map For Feature Product Box
+ *
+ * @package Hongo
+ */
+?>
+<?php
+/*-----------------------------------------------------------------------------------*/
+/* Feature Box */
+/*-----------------------------------------------------------------------------------*/
+
+vc_map( 
+  	array(
+	    'name' => esc_html__( 'Features Box', 'hongo-addons'),
+	    'description' => esc_html__( 'Features content blocks', 'hongo-addons'),
+	    'icon' => 'fa-solid fa-info hongo-shortcode-icon',
+	    'base' => 'hongo_sfeature_box',
+	    'category' => 'Hongo Builder',
+	    'params' => array(
+            array(
+                'type' => 'dropdown',
+                'heading' => esc_html__( 'Style', 'hongo-addons'),
+                'admin_label' => true,
+                'param_name' => 'hongo_section_product_feature_type',
+                'value' => array(
+                    esc_html__( 'Select', 'hongo-addons') => '',
+                    esc_html__( 'Icon with text style 1', 'hongo-addons')  => 'hongo-section-product-featurebox-1',
+                    esc_html__( 'Icon with text style 2', 'hongo-addons')  => 'hongo-section-product-featurebox-2',
+                ),
+            ),
+            array(
+                'type' => 'hongo_preview_image',
+                'heading' => esc_html__( 'Select pre-made style for Feature', 'hongo-addons'),
+                'param_name' => 'hongo_product_feature_type_box_preview_image',
+            ),
+            array(
+                'type' => 'attach_image',
+                'heading' => esc_html__( 'Image', 'hongo-addons'),
+                'param_name' => 'hongo_featurebox_image',
+                'dependency'  => array( 'element' => 'hongo_section_product_feature_type', 'value' => array( 'hongo-section-product-featurebox-1' ) ),
+            ),
+            array(
+                'type' => 'hongo_custom_switch_option',
+                'heading' => esc_html__( 'Custom icon image', 'hongo-addons'),
+                'param_name' => 'custom_icon',
+                'value' => array(
+                    esc_html__( 'Off', 'hongo-addons') => '0',
+                    esc_html__( 'On', 'hongo-addons') => '1'
+                ),
+                'dependency'  => array( 'element' => 'hongo_section_product_feature_type', 'value' => array( 'hongo-section-product-featurebox-2' )),
+            ),
+            array(
+                'type' => 'hongo_icon',
+                'heading' => esc_html__( 'Font icon', 'hongo-addons'),
+                'param_name' => 'hongo_icon_list',
+                'dependency' => array( 'element' => 'custom_icon', 'value' => '0' ),
+            ),
+            array(
+                'type' => 'attach_image',
+                'heading' => esc_html__( 'Custom image', 'hongo-addons'),
+                'param_name' => 'custom_icon_image',
+                'dependency' => array( 'element' => 'custom_icon', 'value' => '1' ),
+                'description' => esc_html__( 'Recommended size: Extra Large - 60px X 60px, Large - 50px X 50px, Extra Medium - 40px X 40px, Medium - 35px X 35px, Small - 24px X 24px, Extra Small - 16px X 16px', 'hongo-addons' ),
+            ),
+            array(
+                'type' => 'textfield',
+                'heading' => esc_html__( 'Icon image maximum width', 'hongo-addons' ),
+                'param_name' => 'custom_icon_max_width',
+                'value' => '',
+                'dependency'  => array( 'element' => 'custom_icon', 'value' => array( '1' ) ),
+                'description' => esc_html__( 'In pixel like 40px.', 'hongo-addons' ),
+            ),
+            array(
+            	'type' => 'textfield',
+            	'heading' => esc_html__( 'Title', 'hongo-addons' ),
+            	'param_name' => 'hongo_feature_title',
+            	'dependency'  => array( 'element' => 'hongo_section_product_feature_type', 'value' => array( 'hongo-section-product-featurebox-1', 'hongo-section-product-featurebox-2' )),
+            	'description' => esc_html__( 'Use || to break the word in new line.', 'hongo-addons' ),
+            ),
+            array(
+                'type' => 'textarea',
+                'heading' => esc_html__( 'Content', 'hongo-addons' ),
+                'param_name' => 'hongo_feature_content',
+                'dependency'  => array( 'element' => 'hongo_section_product_feature_type', 'value' => array( 'hongo-section-product-featurebox-2' )),
+            ),
+            array(
+                'type'        => 'vc_link',
+                'heading'     => esc_html__('Button configuration', 'hongo-addons' ),
+                'param_name'  => 'hongo_button_config',
+                'admin_label' => true,
+                'dependency'  => array( 'element' => 'hongo_section_product_feature_type', 'value' => array( 'hongo-section-product-featurebox-2' )),
+            ),
+            array(
+                'type' => 'hongo_custom_switch_option',
+                'class' => '',
+                'heading' => esc_html__( 'Button icon', 'hongo-addons'),
+                'param_name' => 'hongo_button_enable_icon',
+                'value' => array(
+                    esc_html__( 'Off', 'hongo-addons') => '0', 
+                    esc_html__( 'On', 'hongo-addons') => '1'
+                ),
+                'dependency'  => array( 'element' => 'hongo_section_product_feature_type', 'value' => array( 'hongo-section-product-featurebox-2' )),
+            ),            
+            array(
+                'type' => 'dropdown',
+                'heading' => esc_html__('Button icon size', 'hongo-addons'),
+                'param_name' => 'hongo_button_icon_type',
+                'value' => array(
+                    esc_html__('Select Icon Size', 'hongo-addons') => '',
+                    esc_html__('Extra Large', 'hongo-addons') => 'icon-extra-large',
+                    esc_html__('Large', 'hongo-addons') => 'icon-large',
+                    esc_html__('Extra Medium', 'hongo-addons') => 'icon-extra-medium',
+                    esc_html__('Medium', 'hongo-addons') => 'icon-medium',
+                    esc_html__('Extra Small', 'hongo-addons') => 'icon-extra-small',
+                    esc_html__('Small', 'hongo-addons') => 'icon-small',
+                    esc_html__('Very Small', 'hongo-addons') => 'icon-very-small',
+                ),
+                'dependency' => array( 'element' => 'hongo_button_enable_icon', 'value' => '1' ),
+            ),
+            array(
+                'type' => 'dropdown',
+                'heading' => esc_html__('Button icon position', 'hongo-addons'),
+                'param_name' => 'hongo_button_icon_position',
+                'value' => array(
+                    esc_html__('Left', 'hongo-addons') => 'left',
+                    esc_html__('Right', 'hongo-addons') => 'right',
+                ),
+                'std' => 'left',
+                'dependency' => array( 'element' => 'hongo_button_enable_icon', 'value' => array( '1' ) ),
+            ),
+            array(
+                'type' => 'hongo_icon',
+                'heading' => esc_html__('Button font icon', 'hongo-addons'),
+                'param_name' => 'hongo_button_icon',
+                'admin_label' => true,
+                'dependency' => array( 'element' => 'hongo_button_enable_icon', 'value' => '1' ),
+            ),
+            array(
+                'type' => 'hongo_custom_switch_option',
+                'heading' => esc_html__( 'Title link', 'hongo-addons' ),
+                'param_name' => 'hongo_title_link',
+                'value' => array(
+                    esc_html__( 'Off', 'hongo-addons' ) => '0', 
+                    esc_html__( 'On', 'hongo-addons' ) => '1'
+                ),
+                'dependency'  => array( 'element' => 'hongo_section_product_feature_type', 'value' => array( 'hongo-section-product-featurebox-1','hongo-section-product-featurebox-2' )),
+            ),
+            array(
+                'type' => 'dropdown',
+                'heading' => esc_html__( 'Link target', 'hongo-addons'),
+                'param_name' => 'hongo_link_target',
+                'value' => array(
+                    esc_html__('Self', 'hongo-addons') => '_self', 
+                    esc_html__('New tab / window', 'hongo-addons') => '_blank'
+                ),
+                'dependency'  => array( 'element' => 'hongo_title_link', 'value' => '1' ),
+            ),
+            array(
+                'type' => 'textfield',
+                'heading' =>esc_html__( 'Link / URL', 'hongo-addons'),
+                'param_name' => 'hongo_link_url',
+                'admin_label' => true,
+                'description' => esc_html__( 'Enter full URL with http, like http://www.example.com', 'hongo-addons' ),
+                'dependency'  => array( 'element' => 'hongo_title_link', 'value' => '1' ),
+            ),
+            array(
+                'type' => 'colorpicker',
+                'class' => '',
+                'heading' => esc_html__( 'Box bg color', 'hongo-addons' ),
+                'param_name' => 'hongo_box_bg_color',
+                'dependency'  => array( 'element' => 'hongo_enable_link', 'value' => '1' ),
+                'group' => esc_html__( 'Style', 'hongo-addons' ),
+                'edit_field_class' => 'vc_col-sm-6 vc_column-with-padding',
+                'dependency'  => array( 'element' => 'hongo_section_product_feature_type', 'value' => array( 'hongo-section-product-featurebox-1' )),
+            ),
+            array(
+                'type' => 'colorpicker',
+                'class' => '',
+                'heading' => esc_html__( 'Box hover background color', 'hongo-addons' ),
+                'param_name' => 'hongo_box_hover_bg_color',
+                'dependency'  => array( 'element' => 'hongo_enable_link', 'value' => '1' ),
+                'group' => esc_html__( 'Style', 'hongo-addons' ),
+                'edit_field_class' => 'vc_col-sm-6 vc_column-with-padding',
+                'dependency'  => array( 'element' => 'hongo_section_product_feature_type', 'value' => array( 'hongo-section-product-featurebox-1' )),
+            ),
+            array(
+                'type' => 'colorpicker',
+                'class' => '',
+                'heading' => esc_html__( 'Box hover border color', 'hongo-addons' ),
+                'param_name' => 'hongo_box_hover_border_color',
+                'dependency'  => array( 'element' => 'hongo_enable_link', 'value' => '1' ),
+                'group' => esc_html__( 'Style', 'hongo-addons' ),
+                'edit_field_class' => 'vc_col-sm-6 vc_column-with-padding',
+                'dependency'  => array( 'element' => 'hongo_section_product_feature_type', 'value' => array( 'hongo-section-product-featurebox-1' )),
+            ),
+            array(
+                'type' => 'colorpicker',
+                'class' => '',
+                'heading' => esc_html__( 'Title hover text color', 'hongo-addons' ),
+                'param_name' => 'hongo_title_hover_color',
+                'dependency'  => array( 'element' => 'hongo_enable_link', 'value' => '1' ),
+                'group' => esc_html__( 'Style', 'hongo-addons' ),
+                'edit_field_class' => 'vc_col-sm-6 vc_column-with-padding',
+                'dependency'  => array( 'element' => 'hongo_section_product_feature_type', 'value' => array( 'hongo-section-product-featurebox-1' )),
+            ),
+            array(
+                'type' => 'colorpicker',
+                'class' => '',
+                'heading' => esc_html__( 'Title hover bg color', 'hongo-addons' ),
+                'param_name' => 'hongo_title_hover_bg_color',
+                'dependency'  => array( 'element' => 'hongo_enable_link', 'value' => '1' ),
+                'group' => esc_html__( 'Style', 'hongo-addons' ),
+                'edit_field_class' => 'vc_col-sm-6 vc_column-with-padding',
+                'dependency'  => array( 'element' => 'hongo_section_product_feature_type', 'value' => array( 'hongo-section-product-featurebox-1' )),
+            ),
+            array(
+                'type' => 'dropdown',
+                'heading' => esc_html__( 'Icon size', 'hongo-addons'),
+                'param_name' => 'hongo_icon_size',
+                'admin_label' => true,
+                'value' => array(
+                    esc_html__( 'Default', 'hongo-addons') => '',
+                    esc_html__( 'Extra large', 'hongo-addons') => 'icon-extra-large', 
+                    esc_html__( 'Large', 'hongo-addons') => 'icon-large',
+                    esc_html__( 'Extra medium', 'hongo-addons') => 'icon-extra-medium',
+                    esc_html__( 'Medium', 'hongo-addons') => 'icon-medium',
+                    esc_html__( 'Small', 'hongo-addons') => 'icon-small',
+                    esc_html__( 'Extra small', 'hongo-addons') => 'icon-extra-small',
+                ),
+                'dependency' => array( 'element' => 'custom_icon', 'value' => '0' ),
+                'edit_field_class' => 'vc_col-sm-6 vc_column-with-padding',
+                'group' => esc_html__( 'Style', 'hongo-addons' ),
+                'dependency'  => array( 'element' => 'custom_icon', 'value' => array( '0' )),
+            ),
+            array(
+                'type' => 'colorpicker',
+                'class' => '',
+                'heading' => esc_html__( 'Icon color', 'hongo-addons' ),
+                'param_name' => 'hongo_icon_color',
+                'group' => esc_html__( 'Style', 'hongo-addons' ),
+                'edit_field_class' => 'vc_col-sm-6 vc_column-with-padding',
+                'dependency'  => array( 'element' => 'custom_icon', 'value' => array( '0' )),
+            ),
+            array(
+                'type' => 'dropdown',
+                'heading' => esc_html__('Button style', 'hongo-addons'),
+                'param_name' => 'hongo_button_style',
+                'value' => array(
+                    esc_html__( 'Default', 'hongo-addons' ) => '',
+                    esc_html__( 'Black', 'hongo-addons' ) => 'style1',
+                    esc_html__( 'White', 'hongo-addons' ) => 'style2',
+                    esc_html__( 'Base color', 'hongo-addons' ) => 'style10',
+                    esc_html__( 'Black border', 'hongo-addons' ) => 'style3',
+                    esc_html__( 'White border', 'hongo-addons' ) => 'style4',
+                    esc_html__( 'Base color border', 'hongo-addons' ) => 'style11',
+                    esc_html__( 'Black round corner', 'hongo-addons' ) => 'style5',
+                    esc_html__( 'White round corner', 'hongo-addons' ) => 'style6',
+                    esc_html__( 'Base color round corner', 'hongo-addons' ) => 'style12',
+                    esc_html__( 'Black border with rounded', 'hongo-addons' ) => 'style7',
+                    esc_html__( 'White border with rounded', 'hongo-addons' ) => 'style8',
+                    esc_html__( 'Base color border with rounded', 'hongo-addons' ) => 'style13',
+                    esc_html__( 'Text with underline', 'hongo-addons' ) => 'style9',
+                    esc_html__( 'Base color text with underline', 'hongo-addons' ) => 'style14',
+                ),
+                'admin_label' => true,
+                'edit_field_class' => 'vc_col-sm-6 vc_column-with-padding button-style-setting',
+                'group'      => esc_html__( 'Button Settings', 'hongo-addons' ),
+                'dependency'  => array( 'element' => 'hongo_section_product_feature_type', 'value' => array( 'hongo-section-product-featurebox-2' )),
+            ),
+            array(
+                'type' => 'dropdown',
+                'heading' => esc_html__( 'Button size', 'hongo-addons' ),
+                'param_name' => 'hongo_button_type',
+                'value' => array(
+                    esc_html__( 'Select', 'hongo-addons' ) => '',
+                    esc_html__( 'Extra large', 'hongo-addons' ) => 'btn-extra-large',
+                    esc_html__( 'Large', 'hongo-addons' ) => 'btn-large',
+                    esc_html__( 'Medium', 'hongo-addons' ) => 'btn-medium',
+                    esc_html__( 'Small', 'hongo-addons' ) => 'btn-small',
+                    esc_html__( 'Very small', 'hongo-addons' ) => 'btn-very-small',
+                ),
+                'group' => esc_html__( 'Button Settings', 'hongo-addons' ),
+                'edit_field_class' => 'vc_col-sm-6 button-style-setting',
+                'dependency'  => array( 'element' => 'hongo_section_product_feature_type', 'value' => array( 'hongo-section-product-featurebox-2' )),
+            ),
+            array(
+                'type'       => 'hongo_button_settings',
+                'param_name' => 'hongo_button_setting',
+                'heading'    => esc_html__( 'Button typography', 'hongo-addons' ),
+                'group'      => esc_html__( 'Button Settings', 'hongo-addons' ),
+                'dependency'  => array( 'element' => 'hongo_section_product_feature_type', 'value' => array( 'hongo-section-product-featurebox-2' )),
+            ),
+            array(
+                'type'       => 'responsive_font_settings',
+                'param_name' => 'hongo_font_title_setting',
+                'heading'    => esc_html__( 'Title typography', 'hongo-addons' ),
+                'group'      => esc_html__( 'Typography', 'hongo-addons' ),
+                'dependency'  => array( 'element' => 'hongo_section_product_feature_type', 'value' => array( 'hongo-section-product-featurebox-1','hongo-section-product-featurebox-2' )),
+            ),
+            array(
+                'type' => 'hongo_custom_switch_option',
+                'heading' => esc_html__( 'Use additional font for title', 'hongo-addons'),
+                'param_name' => 'hongo_enable_alternate_font_title',
+                'value' => array(
+                    esc_html__( 'Off', 'hongo-addons') => '0', 
+                    esc_html__( 'On', 'hongo-addons') => '1'
+                ),
+                'std' => '1',
+                'edit_field_class' => 'vc_col-sm-12 vc_column-with-padding typography-left-setting typography-full-setting',
+                'group'      => esc_html__( 'Typography', 'hongo-addons' ),
+                'description' => esc_html__( 'If On is selected then title will use additional font family setup in WordPress customizer', 'hongo-addons' ),
+                'dependency'  => array( 'element' => 'hongo_section_product_feature_type', 'value' => array( 'hongo-section-product-featurebox-1','hongo-section-product-featurebox-2' )),
+            ),
+            array(
+                'type'       => 'responsive_font_settings',
+                'param_name' => 'hongo_font_content_setting',
+                'heading'    => esc_html__( 'Content typography', 'hongo-addons' ),
+                'group'      => esc_html__( 'Typography', 'hongo-addons' ),
+                'dependency'  => array( 'element' => 'hongo_section_product_feature_type', 'value' => array( 'hongo-section-product-featurebox-2' )),
+            ),
+	        $hongo_vc_extra_id,
+	      	$hongo_vc_extra_class,
+	    ),
+    )
+);
+
