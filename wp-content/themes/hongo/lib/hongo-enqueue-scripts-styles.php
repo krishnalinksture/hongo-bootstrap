@@ -66,7 +66,7 @@ if( ! function_exists( 'hongo_register_style_js' ) ) :
 			}
 		}
 
-		wp_register_style( 'bootstrap', HONGO_THEME_CSS_URI . '/bootstrap.min.css', null, '5.2.3' );
+		wp_register_style( 'bootstrap', HONGO_THEME_CSS_URI . '/bootstrap.min.css', null, '5.3.8' );
 		wp_enqueue_style( 'bootstrap' );
 
 		if( hongo_load_stylesheet_by_key( 'et-line-icons' ) ) {
@@ -112,7 +112,7 @@ if( ! function_exists( 'hongo_register_style_js' ) ) :
 		/*
 		 * Load Hongo theme main and other required jquery files. 
 		 */
-		wp_register_script( 'bootstrap', HONGO_THEME_JS_URI.'/bootstrap.min.js', array( 'jquery' ), '5.2.3', true);
+		wp_register_script( 'bootstrap', HONGO_THEME_JS_URI.'/bootstrap.min.js', array( 'jquery' ), '5.3.8', true);
 		wp_enqueue_script( 'bootstrap' );
 
 		wp_register_script( 'jquery-easing', HONGO_THEME_JS_URI.'/jquery.easing.1.3.js', array( 'jquery' ), '1.3', true);
@@ -435,7 +435,7 @@ if( ! function_exists( 'hongo_load_vc_iframe_js' ) ) :
 		wp_register_style( 'hongo-admin-custom', HONGO_THEME_ADMIN_CSS_URI . '/hongo-admin-custom.css', null, HONGO_THEME_VERSION);
 		wp_enqueue_style( 'hongo-admin-custom' );
 
-		wp_register_style( 'bootstrap-frontend', HONGO_THEME_CSS_URI . '/bootstrap.min.css', null, '5.2.3' );
+		wp_register_style( 'bootstrap-frontend', HONGO_THEME_CSS_URI . '/bootstrap.min.css', null, '5.3.8' );
 		wp_enqueue_style( 'bootstrap-frontend' );
 
 		if( hongo_load_javascript_by_key( 'smooth-scroll' ) ) {
