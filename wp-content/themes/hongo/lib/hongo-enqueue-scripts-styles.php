@@ -75,7 +75,7 @@ if( ! function_exists( 'hongo_register_style_js' ) ) :
 		}
 
 		if( hongo_load_stylesheet_by_key( 'font-awesome' ) ) {
-			wp_register_style( 'font-awesome', HONGO_THEME_CSS_URI . '/font-awesome.min.css', null, '6.7.2' );
+			wp_register_style( 'font-awesome', HONGO_THEME_CSS_URI . '/font-awesome.min.css', null, '7.3.1' );
 			wp_enqueue_style( 'font-awesome' );
 		}
 
@@ -90,7 +90,7 @@ if( ! function_exists( 'hongo_register_style_js' ) ) :
 		}
 
 		if( hongo_load_stylesheet_by_key( 'swiper' ) ) {
-			wp_register_style( 'swiper', HONGO_THEME_CSS_URI . '/swiper.min.css', null, '5.4.5' );
+			wp_register_style( 'swiper', HONGO_THEME_CSS_URI . '/swiper.min.css', null, '12.2.0' );
 			wp_enqueue_style( 'swiper' );
 		}
 
@@ -142,7 +142,7 @@ if( ! function_exists( 'hongo_register_style_js' ) ) :
 		}
 
 		if( hongo_load_javascript_by_key( 'swiper' ) ) {
-			wp_register_script( 'swiper', HONGO_THEME_JS_URI.'/swiper.min.js', array( 'jquery' ), '5.4.5', true );
+			wp_register_script( 'swiper', HONGO_THEME_JS_URI.'/swiper.min.js', array( 'jquery' ), '12.2.0', true );
 			wp_enqueue_script( 'swiper' );
 		}
 
@@ -377,7 +377,7 @@ if( ! function_exists( 'hongo_admin_custom_scripts' ) ) :
 		wp_register_style( 'themify-icons', HONGO_THEME_CSS_URI . '/themify-icons.css', null, HONGO_THEME_VERSION );
 		wp_enqueue_style( 'themify-icons' );
 
-		wp_register_style( 'font-awesome', HONGO_THEME_CSS_URI . '/font-awesome.min.css', null, '6.7.2' );
+		wp_register_style( 'font-awesome', HONGO_THEME_CSS_URI . '/font-awesome.min.css', null, '7.3.1' );
 		wp_enqueue_style( 'font-awesome' );
 
 		wp_register_style( 'simple-line-icons', HONGO_THEME_CSS_URI . '/simple-line-icons.css', null, HONGO_THEME_VERSION );
@@ -423,7 +423,7 @@ add_action( 'admin_enqueue_scripts', 'hongo_admin_custom_scripts' );
 if ( ! function_exists( 'hongo_vc_frontend_editor_enqueue_js_css' ) ) :
 	function hongo_vc_frontend_editor_enqueue_js_css() {
 		
-		wp_register_script( 'swiper', HONGO_THEME_JS_URI.'/swiper.min.js', array( 'jquery' ), '5.4.5', true );
+		wp_register_script( 'swiper', HONGO_THEME_JS_URI.'/swiper.min.js', array( 'jquery' ), '12.2.0', true );
 		wp_enqueue_script( 'swiper' );
 	}
 endif;
@@ -462,7 +462,7 @@ if( ! function_exists( 'hongo_load_vc_iframe_js' ) ) :
 		}
 
 		if( hongo_load_javascript_by_key( 'swiper' ) ) {
-			wp_register_script( 'swiper-frontend', HONGO_THEME_JS_URI.'/swiper.min.js', array( 'jquery' ), '5.4.5', true );
+			wp_register_script( 'swiper-frontend', HONGO_THEME_JS_URI.'/swiper.min.js', array( 'jquery' ), '12.2.0', true );
 			wp_enqueue_script( 'swiper-frontend' );
 		}
 
