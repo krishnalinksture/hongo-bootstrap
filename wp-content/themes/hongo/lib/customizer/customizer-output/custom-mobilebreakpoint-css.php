@@ -71,7 +71,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	    .navbar-collapse.collapse.in { display: block !important; overflow-y: hidden !important; }
 	    .navbar-collapse { max-height: 400px; overflow-y: hidden !important; left: 0; padding: 0; position: absolute; top: 100%; width: 100%; border-top: 0; } 
 	    header .nav { float: none !important; padding-left: 0; padding-right: 0; margin: 0px 0; width: 100%; text-align: left; background-color: rgba(23,23,23,1) !important; }
-	    header .nav > li { position: relative; display: block; margin: 0; border-bottom: 1px solid rgba(255,255,255,0.06);  }
+	    header .nav > li { position: relative; display: block; margin: 0; border-bottom: 1px solid rgba(255,255,255,0.06); width: 100%; }
 	    header .nav > li ul.menu { margin: 5px 0; float: left; width: 100%;}
 	    header .nav > li ul.menu > li:last-child > a { border-bottom: 0; }
 	    header .nav > li > a > i { top: 4px; min-width: 12px; }

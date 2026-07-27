@@ -172,6 +172,10 @@ select,
 	line-height: 22px;
 }
 
+.input-group .form-control {
+	margin-bottom: 0;
+}
+
 select {
 	padding: 11px 12px 12px;
 	color: #808080;
@@ -356,6 +360,18 @@ div.wpcf7 .ajax-loader.is-active {
 
 .form-control {
 	font-size: inherit;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+figure {
+    margin: 0;
 }
 
 /* ===================================
@@ -750,6 +766,18 @@ h6 {
 /* ===================================
 	Custom
 ====================================== */
+
+/* container */
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+	width: 100%;
+}
 
 body.overflow-y-hidden {
 	height: 100%;
@@ -1251,6 +1279,16 @@ p.demo_store a {
 /* ===================================
 	Button
 ====================================== */
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active,
+.btn:hover {
+	color: initial;
+    background-color: initial;
+    border-color: initial;
+}
 
 .woocommerce #respond input#submit.alt.disabled,
 .woocommerce #respond input#submit.alt.disabled:hover,
@@ -7185,6 +7223,7 @@ li.active .hongo-cb:after {
 
 .hongo-content-newsletter-1 input:focus {
 	border-bottom: 1px solid rgba(0, 0, 0, .60);
+	background-color: transparent;
 }
 
 .hongo-content-newsletter-1 input::-webkit-input-placeholder {
@@ -9224,6 +9263,16 @@ li.active .hongo-cb:after {
 
 .swiper-button-next {
 	right: 50px;
+}
+
+.swiper-horizontal .swiper-button-prev {
+	left: 50px;
+	margin-top: 0;
+}
+
+.swiper-horizontal .swiper-button-next {
+    right: 50px;
+	margin-top: 0;
 }
 
 .swiper-button-prev {
@@ -13309,6 +13358,13 @@ li.active .hongo-cb:after {
 /* ===================================
 	Instagram feed
 ====================================== */
+
+.hongo-instagram-feed {
+	display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
 
 .hongo-instagram-feed-wrap {
 	position: relative;
@@ -35251,6 +35307,10 @@ header .display-inline-block {
 	background-color: #232323;
 }
 
+.navbar-toggle {
+	display: none;
+}
+
 /* navigation */
 
 header.header-default-wrapper .nav>li {
@@ -35349,6 +35409,10 @@ header.header-default-wrapper .nav>li.current-menu-ancestor>a,
 header.header-default-wrapper .nav>li.current-menu-item>a,
 header.header-default-wrapper .nav>li.current-menu-item>a {
 	color: #000;
+}
+
+.dropdown-toggle::after {
+	display: none;
 }
 
 /* ===================================
