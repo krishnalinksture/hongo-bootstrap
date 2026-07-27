@@ -1625,7 +1625,7 @@ header .hongo-shop-dropdown-menu .nav>li ul.menu li {
 .with-categories-navigation-menu .hongo-shop-dropdown-menu .navbar-nav>li>a,
 .with-categories-navigation-menu .hongo-shop-dropdown-menu .navbar-nav>li:first-child>a,
 .with-categories-navigation-menu .hongo-shop-dropdown-menu .navbar-nav>li:last-child>a {
-	padding: 17px 20px;
+	padding: 19px 20px 15px 20px;
 	margin: 0;
 }
 .hongo-shop-dropdown-menu .navbar-nav li.dropdown ul.dropdown-menu {
@@ -1952,7 +1952,9 @@ header .nav>li>a>img.menu-link-icon,
 	max-width: 22px;
 	margin-right: 10px;
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: middle;
+	position: relative;
+    top: -2px;
 }
 .hongo-shop-dropdown-menu ul.dropdown-menu .menu-item>a>img.menu-link-icon,
 .hongo-left-menu ul.dropdown-menu .menu-item>a>img.menu-link-icon {
@@ -3334,7 +3336,7 @@ header.header-sticky .appear-up-scroll.sticky-appear {
 
 .header-menu-button {
 	position: relative;
-	top: 1px;
+	top: 2px;
 	height: auto;
 	display: inline-block;
 	vertical-align: middle;
@@ -3342,7 +3344,6 @@ header.header-sticky .appear-up-scroll.sticky-appear {
 	float: none;
 	padding: 0;
 	margin: 0 0 0 15px;
-	;
 	line-height: normal;
 	background-color: transparent;
 	border: 0;
@@ -3357,6 +3358,7 @@ header.header-sticky .appear-up-scroll.sticky-appear {
 	padding: 0;
 	border: 0;
 	border-radius: 0;
+	background-color: transparent;
 }
 .header-menu-button .navbar-toggle span {
 	display: block;
@@ -4283,6 +4285,7 @@ header .with-categories-navigation-menu .hongo-shop-dropdown-menu .shop-dropdown
 	width: 100% !important;
 	padding-left: 0 !important;
 	padding-right: 0 !important;
+	max-width: 100%;
 }
 .header-sticky .sticky-appear section.full-with-on-sticky {
 	width: 100% !important;

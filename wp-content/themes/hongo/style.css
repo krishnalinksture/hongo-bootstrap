@@ -777,6 +777,18 @@ h6 {
 .container-xl,
 .container-xxl {
 	width: 100%;
+    padding-left: 15px;
+	padding-right: 15px;
+}
+
+.row {
+	margin-left: -15px;
+    margin-right: -15px;
+}
+.row>*,
+.container>[class*="col-"]{
+    padding-left: 15px;
+	padding-right: 15px;
 }
 
 body.overflow-y-hidden {
@@ -13359,13 +13371,6 @@ li.active .hongo-cb:after {
 	Instagram feed
 ====================================== */
 
-.hongo-instagram-feed {
-	display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
 .hongo-instagram-feed-wrap {
 	position: relative;
 	float: left;
@@ -13602,6 +13607,10 @@ li.active .hongo-cb:after {
 	width: 50%;
 }
 
+.hongo-instagram-widget-wrap li {
+	float: left;
+}
+
 /* ===================================
 	Product category
 ====================================== */
@@ -13791,7 +13800,6 @@ li.active .hongo-cb:after {
 /* product category style 3 */
 
 .category-style-3 {
-	display: table;
 	margin: 0;
 }
 
