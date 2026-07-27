@@ -383,7 +383,7 @@ if ( ! function_exists( 'hongo_product_shortcode' ) ) {
                 }
                 $output .= '<div class="hongo-product-category-wrap">';
 
-                    $output.='<ul '.$id.' class="'.esc_attr( $class_list ).'">';
+                    $output.='<ul '.$id.' class="'.esc_attr( $class_list ).' row">';
 
                         $i = 0;
                         foreach( $categories_list as $cat_list ) {
