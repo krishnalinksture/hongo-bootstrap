@@ -815,6 +815,12 @@ body.overflow-y-hidden {
 	margin-right: auto;
 }
 
+.content-area .site-main:has(.hongo-content-full-part),
+.hongo-single-product-main-wrap .site-main:has(.product) {
+	margin-left: 0;
+    margin-right: 0;
+}
+
 /* admin mfp-container */
 
 .admin-bar .mfp-container {
@@ -18861,7 +18867,7 @@ li.active .hongo-cb:after {
 
 .woocommerce form.cart .variations .size-chart {
 	display: inline-block;
-	margin: 4px 0 0 10px;
+	margin: 4px 0 0 7px;
 }
 
 .woocommerce form.cart .variations .size-chart .size-guide-link {
@@ -22396,7 +22402,7 @@ hongo-swatch.disable:hover {
 }
 
 .woocommerce .single-product-modern div.product form.cart .variations .size-chart {
-	margin-left: 10px;
+	margin-left: 7px;
 }
 
 .woocommerce .single-product-modern div.product form.cart .variations select {
