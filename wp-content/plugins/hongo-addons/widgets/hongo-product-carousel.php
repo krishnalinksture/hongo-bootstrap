@@ -218,7 +218,7 @@ if (! class_exists('Hongo_Addons_Product_Carousel_Widget')) {
 					echo $args['before_title'] . $title . $args['after_title'];
 				}
 
-				echo '<div class="swiper-container hongo-product-carousel-widget woocommerce '.$widget_unique_id.'">'; 
+				echo '<div class="swiper hongo-product-carousel-widget woocommerce '.$widget_unique_id.'">'; 
 					echo '<ul class="products swiper-wrapper hongo-product-widget-layout'.$class.'">';
 
 					while ( $products->have_posts() ) {

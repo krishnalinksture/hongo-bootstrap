@@ -62,7 +62,7 @@
     	</ul>
     <?php } else { ?>
 		<div class="blog-image">        	
-        	<div class="swiper-full-screen swiper-container white-move" data-slider-options='{ "loop": true, "slidesPerView": 1, "autoplay": { "delay": 1000 }, "keyboard": { "enabled": true, "onlyInViewport": false }, "preventClicks": false, "watchOverflow": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" } }'>
+        	<div class="swiper-full-screen swiper white-move" data-slider-options='{ "loop": true, "slidesPerView": 1, "autoplay": { "delay": 1000 }, "keyboard": { "enabled": true, "onlyInViewport": false }, "preventClicks": false, "watchOverflow": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" } }'>
         		<div class="swiper-wrapper">
         			<?php
 						if ( is_array( $hongo_gallery ) ) {

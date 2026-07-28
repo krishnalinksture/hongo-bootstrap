@@ -937,7 +937,7 @@
                 
                 if( ! ( $( '#single-product-sticky' ).length > 0 ) ) {
 
-                    $( '.hongo-sticky-content-images-wrap .woocommerce-product-gallery__wrapper' ).wrapInner( '<div id="single-product-sticky" class="swiper-container"><div class="swiper-wrapper"></div><div class="swiper-button-next"><i class="ti-angle-right"></i></div><div class="swiper-button-prev"><i class="ti-angle-left"></i></div></div>' );
+                    $( '.hongo-sticky-content-images-wrap .woocommerce-product-gallery__wrapper' ).wrapInner( '<div id="single-product-sticky" class="swiper"><div class="swiper-wrapper"></div><div class="swiper-button-next"><i class="ti-angle-right"></i></div><div class="swiper-button-prev"><i class="ti-angle-left"></i></div></div>' );
                     $( '#single-product-sticky .woocommerce-product-gallery__image' ).addClass('swiper-slide');
 
                     swiperStickyProduct = new Swiper( '#single-product-sticky', {
@@ -2976,7 +2976,7 @@
                 
                 if( ! ( $( '#single-product-sticky' ).length > 0 ) ) {
 
-                    $( '.hongo-sticky-content-images-wrap .woocommerce-product-gallery__wrapper' ).wrapInner( '<div id="single-product-sticky" class="swiper-container"><div class="swiper-wrapper"></div><div class="swiper-button-next"><i class="ti-angle-right"></i></div><div class="swiper-button-prev"><i class="ti-angle-left"></i></div></div>' );
+                    $( '.hongo-sticky-content-images-wrap .woocommerce-product-gallery__wrapper' ).wrapInner( '<div id="single-product-sticky" class="swiper"><div class="swiper-wrapper"></div><div class="swiper-button-next"><i class="ti-angle-right"></i></div><div class="swiper-button-prev"><i class="ti-angle-left"></i></div></div>' );
                     $( '#single-product-sticky .woocommerce-product-gallery__image' ).addClass('swiper-slide');
 
                     swiperStickyProduct = new Swiper( '#single-product-sticky', {

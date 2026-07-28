@@ -177,7 +177,7 @@ if ( ! function_exists( 'hongo_team_member_slider_shortcode' ) ) {
 		        		// Team Member Slider        
 		        		$hongo_team_member_slides = json_decode( urldecode( $hongo_team_member_slides ) );
 
-		        		$output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper-container '.esc_attr( $class_list ).'" data-slider-options="' . esc_attr( $slider_options ) . '">';
+		        		$output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper '.esc_attr( $class_list ).'" data-slider-options="' . esc_attr( $slider_options ) . '">';
 		                	$output .= '<div class="swiper-wrapper">';
 
 	        				if ( ! empty( $hongo_team_member_slides ) ) {
@@ -324,7 +324,7 @@ if ( ! function_exists( 'hongo_team_member_slider_shortcode' ) ) {
 		        		// Team Member Slider        
 		        		$hongo_team_member_slides = json_decode( urldecode( $hongo_team_member_slides ) );
 
-		        		$output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper-container '.esc_attr( $class_list ).'" data-slider-options="' . esc_attr( $slider_options ) . '">';
+		        		$output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper '.esc_attr( $class_list ).'" data-slider-options="' . esc_attr( $slider_options ) . '">';
 		                	$output .= '<div class="swiper-wrapper">';
 
 		        				if ( ! empty( $hongo_team_member_slides ) ) {
@@ -480,7 +480,7 @@ if ( ! function_exists( 'hongo_team_member_slider_shortcode' ) ) {
 		        		// Team Member Slider        
 		        		$hongo_team_member_slides = json_decode( urldecode( $hongo_team_member_slides ) );
 
-		        		$output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper-container '.esc_attr( $class_list ).'" data-slider-options="' . esc_attr( $slider_options ) . '">';
+		        		$output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper '.esc_attr( $class_list ).'" data-slider-options="' . esc_attr( $slider_options ) . '">';
 		                	$output .= '<div class="swiper-wrapper">';
 
 		        				if ( ! empty( $hongo_team_member_slides ) ) {
@@ -633,7 +633,7 @@ if ( ! function_exists( 'hongo_team_member_slider_shortcode' ) ) {
 		        		// Team Member Slider        
 		        		$hongo_team_member_slides = json_decode( urldecode( $hongo_team_member_slides ) );
 
-		        		$output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper-container '.esc_attr( $class_list ).'" data-slider-options="' . esc_attr( $slider_options ) . '">';
+		        		$output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper '.esc_attr( $class_list ).'" data-slider-options="' . esc_attr( $slider_options ) . '">';
 		                	$output .= '<div class="swiper-wrapper">';
 
 		        				if ( ! empty( $hongo_team_member_slides ) ) {

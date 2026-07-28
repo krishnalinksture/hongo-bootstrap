@@ -66,7 +66,7 @@
 		if( ( is_array($hongo_gallery ) ) || ( ! empty( $hongo_gallery ) ) ) {
 		?>
 			<div class="blog-image hongo-post-format-wrap">
-    			<div class="swiper-full-screen swiper-container white-move" data-slider-options='{ "loop": true, "slidesPerView": 1, "autoplay": { "delay": 1000 }, "keyboard": { "enabled": true, "onlyInViewport": false }, "preventClicks": false, "watchOverflow": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" } }'>
+    			<div class="swiper-full-screen swiper white-move" data-slider-options='{ "loop": true, "slidesPerView": 1, "autoplay": { "delay": 1000 }, "keyboard": { "enabled": true, "onlyInViewport": false }, "preventClicks": false, "watchOverflow": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" } }'>
     				<div class="swiper-wrapper">
     				<?php
 						foreach ( $hongo_gallery as $key => $value ) {

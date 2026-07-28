@@ -231,7 +231,7 @@ if ( ! function_exists( 'hongo_testimonial_slider_shortcode' ) ) {
 
             $slider_options = ! empty( $swiper_config ) ? json_encode( $swiper_config ) : '';
 
-            $output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper-container '.esc_attr( $class_list ).'" data-slider-options="' . esc_attr( $slider_options ) . '">';
+            $output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper '.esc_attr( $class_list ).'" data-slider-options="' . esc_attr( $slider_options ) . '">';
                 
                 $output .= '<div class="swiper-wrapper equalize">';
 
@@ -434,7 +434,7 @@ if ( ! function_exists( 'hongo_testimonial_slider_shortcode' ) ) {
                     break;
                 }
 
-            $output .= '</div>'; // End .swiper-container
+            $output .= '</div>'; // End .swiper
             
         }
         return $output;

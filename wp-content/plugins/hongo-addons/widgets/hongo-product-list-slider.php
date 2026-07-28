@@ -156,7 +156,7 @@ if ( ! class_exists( 'hongo_products_list_slider_widget' ) ) {
 					// Display the widget title if one was input (before and after defined by themes).
 					$class = ( ! empty( $hongo_title ) ) ? ' no-padding-top' : '';
 					echo '<div class="hongo-product-lists-widget-wrap">';
-						echo '<div class="swiper-container hongo-product-lists-widget-slider woocommerce '.$widget_unique_id.$class.'">';
+						echo '<div class="swiper hongo-product-lists-widget-slider woocommerce '.$widget_unique_id.$class.'">';
 							
 							if( ! empty( $hongo_title ) ) {
 				        		echo $args['before_title'] . esc_attr( $hongo_title ) . $args['after_title'];

@@ -33,7 +33,7 @@ echo '<div class="'.esc_attr( implode( ' ', array_map( 'sanitize_html_class', $w
 
 		if ( has_post_thumbnail() && $attachment_ids ) {
 			
-			echo '<figure class="woocommerce-product-gallery__wrapper quick-view-images swiper-container">';
+			echo '<figure class="woocommerce-product-gallery__wrapper quick-view-images swiper">';
 
 				echo '<div class="swiper-wrapper">';
 				

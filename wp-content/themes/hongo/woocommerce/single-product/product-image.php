@@ -54,7 +54,7 @@ $lighbox_wrap_class = ( $photoswipe_enabled ) ? ' photoswipe-lightbox' : '';
 				<div class="hongo-single-product-image-wrap hongo-single-product-slider-wrap">
 			<?php } ?>
 				<?php do_action( 'hongo_single_product_image_before' ); ?>
-				<figure class="woocommerce-product-gallery__wrapper swiper-container hongo-single-product-slider<?php echo esc_attr( $lighbox_wrap_class ); ?>">
+				<figure class="woocommerce-product-gallery__wrapper swiper hongo-single-product-slider<?php echo esc_attr( $lighbox_wrap_class ); ?>">
 					<div class="swiper-wrapper">
 		                <?php
 			                $attachment_id = $product->get_image_id();
@@ -127,7 +127,7 @@ $lighbox_wrap_class = ( $photoswipe_enabled ) ? ' photoswipe-lightbox' : '';
 			<?php do_action( 'hongo_single_product_image_before' ); ?>
 			<figure class="woocommerce-product-gallery__wrapper<?php echo esc_attr( $lighbox_wrap_class ); ?>">
 				<?php if ( $hongo_get_single_content_product_style == 'single-product-carousel' && $attachment_ids ) { ?>
-					<div id="single-product-carousel" class="swiper-container">
+					<div id="single-product-carousel" class="swiper">
 						<div class="swiper-wrapper">
 				<?php }
 					if ( has_post_thumbnail() ) {

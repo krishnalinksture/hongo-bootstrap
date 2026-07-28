@@ -118,7 +118,7 @@ if ( $upsells ) :
         ( $autoloop == 1 ) ? $slider_config .= 'loop: true,' : '';
 
 		ob_start(); ?>
-			$( '#hongo-up-sells-products' ).addClass( 'swiper-container' ); $( '#hongo-up-sells-products .products' ).addClass( 'swiper-wrapper' ); $( '#hongo-up-sells-products .product' ).addClass( 'swiper-slide' ); var hongo_up_sell_products = new Swiper('#hongo-up-sells-products', { <?php echo sprintf( '%s', $slider_config ); ?> }); $( document ).on( 'click', '.hongo-tabs a', function () { setTimeout(function () { hongo_up_sell_products.update(); }, 300 ); });
+			$( '#hongo-up-sells-products' ).addClass( 'swiper' ); $( '#hongo-up-sells-products .products' ).addClass( 'swiper-wrapper' ); $( '#hongo-up-sells-products .product' ).addClass( 'swiper-slide' ); var hongo_up_sell_products = new Swiper('#hongo-up-sells-products', { <?php echo sprintf( '%s', $slider_config ); ?> }); $( document ).on( 'click', '.hongo-tabs a', function () { setTimeout(function () { hongo_up_sell_products.update(); }, 300 ); });
 		<?php 
 			$hongo_slider_script .= ob_get_contents();
 			ob_end_clean();

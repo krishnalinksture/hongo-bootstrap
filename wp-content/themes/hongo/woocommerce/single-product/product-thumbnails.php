@@ -40,7 +40,7 @@ if( $hongo_single_product_page_enable_slider == '1' && ( $hongo_get_single_conte
 	global $product, $post;
     ?>
     <div class="hongo-single-product-thumb-wrap">
-    	<div class="swiper-container hongo-single-product-thumb">
+    	<div class="swiper hongo-single-product-thumb">
             <ol class="swiper-wrapper flex-control-nav">
             <?php
 

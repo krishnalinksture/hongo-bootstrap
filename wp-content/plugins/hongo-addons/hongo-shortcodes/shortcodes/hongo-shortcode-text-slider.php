@@ -132,7 +132,7 @@ if ( ! function_exists( 'hongo_text_slider_shortcode' ) ) {
                     $hongo_text_slider_style2 = $hongo_text_slider_style2 + 1;
                     $output .= '<div class="text-slider-wrapper text-slider-style2-'.$hongo_text_slider_style2.'" >';
 
-                        $output .='<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper-container content-right-slider '.esc_attr( $class_list ).'">';
+                        $output .='<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper content-right-slider '.esc_attr( $class_list ).'">';
                             $output .='<div class="swiper-wrapper">';
 
                                 $hongo_title_element_tag = ( $hongo_title_element_tag ) ? $hongo_title_element_tag : 'h4';

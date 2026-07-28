@@ -224,7 +224,7 @@ if ( ! function_exists( 'hongo_image_carousel_shortcode' ) ) {
 		        ( $hongo_show_pagination == 1 ) ? $class_list .= ' pagination-bottom-space' : '';
 
 	     		if ( $explode_image ):
-	     			$output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper-container'.esc_attr( $class_list ).'" data-slider-options="' . esc_attr( $slider_options ) . '">';
+	     			$output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper'.esc_attr( $class_list ).'" data-slider-options="' . esc_attr( $slider_options ) . '">';
 						$output .='<ul '.$id.' class="swiper-wrapper">';
 
 							foreach ( $explode_image as $key => $value ) {
@@ -294,7 +294,7 @@ if ( ! function_exists( 'hongo_image_carousel_shortcode' ) ) {
 			case 'image-carousel-style-2':
 				
 	     		if ( $explode_image ):
-	     			$output .= '<div id="'.$hongo_slider_id.'" class="swiper-container '.esc_attr( $class_list ).'" data-slider-options="' . esc_attr( $slider_options ) . '">';
+	     			$output .= '<div id="'.$hongo_slider_id.'" class="swiper '.esc_attr( $class_list ).'" data-slider-options="' . esc_attr( $slider_options ) . '">';
 						$output .='<div '.$id.' class="swiper-wrapper">';
 
 	                    	$i = 0;
@@ -353,7 +353,7 @@ if ( ! function_exists( 'hongo_image_carousel_shortcode' ) ) {
 					$hongo_image_slides = json_decode( urldecode( $hongo_image_slides ) );
 
 					$output .= '<div class="swiper-image-wrapper">';
-						$output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper-container' .esc_attr( $class_list ). '" data-slider-options="' . esc_attr( $slider_options ) . '">';
+						$output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper' .esc_attr( $class_list ). '" data-slider-options="' . esc_attr( $slider_options ) . '">';
 
 			                $output .= '<div '.$id.' class="swiper-wrapper">';
 

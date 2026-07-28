@@ -133,7 +133,7 @@ if ( ! function_exists( 'hongo_product_brand_slider_shortcode' ) ) {
             
             if ( ! empty( $brand_list ) && ! is_wp_error( $brand_list ) ) {
                 $output .= '<div class="hongo-brand-carousel-wrap">';
-                    $output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper-container brand-style-slider-1'.esc_attr( $class_list ).'" data-slider-options="' . esc_attr( $slider_options ) . '">';
+                    $output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper brand-style-slider-1'.esc_attr( $class_list ).'" data-slider-options="' . esc_attr( $slider_options ) . '">';
                 
                         $output .= '<div class="swiper-wrapper">';
                             foreach( $brand_list as $brands_id ) {

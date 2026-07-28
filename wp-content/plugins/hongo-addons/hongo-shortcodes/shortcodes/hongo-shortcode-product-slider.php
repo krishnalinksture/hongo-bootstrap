@@ -121,7 +121,7 @@ if ( ! function_exists( 'hongo_product_slider_shortcode' ) ) {
 
                         $hongo_product_slides = json_decode( urldecode( $hongo_product_slides ) );
 
-                        $output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="woocommerce swiper-container'.esc_attr( $class_list ).'">';
+                        $output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="woocommerce swiper'.esc_attr( $class_list ).'">';
 
                             $output .= '<div class="swiper-wrapper">';
 
@@ -296,7 +296,7 @@ if ( ! function_exists( 'hongo_product_slider_shortcode' ) ) {
                     
                     if ( ! empty( $hongo_multiple_products ) ) {
 
-                        $output .= '<div id="'.$hongo_slider_id.'" class="woocommerce swiper-container'.esc_attr( $class_list ).esc_attr( $show_cursor_color_style ).esc_attr( $pagination_class ).'">';
+                        $output .= '<div id="'.$hongo_slider_id.'" class="woocommerce swiper'.esc_attr( $class_list ).esc_attr( $show_cursor_color_style ).esc_attr( $pagination_class ).'">';
                             $output .= '<div class="swiper-wrapper">';
 
                                 $args = array(
@@ -477,7 +477,7 @@ if ( ! function_exists( 'hongo_product_slider_shortcode' ) ) {
 
                         $hongo_product_slides = json_decode( urldecode( $hongo_product_slides ) );
 
-                        $output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="woocommerce swiper-container'.esc_attr( $class_list ).'">';
+                        $output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="woocommerce swiper'.esc_attr( $class_list ).'">';
 
                             $output .= '<div class="swiper-wrapper">';
 

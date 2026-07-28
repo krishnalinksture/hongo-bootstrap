@@ -3683,7 +3683,7 @@
         /* Single Product list Slider Navigation color */
         hongo_customize( 'hongo_single_product_list_navigation_color', function( value ) { 
             value.bind( function( to ) {
-                $( '.hongo-related-products.swiper-container .swiper-button-next i,.hongo-related-products.swiper-container .swiper-button-prev i, .hongo-up-sells-products.swiper-container .swiper-button-next i,.hongo-up-sells-products.swiper-container .swiper-button-prev i' ).css( 'color', to );
+                $( '.hongo-related-products.swiper .swiper-button-next i,.hongo-related-products.swiper .swiper-button-prev i, .hongo-up-sells-products.swiper .swiper-button-next i,.hongo-up-sells-products.swiper .swiper-button-prev i' ).css( 'color', to );
             });
         });        
 

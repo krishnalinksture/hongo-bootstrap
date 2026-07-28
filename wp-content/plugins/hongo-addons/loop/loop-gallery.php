@@ -56,7 +56,7 @@ if( $hongo_blog_lightbox_gallery == 1 ){
     echo '</ul>';
 } else{
 	echo '<div class="blog-image post-type-slider">';
-        echo '<div class="swiper-full-screen swiper-container white-move" data-slider-options=\'{ "pagination": ".swiper-pagination", "clickable": true, "loop": true, "autoplay": { "delay": 1000 }, "slidesPerView": 1, "keyboard": { "enabled": true, "onlyInViewport": false }, "preventClicks": false, "watchOverflow": true, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev"} }\'>';        
+        echo '<div class="swiper-full-screen swiper white-move" data-slider-options=\'{ "pagination": ".swiper-pagination", "clickable": true, "loop": true, "autoplay": { "delay": 1000 }, "slidesPerView": 1, "keyboard": { "enabled": true, "onlyInViewport": false }, "preventClicks": false, "watchOverflow": true, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev"} }\'>';        
         	echo '<div class="swiper-wrapper">';
 				if( is_array($hongo_gallery) ){
 					foreach ( $hongo_gallery as $key => $value ) {

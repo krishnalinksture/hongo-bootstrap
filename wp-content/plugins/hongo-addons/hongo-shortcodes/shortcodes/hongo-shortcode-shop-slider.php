@@ -339,7 +339,7 @@ if ( ! function_exists( 'hongo_shop_slider_shortcode' ) ) {
 	       	// Class List
 	        $class_list = ! empty( $classes ) ? ' ' . implode(" ", $classes) : '';
 
-	        $output .='<div id="'.$hongo_slider_id.'" class="swiper-container'.$class_list.'">';
+	        $output .='<div id="'.$hongo_slider_id.'" class="swiper'.$class_list.'">';
 	        	
 	        	if ( $hongo_slider_style == 'hongo-shop-slider-style-7' ) {
 	        		$output .= '<div class="hongo-overlay-image"></div>';
@@ -1223,7 +1223,7 @@ if ( ! function_exists( 'hongo_shop_slider_shortcode' ) ) {
 	            }
 
 
-	    	$output .= '</div>'; // .swiper-container
+	    	$output .= '</div>'; // .swiper
 
     				// Transition Speed & Style
 		            ( $hongo_transition_style ) ? $slider_config .= 'effect: "'. $hongo_transition_style .'",' : '';

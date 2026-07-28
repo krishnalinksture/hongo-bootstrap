@@ -257,7 +257,7 @@ if ( ! function_exists( 'hongo_instagram' ) ) {
 
                         $output .= '<div '.$id.' class="hongo-instagram-feed-wrap'.esc_attr( $class ).'">';
 
-                            $output .= '<div class="swiper-container '.esc_attr( $hongo_slider_id ).esc_attr( $pagination_style_class ).esc_attr( $pagination_space ).esc_attr( $show_cursor_color_style ).'" data-slider-options="' . esc_attr( $slider_options ) . '">';
+                            $output .= '<div class="swiper '.esc_attr( $hongo_slider_id ).esc_attr( $pagination_style_class ).esc_attr( $pagination_space ).esc_attr( $show_cursor_color_style ).'" data-slider-options="' . esc_attr( $slider_options ) . '">';
 
                                 $output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper-wrapper">';
 

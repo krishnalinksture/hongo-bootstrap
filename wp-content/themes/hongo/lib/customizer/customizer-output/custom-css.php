@@ -2151,7 +2151,7 @@ h6 { color: <?php echo sprintf( '%s', $hongo_heading_h6_color ); ?>; }
 
     <?php if( $hongo_single_product_list_navigation_color ) : ?>
     /* Product List Slider Navigation */
-    .hongo-related-products.swiper-container .swiper-button-next i,.hongo-related-products.swiper-container .swiper-button-prev i, .hongo-up-sells-products.swiper-container .swiper-button-next i,.hongo-up-sells-products.swiper-container .swiper-button-prev i { color: <?php echo sprintf( '%s', $hongo_single_product_list_navigation_color ); ?>; }
+    .hongo-related-products.swiper .swiper-button-next i,.hongo-related-products.swiper .swiper-button-prev i, .hongo-up-sells-products.swiper .swiper-button-next i,.hongo-up-sells-products.swiper .swiper-button-prev i { color: <?php echo sprintf( '%s', $hongo_single_product_list_navigation_color ); ?>; }
     <?php endif; ?>
 
     <?php if( $hongo_single_product_list_heading_font_size ) : ?>

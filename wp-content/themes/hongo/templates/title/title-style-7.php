@@ -52,7 +52,7 @@ echo '<section class="bg-very-light-gray hongo-main-title-wrap' . esc_attr( $hon
 		</div>
 	<?php } ?>
 	<?php if( $hongo_title_bg_multiple_image ) { ?>
-		<div class="swiper-auto-fade swiper-container page-title-slider width-100 height-100" data-slider-options='{ "pagination": ".swiper-pagination", "loop": true, "autoplay": { "delay": 5000 }, "slidesPerView": 1, "clickable": true, "keyboard": { "enabled": true, "onlyInViewport": false }, "preventClicks": false, "watchOverflow": true, "effect": "fade","navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" } }'>
+		<div class="swiper-auto-fade swiper page-title-slider width-100 height-100" data-slider-options='{ "pagination": ".swiper-pagination", "loop": true, "autoplay": { "delay": 5000 }, "slidesPerView": 1, "clickable": true, "keyboard": { "enabled": true, "onlyInViewport": false }, "preventClicks": false, "watchOverflow": true, "effect": "fade","navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" } }'>
 			<div class="swiper-wrapper">
 				<?php
 					$hongo_title_bg_multiple_image = explode( ',', $hongo_title_bg_multiple_image );

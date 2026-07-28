@@ -25,7 +25,7 @@ if( empty( $gallery_ids ) ) { ?>
 	<?php echo sprintf( '%s', $main_image ); ?>
 
 <?php } else { ?>
-	<div class="swiper-container hongo-loop-product-slider" data-attr="1">
+	<div class="swiper hongo-loop-product-slider" data-attr="1">
 	    <div class="swiper-wrapper">
 	        <div class="swiper-slide"><?php echo sprintf( '%s', $main_image ); ?></div>
 	        <?php

@@ -117,7 +117,7 @@ if ( ! class_exists('Hongo_Addons_Brand_Slider_Widget') ) {
 
 			$output = '';
 			if ( ! empty( $terms ) ) {
-				$output .= '<div class="swiper-container hongo-widget-brand-list '.$widget_unique_id.'">'; 
+				$output .= '<div class="swiper hongo-widget-brand-list '.$widget_unique_id.'">'; 
 					$output .= '<ul class="brand-list-widget swiper-wrapper">';
 						foreach( $terms as $term ) {
 

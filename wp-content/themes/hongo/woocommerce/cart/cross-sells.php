@@ -104,7 +104,7 @@ if ( $cross_sells ) :
 	    $slider_config .= "watchOverflow: true,";  
 	    
 		ob_start(); ?>
-			$( '#hongo-cross-sells-products' ).addClass( 'swiper-container' ); $( '#hongo-cross-sells-products .products' ).addClass( 'swiper-wrapper' ); $( '#hongo-cross-sells-products .product' ).addClass( 'swiper-slide' ); var hongo_cross_sell_products = new Swiper('#hongo-cross-sells-products', { <?php echo sprintf( '%s', $slider_config ); ?> }); $( document.body ).on( 'wc_fragments_refreshed', function () { $( '#hongo-cross-sells-products' ).addClass( 'swiper-container' ); $( '#hongo-cross-sells-products .products' ).addClass( 'swiper-wrapper' ); $( '#hongo-cross-sells-products .product' ).addClass( 'swiper-slide' ); var hongo_cross_sell_products = new Swiper('#hongo-cross-sells-products', { <?php echo sprintf( '%s', $slider_config ); ?> }); });
+			$( '#hongo-cross-sells-products' ).addClass( 'swiper' ); $( '#hongo-cross-sells-products .products' ).addClass( 'swiper-wrapper' ); $( '#hongo-cross-sells-products .product' ).addClass( 'swiper-slide' ); var hongo_cross_sell_products = new Swiper('#hongo-cross-sells-products', { <?php echo sprintf( '%s', $slider_config ); ?> }); $( document.body ).on( 'wc_fragments_refreshed', function () { $( '#hongo-cross-sells-products' ).addClass( 'swiper' ); $( '#hongo-cross-sells-products .products' ).addClass( 'swiper-wrapper' ); $( '#hongo-cross-sells-products .product' ).addClass( 'swiper-slide' ); var hongo_cross_sell_products = new Swiper('#hongo-cross-sells-products', { <?php echo sprintf( '%s', $slider_config ); ?> }); });
 		<?php 
 			$hongo_slider_script .= ob_get_contents();
 			ob_end_clean();

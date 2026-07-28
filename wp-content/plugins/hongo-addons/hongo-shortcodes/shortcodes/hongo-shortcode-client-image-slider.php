@@ -126,7 +126,7 @@ if ( ! function_exists( 'hongo_client_image_slider_shortcode' ) ) {
             // Main class list
             $class_list = ! empty( $classes ) ? ' ' . implode( " ", $classes ) : '';
 
-            $output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper-container' .esc_attr( $class_list ). '">';
+            $output .= '<div id="'.esc_attr( $hongo_slider_id ).'" class="swiper' .esc_attr( $class_list ). '">';
 
                 $output .= '<div class="swiper-wrapper">';
 
