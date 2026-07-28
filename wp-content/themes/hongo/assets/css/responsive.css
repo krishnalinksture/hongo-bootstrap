@@ -5147,7 +5147,7 @@
     }
     /* swiper text top */
     .pagination-bottom-space,
-    .woocommerce-cart .cross-sells .swiper-container.pagination-bottom-space {
+    .woocommerce-cart .cross-sells .swiper.pagination-bottom-space {
         padding-bottom: 40px
     }
     /* instagram feed */
@@ -5228,7 +5228,7 @@
         padding: 9% 3%
     }
     /* number pagination */
-    .swiper-container-vertical.swiper-pagination-number .swiper-pagination-bullets {
+    .swiper-vertical.swiper-pagination-number .swiper-pagination-bullets {
         width: 100%;
         height: auto;
         top: auto;
@@ -5238,12 +5238,12 @@
         -webkit-transform: none;
         transform: none;
     }
-    .swiper-container-vertical.swiper-pagination-number .swiper-pagination-bullets .swiper-pagination-bullet {
+    .swiper-vertical.swiper-pagination-number .swiper-pagination-bullets .swiper-pagination-bullet {
         display: inline-block;
         margin: 0 10px;
     }
     /* swiper pagination */
-    .swiper-container-vertical .swiper-pagination {
+    .swiper-vertical .swiper-pagination {
         right: 0;
         bottom: 0 !important;
         left: 0;
@@ -5251,7 +5251,7 @@
         text-align: center;
         padding-bottom: 10px;
     }
-    .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+    .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
         margin: 0 5px !important;
         display: inline-block;
     }
@@ -10147,15 +10147,15 @@
         margin-top: 0;
     }
     /* swiper next prev top */
-    .hongo-related-products.swiper-container .swiper-button-prev,
-    .hongo-up-sells-products.swiper-container .swiper-button-prev,
-    .cross-sells .swiper-container .swiper-button-prev {
+    .hongo-related-products.swiper .swiper-button-prev,
+    .hongo-up-sells-products.swiper .swiper-button-prev,
+    .cross-sells .swiper .swiper-button-prev {
         left: 47%;
         right: auto;
     }
-    .hongo-related-products.swiper-container .swiper-button-next,
-    .hongo-up-sells-products.swiper-container .swiper-button-next,
-    .cross-sells .swiper-container .swiper-button-next {
+    .hongo-related-products.swiper .swiper-button-next,
+    .hongo-up-sells-products.swiper .swiper-button-next,
+    .cross-sells .swiper .swiper-button-next {
         right: 47%;
     }
     /* ----- woocommerce listing  ----- */
@@ -10898,10 +10898,10 @@
     .woocommerce-checkout .checkout-sidebar table.shop_table th {
         width: 50%;
     }
-    .woocommerce-cart .cross-sells .swiper-container .swiper-button-next {
+    .woocommerce-cart .cross-sells .swiper .swiper-button-next {
         right: 0;
     }
-    .woocommerce-cart .cross-sells .swiper-container .swiper-button-prev {
+    .woocommerce-cart .cross-sells .swiper .swiper-button-prev {
         right: 15px;
         left: auto;
     }

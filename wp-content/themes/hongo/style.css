@@ -362,16 +362,16 @@ div.wpcf7 .ajax-loader.is-active {
 	font-size: inherit;
 }
 
-.text-right {
-    text-align: right;
-}
-
-.text-left {
-	text-align: left;
-}
-
 figure {
     margin: 0;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
 }
 
 /* ===================================
@@ -439,6 +439,14 @@ a img.aligncenter {
 	display: block;
 	margin-left: auto;
 	margin-right: auto
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+	text-align: left;
 }
 
 /* captions */
@@ -781,14 +789,17 @@ h6 {
 	padding-right: 15px;
 }
 
-.row {
+.row,
+.content-area .site-main {
 	margin-left: -15px;
     margin-right: -15px;
 }
 .row>*,
-.container>[class*="col-"]{
+.container>[class*="col-"],
+.container-fluid>[class*="col-"] {
     padding-left: 15px;
 	padding-right: 15px;
+	position: relative;
 }
 
 body.overflow-y-hidden {
@@ -1297,9 +1308,9 @@ p.demo_store a {
 .btn:first-child:active,
 :not(.btn-check)+.btn:active,
 .btn:hover {
-	color: initial;
-    background-color: initial;
-    border-color: initial;
+	color: #232323;
+    background-color: transparent;
+    border-color: #232323;
 }
 
 .woocommerce #respond input#submit.alt.disabled,
@@ -4117,6 +4128,7 @@ ul .grid-sizer {
 
 .pagination {
 	margin: 70px 0 20px 0;
+	display: block;
 }
 
 .hongo-default-pagination-wrap {
@@ -9273,6 +9285,11 @@ li.active .hongo-cb:after {
 	-o-transition: all 0.2s ease-in-out;
 }
 
+.swiper-button-next svg,
+.swiper-button-prev svg {
+	display: none;
+}
+
 .swiper-button-next {
 	right: 50px;
 }
@@ -9312,12 +9329,12 @@ li.active .hongo-cb:after {
 .hongo_widget_products_carousel .swiper-button-prev,
 .hongo-product-lists-widget-wrap .swiper-button-next,
 .hongo-product-lists-widget-wrap .swiper-button-prev,
-.hongo-related-products.swiper-container .swiper-button-next,
-.hongo-related-products.swiper-container .swiper-button-prev,
-.hongo-up-sells-products.swiper-container .swiper-button-next,
-.hongo-up-sells-products.swiper-container .swiper-button-prev,
-.cross-sells .swiper-container .swiper-button-next,
-.cross-sells .swiper-container .swiper-button-prev,
+.hongo-related-products.swiper .swiper-button-next,
+.hongo-related-products.swiper .swiper-button-prev,
+.hongo-up-sells-products.swiper .swiper-button-next,
+.hongo-up-sells-products.swiper .swiper-button-prev,
+.cross-sells .swiper .swiper-button-next,
+.cross-sells .swiper .swiper-button-prev,
 .hongo-woocommerce-product-lists.hongo-product-lists-slider .swiper-button-next,
 .hongo-woocommerce-product-lists.hongo-product-lists-slider .swiper-button-prev {
 	top: -1px;
@@ -9344,28 +9361,28 @@ li.active .hongo-cb:after {
 .hongo_widget_products_carousel .swiper-button-prev i,
 .hongo-product-lists-widget-wrap .swiper-button-next i,
 .hongo-product-lists-widget-wrap .swiper-button-prev i,
-.hongo-related-products.swiper-container .swiper-button-next i,
-.hongo-related-products.swiper-container .swiper-button-prev i,
-.hongo-up-sells-products.swiper-container .swiper-button-next i,
-.hongo-up-sells-products.swiper-container .swiper-button-prev i,
-.cross-sells .swiper-container .swiper-button-next i,
-.cross-sells .swiper-container .swiper-button-prev i,
+.hongo-related-products.swiper .swiper-button-next i,
+.hongo-related-products.swiper .swiper-button-prev i,
+.hongo-up-sells-products.swiper .swiper-button-next i,
+.hongo-up-sells-products.swiper .swiper-button-prev i,
+.cross-sells .swiper .swiper-button-next i,
+.cross-sells .swiper .swiper-button-prev i,
 .hongo-woocommerce-product-lists.hongo-product-lists-slider .swiper-button-next i,
 .hongo-woocommerce-product-lists.hongo-product-lists-slider .swiper-button-prev i {
 	color: #000;
 	font-size: 12px;
 }
 
-.hongo-related-products.swiper-container .swiper-button-next,
-.hongo-up-sells-products.swiper-container .swiper-button-next,
-.cross-sells .swiper-container .swiper-button-next {
+.hongo-related-products.swiper .swiper-button-next,
+.hongo-up-sells-products.swiper .swiper-button-next,
+.cross-sells .swiper .swiper-button-next {
 	right: 0;
 	margin-top: 0
 }
 
-.hongo-related-products.swiper-container .swiper-button-prev,
-.hongo-up-sells-products.swiper-container .swiper-button-prev,
-.cross-sells .swiper-container .swiper-button-prev {
+.hongo-related-products.swiper .swiper-button-prev,
+.hongo-up-sells-products.swiper .swiper-button-prev,
+.cross-sells .swiper .swiper-button-prev {
 	right: 15px;
 	left: inherit;
 	margin-top: 0
@@ -9426,7 +9443,7 @@ li.active .hongo-cb:after {
 	opacity: 1;
 }
 
-.swiper-container-vertical .swiper-pagination {
+.swiper-vertical .swiper-pagination {
 	width: auto;
 	right: 40px;
 	bottom: unset !important
@@ -9456,7 +9473,7 @@ li.active .hongo-cb:after {
 	text-indent: -9999px;
 }
 
-.swiper-container-vertical.swiper-pagination-square .swiper-pagination-bullet {
+.swiper-vertical.swiper-pagination-square .swiper-pagination-bullet {
 	margin: 10px 0 !important;
 }
 
@@ -9480,11 +9497,11 @@ li.active .hongo-cb:after {
 	background-color: #fff !important;
 }
 
-.swiper-container-vertical.swiper-pagination-border .swiper-pagination-bullet {
+.swiper-vertical.swiper-pagination-border .swiper-pagination-bullet {
 	margin: 7px auto !important
 }
 
-.swiper-container-vertical.swiper-pagination-border .swiper-pagination {
+.swiper-vertical.swiper-pagination-border .swiper-pagination {
 	text-align: center;
 	vertical-align: middle
 }
@@ -9539,7 +9556,7 @@ li.active .hongo-cb:after {
 	display: none;
 }
 
-.swiper-container-vertical.swiper-pagination-number .swiper-pagination-bullets {
+.swiper-vertical.swiper-pagination-number .swiper-pagination-bullets {
 	right: 48px;
 	position: absolute;
 	z-index: 9;
@@ -9552,7 +9569,7 @@ li.active .hongo-cb:after {
 	bottom: inherit !important;
 }
 
-.swiper-container-vertical.swiper-pagination-number .swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-vertical.swiper-pagination-number .swiper-pagination-bullets .swiper-pagination-bullet {
 	min-width: 28px;
 	min-height: 1px;
 	opacity: 1;
@@ -9568,11 +9585,11 @@ li.active .hongo-cb:after {
 	font-size: 12px;
 }
 
-.swiper-container-vertical.swiper-pagination-number .swiper-pagination-bullets .swiper-pagination-bullet-active {
+.swiper-vertical.swiper-pagination-number .swiper-pagination-bullets .swiper-pagination-bullet-active {
 	color: #ffffff;
 }
 
-.swiper-container-vertical.swiper-pagination-number .swiper-pagination-bullets .swiper-pagination-bullet-active:after {
+.swiper-vertical.swiper-pagination-number .swiper-pagination-bullets .swiper-pagination-bullet-active:after {
 	background-color: #ffffff;
 	width: 28px;
 	height: 1px;
@@ -9589,7 +9606,7 @@ li.active .hongo-cb:after {
 	display: block !important;
 }
 
-.swiper-container-vertical.swiper-pagination-number .swiper-pagination-bullets .swiper-pagination-bullet:after {
+.swiper-vertical.swiper-pagination-number .swiper-pagination-bullets .swiper-pagination-bullet:after {
 	display: none;
 }
 
@@ -9644,7 +9661,7 @@ li.active .hongo-cb:after {
 /* swiper text top */
 
 .pagination-bottom-space,
-.woocommerce-cart .cross-sells .swiper-container.pagination-bottom-space {
+.woocommerce-cart .cross-sells .swiper.pagination-bottom-space {
 	padding-bottom: 60px
 }
 
@@ -9673,7 +9690,7 @@ li.active .hongo-cb:after {
 
 /* swiper slider */
 
-.swiper-container {
+.swiper {
 	width: 100%;
 	height: 100%;
 	margin-left: auto;
@@ -11392,10 +11409,10 @@ li.active .hongo-cb:after {
 	overflow: hidden;
 }
 
-.hongo-related-products.swiper-container,
-.hongo-up-sells-products.swiper-container,
-.hongo-woocommerce-product-lists .swiper-container ul.products,
-.cross-sells .swiper-container {
+.hongo-related-products.swiper,
+.hongo-up-sells-products.swiper,
+.hongo-woocommerce-product-lists .swiper ul.products,
+.cross-sells .swiper {
 	padding-top: 30px;
 }
 
@@ -12078,7 +12095,7 @@ li.active .hongo-cb:after {
 	margin-left: 2px;
 }
 
-.sidebar .hongo-product-lists-widget-wrap .swiper-container {
+.sidebar .hongo-product-lists-widget-wrap .swiper {
 	padding-top: 25px;
 }
 
@@ -14822,7 +14839,6 @@ li.active .hongo-cb:after {
 /* product category style 11 */
 .category-style-11 {
 	margin: 0;
-	display: table;
 }
 .category-style-11 .category-wrap {
     position: relative;
@@ -15123,7 +15139,7 @@ li.active .hongo-cb:after {
 .woocommerce ul.products li.product:hover .hongo-loop-product-slider .swiper-button-prev { 
 	opacity: 1;
 }
-.woocommerce ul.products li.product .swiper-container { 
+.woocommerce ul.products li.product .swiper { 
 	z-index: inherit;
 }
 .woocommerce ul.products li.product .hongo-loop-product-slider .swiper-slide img {
@@ -23251,6 +23267,9 @@ hongo-swatch.disable:hover {
 .sidebar .wp-nav-menu-responsive-button,
 .hongo-product-sidebar {
 	display: block !important;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
 }
 
 .hongo-left-common-sidebar-link,
@@ -26158,18 +26177,22 @@ button.mfp-close:active {
 
 .hongo-content-right-part {
 	padding-left: 60px;
+	padding-right: 15px;
 }
 
 .hongo-content-left-part {
 	padding-right: 60px;
+	padding-left: 15px;
 }
 
 .hongo-layout-right-sidebar.hongo-content-left-part {
 	padding-right: 45px;
+	padding-left: 15px;
 }
 
 .hongo-layout-left-sidebar.hongo-content-right-part {
 	padding-left: 45px;
+	padding-right: 15px;
 }
 
 .hongo-content-left-part .hongo-blog-standard.hongo-blog-styles .infinite-scroll-pagination {
@@ -30934,6 +30957,10 @@ ul.list-style-9 li span {
 	Tab
 ====================================== */
 
+.nav-tabs {
+    display: block;
+}
+
 /* tab style 1 */
 
 .tab-style1 .nav-tabs {
@@ -34342,7 +34369,7 @@ label {
 	padding-right: 0;
 }
 
-.woocommerce-cart .cross-sells .swiper-container {
+.woocommerce-cart .cross-sells .swiper {
 	padding-bottom: 0;
 }
 

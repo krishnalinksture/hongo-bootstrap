@@ -2011,7 +2011,7 @@ header .hongo-shop-dropdown-menu .widget {
 .hongo-shop-dropdown-menu .hongo_widget_products_carousel .product-title {
 	font-weight: 600;
 }
-nav.navbar.hongo-header-common-menu .hongo-shop-dropdown-menu li.dropdown .mega-menu-full>ul>li .swiper-container .button {
+nav.navbar.hongo-header-common-menu .hongo-shop-dropdown-menu li.dropdown .mega-menu-full>ul>li .swiper .button {
 	border-radius: 0;
 	background-color: #000000;
 	color: #ffffff;
@@ -2029,7 +2029,7 @@ nav.navbar.hongo-header-common-menu .hongo-shop-dropdown-menu li.dropdown .mega-
 	outline: none;
 	z-index: 2;
 }
-nav.navbar.hongo-header-common-menu .hongo-shop-dropdown-menu li.dropdown .mega-menu-full>ul>li .swiper-container .button:hover {
+nav.navbar.hongo-header-common-menu .hongo-shop-dropdown-menu li.dropdown .mega-menu-full>ul>li .swiper .button:hover {
 	background-color: transparent;
 	color: #000;
 }
