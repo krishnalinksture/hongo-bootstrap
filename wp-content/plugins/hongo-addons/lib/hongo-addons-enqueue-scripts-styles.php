@@ -117,7 +117,7 @@ if( ! function_exists( 'hongo_addons_script_style' ) ) {
 		}
 
 		if( hongo_load_javascript_by_key( 'jquery-justifiedGallery' ) ) {
-			wp_register_script( 'jquery-justifiedGallery', HONGO_ADDONS_ROOT_DIR.'/assets/js/jquery.justifiedGallery.min.js', array( 'jquery' ),'3.7.0',true);
+			wp_register_script( 'jquery-justifiedGallery', HONGO_ADDONS_ROOT_DIR.'/assets/js/jquery.justifiedGallery.min.js', array( 'jquery' ),'3.8.0',true);
 		}
 
 		/*
@@ -283,7 +283,7 @@ add_action( 'hongo_enqueue_scripts_before_main_jquery', 'hongo_addons_script_sty
 if( ! function_exists( 'hongo_addons_load_vc_iframe_js' ) ) :
 	function hongo_addons_load_vc_iframe_js() {
 
-		wp_register_script( 'jquery-justifiedGallery', HONGO_ADDONS_ROOT_DIR.'/assets/js/jquery.justifiedGallery.min.js', array( 'jquery' ),'3.7.0',true);
+		wp_register_script( 'jquery-justifiedGallery', HONGO_ADDONS_ROOT_DIR.'/assets/js/jquery.justifiedGallery.min.js', array( 'jquery' ),'3.8.0',true);
 
 	   	wp_enqueue_script( 'jquery-justifiedGallery' );
 	}
