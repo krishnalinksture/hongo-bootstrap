@@ -493,7 +493,7 @@ if ( ! function_exists( 'hongo_shop_slider_shortcode' ) ) {
 
 						            	$output .='<div class="container hongo-slide-inner-wrapper" >';
 
-						            		$output .='<div class="col-md-12 hongo-slider-typography-wrap">';
+						            		$output .='<div class="col-lg-12 hongo-slider-typography-wrap">';
 
 						            			$output .='<div class="hongo-slider-text-middle-main">';
 
@@ -576,7 +576,7 @@ if ( ! function_exists( 'hongo_shop_slider_shortcode' ) ) {
 
 								    	$output .='<div class="container hongo-slide-inner-wrapper" >';
 
-							            	$output .='<div class="col-md-12 hongo-slider-typography-wrap">';
+							            	$output .='<div class="col-lg-12 hongo-slider-typography-wrap">';
 
 							            		$output .='<div class="hongo-slider-text-middle-main">';
 
@@ -648,7 +648,7 @@ if ( ! function_exists( 'hongo_shop_slider_shortcode' ) ) {
 
 						            	$output .='<div class="container hongo-slide-inner-wrapper" >';
 
-						            		$output .='<div class="col-md-12 hongo-slider-typography-wrap">';
+						            		$output .='<div class="col-lg-12 hongo-slider-typography-wrap">';
 
 						            			$output .='<div class="hongo-slider-text-middle-main">';
 
@@ -736,7 +736,7 @@ if ( ! function_exists( 'hongo_shop_slider_shortcode' ) ) {
 
 						            	$output .='<div class="container-fluid hongo-slide-inner-wrapper" >';
 
-						            		$output .='<div class="col-sm-6 col-xs-12 hongo-slider-typography-wrap">';
+						            		$output .='<div class="col-md-6 col-12 hongo-slider-typography-wrap">';
 
 						            			$output .='<div class="hongo-slider-text-middle-main">';
 
@@ -817,7 +817,7 @@ if ( ! function_exists( 'hongo_shop_slider_shortcode' ) ) {
 
 						            	$output .='<div class="container hongo-slide-inner-wrapper woocommerce" >';
 
-						            		$output .='<div class="col-md-5 hongo-slider-typography-wrap">';
+						            		$output .='<div class="col-lg-5 hongo-slider-typography-wrap">';
 
 						            			$output .='<div class="hongo-slider-text-middle-main">';
 		                            				
@@ -894,7 +894,7 @@ if ( ! function_exists( 'hongo_shop_slider_shortcode' ) ) {
 
 						            	$output .='<div class="container-fluid hongo-slide-inner-wrapper woocommerce" >';
 
-						            		$output .='<div class="col-md-12 hongo-slider-typography-wrap">';
+						            		$output .='<div class="col-lg-12 hongo-slider-typography-wrap">';
 
 						            			$output .='<div class="hongo-slider-text-middle-main">';
 		                            				

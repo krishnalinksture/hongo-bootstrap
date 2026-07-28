@@ -152,9 +152,9 @@ if ( ! function_exists( 'hongo_product_slider_shortcode' ) ) {
 
                                                         if ( ! empty( $thumb[0] ) ) {
                                                             $category_background_image = ! empty( $thumb[0] ) ? ' style="background-image:url('.$thumb[0].')"' : '';
-                                                            $output .='<div class="custom-image col-sm-6"'.$category_background_image.$srcset_data.'></div>';
+                                                            $output .='<div class="custom-image col-md-6"'.$category_background_image.$srcset_data.'></div>';
                                                         } else{
-                                                            $output .= '<div class="custom-image col-sm-6" style="background-image: url('. wc_placeholder_img_src() .' );"></div>';
+                                                            $output .= '<div class="custom-image col-md-6" style="background-image: url('. wc_placeholder_img_src() .' );"></div>';
                                                         }
 
                                                         $thumbnail_id = get_post_thumbnail_id( $hongo_single_products_id );
@@ -176,9 +176,9 @@ if ( ! function_exists( 'hongo_product_slider_shortcode' ) ) {
                                                         $background_image = ! empty( $shop_image[0] ) ? ' style="background-image:url('.$shop_image[0].')"' : '';
 
                                                         if ( ! empty( $shop_image[0] ) ) {
-                                                            $output .= '<div class="shop-product-image col-sm-6"'.$background_image.$product_srcset_data.'>';
+                                                            $output .= '<div class="shop-product-image col-md-6"'.$background_image.$product_srcset_data.'>';
                                                         } else{
-                                                            $output .= '<div class="shop-product-image col-sm-6" style="background-image: url('. wc_placeholder_img_src() .' );">';
+                                                            $output .= '<div class="shop-product-image col-md-6" style="background-image: url('. wc_placeholder_img_src() .' );">';
                                                         }
                                                             // Number navigation
                                                             if ( $hongo_show_number_navigation == 1 ) {

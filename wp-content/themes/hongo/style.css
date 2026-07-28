@@ -547,7 +547,10 @@ dl.wp-caption {
 	font-weight: 500;
 }
 
-.mc4wp-form .input-group input {
+.mc4wp-form .input-group input,
+.input-group>.form-control:focus,
+.input-group>.form-floating:focus-within,
+.input-group>.form-select:focus {
 	position: relative;
 	z-index: 4;
 }
@@ -1313,7 +1316,8 @@ p.demo_store a {
 .btn.show,
 .btn:first-child:active,
 :not(.btn-check)+.btn:active,
-.btn:hover {
+.btn:hover,
+.btn:focus-visible {
 	color: #232323;
     background-color: transparent;
     border-color: #232323;
@@ -33458,6 +33462,8 @@ blockquote footer:before {
 	border-top: 2px solid #232323;
 	margin-top: 25px;
 	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 .woocommerce-account .woocommerce .woocommerce-pagination a {
@@ -33472,7 +33478,8 @@ blockquote footer:before {
 .woocommerce-account .woocommerce .woocommerce-pagination a.woocommerce-button--next {
 	text-align: right;
 	display: inherit;
-	padding-right: 12px
+	padding-right: 12px;
+	margin-left: auto;
 }
 
 .woocommerce-account .woocommerce .woocommerce-pagination a.woocommerce-button--previous {
@@ -33580,22 +33587,21 @@ label {
 	font-size: 13px;
 }
 
+.woocommerce-account #customer_login.col2-set::before,
+.woocommerce-account #customer_login.col2-set::after {
+	display: none;
+}
+
 .woocommerce-account #customer_login.col2-set {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	justify-content: space-between;
 }
 
-.woocommerce-account #customer_login.col2-set .u-column1,
-.woocommerce-account #customer_login.col2-set .u-column2 {
-	width: 100%;
-}
-
-.woocommerce-account #customer_login.col2-set .u-column1.col-1 {
-	margin-right: 7%;
+.woocommerce-account #customer_login.col2-set .col-1,
+.woocommerce-account #customer_login.col2-set .col-2 {
+    width: 46.5%;
 }
 
 .woocommerce form.lost_reset_password,

@@ -99,7 +99,7 @@ if ( ! function_exists( 'hongo_popup_shortcode' ) ) {
         
         if($hongo_width != ''){
             $hongo_width = explode('/', $hongo_width);
-            $hongo_width = ( $hongo_width[0] != '1' ) ? ' col-sm-'.$hongo_width[0] * floor(12 / $hongo_width[1]) : ' col-sm-'.floor(12 / $hongo_width[1]);
+            $hongo_width = ( $hongo_width[0] != '1' ) ? ' col-md-'.$hongo_width[0] * floor(12 / $hongo_width[1]) : ' col-md-'.floor(12 / $hongo_width[1]);
         }
 
         // Button size
@@ -113,7 +113,7 @@ if ( ! function_exists( 'hongo_popup_shortcode' ) ) {
             case 'popup-form-1':
 
                 $hongo_width = ! empty( $hongo_width ) ? $hongo_width : '';
-                $hongo_offset = ! empty( $hongo_offset ) ? $hongo_offset : ' col-lg-3 col-md-6 col-sm-7 col-xs-11';
+                $hongo_offset = ! empty( $hongo_offset ) ? $hongo_offset : ' col-xl-3 col-lg-6 col-md-7 col-11';
 
                 // Icon Width
                 if( ! empty( $custom_icon_max_width ) && $hongo_custom_icon == 1 ) {
@@ -206,7 +206,7 @@ if ( ! function_exists( 'hongo_popup_shortcode' ) ) {
             case 'modal-popup':
 
                 $hongo_width = ! empty( $hongo_width ) ? $hongo_width : '';
-                $hongo_offset = ! empty( $hongo_offset ) ? $hongo_offset : ' col-lg-3 col-md-6 col-sm-7 col-xs-11';
+                $hongo_offset = ! empty( $hongo_offset ) ? $hongo_offset : ' col-xl-3 col-lg-6 col-md-7 col-11';
 
                 $animation_dialog = ! empty( $hongo_popup_animation_effect ) ? 'zoom-anim-dialog ' : '';
 

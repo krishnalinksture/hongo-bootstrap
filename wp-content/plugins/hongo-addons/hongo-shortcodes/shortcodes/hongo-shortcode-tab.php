@@ -94,7 +94,7 @@ if ( ! function_exists( 'hongo_tabs' ) ) {
 
                 $output .= '<div '.$id.' class="'.esc_attr( $hongo_main_class_list ).' tab-style-2-'.$hongo_tabs_style2.'">';
                     $output .= '<div class="row equalize xs-equalize-auto clearfix">';
-                        $output .= '<div class="col-md-2 col-sm-3 col-xs-12 no-padding-right">';
+                        $output .= '<div class="col-lg-2 col-md-3 col-12 no-padding-right">';
                             $output .='<div class="display-table width-100 height-100">';
                                 $output .= '<div class="display-table-cell vertical-align-middle">';
                                     $output .= '<ul class="nav nav-tabs">';
@@ -119,7 +119,7 @@ if ( ! function_exists( 'hongo_tabs' ) ) {
                                 $output .= '</div>'; 
                             $output .= '</div>'; 
                         $output .= '</div>';
-                        $output .=' <div class="col-md-10 col-sm-9 col-xs-12 no-padding-left">';
+                        $output .=' <div class="col-lg-10 col-md-9 col-12 no-padding-left">';
                             $output .= '<div class="tab-content">';
                                 foreach ( $hongo_global_tabs as $key => $tab ) {
                                     $active_content = ( ( $key + 1 ) == $active_tab ) ? ' in active' : '';
@@ -155,7 +155,7 @@ if ( ! function_exists( 'hongo_tabs' ) ) {
 
                 $output .= '<div '.$id.' class="'.esc_attr( $hongo_main_class_list ).' tab-style-3-'.$hongo_tabs_style3.'">';
                     $output .= '<div class="row">';
-                        $output .= '<div class="col-md-12 col-sm-12">';
+                        $output .= '<div class="col-lg-12 col-md-12">';
                             $output .= '<ul class="nav nav-tabs'.esc_attr( $tabs_alignment ).'">';
                                 foreach( $hongo_global_tabs as $key => $tab ) {
                                     $title = ( array_key_exists('title', $tab['atts']) ) ?  $tab['atts']['title'] : '';
@@ -221,7 +221,7 @@ if ( ! function_exists( 'hongo_tabs' ) ) {
 
                 $output .= '<div '.$id.' class="'.esc_attr( $hongo_main_class_list ).' tab-style-1-'.$hongo_tabs_style1.'">';
                     $output .= '<div class="row">';
-                        $output .= '<div class="col-md-12 col-sm-12">';
+                        $output .= '<div class="col-lg-12 col-md-12">';
                             $output .= '<ul class="nav nav-tabs'.esc_attr( $tabs_alignment ).'">';
                                 foreach( $hongo_global_tabs as $key => $tab ) {
                                     $title = ( array_key_exists('title', $tab['atts']) ) ?  $tab['atts']['title'] : '';

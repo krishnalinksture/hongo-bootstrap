@@ -2757,9 +2757,9 @@ if ( ! function_exists( 'hongo_feature_product_box_shortcode' ) ) {
 
                     $output.='<div'.$id.' class="hongo-featurebox-wrap'.$class_list.' hongo-info-banner-5-'.$hongo_info_banner5.'">';
 
-                		$output .= '<div class="col-sm-6 col-xs-12 no-padding'.$bg_class_list.'"></div>';
+                		$output .= '<div class="col-md-6 col-12 no-padding'.$bg_class_list.'"></div>';
 
-                		$output .= '<div class="col-sm-6 col-xs-12 no-padding bg-very-light-gray">';
+                		$output .= '<div class="col-md-6 col-12 no-padding bg-very-light-gray">';
 
                 			$output .= '<div class="info-banner-wrapper text-middle-main">';
                 				

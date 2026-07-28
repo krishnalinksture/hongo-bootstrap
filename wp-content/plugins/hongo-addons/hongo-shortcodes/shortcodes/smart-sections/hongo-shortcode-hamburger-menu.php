@@ -146,7 +146,7 @@ if ( ! function_exists( 'hongo_hamburger_navigation_menu_shortcode' ) ) {
                     // Navigation Menu
                     if ( ! empty( $hongo_menu_select ) && class_exists( 'Hongo_Hamburger_Menu_Walker' ) ) {
 
-                        $menu_output .= '<div class="col-sm-6 hongo-hamburger-menu-bg full-screen height-100 h-menu" >';
+                        $menu_output .= '<div class="col-md-6 hongo-hamburger-menu-bg full-screen height-100 h-menu" >';
                             $menu_output .= '<div class="hongo-hamburger-menu-content-wrap" >';
                                 $menu_output .= '<div class="menu-content-inner-wrap" >';
 
@@ -204,7 +204,7 @@ if ( ! function_exists( 'hongo_hamburger_navigation_menu_shortcode' ) ) {
                     }
 
                     // Background image section
-                    $image_output .= '<div class="col-sm-6 no-padding cover-background full-screen height-100 h-image" '.$hongo_hamburger_bg_image.'>';
+                    $image_output .= '<div class="col-md-6 no-padding cover-background full-screen height-100 h-image" '.$hongo_hamburger_bg_image.'>';
                         $image_output .= '<div class="hongo-overlay"></div>';
                     if ( ! empty( $hongo_hamburger_logo_image ) || ! empty( $hongo_hamburger_ratina_logo_image ) ) {
 

@@ -246,7 +246,7 @@ if ( ! function_exists( 'hongo_product_shortcode' ) ) {
             break;
             case 'column-5':
                 $classes[] = 'col-5-nth';
-                $column_classes .= ' class="vc_col-lg-1/5 col-sm-4 col-xs-12'.$hongo_animation_style.'"';
+                $column_classes .= ' class="vc_col-lg-1/5 col-md-4 col-12'.$hongo_animation_style.'"';
             break;
             case 'column-6':
                 $classes[] = 'col-6-nth';

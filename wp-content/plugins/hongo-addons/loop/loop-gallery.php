@@ -14,7 +14,7 @@ $hongo_popup_id = 'blog-'.get_the_ID();
 if( $hongo_blog_lightbox_gallery == 1 ){
 	echo '<ul class="blog-post-gallery-grid hover-option4 gutter-small lightbox-gallery">';
 	if( is_array($hongo_gallery) ){
-		echo '<li class="grid-sizer col-md-4 col-sm-6 col-xs-12"></li>';
+		echo '<li class="grid-sizer col-lg-4 col-md-6 col-12"></li>';
 		foreach ( $hongo_gallery as $key => $value ) {
 			/* Image Alt, Title, Caption */
 			$hongo_img_alt = hongo_option_image_alt($value);
@@ -31,7 +31,7 @@ if( $hongo_blog_lightbox_gallery == 1 ){
 				// Get Image srcset
 	            $srcset_data = hongo_get_image_srcset_sizes( $value, $hongo_srcset );
 
-                echo '<li class="col-md-4 col-sm-6 col-xs-12 grid-item">';
+                echo '<li class="col-lg-4 col-md-6 col-12 grid-item">';
                 	echo '<a class="lightboxgalleryitem" data-group="'.esc_attr($hongo_popup_id).'" '.$hongo_image_lightbox_title.$hongo_image_lightbox_caption.' href="'.esc_url($hongo_thumb[0]).'">';
 	                	echo '<figure>';
 		                    echo '<div class="portfolio-img bg-extra-dark-gray">';

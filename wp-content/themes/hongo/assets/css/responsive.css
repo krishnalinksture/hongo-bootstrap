@@ -1332,16 +1332,16 @@
     }
     /* text align */
     .md-text-left {
-        text-align: left
+        text-align: left !important;
     }
     .md-text-center {
-        text-align: center
+        text-align: center !important;
     }
     .md-text-right {
-        text-align: right
+        text-align: right !important;
     }
     .md-text-justify {
-        text-align: justify
+        text-align: justify !important;
     }
     /* width */
     .md-width-auto {
@@ -4188,6 +4188,13 @@
     .woocommerce-account .woocommerce table.my_account_orders tr td.woocommerce-orders-table__cell-order-actions {
         max-width: 160px
     }
+
+    /* woocommerce order received */
+    .woocommerce .woocommerce-columns--addresses .woocommerce-column,
+    .woocommerce-account .woocommerce-Address {
+        margin-right: 26px;
+    }
+
     /* ----- Product slider  ----- */
     /* product slider 2 */
     .product-slider-style-2 .swiper-slide {
@@ -4542,16 +4549,16 @@
     }
     /* text align */
     .sm-text-left {
-        text-align: left
+        text-align: left !important;
     }
     .sm-text-center {
-        text-align: center
+        text-align: center !important;
     }
     .sm-text-right {
-        text-align: right
+        text-align: right !important;
     }
     .sm-text-justify {
-        text-align: justify
+        text-align: justify !important;
     }
     /* width */
     .sm-width-auto {
@@ -7378,6 +7385,13 @@
     .woocommerce-column.woocommerce-column--2.woocommerce-column--shipping-address.col-2 {
         margin-right: 0;
     }
+
+    /* woocommerce order received */
+    .woocommerce .woocommerce-columns--addresses .woocommerce-column,
+    .woocommerce-account .woocommerce-Address {
+        margin-right: 29px;
+    }
+    
     /* login, register, reset password  */
     #customer_login {
         width: 100%;
@@ -7395,9 +7409,6 @@
     }
     .woocommerce .woocommerce-order-downloads {
         margin-bottom: 0;
-    }
-    .woocommerce-account .woocommerce-Address {
-        width: 100% !important;
     }
     .woocommerce-account .woocommerce-Addresses .woocommerce-Address:last-child {
         margin-right: 0;
@@ -8187,16 +8198,16 @@
     }
     /* text align */
     .xs-text-left {
-        text-align: left
+        text-align: left !important;
     }
     .xs-text-center {
-        text-align: center
+        text-align: center !important;
     }
     .xs-text-right {
-        text-align: right
+        text-align: right !important;
     }
     .xs-text-justify {
-        text-align: justify
+        text-align: justify !important;
     }
     /* equalize auto */
     .xs-equalize-auto>[class*='col-'],
@@ -11008,6 +11019,9 @@
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
+    .woocommerce-account .woocommerce-Address {
+        width: 100% !important;
+    }
     .woocommerce-account .woocommerce-column.woocommerce-column--1.woocommerce-column--billing-address.col-1,
     .woocommerce-column.woocommerce-column--2.woocommerce-column--shipping-address.col-2 {
         width: 100%;
@@ -11057,6 +11071,11 @@
         width: 100%;
     }
     /* login, register, reset password  */
+    .woocommerce-account #customer_login.col2-set .col-1,
+    .woocommerce-account #customer_login.col2-set .col-2 {
+        width: 100%;
+    }
+
     .woocommerce-account #customer_login.col2-set {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;

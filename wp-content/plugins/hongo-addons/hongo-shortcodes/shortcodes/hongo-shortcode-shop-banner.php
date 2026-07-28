@@ -405,7 +405,7 @@ if ( ! function_exists( 'hongo_shop_banner_shortcode' ) ) {
 
                     $output .= '<div' . $id . ' class="' . $class_list . '"' . $main_attr . '>';
 
-                        $output .= '<div class="col-sm-6 col-xs-12 no-padding">';
+                        $output .= '<div class="col-md-6 col-12 no-padding">';
                             // Image 
                             if ( ! empty( $hongo_image ) ) {
                                 $output .= '<div class="hongo-shop-banner-img">';                                    
@@ -414,7 +414,7 @@ if ( ! function_exists( 'hongo_shop_banner_shortcode' ) ) {
                             }
                         $output .= '</div>';
 
-                        $output .= '<div class="col-sm-6 col-xs-12 no-padding bg-very-light-gray">';
+                        $output .= '<div class="col-md-6 col-12 no-padding bg-very-light-gray">';
                             $output .= '<div class="hongo-shop-banner-content text-middle-main">';
                                 $output .= '<div class="text-middle">';
                                     // Subtitle 
@@ -454,7 +454,7 @@ if ( ! function_exists( 'hongo_shop_banner_shortcode' ) ) {
 
                     $output .= '<div' . $id . ' class="' . $class_list . '"' . $main_attr . '>';
 
-                        $output .= '<div class="col-sm-6 col-xs-12 no-padding">';
+                        $output .= '<div class="col-md-6 col-12 no-padding">';
                             // Image 
                             if ( ! empty( $hongo_image ) ) {
                                 $output .= '<div class="hongo-shop-banner-img">';                                    
@@ -463,7 +463,7 @@ if ( ! function_exists( 'hongo_shop_banner_shortcode' ) ) {
                             }
                         $output .= '</div>';
 
-                        $output .= '<div class="col-sm-6 col-xs-12 no-padding bg-extra-light-gray">';
+                        $output .= '<div class="col-md-6 col-12 no-padding bg-extra-light-gray">';
                             $output .= '<div class="hongo-shop-banner-content text-middle-main">';
                                 $output .= '<div class="text-middle">';
                                     // Border Option 
@@ -554,7 +554,7 @@ if ( ! function_exists( 'hongo_shop_banner_shortcode' ) ) {
 
                     $output .= '<div' . $id . ' class="' . $class_list . '"' . $main_attr . '>';
 
-                        $output .= '<div class="col-sm-6 col-xs-12 no-padding">';
+                        $output .= '<div class="col-md-6 col-12 no-padding">';
                             // Image 
                             if ( ! empty( $hongo_image ) ) {
                                 $output .= '<div class="hongo-shop-banner-img">';
@@ -563,7 +563,7 @@ if ( ! function_exists( 'hongo_shop_banner_shortcode' ) ) {
                             }
                         $output .= '</div>';
 
-                        $output .= '<div class="col-sm-6 col-xs-12 no-padding bg-very-light-gray">';
+                        $output .= '<div class="col-md-6 col-12 no-padding bg-very-light-gray">';
                             $output .= '<div class="hongo-shop-banner-content text-middle-main">';
                                 $output .= '<div class="text-middle">';
                                     // Subtitle 
