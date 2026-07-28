@@ -7479,7 +7479,7 @@
     .header-default-wrapper.navbar-default .navbar-collapse.collapse {
         display: none !important;
     }
-    .header-default-wrapper.navbar-default .navbar-collapse.collapse.in {
+    .header-default-wrapper.navbar-default .navbar-collapse.collapse.show {
         display: block !important;
     }
     /* landing page footer */
