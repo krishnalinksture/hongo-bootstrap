@@ -27,7 +27,7 @@ $hongo_product_archive_layout_setting	= apply_filters( 'hongo_page_layout_style'
 
 $hongo_product_widget_style 	= hongo_option( 'hongo_product_widget_style', 'sidebar-style-1' );
 $hongo_product_sidebar_class 	= ( $hongo_product_widget_style ) ? ' hongo-' . $hongo_product_widget_style : '';
-$hongo_product_sidebar_class 	.= ( $hongo_product_archive_container_style == 'container' ) ? ' col-md-3' :  ' col-lg-2 col-md-3';
+$hongo_product_sidebar_class 	.= ( $hongo_product_archive_container_style == 'container' ) ? ' col-lg-3' :  ' col-xl-2 col-lg-3';
 
 // Left Sidebar
 if( $hongo_product_archive_layout_setting == 'hongo_layout_left_sidebar' ) {
