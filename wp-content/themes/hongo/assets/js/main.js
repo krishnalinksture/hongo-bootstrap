@@ -2861,7 +2861,7 @@
                     _this.imagesLoaded( function () {
 
                         equalizeHeight();
-                        var swiperObj = new Swiper( _this, sliderOptions );
+                        var swiperObj = new Swiper( _this[0], sliderOptions );
                         swiperObjs.push( swiperObj );
                     });
                 }
