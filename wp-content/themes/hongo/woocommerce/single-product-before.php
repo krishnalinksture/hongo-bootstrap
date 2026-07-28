@@ -28,7 +28,7 @@ $hongo_product_both_sidebar_class = ( $hongo_single_product_content_container_fl
 switch( $hongo_single_product_layout_setting ) {
 	case 'hongo_layout_no_sidebar':
 		?>
-			<div class="col-sm-12 col-xs-12 hongo-full-width-layout hongo-full-width-no-padding hongo-content-full-part">
+			<div class="col-md-12 col-12 hongo-full-width-layout hongo-full-width-no-padding hongo-content-full-part">
 		<?php
 		break;
 	case 'hongo_layout_left_sidebar':
