@@ -288,7 +288,7 @@ if( hongo_is_woocommerce_activated() ) {
                 echo'</div>';
 
                 echo '<div class="hongo-top-shop-filter-overlay"></div>';
-                echo '<div class="col-md-12 col-xs-12 sidebar hongo-woocommerce-top-sidebar' . esc_attr( $off_canvas_filter_class ) . '">';
+                echo '<div class="col-lg-12 col-12 sidebar hongo-woocommerce-top-sidebar' . esc_attr( $off_canvas_filter_class ) . '">';
                     if ( $hongo_enable_shop_off_canvas_filter_sidebar == '1' ) {
 
                         echo '<div class="top-sidebar-heading">';
