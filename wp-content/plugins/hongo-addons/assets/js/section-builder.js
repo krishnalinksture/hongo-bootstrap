@@ -265,7 +265,7 @@
         });
 
         /* Menu toggle */
-        $( document ).on( 'click', '.navbar-collapse [data-toggle="dropdown"]', function (event) {
+        $( document ).on( 'click', '.navbar-collapse [data-bs-toggle="dropdown"]', function (event) {
             var $innerLinkLI = $(this).parents('ul.navbar-nav').find('li.dropdown.inner-link a').parent('li.dropdown');
             if (!$(this).parent().hasClass('inner-link') && !$(this).hasClass('dropdown-toggle') && $innerLinkLI.hasClass('open')) {
                 $innerLinkLI.removeClass('open');
@@ -307,19 +307,19 @@
         });
 
         /* Touchstart click */
-        $( document ).on( 'touchstart click', 'body', function (e) {
-            if ( $(window).width() <= hongoAddons.menu_breakpoint ) {
-                if ( ! $('.navbar-collapse').has(e.target).is('.navbar-collapse') && $('.navbar-collapse').hasClass('in') && !$(e.target).hasClass('navbar-toggle') ) {
-                    $('.navbar-collapse').collapse('hide');
-                }
-            } else {
-                if ( ! $('.navbar-collapse').has(e.target).is('.navbar-collapse') && $('.navbar-collapse ul').hasClass('in')) {
-                    $('.navbar-collapse').find('a.dropdown-toggle').addClass('collapsed');
-                    $('.navbar-collapse').find('ul.dropdown-menu').removeClass('in');
-                    $('.navbar-collapse a.dropdown-toggle').removeClass('active');
-                }
-            }
-        });
+        // $( document ).on( 'touchstart click', 'body', function (e) {
+        //     if ( $(window).width() <= hongoAddons.menu_breakpoint ) {
+        //         if ( ! $('.navbar-collapse').has(e.target).is('.navbar-collapse') && $('.navbar-collapse').hasClass('show') && !$(e.target).hasClass('navbar-toggle') ) {
+        //             $('.navbar-collapse').collapse('hide');
+        //         }
+        //     } else {
+        //         if ( ! $('.navbar-collapse').has(e.target).is('.navbar-collapse') && $('.navbar-collapse ul').hasClass('show')) {
+        //             $('.navbar-collapse').find('a.dropdown-toggle').addClass('collapsed');
+        //             $('.navbar-collapse').find('ul.dropdown-menu').removeClass('show');
+        //             $('.navbar-collapse a.dropdown-toggle').removeClass('active');
+        //         }
+        //     }
+        // });
 
         /* Mobile menu button click active class */
         if( $( '.hongo-navigation-main-wrapper button.toggle-mobile, .hongo-left-menu-wrap button.toggle-mobile' ).length > 0 ) {

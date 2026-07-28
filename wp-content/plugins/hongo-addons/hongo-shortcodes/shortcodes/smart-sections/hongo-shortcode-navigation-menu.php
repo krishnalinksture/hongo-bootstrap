@@ -195,17 +195,17 @@ if ( ! function_exists('hongo_navigation_menu_shortcode') ) {
             $output .= '<div'.$id.' class="hongo-navigation-main-wrapper'.$class_list.'">';
 
                 // Mobile Menu Button
-                $output .= '<button type="button" class="navbar-toggle collapsed'.$hongo_enable_close_toggle_class.'" data-toggle="collapse" data-target="#'.$hongo_navigation_menu_uniq_class.'">';
+                $output .= '<button type="button" class="navbar-toggle collapsed'.$hongo_enable_close_toggle_class.'" data-bs-toggle="collapse" data-bs-target="#'.$hongo_navigation_menu_uniq_class.'">';
                     $output .= '<span class="icon-bar"></span>';
                     $output .= '<span class="icon-bar"></span>';
                     $output .= '<span class="icon-bar"></span>';
                     $output .= '<span class="icon-bar"></span>';
                 $output .= '</button>';
                 if ( ! empty( $hongo_mobile_menu_text ) ) {
-                    $output .= '<span class="navbar-toggle collapsed sr-only mobile-menu-text alt-font" data-toggle="collapse" data-target="#'.$hongo_navigation_menu_uniq_class.'">'.$hongo_mobile_menu_text.'</span>';
+                    $output .= '<span class="navbar-toggle collapsed sr-only mobile-menu-text alt-font" data-bs-toggle="collapse" data-bs-target="#'.$hongo_navigation_menu_uniq_class.'">'.$hongo_mobile_menu_text.'</span>';
                 }
 
-                $output .= '<div class="navbar-collapse collapse'.$tab_class.$ipad_icon_class.'" id="'.$hongo_navigation_menu_uniq_class.'" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">';
+                $output .= '<div class="collapse navbar-collapse'.$tab_class.$ipad_icon_class.'" id="'.$hongo_navigation_menu_uniq_class.'" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">';
 
                     $without_tab_category_active_class = ' active';
 

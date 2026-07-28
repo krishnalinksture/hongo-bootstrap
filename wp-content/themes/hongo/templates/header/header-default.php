@@ -71,7 +71,7 @@ $hongo_logo_light_ratina= get_theme_mod( 'hongo_logo_light_ratina', '' );
 	                    <span class="icon-bar"></span>
 	                    <span class="icon-bar"></span>
 	                </button>
-                    <div class="navbar-collapse collapse pull-right" id="navbar-collapse-toggle-1" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+                    <div class="collapse navbar-collapse pull-right" id="navbar-collapse-toggle-1" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
                         <?php   
                             if( has_nav_menu( 'primary-menu' ) ) {
                                 $hongo_header_menu_default = array(

@@ -245,7 +245,7 @@ if ( ! function_exists( 'hongo_hamburger_navigation_menu_shortcode' ) ) {
                 $output .= '<span class="mobile-menu-text sr-only alt-font" >'.$hongo_mobile_menu_text.'</span>';
             }
             $mobile_menu_text_class = ! empty( $hongo_mobile_menu_text ) ? ' hamburger-mobile-menu-text' : '';
-            $output .= '<button class="navbar-toggle mobile-toggle'.$mobile_menu_text_class.'" type="button" >';
+            $output .= '<button class="navbar-toggle mobile-toggle'.$mobile_menu_text_class.'" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">';
                 $output .= '<span></span>';
                 $output .= '<span></span>';
                 $output .= '<span></span>';
