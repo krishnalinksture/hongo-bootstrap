@@ -22,8 +22,8 @@ $hongo_single_product_content_container_fluid = hongo_option( 'hongo_single_prod
 // Filter for change container style for ex. ?container=full
 $hongo_single_product_content_container_fluid = apply_filters( 'hongo_page_container_style', $hongo_single_product_content_container_fluid );
 
-$hongo_product_sidebar_class = ( $hongo_single_product_content_container_fluid == 'container' ) ? ' col-lg-9 col-md-12 col-sm-12' :  ' col-lg-10 col-md-12 col-sm-12';
-$hongo_product_both_sidebar_class = ( $hongo_single_product_content_container_fluid == 'container' ) ? ' col-lg-6 col-md-12 col-sm-12' :  ' col-lg-8 col-md-12 col-sm-12';
+$hongo_product_sidebar_class = ( $hongo_single_product_content_container_fluid == 'container' ) ? ' col-xl-9 col-lg-12 col-md-12' :  ' col-xl-10 col-lg-12 col-md-12';
+$hongo_product_both_sidebar_class = ( $hongo_single_product_content_container_fluid == 'container' ) ? ' col-xl-6 col-lg-12 col-md-12' :  ' col-xl-8 col-lg-12 col-md-12';
 
 switch( $hongo_single_product_layout_setting ) {
 	case 'hongo_layout_no_sidebar':
@@ -33,7 +33,7 @@ switch( $hongo_single_product_layout_setting ) {
 		break;
 	case 'hongo_layout_left_sidebar':
 		?>
-			<div class="col-xs-12 pull-right hongo-full-width-no-padding hongo-content-right-part<?php echo esc_attr( $hongo_product_sidebar_class ); ?>">
+			<div class="col-12 pull-right hongo-full-width-no-padding hongo-content-right-part<?php echo esc_attr( $hongo_product_sidebar_class ); ?>">
 				<div class="hongo-sidebar-btn-wrap">
 					<div class="hongo-left-common-sidebar-link alt-font">
 						<?php $hongo_single_left_sidebar_text = apply_filters( 'hongo_single_left_sidebar_text', esc_html__( 'Show Sidebar', 'hongo' ) ); ?>
@@ -44,7 +44,7 @@ switch( $hongo_single_product_layout_setting ) {
 		break;
 	case 'hongo_layout_right_sidebar':
 		?>
-			<div class="col-xs-12 hongo-full-width-no-padding hongo-content-left-part<?php echo esc_attr( $hongo_product_sidebar_class ); ?>">
+			<div class="col-12 hongo-full-width-no-padding hongo-content-left-part<?php echo esc_attr( $hongo_product_sidebar_class ); ?>">
 				<div class="hongo-sidebar-btn-wrap">
 					<div class="hongo-right-common-sidebar-link alt-font">
 						<?php $hongo_single_right_sidebar_text = apply_filters( 'hongo_single_right_sidebar_text', esc_html__( 'Show Sidebar', 'hongo' ) ); ?>
@@ -56,7 +56,7 @@ switch( $hongo_single_product_layout_setting ) {
 	case 'hongo_layout_both_sidebar':
 		?>
 			<div class="both-sidebar-wrap">
-	        	<div class="col-xs-12 both-content-center post-center hongo-full-width-no-padding hongo-content-center-part<?php echo esc_attr( $hongo_product_both_sidebar_class ); ?>">
+	        	<div class="col-12 both-content-center post-center hongo-full-width-no-padding hongo-content-center-part<?php echo esc_attr( $hongo_product_both_sidebar_class ); ?>">
 					<div class="hongo-sidebar-btn-wrap">
 						<div class="hongo-left-common-sidebar-link alt-font">
 							<?php $hongo_single_left_sidebar_text = apply_filters( 'hongo_single_left_sidebar_text', esc_html__( 'Show Sidebar', 'hongo' ) ); ?>
