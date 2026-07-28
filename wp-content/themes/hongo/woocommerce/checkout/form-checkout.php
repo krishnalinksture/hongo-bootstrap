@@ -29,20 +29,20 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 ?>
 
-<form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
+<form name="checkout" method="post" class="checkout woocommerce-checkout row ms-0 me-0" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
 
-	<div class="col-sm-6 col-md-7 col-xs-12 checkout-content-left">
+	<div class="col-md-6 col-lg-7 col-12 checkout-content-left">
 
 		<?php if ( $checkout->get_checkout_fields() ) : ?>
 
 			<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
 
 			<div class="col2-set" id="customer_details">
-				<div class="col-1 col-sm-12 col-xs-12">
+				<div class="col-1 col-md-12 col-12">
 					<?php do_action( 'woocommerce_checkout_billing' ); ?>
 				</div>
 
-				<div class="col-2 col-sm-12 col-xs-12">
+				<div class="col-2 col-md-12 col-12">
 					<?php do_action( 'woocommerce_checkout_shipping' ); ?>
 				</div>
 			</div>
@@ -52,7 +52,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 		<?php endif; ?>
 
 	</div>
-	<div class="col-sm-6 col-md-5 col-xs-12 checkout-sidebar">
+	<div class="col-md-6 col-lg-5 col-12 checkout-sidebar">
 
 		<h4 id="order_review_heading" class="alt-font"><?php esc_html_e( 'Your order', 'hongo' ); ?></h4>
 
