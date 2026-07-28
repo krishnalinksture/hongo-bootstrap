@@ -69,7 +69,7 @@ while ( have_posts() ) : the_post();
 		}
 	?>
 		<div id="post-<?php echo esc_attr( get_the_ID() ); ?>" <?php echo sprintf( '%s', $hongo_post_classes ); ?>>
-			<div class="col-md-12 col-sm-12 col-xs-12">
+			<div class="col-lg-12 col-md-12 col-12">
 				<div class="blog-post blog-post-content blog-post-sticky hongo-sticky-post-description hongo-blog-standard hongo-blog-styles">
 					<div class="blog-single-post blog-post">
 						<?php 

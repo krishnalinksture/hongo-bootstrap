@@ -69,18 +69,18 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	switch( $hongo_archive_layout_setting ) {
 		case 'hongo_layout_left_sidebar':
 			?>
-				<div class="col-md-9 col-sm-8 col-xs-12 hongo-layout-left-sidebar pull-right no-padding-right hongo-content-right-part">
+				<div class="col-lg-9 col-md-8 col-12 hongo-layout-left-sidebar pull-right no-padding-right hongo-content-right-part">
 			<?php
 			break;
 		case 'hongo_layout_right_sidebar':
 			?>
-				<div class="col-md-9 col-sm-8 col-xs-12 hongo-layout-right-sidebar no-padding-left hongo-content-left-part">
+				<div class="col-lg-9 col-md-8 col-12 hongo-layout-right-sidebar no-padding-left hongo-content-left-part">
 			<?php
 			break;
 		case 'hongo_layout_both_sidebar':
 			?>
 			<div class="both-sidebar-wrap">
-				<div class="col-md-6 col-sm-12 col-xs-12 hongo-layout-both-sidebar hongo-content-center-part">
+				<div class="col-lg-6 col-md-12 col-12 hongo-layout-both-sidebar hongo-content-center-part">
 			<?php
 			break;
 	}

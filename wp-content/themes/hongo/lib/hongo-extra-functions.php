@@ -989,19 +989,19 @@ if ( ! function_exists( 'hongo_related_posts' ) ) {
         $column_class = '';
         switch ( $hongo_no_of_related_posts_columns ) {
             case '1':
-                $column_class .= ' col-md-12 col-sm-12 col-xs-12 margin-30px-bottom';
+                $column_class .= ' col-lg-12 col-md-12 col-12 margin-30px-bottom';
                 break;
             case '2':
-                $column_class .= ' col-md-6 col-sm-6 col-xs-12 margin-30px-bottom';
+                $column_class .= ' col-lg-6 col-md-6 col-12 margin-30px-bottom';
                 break;
             case '4':
-                $column_class .= ' col-md-3 col-sm-6 col-xs-12 margin-30px-bottom';
+                $column_class .= ' col-lg-3 col-md-6 col-12 margin-30px-bottom';
                 break;
             case '6':
-                $column_class .= ' col-md-2 col-sm-6 col-xs-12 margin-30px-bottom';
+                $column_class .= ' col-lg-2 col-md-6 col-12 margin-30px-bottom';
                 break;    
             default:
-                $column_class .= ' col-md-4 col-sm-4 col-xs-12 margin-30px-bottom';
+                $column_class .= ' col-lg-4 col-md-4 col-12 margin-30px-bottom';
                 break;
         }
 
@@ -1017,7 +1017,7 @@ if ( ! function_exists( 'hongo_related_posts' ) ) {
         $recent_post = new WP_Query( $args );
         if ( $recent_post->have_posts() ) {
             if ( $hongo_related_posts_title ) {
-                echo '<div class="col-md-12 col-sm-12 col-xs-12">';
+                echo '<div class="col-lg-12 col-md-12 col-12">';
                     echo '<span class="related-post-general-title alt-font">'.esc_html( $hongo_related_posts_title ).'</span>';
                 echo '</div>';
             }
@@ -1083,7 +1083,7 @@ if ( ! function_exists( 'hongo_related_posts' ) ) {
                                         }
                                     echo '</div>';
                                 }
-                                echo '<div class="post-details blog-text col-md-12">';
+                                echo '<div class="post-details blog-text col-lg-12">';
                                     echo '<div class="content">';
                                         if ( $post_category ) {
                                             echo '<div class="hongo-blog-post-category alt-font">'.$post_category.'</div>';

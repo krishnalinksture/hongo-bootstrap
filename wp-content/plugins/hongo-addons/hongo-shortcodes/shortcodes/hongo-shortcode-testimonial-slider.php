@@ -256,7 +256,7 @@ if ( ! function_exists( 'hongo_testimonial_slider_shortcode' ) ) {
 
                                     if ( ! empty( $slide->hongo_title_content ) || ! empty( $slide->hongo_content ) || ! empty( $slide->hongo_image ) || ! empty( $slide_name ) || ! empty( $slide->hongo_designation ) ) {
                                         $output .= '<div class="swiper-slide">';
-                                            $output .= '<div class="col-md-12 col-sm-12 col-xs-12">';
+                                            $output .= '<div class="col-lg-12 col-md-12 col-12">';
                                             
                                                 $output .= '<div class="testimonial-content-wrap">';
                                                     if ( ! empty( $slide->hongo_title_content ) || ! empty( $slide->hongo_content ) ) {
@@ -301,7 +301,7 @@ if ( ! function_exists( 'hongo_testimonial_slider_shortcode' ) ) {
 
                                     if ( ! empty( $slide->hongo_title_content ) || ! empty( $slide->hongo_content ) || ! empty( $thumb[0] ) || ! empty( $slide_name ) || ! empty( $slide->hongo_designation ) ) {
                                         $output .= '<div class="swiper-slide">';
-                                            $output .= '<div class="col-md-12 col-sm-12 col-xs-12">';
+                                            $output .= '<div class="col-lg-12 col-md-12 col-12">';
                                                 $output .= '<div class="testimonial-content-wrap">';
                                                     // Image
                                                     if ( ! empty( $slide->hongo_image ) ) {
@@ -341,7 +341,7 @@ if ( ! function_exists( 'hongo_testimonial_slider_shortcode' ) ) {
                                 
                                     if ( ! empty( $slide->hongo_content ) || ! empty( $thumb[0] ) || ! empty( $slide_name ) || ! empty( $slide->hongo_designation ) ) {
                                         $output .= '<div class="swiper-slide">';
-                                            $output .= '<div class="col-md-7 col-sm-10 col-xs-12">';
+                                            $output .= '<div class="col-lg-7 col-md-10 col-12">';
                                                 $output .= '<div class="testimonial-content-wrap">';
                                                 
                                                     //Image

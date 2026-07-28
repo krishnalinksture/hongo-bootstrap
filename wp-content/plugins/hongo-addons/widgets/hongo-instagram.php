@@ -78,17 +78,17 @@ if (! class_exists('hongo_instagram_widget')) {
 	    	
 	    		switch( $no_of_columns_instagram_feed ) {
 	                case '3':
-	                    $column_classes .= ' class="col-md-4 col-sm-4 col-xs-4"';
+	                    $column_classes .= ' class="col-lg-4 col-md-4 col-4"';
 	                break;
 	                case '2':
-	                    $column_classes .= ' class="col-md-6 col-sm-6 col-xs-12"';
+	                    $column_classes .= ' class="col-lg-6 col-md-6 col-12"';
 	                break;
 	                case '1':
-	                    $column_classes .= ' class="col-md-12 col-sm-12 col-xs-12"';
+	                    $column_classes .= ' class="col-lg-12 col-md-12 col-12"';
 	                break;
 	                case '4':
 	                default:
-	                    $column_classes .= ' class="col-md-3 col-sm-3 col-xs-3"';
+	                    $column_classes .= ' class="col-lg-3 col-md-3 col-3"';
 	                break;
 	            }
 	    		echo '<div class="hongo-instagram-widget-wrap">';

@@ -44,23 +44,23 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     /* Column */
     switch( $blog_column ) {
         case '1':
-            $class_column .= ' col-md-12 col-sm-12 col-xs-12';
+            $class_column .= ' col-lg-12 col-md-12 col-12';
             break;
         case '2':
-            $class_column .= ' col-lg-6 col-md-6 col-sm-6 col-xs-12';
+            $class_column .= ' col-xl-6 col-lg-6 col-md-6 col-12';
             break;
         case '3':
         default:
-            $class_column .= ' col-lg-4 col-md-6 col-sm-6 col-xs-12';
+            $class_column .= ' col-xl-4 col-lg-6 col-md-6 col-12';
             break;
         case '4':
-            $class_column .= ' col-lg-3 col-md-4 col-sm-6 col-xs-12';
+            $class_column .= ' col-xl-3 col-lg-4 col-md-6 col-12';
             break;
         case '5':
             $class_column .= ' vc_col-lg-1/5 col-md-4 col-sm-6 col-xs-12';
             break;
         case '6':
-            $class_column .= ' col-lg-2 col-md-4 col-sm-6 col-xs-12';
+            $class_column .= ' col-xl-2 col-lg-4 col-md-6 col-12';
             break;
     }
 
@@ -143,14 +143,14 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                         <div class="equalize sm-equalize-auto width-100">
                             <?php if ( !post_password_required() && $blog_thumbnail == 1 && has_post_thumbnail() ) { ?>
                                 <?php $flag = 1; ?>
-                                <div class="blog-image col-md-5">
+                                <div class="blog-image col-lg-5">
                                     <?php echo get_template_part( 'loop/archive/loop', 'common' ); ?>
                                 </div>
                             <?php } ?>
                             <?php if ( $flag == 0 ) { ?>
-                                <div class="blog-text col-md-12">
+                                <div class="blog-text col-lg-12">
                             <?php } else { ?>
-                                <div class="blog-text col-md-7">
+                                <div class="blog-text col-lg-7">
                             <?php } ?>
                             
                                 <div class="display-table-cell height-100">
@@ -246,7 +246,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                 <?php } ?>
                             </div>
                         <?php } ?>
-                        <div class="blog-text col-md-12">
+                        <div class="blog-text col-lg-12">
                             <div class="content">
                                 <?php if ( $blog_title == 1 ) { ?>
                                     <a class="entry-title alt-font<?php echo esc_attr( $title_text_transform ); ?>" href="<?php echo esc_url( get_permalink() ); ?>">
@@ -319,7 +319,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                 <?php echo get_template_part( 'loop/archive/loop', 'common' ); ?>
                             </div>
                         <?php } ?>
-                        <div class="blog-text col-md-12">
+                        <div class="blog-text col-lg-12">
                             <div class="content">
                                 <?php if ( $show_category == 1 && $post_category ) { ?>
                                     <div class="hongo-blog-post-category alt-font<?php echo esc_attr( $meta_text_transform ); ?>">
@@ -421,7 +421,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                 </a>
                             </div>
                         <?php } ?>
-                        <div class="blog-text col-md-12">
+                        <div class="blog-text col-lg-12">
                             <div class="content">
                                 <?php if ( $show_category == 1 && $post_category ) { ?>
                                     <div class="hongo-blog-post-category alt-font<?php echo esc_attr( $meta_text_transform ); ?>">
@@ -503,7 +503,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                 </a>
                             </div>
                         <?php } ?>
-                        <div class="blog-text col-md-12">
+                        <div class="blog-text col-lg-12">
                             <div class="content">
                                 <?php
                                     if ( $blog_thumbnail_icon == '1' ) {
@@ -614,7 +614,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                 <?php echo get_template_part( 'loop/archive/loop', 'common' ); ?>
                             </div>
                         <?php } ?>
-                        <div class="blog-text col-md-12">
+                        <div class="blog-text col-lg-12">
                             <div class="content">
                                 <?php if ( ! empty( $author_date_array ) ) { ?>
                                     <div class="hongo-blog-post-meta blog-date-author alt-font<?php echo esc_attr( $meta_text_transform ); ?>">
@@ -727,7 +727,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                 <div class="blog-image-vertical-middle cover-background" style="background-image:url( <?php echo get_the_post_thumbnail_url( get_the_ID(), $srcset, $img_attr ); ?> )"></div>
                             </div>
                         <?php } ?>
-                        <div class="blog-text col-md-12">
+                        <div class="blog-text col-lg-12">
                             <div class="content">
                                 <div class="hongo-overlay-image-content-wrap">
                                     <?php if ( $show_category == 1 && $post_category ) { ?>
@@ -886,7 +886,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                     $author_date_array[] = $author_image.'<span class="hongo-blog-post-meta blog-author display-inline-block' . esc_attr( $meta_text_transform ) . '">' . esc_html__( 'By', 'hongo' ) . ' <span class="author vcard"><a href="' . esc_url( $author_url ) . '" class="url fn n">' . esc_html( get_the_author() ) . '</a></span></span>';
                 }
 
-                echo  '<div class="blog-single-post blog-post col-md-12 col-sm-12 col-xs-12 blog-style9-'.esc_attr( $blog_style ).esc_attr( $hongo_animation_archive ).'"'.$hongo_animation_delay_attr.'>';// @codingStandardsIgnoreLine
+                echo  '<div class="blog-single-post blog-post col-lg-12 col-md-12 col-12 blog-style9-'.esc_attr( $blog_style ).esc_attr( $hongo_animation_archive ).'"'.$hongo_animation_delay_attr.'>';// @codingStandardsIgnoreLine
                     $post_format = get_post_format( get_the_ID() );
                 ?>
                     <div <?php echo sprintf( '%s', $hongo_post_classes ); ?>>

@@ -229,20 +229,20 @@ if ( ! function_exists( 'hongo_product_shortcode' ) ) {
         // Column Class
         switch ( $hongo_category_column ) {
             case 'column-1':
-                $column_classes .= ' class="col-md-12 col-sm-12 col-xs-12'.$hongo_animation_style.'"';
+                $column_classes .= ' class="col-lg-12 col-md-12 col-12'.$hongo_animation_style.'"';
             break;
             case 'column-2':
                 $classes[] = 'col-2-nth';
-                $column_classes .= ' class="col-md-6 col-sm-6 col-xs-12'.$hongo_animation_style.'"';
+                $column_classes .= ' class="col-lg-6 col-md-6 col-12'.$hongo_animation_style.'"';
             break;
             case 'column-3':
                 $classes[] = 'col-3-nth ';
-                $column_classes .= ' class="col-md-4 col-sm-6 col-xs-12'.$hongo_animation_style.'"';
+                $column_classes .= ' class="col-lg-4 col-md-6 col-12'.$hongo_animation_style.'"';
             break;
             case 'column-4':
             default:
                 $classes[] = 'col-4-nth';
-                $column_classes .= ' class="col-md-3 col-sm-6 col-xs-12'.$hongo_animation_style.'"';
+                $column_classes .= ' class="col-lg-3 col-md-6 col-12'.$hongo_animation_style.'"';
             break;
             case 'column-5':
                 $classes[] = 'col-5-nth';
@@ -250,7 +250,7 @@ if ( ! function_exists( 'hongo_product_shortcode' ) ) {
             break;
             case 'column-6':
                 $classes[] = 'col-6-nth';
-                $column_classes .= ' class="col-md-2 col-sm-6 col-xs-12'.$hongo_animation_style.'"';
+                $column_classes .= ' class="col-lg-2 col-md-6 col-12'.$hongo_animation_style.'"';
             break;
         }
 

@@ -16,7 +16,7 @@ if ( $hongo_author_decription ) {
 	$hongo_author_box_button_title = get_theme_mod( 'hongo_author_box_button_title', esc_html__( 'All author posts', 'hongo' ) );
 	/* Start Author Info. */
 ?>
-	<div class="col-md-12 col-sm-12 col-xs-12 hongo-author-box-wrap">
+	<div class="col-lg-12 col-md-12 col-12 hongo-author-box-wrap">
 		<div class="display-table width-100 hongo-author-box">
 			<div class="display-table-cell vertical-align-top xs-display-block xs-text-center">
 				<a class="comment-avtar" href="<?php echo esc_url( $author_url ); ?>">

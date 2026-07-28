@@ -41,7 +41,7 @@ if ( $cross_sells ) :
 	do_action( 'hongo_single_product_cross_sells_before', $hongo_single_product_enable_cross_sells_slider, $hongo_get_product_archive_list_style );
 ?>
 
-	<div class="col-sm-12 col-xs-12 cross-sells">
+	<div class="col-md-12 col-12 cross-sells">
 	<?php 
 		$hongo_single_product_cross_sells_title = get_theme_mod( 'hongo_single_product_cross_sells_title', __( 'You may be interested in&hellip;', 'hongo' ) );
 

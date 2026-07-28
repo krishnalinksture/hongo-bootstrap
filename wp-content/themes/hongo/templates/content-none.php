@@ -9,7 +9,7 @@
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 ?>
-	<div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+	<div class="col-lg-12 col-md-12 col-12 no-padding">
 		<div class="alert alert-warning fade in" role="alert">
 			<i class="fa-solid fa-question-circle alert-warning"></i>
 			<?php if ( is_search() ) : ?>

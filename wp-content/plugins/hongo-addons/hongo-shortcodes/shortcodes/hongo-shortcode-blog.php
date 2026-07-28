@@ -136,23 +136,23 @@ if ( ! function_exists( 'hongo_blog_shortcode' ) ) {
 
         switch( $hongo_blog_column ) {
             case '1':
-                $class_column .= ' col-md-12 col-sm-12 col-xs-12';
+                $class_column .= ' col-lg-12 col-md-12 col-12';
             break;
             case '2':
-                $class_column .= ' col-lg-6 col-md-6 col-sm-6 col-xs-12';
+                $class_column .= ' col-xl-6 col-lg-6 col-md-6 col-12';
             break;
             case '3':
             default:
-                $class_column .= ' col-lg-4 col-md-6 col-sm-6 col-xs-12';
+                $class_column .= ' col-xl-4 col-lg-6 col-md-6 col-12';
             break;
             case '4':
-                $class_column .= ' col-lg-3 col-md-4 col-sm-6 col-xs-12';
+                $class_column .= ' col-xl-3 col-lg-4 col-md-6 col-12';
                 break;
             case '5':
                 $class_column .= ' vc_col-lg-1/5 col-md-4 col-sm-6 col-xs-12';
                 break;
             case '6':
-                $class_column .= ' col-lg-2 col-md-4 col-sm-6 col-xs-12';
+                $class_column .= ' col-xl-2 col-lg-4 col-md-6 col-12';
             break;
         }
 
@@ -380,7 +380,7 @@ if ( ! function_exists( 'hongo_blog_shortcode' ) ) {
                                 $output .= '<div class="equalize sm-equalize-auto width-100">';
                                     if ( ! post_password_required() && $hongo_show_post_thumbnail == 1 && has_post_thumbnail() ) {
                                         $flag = 1;
-                                        $output .= '<div class="blog-image col-md-5">';
+                                        $output .= '<div class="blog-image col-lg-5">';
                                             $output .=  '<a href="'.get_permalink().'">';
                                                 $output .= get_the_post_thumbnail( get_the_ID(), $hongo_image_srcset, $img_attr );
                                                 if ( $hongo_show_post_thumbnail_icon == '1' ) {
@@ -405,9 +405,9 @@ if ( ! function_exists( 'hongo_blog_shortcode' ) ) {
                                     }
                                     // Content Area
                                     if ( $flag == 0 ) {
-                                        $output .= '<div class="blog-text col-md-12">';
+                                        $output .= '<div class="blog-text col-lg-12">';
                                     } else {
-                                        $output .= '<div class="blog-text col-md-7">';
+                                        $output .= '<div class="blog-text col-lg-7">';
                                     }
                                         $output .= '<div class="display-table height-100">';
                                             $output .= '<div class="content display-table-cell vertical-align-middle">';
@@ -538,7 +538,7 @@ if ( ! function_exists( 'hongo_blog_shortcode' ) ) {
                                     $output .= '</div>';
                                 }
 
-                                $output .= '<div class="blog-text col-md-12">';
+                                $output .= '<div class="blog-text col-lg-12">';
                                     $output .= '<div class="content">';
 
                                         if ( $hongo_show_post_title == 1 ) {
@@ -648,7 +648,7 @@ if ( ! function_exists( 'hongo_blog_shortcode' ) ) {
                                     $output .= '</div>';
                                 }
 
-                                $output .= '<div class="blog-text col-md-12">';
+                                $output .= '<div class="blog-text col-lg-12">';
                                     $output .= '<div class="content">';
                                         if ( $hongo_show_category == 1 && $post_category ) {
                                             $output .= '<div class="hongo-blog-post-category alt-font">'.$post_category.'</div>';
@@ -777,7 +777,7 @@ if ( ! function_exists( 'hongo_blog_shortcode' ) ) {
                                     $output .= '</div>';
                                 }
 
-                                $output .= '<div class="blog-text col-md-12">';
+                                $output .= '<div class="blog-text col-lg-12">';
                                     $output .= '<div class="content">';
                                         if ( $hongo_show_category == 1 && $post_category ) {
                                             $output .= '<div class="hongo-blog-post-category alt-font">'.$post_category.'</div>';
@@ -876,7 +876,7 @@ if ( ! function_exists( 'hongo_blog_shortcode' ) ) {
                                     $output .= '</div>';
                                 }
 
-                                $output .= '<div class="blog-text col-md-12">';
+                                $output .= '<div class="blog-text col-lg-12">';
                                     $output .= '<div class="content">';
                                         if ( $hongo_show_post_thumbnail_icon == '1' ) {
                                             $blog_lightbox_gallery = get_post_meta( get_the_ID(), '_hongo_lightbox_image_single', true);
@@ -1050,7 +1050,7 @@ if ( ! function_exists( 'hongo_blog_shortcode' ) ) {
                                     $output .= '</div>';
                                 }
 
-                                $output .= '<div class="blog-text col-md-12">';
+                                $output .= '<div class="blog-text col-lg-12">';
                                     $output .= '<div class="content">';
                                         
                                         if ( ! empty( $author_date_array ) ) {
@@ -1224,7 +1224,7 @@ if ( ! function_exists( 'hongo_blog_shortcode' ) ) {
                                         $output .= '<div class="blog-image-vertical-middle cover-background" style="background-image:url( '.get_the_post_thumbnail_url( get_the_ID(), $hongo_image_srcset, $img_attr ).' )"></div>';
                                     $output .= '</div>';
                                 }
-                                $output .= '<div class="blog-text col-md-12">';
+                                $output .= '<div class="blog-text col-lg-12">';
                                     $output .= '<div class="content">';
                                         $output .= '<div class="hongo-overlay-image-content-wrap">';
                                             if ( ! empty( $category_date_array ) ) {
@@ -1462,7 +1462,7 @@ if ( ! function_exists( 'hongo_blog_shortcode' ) ) {
                             }
                             $author_date_array[] = $author_image.'<span class="hongo-blog-post-meta blog-author display-inline-block'.$font_setting_class_meta.'">'.esc_html__( 'By', 'hongo-addons' ).' <span class="author vcard"><a href="'.get_author_posts_url( get_the_author_meta( 'ID' ) ).'" class="url fn n'.$font_setting_class_meta.'">'.get_the_author().'</a></span></span>';
                         }
-                        $output .= '<div class="blog-post col-md-12 col-sm-12 col-xs-12 blog-style9-'.$hongo_blog_style9.esc_attr( $hongo_animation_style ).esc_attr( $hongo_post_classes_infinite_scroll ).esc_attr( $filter_class ).'"'.$hongo_animation_delay_attr.$hongo_animation_duration_attr.'>';
+                        $output .= '<div class="blog-post col-lg-12 col-md-12 col-12 blog-style9-'.$hongo_blog_style9.esc_attr( $hongo_animation_style ).esc_attr( $hongo_post_classes_infinite_scroll ).esc_attr( $filter_class ).'"'.$hongo_animation_delay_attr.$hongo_animation_duration_attr.'>';
                             $output .= '<div '.$hongo_post_classes.'>';
                                 if ( !post_password_required() ) {
                                     if ( $hongo_show_post_thumbnail == 1 ) {

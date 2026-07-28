@@ -30,7 +30,7 @@ get_header();
 	$blog_pagination_style = get_theme_mod( 'hongo_blog_pagination_style_default', 'number-pagination' );
 	$show_pagination	   = get_theme_mod( 'hongo_show_pagination_default', '1' );
 
-	$no_sidebar_column_class = ' col-md-12 col-sm-12 col-xs-12';
+	$no_sidebar_column_class = ' col-lg-12 col-md-12 col-12';
 
 	/* Check default type */
 	$hongo_general_default_type_gutter = ( $blog_gutter ) ? ' blog-post-gutter '.$blog_gutter : '';
@@ -45,23 +45,23 @@ get_header();
 
 						switch ( $blog_column ) {
 							case '1':
-								$class_column .= ' col-md-12 col-sm-12 col-xs-12';
+								$class_column .= ' col-lg-12 col-md-12 col-12';
 								break;
 							case '2':
-								$class_column .= ' col-lg-6 col-md-6 col-sm-6 col-xs-12';
+								$class_column .= ' col-xl-6 col-lg-6 col-md-6 col-12';
 								break;
 							case '3':
 							default:
-								$class_column .= ' col-lg-4 col-md-6 col-sm-6 col-xs-12';
+								$class_column .= ' col-xl-4 col-lg-6 col-md-6 col-12';
 								break;
 							case '4':
-								$class_column .= ( $blog_style != 'blog-modern' ) ? ' col-lg-3 col-md-4 col-sm-6 col-xs-12' : ' col-lg-3 col-sm-6 col-xs-12';
+								$class_column .= ( $blog_style != 'blog-modern' ) ? ' col-xl-3 col-lg-4 col-md-6 col-12' : ' col-xl-3 col-md-6 col-12';
 								break;
 							case '5':
 								$class_column .= ' vc_col-lg-1/5 col-md-4 col-sm-6 col-xs-12';
 								break;
 							case '6':
-								$class_column .= ' col-lg-2 col-md-4 col-sm-6 col-xs-12';
+								$class_column .= ' col-xl-2 col-lg-4 col-md-6 col-12';
 								break;
 						}
 
@@ -70,7 +70,7 @@ get_header();
 							get_template_part( 'templates/index/hongo-blog', 'sticky' );
 						}
 					?>
-					<div class="hongo-blog-styles col-md-12 col-sm-12 col-xs-12 hongo-default-post-description<?php echo esc_attr( ' hongo-' . $blog_style ); ?>">
+					<div class="hongo-blog-styles col-lg-12 col-md-12 col-12 hongo-default-post-description<?php echo esc_attr( ' hongo-' . $blog_style ); ?>">
 						<?php
 							// Infinite scroll
 							if ( $show_pagination == 1 ) {

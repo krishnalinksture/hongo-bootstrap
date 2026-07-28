@@ -72,21 +72,21 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			/* if WooCommerce plugin is activated */
 			$hongo_page_class = ( hongo_is_woocommerce_activated() && is_account_page() ) ? ' hongo-my-account-full' : '';
 			?>
-				<div class="col-md-12 col-sm-12 col-xs-12 hongo-content-full-part<?php echo esc_attr( $hongo_page_class ); ?>">
+				<div class="col-lg-12 col-md-12 col-12 hongo-content-full-part<?php echo esc_attr( $hongo_page_class ); ?>">
 		    <?php
 			break;
 		case 'hongo_layout_left_sidebar':
 			/* if WooCommerce plugin is activated */
 			$hongo_page_class = ( hongo_is_woocommerce_activated() && is_account_page() ) ? ' pull-right' : ' pull-right hongo-page-content-area';
 			?>
-				<div class="col-md-9 col-sm-8 col-xs-12 hongo-content-right-part<?php echo esc_attr( $hongo_page_class ); ?>">
+				<div class="col-lg-9 col-md-8 col-12 hongo-content-right-part<?php echo esc_attr( $hongo_page_class ); ?>">
 		    <?php
 			break;
 		case 'hongo_layout_right_sidebar':
 			/* if WooCommerce plugin is activated */
 			$hongo_page_class = ( hongo_is_woocommerce_activated() && is_account_page() ) ? '' : ' hongo-page-content-area';
 			?>
-				<div class="col-md-9 col-sm-8 col-xs-12 hongo-content-left-part<?php echo esc_attr( $hongo_page_class ); ?>">
+				<div class="col-lg-9 col-md-8 col-12 hongo-content-left-part<?php echo esc_attr( $hongo_page_class ); ?>">
 		    <?php
 			break;
 		case 'hongo_layout_both_sidebar':
@@ -94,7 +94,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			$hongo_page_class 		= ( hongo_is_woocommerce_activated() && is_account_page() ) ? ' both-content-center' : ' both-content-center hongo-page-content-area';
 			?>
 				<div class="both-sidebar-wrap">
-		        	<div class="col-md-6 col-sm-12 col-xs-12 hongo-content-center-part<?php echo esc_attr( $hongo_page_class ); ?>">
+		        	<div class="col-lg-6 col-md-12 col-12 hongo-content-center-part<?php echo esc_attr( $hongo_page_class ); ?>">
 		    <?php
 	    	break;
 	}

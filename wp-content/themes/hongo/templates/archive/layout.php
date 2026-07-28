@@ -24,7 +24,7 @@ if( $hongo_show_description_archive == '1' && get_the_archive_description() ) {
 	<section class="no-padding-bottom">
 		<div class="<?php echo esc_attr( $hongo_post_container_style_archive ); ?>">
 			<div class="row">
-				<div class="col-sm-12 col-xs-12">
+				<div class="col-md-12 col-12">
 					<?php the_archive_description(); ?>
 				</div>
 			</div>
@@ -41,27 +41,27 @@ if( $hongo_show_description_archive == '1' && get_the_archive_description() ) {
 
 						switch( $blog_column ) {
 							case '1':
-								$class_column .= ' col-md-12 col-sm-12 col-xs-12';
+								$class_column .= ' col-lg-12 col-md-12 col-12';
 								break;
 							case '2':
-								$class_column .= ' col-lg-6 col-md-6 col-sm-6 col-xs-12';
+								$class_column .= ' col-xl-6 col-lg-6 col-md-6 col-12';
 								break;
 							case '3':
 							default:
-								$class_column .= ' col-lg-4 col-md-6 col-sm-6 col-xs-12';
+								$class_column .= ' col-xl-4 col-lg-6 col-md-6 col-12';
 								break;
 							case '4':
-								$class_column .= ( $blog_style != 'blog-modern' ) ? ' col-lg-3 col-md-4 col-sm-6 col-xs-12' : ' col-lg-3 col-sm-6 col-xs-12';
+								$class_column .= ( $blog_style != 'blog-modern' ) ? ' col-xl-3 col-lg-4 col-md-6 col-12' : ' col-xl-3 col-md-6 col-12';
 								break;
 							case '5':
 								$class_column .= ' vc_col-lg-1/5 col-md-4 col-sm-6 col-xs-12';
 								break;
 							case '6':
-								$class_column .= ' col-lg-2 col-md-4 col-sm-6 col-xs-12';
+								$class_column .= ' col-xl-2 col-lg-4 col-md-6 col-12';
 								break;
 						}
 					?>
-					<div class="hongo-blog-styles col-md-12 col-sm-12 col-xs-12 blog-style-archive-1 hongo-blog-pages hongo-<?php echo esc_attr( $blog_style ); ?>">
+					<div class="hongo-blog-styles col-lg-12 col-md-12 col-12 blog-style-archive-1 hongo-blog-pages hongo-<?php echo esc_attr( $blog_style ); ?>">
 						<?php
 							// Infinite scroll
 							if( $show_pagination == 1 ) {

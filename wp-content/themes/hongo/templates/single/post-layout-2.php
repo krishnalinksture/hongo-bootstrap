@@ -35,7 +35,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 					
 					if( ! empty( $hongo_post_meta_array ) ) {
 				?>
-						<div class="col-sm-12 col-md-12 col-xs-12 blog-details-title-meta">
+						<div class="col-md-12 col-lg-12 col-12 blog-details-title-meta">
 							<div class="hongo-post-details-meta-wrap">
 								<ul class="hongo-post-details-meta">
 									<?php echo implode( "<span class='post-details-separator'>|</span>", $hongo_post_meta_array ); ?>
@@ -52,25 +52,25 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                             <?php
 						} elseif( $post_format == 'gallery' ) {
                             ?>
-                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-lg-12 col-md-12 col-12">
 								    <?php echo get_template_part( 'loop/single/loop', 'gallery' ); ?>
 							    </div>
                             <?php
 						} elseif( $post_format == 'video' ) {
                             ?>
-                                <div class="col-md-12 col-sm-12 col-xs-12">';
+                                <div class="col-lg-12 col-md-12 col-12">';
 								    <?php echo get_template_part( 'loop/single/loop', 'video' ); ?>
                                 </div>
                             <?php
 						} elseif( $post_format == 'quote' ) {
                             ?>
-                                <div class="col-md-12 col-sm-12 col-xs-12">';
+                                <div class="col-lg-12 col-md-12 col-12">';
 								    <?php echo get_template_part( 'loop/single/loop', 'quote' ); ?>
                                 </div>
                             <?php
 						} elseif( $post_format == 'audio' ) {
                             ?>
-                                <div class="col-md-12 col-sm-12 col-xs-12">';
+                                <div class="col-lg-12 col-md-12 col-12">';
 								    <?php echo get_template_part( 'loop/single/loop', 'audio' ); ?>
                                 </div>
                             <?php
@@ -82,7 +82,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 					}
 					// Show Post Content
 				?>
-					<div class="col-md-12 col-sm-12 col-xs-12 blog-details-text entry-content">
+					<div class="col-lg-12 col-md-12 col-12 blog-details-text entry-content">
 						<?php the_content(); ?>
 					</div>
 					<?php
@@ -113,14 +113,14 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 								$tags_list = get_the_tag_list();
 								
 								if ( $tags_list ) {
-									printf( '<div class="col-md-7 col-sm-6 col-xs-12 xs-text-center tagcloud">%1$s</div>',
+									printf( '<div class="col-lg-7 col-md-6 col-12 xs-text-center tagcloud">%1$s</div>',
 										$tags_list
 									);
 								}
 							}
 						}
 					?>
-					<div class="col-md-5 col-sm-6 col-xs-12 xs-text-center hongo-post-detail-icon alt-font pull-right">
+					<div class="col-lg-5 col-md-6 col-12 xs-text-center hongo-post-detail-icon alt-font pull-right">
 						<?php
 							if( $hongo_enable_share == 1 && function_exists( 'hongo_single_post_share_shortcode' ) ) {
 								echo do_shortcode( "[hongo_single_post_share]" );
@@ -135,7 +135,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 						</div>
 					</div>
 					<?php if( $hongo_enable_navigation_link ) { // Next Previous Navigation Post Link ?>
-						<div class="col-md-12 col-sm-12 col-xs-12 navigation-link-wrap">
+						<div class="col-lg-12 col-md-12 col-12 navigation-link-wrap">
 							<?php hongo_single_post_navigation(); ?>
 						</div>
 					<?php } ?>
@@ -152,7 +152,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 		<section class="wow fadeIn bg-very-light-gray hongo-related-posts-background">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 col-sm-12 col-xs-12 hongo-related-posts hongo-blog-grid hongo-blog-styles">
+					<div class="col-lg-12 col-md-12 col-12 hongo-related-posts hongo-blog-grid hongo-blog-styles">
 						<?php hongo_related_posts( get_the_ID() ); ?>
 					</div>
 				</div>

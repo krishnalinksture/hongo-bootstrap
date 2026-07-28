@@ -78,7 +78,7 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
 <div class="hongo-main-content-wrap page type-page status-publish hentry default-page-space">
 	<div class="container hongo_layout_no_sidebar_single">
 		<div class="row">
-			<div class="col-md-12 col-sm-12 col-xs-12 hongo-content-full-part">
+			<div class="col-lg-12 col-md-12 col-12 hongo-content-full-part">
 
 <?php } ?>
 				<div class="dokan-dashboard-wrap">

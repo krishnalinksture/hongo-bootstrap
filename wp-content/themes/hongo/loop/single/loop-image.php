@@ -14,7 +14,7 @@
 	if( $hongo_blog_image == 1 ) {
 		if ( has_post_thumbnail() ) {
 ?>
-			<div class="col-md-12 col-sm-12 col-xs-12">
+			<div class="col-lg-12 col-md-12 col-12">
 				<div class="blog-image">
         			<?php the_post_thumbnail( 'full' ); ?>
         		</div>
