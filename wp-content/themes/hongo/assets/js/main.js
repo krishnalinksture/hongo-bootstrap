@@ -1406,7 +1406,7 @@
         } );
 
         /* Refresh Isotope, Swiper On change tab event */
-        $( '.nav-tabs a[data-toggle="tab"]' ).each( function () {
+        $( '.nav-tabs a[data-bs-toggle="tab"]' ).each( function () {
             var $this = $(this);
             $this.on('shown.bs.tab', function () {
 
@@ -2906,8 +2906,15 @@
     }
 
     // .mini-header-main-wrapper .wp-nav-menu-responsive-button, 
-    $( document ).on( 'click', '.navbar .navbar-collapse a.dropdown-toggle, .accordion-style-1 .panel-heading a, .accordion-style-2 .panel-heading a, .accordion-style-3 .panel-heading a, .toggles .panel-heading a, .toggle-style-1 .panel-heading a, .nav-tabs a[data-toggle="tab"], a.shopping-cart, .hongo-top-shop-filter, .hongo-tabs li a, .popup-modal-dismiss, .size-guide-link, .sl-button, .hongo-view-switch a, .hongo-column-switch a, .hongo-accordion-section-title, .woocommerce-review-link', function (e) {
+    $( document ).on( 'click', '.navbar .navbar-collapse a.dropdown-toggle, .accordion-style-1 .panel-heading a, .accordion-style-2 .panel-heading a, .accordion-style-3 .panel-heading a, .toggles .panel-heading a, .toggle-style-1 .panel-heading a, .nav-tabs a[data-bs-toggle="tab"], a.shopping-cart, .hongo-top-shop-filter, .hongo-tabs li a, .popup-modal-dismiss, .size-guide-link, .sl-button, .hongo-view-switch a, .hongo-column-switch a, .hongo-accordion-section-title, .woocommerce-review-link', function (e) {
         e.preventDefault();
+    });
+
+    $(document).on('click', '.panel-heading a[data-bs-toggle="collapse"]', function () {
+        var target = $(this).attr('href');
+        $('.panel-collapse.show').not(target).collapse('hide');
+        $('.panel-heading a').addClass('collapsed').attr('aria-expanded', 'false');
+        $(this).removeClass('collapsed').attr('aria-expanded', 'true');
     });
 
     /* Window scroll event start code */    
@@ -2946,7 +2953,7 @@
         });
 
         // Tab work with eualize height
-        $('a[data-toggle="tab"]').on('shown.bs.tab', function () {
+        $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function () {
             equalizeHeight();
             return false;
         });

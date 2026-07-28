@@ -123,7 +123,7 @@ if ( ! function_exists( 'hongo_accordion_shortcode' ) ) {
 
                         // Active class & accodian class
                         $active = ( $hongo_accordion_active == '1' ) ? ' active-accordion' : '';
-                        $accordion_class = ( $hongo_accordion_active == '1' ) ? ' in' : '';
+                        $accordion_class = ( $hongo_accordion_active == '1' ) ? ' show' : '';
                         
                         if ( $hongo_accordion_style != 'accordion-style-1' ) {
                             $icon_class = ( $hongo_accordion_active == '1' ) ? 'ti-minus' : 'ti-plus';
@@ -139,7 +139,7 @@ if ( ! function_exists( 'hongo_accordion_shortcode' ) ) {
                                 
     	                            $output .= '<div class="panel">';
     	                                $output .= '<div class="panel-heading'. esc_attr( $active ) .'">';
-    	                                    $output .= '<a data-toggle="collapse" data-parent="#'.$hongo_accordion_id.'" href="#accordion-one-link-'.$hongo_accordian_tab.'">';
+    	                                    $output .= '<a data-bs-toggle="collapse" data-bs-parent="#'.$hongo_accordion_id.'" href="#accordion-one-link-'.$hongo_accordian_tab.'">';
     	                                        $output .= '<div class="panel-title'. esc_attr( $font_setting_class_title ) .'">'. $hongo_accordion_title;
     	                                            $output .= '<span class="pull-right"><i class="'. esc_attr( $icon_class ) .'"></i></span>';
     	                                        $output .= '</div>';
@@ -179,7 +179,7 @@ if ( ! function_exists( 'hongo_accordion_shortcode' ) ) {
 
     	                            $output .= '<div class="panel panel-default">';
     	                                $output .= '<div class="panel-heading'. esc_attr( $active ) .'" >';
-    	                                    $output .= '<a class="accordion-toggle" data-toggle="collapse" data-parent="#'.$hongo_accordion_id.'" href="#accordion-one-link-'. esc_attr( $hongo_accordian_tab ) .'">';
+    	                                    $output .= '<a class="accordion-toggle" data-bs-toggle="collapse" data-bs-parent="#'.$hongo_accordion_id.'" href="#accordion-one-link-'. esc_attr( $hongo_accordian_tab ) .'">';
     	                                        $output .= '<div class="panel-title'. esc_attr( $font_setting_class_title ) .'">';
     	                                            $output .= '<span class="accordion-title'. esc_attr( $font_setting_class_title ) .'">'.$hongo_accordion_title.'</span>';
     	                                                $output .= '<span class="pull-right"><i class="'. esc_attr( $icon_class ).'"></i></span>';
@@ -220,7 +220,7 @@ if ( ! function_exists( 'hongo_accordion_shortcode' ) ) {
                                     
     	                            $output .= '<div class="panel">';
     	                                $output .= '<div class="panel-heading'. esc_attr( $active ) .'">';
-    	                                    $output .= '<a data-toggle="collapse" data-parent="#'. esc_attr( $hongo_accordion_id ) .'" href="#accordion-one-link-'. esc_attr( $hongo_accordian_tab ) .'">';
+    	                                    $output .= '<a data-bs-toggle="collapse" data-bs-parent="#'. esc_attr( $hongo_accordion_id ) .'" href="#accordion-one-link-'. esc_attr( $hongo_accordian_tab ) .'">';
     	                                        $output .= '<div class="panel-title'. esc_attr( $font_setting_class_title ).'">'. $hongo_accordion_title;
     	                                            $output .= '<span class="pull-right"><i class="'. esc_attr( $icon_class ).'"></i></span>';
     	                                        $output .= '</div>';
@@ -265,7 +265,7 @@ if ( ! function_exists( 'hongo_accordion_shortcode' ) ) {
 
                                     $output .= '<div class="panel panel-default">';
                                         $output .= '<div class="panel-heading'. esc_attr( $active ).'" >';
-                                            $output .= '<a class="accordion-toggle" data-toggle="collapse" data-parent="#'. esc_attr( $hongo_accordion_id ) .'" href="#accordion-one-link-'. esc_attr( $hongo_accordian_tab ) .'">';                                            
+                                            $output .= '<a class="accordion-toggle" data-bs-toggle="collapse" data-bs-parent="#'. esc_attr( $hongo_accordion_id ) .'" href="#accordion-one-link-'. esc_attr( $hongo_accordian_tab ) .'" >';                                            
                                                 $output .= '<div class="panel-title'. esc_attr( $font_setting_class_title ) .'">'. $hongo_accordion_title;
                                                     $output .= '<span class="pull-right"><i class="'. esc_attr( $icon_class ).'"></i></span>';
                                                 $output .= '</div>';
@@ -305,7 +305,7 @@ if ( ! function_exists( 'hongo_accordion_shortcode' ) ) {
                                     
     	                            $output .= '<div class="panel panel-default">';
     	                                $output .= '<div role="tablist" id="toggles-'. esc_attr( $hongo_accordian_tab ).'" class="panel-heading'.esc_attr( $active ).'">';
-    	                                    $output .= '<a data-toggle="collapse" href="#toggles-'. esc_attr( $hongo_accordian_tab ) .'Link">';
+    	                                    $output .= '<a data-bs-toggle="collapse" href="#toggles-'. esc_attr( $hongo_accordian_tab ) .'Link">';
     	                                        $output .= '<div class="panel-title'. esc_attr( $font_setting_class_title ) .'">'.$hongo_accordion_title.'<span class="pull-right"><i class="'. esc_attr( $icon_class ) .'"></i></span>';
     	                                        $output .= '</div>';
     	                                    $output .= '</a>';
