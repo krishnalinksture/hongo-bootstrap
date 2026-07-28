@@ -20,10 +20,10 @@ echo '<section class="hongo-main-title-wrap bg-very-light-gray' . esc_attr( $hon
 	?>
 		<div class="<?php echo esc_attr( $container_style ); ?>">
 			<div class="row">
-				<div class="col-md-12 col-sm-12 col-xs-12 center-col display-table page-title-large<?php echo esc_attr( $content_height_class ); ?>">
+				<div class="col-lg-12 col-md-12 col-12 center-col display-table page-title-large<?php echo esc_attr( $content_height_class ); ?>">
 					<div class="display-table-cell vertical-align-middle<?php echo esc_attr( $alignment_class ); ?>">
 						<?php if( $hongo_enable_breadcrumb == 1 && $hongo_breadcrumb_position == 'title-area' ) { ?>
-							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 display-table no-padding-lr">
+							<div class="col-xl-12 col-lg-12 col-md-12 col-12 display-table no-padding-lr">
 								<div class="display-table-cell vertical-align-middle breadcrumb alt-font">
 									<ul class="hongo-main-title-breadcrumb<?php echo esc_attr( $hongo_title_class ); ?>-breadcrumb"<?php echo sprintf( '%s', $hongo_breadcumbre_attribute ); ?>>
 										<?php echo hongo_breadcrumb_display(); ?>
@@ -69,7 +69,7 @@ echo '<section class="hongo-main-title-wrap bg-very-light-gray' . esc_attr( $hon
 	<section class="padding-20px-tb border-bottom border-color-extra-light-gray hongo-main-breadcrumb<?php echo esc_attr( $hongo_breadcrumb_class ); ?>">
 		<div class="<?php echo esc_attr( $container_style ); ?>">
 			<div class="row">
-				<div class="col-md-12 display-table">
+				<div class="col-lg-12 display-table">
 					<div class="display-table-cell vertical-align-middle<?php echo esc_attr( $breadcrumb_class ); ?>">
 						<div class="breadcrumb alt-font text-small no-margin-bottom">
 							<ul class="hongo-main-title-breadcrumb<?php echo esc_attr( $hongo_title_class ); ?>-breadcrumb"<?php echo sprintf( '%s', $hongo_breadcumbre_attribute ); ?>>
@@ -86,7 +86,7 @@ echo '<section class="hongo-main-title-wrap bg-very-light-gray' . esc_attr( $hon
 	<section class="single-post-meta-wrap">
 		<div class="<?php echo esc_attr( $container_style ); ?>">
 			<div class="row">
-				<div class="col-md-12 display-table">
+				<div class="col-lg-12 display-table">
 					<div class="hongo-single-post-meta vertical-align-middle alt-font display-block">
 						<?php echo sprintf( '%s', $hongo_single_post_meta_output ); ?>
 					</div>
