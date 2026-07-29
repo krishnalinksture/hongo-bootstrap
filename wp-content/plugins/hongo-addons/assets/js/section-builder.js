@@ -455,9 +455,9 @@
 
                 $( '.hongo-navigation-main-wrapper .navbar-toggle' ).addClass( 'collapsed' );
             }
-            if( $( '.hongo-navigation-main-wrapper .navbar-collapse.collapse' ).hasClass( 'show' ) ) {
+            if( $( '.hongo-navigation-main-wrapper .navbar-collapse.collapse' ).hasClass( 'in' ) ) {
 
-                $( '.hongo-navigation-main-wrapper .navbar-collapse.collapse' ).removeClass( 'show' );
+                $( '.hongo-navigation-main-wrapper .navbar-collapse.collapse' ).removeClass( 'in' );
             }
             $( '.hongo-navigation-main-wrapper button.toggle-mobile' ).removeClass( 'active' );
         }
