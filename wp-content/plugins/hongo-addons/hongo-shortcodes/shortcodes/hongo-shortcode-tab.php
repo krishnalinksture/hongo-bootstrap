@@ -76,11 +76,11 @@ if ( ! function_exists( 'hongo_tabs' ) ) {
                 }
                 // Active Background Color
                 if ( $hongo_title_active_bg_color ) {
-                    $hongo_featured_array[] = '.tab-style-2-'.$hongo_tabs_style2.' .nav-tabs li.active a { background: '.$hongo_title_active_bg_color.' }';
+                    $hongo_featured_array[] = '.tab-style-2-'.$hongo_tabs_style2.' .nav-tabs li.active a, .tab-style-2-'.$hongo_tabs_style2.' .nav-tabs li a.active { background: '.$hongo_title_active_bg_color.' }';
                 }
                 // Active Title Color
                 if ( $hongo_title_active_color ) {
-                    $hongo_featured_array[] = '.tab-style-2-'.$hongo_tabs_style2.' .nav-tabs li.active a span ,.tab-style-2-'.$hongo_tabs_style2.' .nav-tabs li.active a span i{ color: '.$hongo_title_active_color.' }';
+                    $hongo_featured_array[] = '.tab-style-2-'.$hongo_tabs_style2.' .nav-tabs li.active a span ,.tab-style-2-'.$hongo_tabs_style2.' .nav-tabs li.active a span i, .tab-style-2-'.$hongo_tabs_style2.' .nav-tabs li a.active span, .tab-style-2-'.$hongo_tabs_style2.' .nav-tabs li a.active span i{ color: '.$hongo_title_active_color.' }';
                 }
                 // Border color
                 if ( $hongo_border_color ) {
@@ -142,13 +142,13 @@ if ( ! function_exists( 'hongo_tabs' ) ) {
                 $hongo_tabs_style3 = $hongo_tabs_style3 + 1;
                 // Title Active Color
                 if ( $hongo_title_active_color ) {
-                    $hongo_featured_array[] = '.tab-style-3-'.$hongo_tabs_style3.' .nav-tabs li.active { border-bottom-color: '.$hongo_title_active_color.' }';
-                    $hongo_featured_array[] = '.tab-style-3-'.$hongo_tabs_style3.' .nav-tabs li.active a span i,.tab-style-3-'.$hongo_tabs_style3.' .nav-tabs li.active a span{ color: '.$hongo_title_active_color.' }';
+                    $hongo_featured_array[] = '.tab-style-3-'.$hongo_tabs_style3.' .nav-tabs li.active, .tab-style-3-'.$hongo_tabs_style3.' .nav-tabs li a.active { border-bottom-color: '.$hongo_title_active_color.' }';
+                    $hongo_featured_array[] = '.tab-style-3-'.$hongo_tabs_style3.' .nav-tabs li.active a span i,.tab-style-3-'.$hongo_tabs_style3.' .nav-tabs li.active a span, .tab-style-3-'.$hongo_tabs_style3.' .nav-tabs li a.active span i,.tab-style-3-'.$hongo_tabs_style3.' .nav-tabs li a.active span{ color: '.$hongo_title_active_color.' }';
                 }
                 //Icon Color 
                 if ( $hongo_title_color ) {
                     if ( empty($hongo_title_active_color) ) {
-                       $hongo_featured_array[] = '.tab-style-3-'.$hongo_tabs_style3.' .nav-tabs li.active{ border-bottom-color : '.$hongo_title_color.' }';
+                       $hongo_featured_array[] = '.tab-style-3-'.$hongo_tabs_style3.' .nav-tabs li.active, .tab-style-3-'.$hongo_tabs_style3.' .nav-tabs li a.active{ border-bottom-color : '.$hongo_title_color.' }';
                     }
                     $hongo_featured_array[] = '.tab-style-3-'.$hongo_tabs_style3.' .nav-tabs li a i { color: '.$hongo_title_color.' }';
                 }
@@ -200,11 +200,11 @@ if ( ! function_exists( 'hongo_tabs' ) ) {
                 }
                 // Active background color
                 if ( $hongo_title_active_bg_color ) {
-                    $hongo_featured_array[] = '.tab-style-1-'.$hongo_tabs_style1.' .nav-tabs li.active a { background: '.$hongo_title_active_bg_color.' }';
+                    $hongo_featured_array[] = '.tab-style-1-'.$hongo_tabs_style1.' .nav-tabs li.active a, .tab-style-1-'.$hongo_tabs_style1.' .nav-tabs li a.active { background: '.$hongo_title_active_bg_color.' }';
                 }
                 // Active background color
                 if ( $hongo_title_active_color ) {
-                    $hongo_featured_array[] = '.tab-style-1-'.$hongo_tabs_style1.' .nav-tabs li.active a span ,.tab-style-1-'.$hongo_tabs_style1.' .nav-tabs li.active a i { color: '.$hongo_title_active_color.' }';
+                    $hongo_featured_array[] = '.tab-style-1-'.$hongo_tabs_style1.' .nav-tabs li.active a span ,.tab-style-1-'.$hongo_tabs_style1.' .nav-tabs li.active a i, .tab-style-1-'.$hongo_tabs_style1.' .nav-tabs li a.active span, .tab-style-1-'.$hongo_tabs_style1.' .nav-tabs li a.active i { color: '.$hongo_title_active_color.' }';
                 }
                 // Border color
                 if ( $hongo_border_color ) {
@@ -214,7 +214,7 @@ if ( ! function_exists( 'hongo_tabs' ) ) {
                 // Icon color 
                 if ( $hongo_title_color ) {
                     if ( empty($hongo_title_active_color) ) {
-                       $hongo_featured_array[] = '.tab-style-1-'.$hongo_tabs_style1.' .nav-tabs li.active a i{ color : '.$hongo_title_color.' }';
+                       $hongo_featured_array[] = '.tab-style-1-'.$hongo_tabs_style1.' .nav-tabs li.active a i, .tab-style-1-'.$hongo_tabs_style1.' .nav-tabs li a.active i{ color : '.$hongo_title_color.' }';
                     }
                     $hongo_featured_array[] = '.tab-style-1-'.$hongo_tabs_style1.' .nav-tabs li a i { color: '.$hongo_title_color.' }';
                 }
