@@ -208,7 +208,7 @@ if ( ! function_exists( 'hongo_tabs' ) ) {
                 }
                 // Border color
                 if ( $hongo_border_color ) {
-                    $hongo_featured_array[] = '.tab-style-1-'.$hongo_tabs_style1.' .nav-tabs li { border-color: '.$hongo_border_color.' }';
+                    $hongo_featured_array[] = '.tab-style-1-'.$hongo_tabs_style1.' .nav-tabs li, .tab-style-1-'.$hongo_tabs_style1.' .nav-tabs li a { border-color: '.$hongo_border_color.' }';
                     $hongo_featured_array[] = '.tab-style-1-'.$hongo_tabs_style1.' .tab-content { border-top-color: '.$hongo_border_color.' }';
                 }
                 // Icon color 
