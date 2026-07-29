@@ -117,16 +117,20 @@
 
         /* Left menu sticky and accordion */
         if( $( '.hongo-left-menu-wrap' ).length > 0 ) {
-            
-            $( '.hongo-left-menu-wrap .hongo-left-menu-wrapper' ).on( 'show.bs.collapse', function() {
-                
-                 $('header').addClass('left-mobile-menu-open');
+            $('.navbar-toggle').on('click', function () {
+                $(this).toggleClass('active');
 
-            }).on( 'hide.bs.collapse', function() {
-
-                 $('header').removeClass('left-mobile-menu-open');
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('collapsed');
+                    $('.hongo-left-menu-wrapper').addClass('collapse in');
+                    $('header').addClass('left-mobile-menu-open');
+                } else {
+                    $(this).addClass('collapsed');
+                    $('.hongo-left-menu-wrapper').removeClass('in').addClass('collapse');
+                    $('header').removeClass('left-mobile-menu-open');
+                }
             });
-
+                        
             if( $.inArray( 'sticky-kit', hongoMain.disable_scripts ) < 0 ) {
                 $( '.hongo-main-wrap .header-left-wrapper' ).stick_in_parent({
                     recalc : 1
@@ -306,6 +310,7 @@
             }
         });
 
+        
         /* Touchstart click */
         $( document ).on( 'touchstart click', 'body', function (e) {
             if ( $(window).width() <= hongoAddons.menu_breakpoint ) {
