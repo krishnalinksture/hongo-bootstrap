@@ -93,7 +93,7 @@ if ( ! function_exists( 'hongo_left_navigation_menu_shortcode' ) ) {
                 if ( ! empty( $hongo_mobile_menu_text ) ) {
                     $output .= '<span class="navbar-toggle collapsed sr-only mobile-menu-text alt-font" data-bs-toggle="collapse" data-bs-target="#'.$hongo_navigation_left_menu_uniq_class.'">'.$hongo_mobile_menu_text.'</span>';
                 }
-                $output .= '<div id="'.$hongo_navigation_left_menu_uniq_class.'" class="hongo-left-menu-wrapper collapse show" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">';
+                $output .= '<div id="'.$hongo_navigation_left_menu_uniq_class.'" class="hongo-left-menu-wrapper" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">';
                     
                     if( $hongo_menu_select ) {
 
