@@ -97,13 +97,13 @@ if ( ! function_exists( 'hongo_tabs' ) ) {
                         $output .= '<div class="col-lg-2 col-md-3 col-12 no-padding-right">';
                             $output .='<div class="display-table width-100 height-100">';
                                 $output .= '<div class="display-table-cell vertical-align-middle">';
-                                    $output .= '<ul class="nav nav-tabs">';
+                                    $output .= '<ul class="nav nav-tabs" role="tablist">';
                                         foreach( $hongo_global_tabs as $key => $tab) {
                                             $title = ( array_key_exists('title', $tab['atts']) ) ?  $tab['atts']['title'] : '';
                                             $tab_icon = ( isset($tab['atts']['show_icon'] ) == 1 ) && isset( $tab['atts']['tab_icon'] ) ? $tab['atts']['tab_icon'] : '';
-                                            $active = ( ( $key + 1 ) == $active_tab ) ? ' class="active"' : '';
-                                            $output .= '<li '.$active.'>';
-                                                $output .= '<a href="#hongo-'.$tabuniqtab.'-'.$key.'" data-bs-toggle="tab" class="tab-title'.$hongo_font_title_class.'">';
+                                            $active = ( ( $key + 1 ) == $active_tab ) ? ' active' : '';
+                                            $output .= '<li class="nav-item" role="presentation">';
+                                                $output .= '<a href="#hongo-'.$tabuniqtab.'-'.$key.'" data-bs-toggle="tab" class="tab-title'.$hongo_font_title_class.$active.'">';
                                                     if( (isset($tab['atts']['custom_tab_icon']) == 1) && ! empty( $tab['atts']['custom_tab_icon_image'] ) ) {
                                                         $output .= '<span><img src="'.wp_get_attachment_url( $tab['atts']['custom_tab_icon_image'] ).'" alt="' . esc_html__( 'Icon', 'hongo-addons' ) . '" class="tab-icon-image"/></span>';
                                                     } elseif($tab_icon) {
@@ -222,13 +222,13 @@ if ( ! function_exists( 'hongo_tabs' ) ) {
                 $output .= '<div '.$id.' class="'.esc_attr( $hongo_main_class_list ).' tab-style-1-'.$hongo_tabs_style1.'">';
                     $output .= '<div class="row">';
                         $output .= '<div class="col-lg-12 col-md-12">';
-                            $output .= '<ul class="nav nav-tabs'.esc_attr( $tabs_alignment ).'">';
+                            $output .= '<ul class="nav nav-tabs'.esc_attr( $tabs_alignment ).'" role="tablist">';
                                 foreach( $hongo_global_tabs as $key => $tab ) {
                                     $title = ( array_key_exists('title', $tab['atts']) ) ?  $tab['atts']['title'] : '';
                                     $tab_icon   = ( isset( $tab['atts']['show_icon'] ) == 1 ) && isset( $tab['atts']['tab_icon'] ) ? $tab['atts']['tab_icon'] : '';
-                                    $active = ( ( $key + 1 ) == $active_tab ) ? ' class="active"' : '';
-                                    $output .= '<li '.$active.'>';
-                                        $output .= '<a href="#hongo-'.$tabuniqtab.'-'.$key.'" data-bs-toggle="tab" class="tab-title'.$hongo_font_title_class.'">';
+                                    $active = ( ( $key + 1 ) == $active_tab ) ? ' active' : '';
+                                    $output .= '<li class="nav-item" role="presentation">';
+                                        $output .= '<a href="#hongo-'.$tabuniqtab.'-'.$key.'" data-bs-toggle="tab" class="tab-title'.$hongo_font_title_class.$active.'">';
                                             if( $tab_icon ) {
                                                 $output .= '<span><i class="'.esc_attr( $tab_icon ).esc_attr( $hongo_icon_size ).'"></i></span>';
                                             }
