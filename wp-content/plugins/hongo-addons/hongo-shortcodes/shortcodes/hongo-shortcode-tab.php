@@ -103,7 +103,7 @@ if ( ! function_exists( 'hongo_tabs' ) ) {
                                             $tab_icon = ( isset($tab['atts']['show_icon'] ) == 1 ) && isset( $tab['atts']['tab_icon'] ) ? $tab['atts']['tab_icon'] : '';
                                             $active = ( ( $key + 1 ) == $active_tab ) ? ' class="active"' : '';
                                             $output .= '<li '.$active.'>';
-                                                $output .= '<a href="#hongo-'.$tabuniqtab.'-'.$key.'" data-toggle="tab" class="tab-title'.$hongo_font_title_class.'">';
+                                                $output .= '<a href="#hongo-'.$tabuniqtab.'-'.$key.'" data-bs-toggle="tab" class="tab-title'.$hongo_font_title_class.'">';
                                                     if( (isset($tab['atts']['custom_tab_icon']) == 1) && ! empty( $tab['atts']['custom_tab_icon_image'] ) ) {
                                                         $output .= '<span><img src="'.wp_get_attachment_url( $tab['atts']['custom_tab_icon_image'] ).'" alt="' . esc_html__( 'Icon', 'hongo-addons' ) . '" class="tab-icon-image"/></span>';
                                                     } elseif($tab_icon) {
@@ -122,7 +122,7 @@ if ( ! function_exists( 'hongo_tabs' ) ) {
                         $output .=' <div class="col-lg-10 col-md-9 col-12 no-padding-left">';
                             $output .= '<div class="tab-content">';
                                 foreach ( $hongo_global_tabs as $key => $tab ) {
-                                    $active_content = ( ( $key + 1 ) == $active_tab ) ? ' in active' : '';
+                                    $active_content = ( ( $key + 1 ) == $active_tab ) ? ' show active' : '';
                                     $title = ( array_key_exists('title', $tab['atts']) ) ?  $tab['atts']['title'] : '';
                                     $output .= '<div class="tab-pane fade'.esc_attr( $active_content ).'" id="hongo-'.$tabuniqtab.'-'.$key.'">';
                                         $output .= '<div class="inner-match-height">';
@@ -162,7 +162,7 @@ if ( ! function_exists( 'hongo_tabs' ) ) {
                                     $tab_icon  =  ( isset($tab['atts']['show_icon'] ) == 1 ) && isset( $tab['atts']['tab_icon'] ) ? $tab['atts']['tab_icon'] : '';
                                     $active = ( ( $key + 1 ) == $active_tab ) ? ' class="active"' : '';
                                     $output .= '<li '.$active.'>';
-                                        $output .= '<a href="#hongo-'.$tabuniqtab.'-'.$key.'" data-toggle="tab" class="tab-title'.$hongo_font_title_class.'">';
+                                        $output .= '<a href="#hongo-'.$tabuniqtab.'-'.$key.'" data-bs-toggle="tab" class="tab-title'.$hongo_font_title_class.'">';
                                             if( ( isset($tab['atts']['custom_tab_icon'] ) == 1) && ! empty( $tab['atts']['custom_tab_icon_image'] ) ) {
                                               $output .= '<span><img src="'.wp_get_attachment_url( $tab['atts']['custom_tab_icon_image'] ).'" alt="' . esc_html__( 'Icon', 'hongo-addons' ) . '" class="tab-icon-image" class="margin-10px-bottom display-block"/></span>';
                                             } elseif( $tab_icon ) {
@@ -177,7 +177,7 @@ if ( ! function_exists( 'hongo_tabs' ) ) {
                             $output .= '</ul>';
                             $output .= '<div class="tab-content">';
                                 foreach ( $hongo_global_tabs as $key => $tab ) {
-                                    $active_content = ( ( $key + 1 ) == $active_tab ) ? ' in active' : '';
+                                    $active_content = ( ( $key + 1 ) == $active_tab ) ? ' show active' : '';
                                     $title = ( array_key_exists('title', $tab['atts']) ) ?  $tab['atts']['title'] : '';
                                     $output .= '<div class="tab-pane fade'.esc_attr( $active_content ).'" id="hongo-'.$tabuniqtab.'-'.$key.'">';
                                         $output .=  do_shortcode( $tab['content'] );
@@ -228,7 +228,7 @@ if ( ! function_exists( 'hongo_tabs' ) ) {
                                     $tab_icon   = ( isset( $tab['atts']['show_icon'] ) == 1 ) && isset( $tab['atts']['tab_icon'] ) ? $tab['atts']['tab_icon'] : '';
                                     $active = ( ( $key + 1 ) == $active_tab ) ? ' class="active"' : '';
                                     $output .= '<li '.$active.'>';
-                                        $output .= '<a href="#hongo-'.$tabuniqtab.'-'.$key.'" data-toggle="tab" class="tab-title'.$hongo_font_title_class.'">';
+                                        $output .= '<a href="#hongo-'.$tabuniqtab.'-'.$key.'" data-bs-toggle="tab" class="tab-title'.$hongo_font_title_class.'">';
                                             if( $tab_icon ) {
                                                 $output .= '<span><i class="'.esc_attr( $tab_icon ).esc_attr( $hongo_icon_size ).'"></i></span>';
                                             }
@@ -246,7 +246,7 @@ if ( ! function_exists( 'hongo_tabs' ) ) {
                     $output .= '</div>';
                     $output .= '<div class="tab-content">';
                         foreach ( $hongo_global_tabs as $key => $tab ) {
-                            $active_content = ( ( $key + 1 ) == $active_tab ) ? ' in active' : '';
+                            $active_content = ( ( $key + 1 ) == $active_tab ) ? ' show active' : '';
                             $title = ( array_key_exists('title', $tab['atts'] ) ) ?  $tab['atts']['title'] : '';
                             $output .= '<div class="tab-pane fade'.esc_attr( $active_content ).'" id="hongo-'.$tabuniqtab.'-'.$key.'">';
                                 $output .=  do_shortcode( $tab['content'] );
