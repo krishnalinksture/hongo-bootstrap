@@ -2910,20 +2910,6 @@
         e.preventDefault();
     });
 
-    $(document).on('shown.bs.tab', '.nav-tabs a[data-bs-toggle="tab"]', function () {
-        $(this).closest('.nav-tabs').find('li').removeClass('active');
-        $(this).parent().addClass('active');
-    });
-
-    document.addEventListener('shown.bs.tab', function (e) {
-        const targetSelector = e.target.getAttribute('href');
-        document.querySelectorAll('.tab-content .tab-pane').forEach(function (pane) {
-            pane.classList.remove('show', 'active');
-        });
-        const activePane = document.querySelector(targetSelector);
-        if (activePane) { activePane.classList.add('show', 'active'); }
-    });
-
     $(document).on('click', '.panel-heading a[data-bs-toggle="collapse"]', function () {
         var target = $(this).attr('href');
         $('.panel-collapse.show').not(target).collapse('hide');
