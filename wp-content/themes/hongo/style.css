@@ -4548,6 +4548,11 @@ ul .grid-sizer {
 	border-bottom-color: #1b1b1b
 }
 
+.bs-tooltip-auto[data-popper-placement^=left],
+.bs-tooltip-auto[data-popper-placement^=right] {
+    padding: 0;
+}
+
 /* quick view */
 
 .hongo-quick-view-popup .woocommerce div.product div.summary {
@@ -30978,8 +30983,7 @@ ul.list-style-9 li span {
 }
 
 .tab-style1 .nav-tabs li {
-	border: 1px solid #ebebeb;
-	border-bottom: none;
+	border: 0;
 	border-radius: 0;
 	margin-bottom: 0;
 	display: inline-block;
@@ -30993,13 +30997,16 @@ ul.list-style-9 li span {
 
 .tab-style1 .nav-tabs li a {
 	background-color: #ffffff;
-	border: 0;
+	border: 1px solid #ebebeb;
+	border-bottom: none;
 	color: #808080;
 	line-height: 40px;
-	margin: 0!important;
 	padding: 0 25px;
 	border-radius: 0;
 	font-size: 12px;
+	display: block;
+	margin: 0 !important;
+	position: relative;
 }
 
 .tab-style1 .nav-tabs li a i {
@@ -31021,17 +31028,15 @@ ul.list-style-9 li span {
 	font-weight: 500
 }
 
-.tab-style1 .nav-tabs>li.active>a {
-	border-color: transparent;
-	border: none;
-	border-radius: 0;
+.tab-style1 .nav-tabs>li>a.active {
 	background: #fff;
 	top: 0;
 	z-index: 9;
 	color: #232323;
+	border-bottom: 0;
 }
 
-.tab-style1 .nav-tabs>li.active>a i {
+.tab-style1 .nav-tabs>li>a.active i {
 	color: #232323;
 }
 
@@ -31139,16 +31144,19 @@ ul.list-style-9 li span {
 	vertical-align: middle;
 	margin: 0 25px;
 	padding: 0;
-	border-bottom: 1px solid transparent;
 }
 
-.tab-style3 .nav-tabs li.active {
+.tab-style3 .nav-tabs li a.active {
 	border-bottom: 1px solid #232323
+}
+
+.tab-style3 .nav-tabs>li>a {
+	border-bottom: 1px solid transparent;
 }
 
 .tab-style3 .nav-tabs>li>a,
 .tab-style3 .nav-tabs>li>a:focus,
-.tab-style3 .nav-tabs>li.active>a:hover,
+.tab-style3 .nav-tabs>li>a.active:hover,
 .tab-style3 .nav-tabs>li>a:hover {
 	background-color: transparent;
 	font-weight: 500;
@@ -31161,8 +31169,8 @@ ul.list-style-9 li span {
 	border-radius: 0;
 }
 
-.tab-style3 .nav-tabs li.active a,
-.tab-style3 .nav-tabs li.active a:hover {
+.tab-style3 .nav-tabs li a.active,
+.tab-style3 .nav-tabs li a.active:hover {
 	color: #232323;
 }
 

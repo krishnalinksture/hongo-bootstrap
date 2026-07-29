@@ -4349,6 +4349,10 @@
     .woocommerce-page ul.products.hongo-shop-md-col-2:not(.swiper-wrapper) li {
         width: 50% !important;
     }
+
+    .woocommerce ul.products.hongo-shop-list.hongo-product-list-view:not(.swiper-wrapper) li.product {
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 1050px) {
@@ -7490,6 +7494,7 @@
     .header-default-wrapper.navbar-default .navbar-collapse.collapse {
         display: none !important;
     }
+    .header-default-wrapper.navbar-default .navbar-collapse.collapse.in,
     .header-default-wrapper.navbar-default .navbar-collapse.collapse.show {
         display: block !important;
     }

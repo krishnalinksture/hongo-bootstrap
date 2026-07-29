@@ -68,7 +68,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	    
 	    /* navigation */
 	    .navbar-collapse.collapse { display: none !important; height: auto!important; width: 100%; margin: 0; position: absolute; top: 100%; }
-	    .navbar-collapse.collapse.show { display: block !important; overflow-y: hidden !important; }
+	    .navbar-collapse.collapse.in, .navbar-collapse.collapse.show { display: block !important; overflow-y: hidden !important; }
 	    .navbar-collapse { max-height: 400px; overflow-y: hidden !important; left: 0; padding: 0; position: absolute; top: 100%; width: 100%; border-top: 0; } 
 	    header .nav { float: none !important; padding-left: 0; padding-right: 0; margin: 0px 0; width: 100%; text-align: left; background-color: rgba(23,23,23,1) !important; }
 	    header .nav > li { position: relative; display: block; margin: 0; border-bottom: 1px solid rgba(255,255,255,0.06); width: 100%; }
@@ -179,7 +179,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     	.header-default-wrapper.navbar-default .navbar-nav>li>ul>li>a, .header-default-wrapper.navbar-default .simple-dropdown ul.sub-menu>li>ul.sub-menu>li>a, .header-default-wrapper.navbar-default .navbar-nav>li>a:hover, .header-default-wrapper.navbar-default .navbar-nav>li:hover>a, .header-default-wrapper.navbar-default .navbar-nav>li>a.active, .header-default-wrapper.navbar-default .navbar-nav>li.urrent-menu-ancestor>a, .header-default-wrapper.navbar-default .navbar-nav>li.current_page_ancestor>a{color:#fff;}
     	.header-default-wrapper.navbar-default .navbar-nav>li>ul>li:last-child a { border:0;}
     	.header-default-wrapper.navbar-default .simple-dropdown ul.sub-menu { display: block; padding: 0 15px !important; }
-    	.header-default-wrapper.navbar-default .navbar-collapse.collapse.show { overflow-y: auto !important; }
+    	.header-default-wrapper.navbar-default .navbar-collapse.collapse.in, .header-default-wrapper.navbar-default .navbar-collapse.collapse.show { overflow-y: auto !important; }
     	.header-default-wrapper.navbar-default .simple-dropdown ul.sub-menu li.menu-item-has-children:before { display: none;}
 
     	/* mini header menu */
