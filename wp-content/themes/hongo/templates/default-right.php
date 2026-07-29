@@ -73,7 +73,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 		case 'hongo_layout_left_sidebar':
 			?>
 				</div>
-				<div id="secondary" class="col-md-3 col-sm-4 col-xs-12 sidebar hongo-post-sidebar hongo-blog-sidebar<?php echo esc_attr( $hongo_post_sidebar_class ); ?>" itemtype="http://schema.org/WPSideBar" itemscope="itemscope" role="complementary">
+				<div id="secondary" class="col-lg-3 col-md-4 col-12 sidebar hongo-post-sidebar hongo-blog-sidebar<?php echo esc_attr( $hongo_post_sidebar_class ); ?>" itemtype="http://schema.org/WPSideBar" itemscope="itemscope" role="complementary">
 					<?php
 						do_action( 'hongo_sidebar_content_start' );
 
@@ -87,7 +87,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 		case 'hongo_layout_right_sidebar':
 			?>
 				</div>
-				<div id="secondary" class="col-md-3 col-sm-4 col-xs-12 sidebar hongo-post-sidebar hongo-blog-sidebar<?php echo esc_attr( $hongo_post_sidebar_class ); ?>" itemtype="http://schema.org/WPSideBar" itemscope="itemscope" role="complementary">
+				<div id="secondary" class="col-lg-3 col-md-4 col-12 sidebar hongo-post-sidebar hongo-blog-sidebar<?php echo esc_attr( $hongo_post_sidebar_class ); ?>" itemtype="http://schema.org/WPSideBar" itemscope="itemscope" role="complementary">
 					<?php
 						do_action( 'hongo_sidebar_content_start' );
 
@@ -101,7 +101,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 		case 'hongo_layout_both_sidebar':
 			?>
 					</div>
-					<div id="secondary" class="col-md-3 col-sm-6 col-xs-12 sidebar hongo-post-sidebar both-sidebar-left hongo-blog-sidebar<?php echo esc_attr( $hongo_post_sidebar_class ); ?>" itemtype="http://schema.org/WPSideBar" itemscope="itemscope" role="complementary">
+					<div id="secondary" class="col-lg-3 col-md-6 col-12 sidebar hongo-post-sidebar both-sidebar-left hongo-blog-sidebar<?php echo esc_attr( $hongo_post_sidebar_class ); ?>" itemtype="http://schema.org/WPSideBar" itemscope="itemscope" role="complementary">
 						<?php
 							do_action( 'hongo_sidebar_content_start' );
 
@@ -110,7 +110,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 							do_action( 'hongo_sidebar_content_end' );
 						?>
 					</div>
-		        	<div id="secondary" class="col-md-3 col-sm-6 col-xs-12 sidebar hongo-post-sidebar both-sidebar-right hongo-blog-sidebar<?php echo esc_attr( $hongo_post_sidebar_class ); ?>" itemtype="http://schema.org/WPSideBar" itemscope="itemscope" role="complementary">
+		        	<div id="secondary" class="col-lg-3 col-md-6 col-12 sidebar hongo-post-sidebar both-sidebar-right hongo-blog-sidebar<?php echo esc_attr( $hongo_post_sidebar_class ); ?>" itemtype="http://schema.org/WPSideBar" itemscope="itemscope" role="complementary">
 						<?php
 							do_action( 'hongo_sidebar_content_start' );
 

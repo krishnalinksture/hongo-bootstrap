@@ -25,22 +25,22 @@ $hongo_footer_middle_column_4         = hongo_check_active_sidebar( $hongo_foote
                 <div class="container">
                     <div class="row">
                         <?php if ( $hongo_footer_middle_column_1 ) { ?>
-                            <div class="footer-sidebar col-md-3 col-sm-3 col-xs-12">
+                            <div class="footer-sidebar col-lg-3 col-md-3 col-12">
                                 <?php dynamic_sidebar( $hongo_footer_middle_column_1_sidebar ); ?>
                             </div>
                         <?php } ?>
                         <?php if ( $hongo_footer_middle_column_2 ) { ?>
-                            <div class="footer-sidebar col-md-3 col-sm-3 col-xs-12">
+                            <div class="footer-sidebar col-lg-3 col-md-3 col-12">
                                 <?php dynamic_sidebar( $hongo_footer_middle_column_2_sidebar ); ?>
                             </div>
                         <?php } ?>
                         <?php if ( $hongo_footer_middle_column_3 ) { ?>
-                            <div class="footer-sidebar col-md-3 col-sm-3 col-xs-12">
+                            <div class="footer-sidebar col-lg-3 col-md-3 col-12">
                                 <?php dynamic_sidebar( $hongo_footer_middle_column_3_sidebar ); ?>
                             </div>
                         <?php } ?>
                         <?php if ( $hongo_footer_middle_column_4 ) { ?>
-                            <div class="footer-sidebar col-md-3 col-sm-3 col-xs-12">
+                            <div class="footer-sidebar col-lg-3 col-md-3 col-12">
                                 <?php dynamic_sidebar( $hongo_footer_middle_column_4_sidebar ); ?>
                             </div>
                         <?php } ?>

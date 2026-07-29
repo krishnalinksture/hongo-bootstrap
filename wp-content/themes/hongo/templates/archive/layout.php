@@ -54,7 +54,7 @@ if( $hongo_show_description_archive == '1' && get_the_archive_description() ) {
 								$class_column .= ( $blog_style != 'blog-modern' ) ? ' col-xl-3 col-lg-4 col-md-6 col-12' : ' col-xl-3 col-md-6 col-12';
 								break;
 							case '5':
-								$class_column .= ' vc_col-lg-1/5 col-md-4 col-sm-6 col-xs-12';
+								$class_column .= ' vc_col-lg-1/5 col-lg-4 col-md-6 col-12';
 								break;
 							case '6':
 								$class_column .= ' col-xl-2 col-lg-4 col-md-6 col-12';

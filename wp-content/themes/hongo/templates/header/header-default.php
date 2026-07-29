@@ -20,7 +20,7 @@ $hongo_logo_light_ratina= get_theme_mod( 'hongo_logo_light_ratina', '' );
         <div class="container nav-header-container">
             <div class="row">
                 <!-- logo -->
-                <div class="col-md-2 col-sm-6 col-xs-6">
+                <div class="col-lg-2 col-md-6 col-6">
                     <?php if( is_front_page() ) { ?>
                         <h1>
                     <?php } ?>
@@ -64,7 +64,7 @@ $hongo_logo_light_ratina= get_theme_mod( 'hongo_logo_light_ratina', '' );
                 </div>
                 <!-- end logo -->
                 <!-- accordion-menu -->
-                <div class="col-md-10 col-sm-6 col-xs-6 sm-text-right accordion-menu">
+                <div class="col-lg-10 col-md-6 col-6 sm-text-right accordion-menu">
 	                <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#navbar-collapse-toggle-1">
 	                    <span class="sr-only"><?php echo esc_html__( 'Toggle Navigation', 'hongo' ); ?></span>
 	                    <span class="icon-bar"></span>

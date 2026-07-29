@@ -17,7 +17,7 @@
 ?>
 		<ul class="blog-post-gallery-grid hover-option4 gutter-small lightbox-gallery">
 		<?php if( is_array( $hongo_gallery ) ) { ?>
-			<li class="grid-sizer col-md-4 col-sm-6 col-xs-12"></li>
+			<li class="grid-sizer col-lg-4 col-md-6 col-12"></li>
 			<?php
 				foreach ( $hongo_gallery as $key => $value ) {
 					/* Image Alt, Title, Caption */
@@ -37,7 +37,7 @@
 			            $srcset_data = hongo_get_image_srcset_sizes( $value, $hongo_srcset_default );
 			?>
 
-	                	<li class="col-md-4 col-sm-6 col-xs-12 grid-item">
+	                	<li class="col-lg-4 col-md-6 col-12 grid-item">
 	                		<a class="lightboxgalleryitem" data-group="<?php echo esc_attr( $hongo_popup_id ); ?>"<?php echo sprintf( '%s%s', $hongo_image_lightbox_title, $hongo_image_lightbox_caption ); ?> href="<?php echo esc_url( $hongo_full_url[0] ); ?>">
 		                		<figure>
 			                    	<div class="blog-post-gallery-img">

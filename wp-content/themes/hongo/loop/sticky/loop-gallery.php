@@ -36,7 +36,7 @@
 			            $srcset_data = hongo_get_image_srcset_sizes( $value, $hongo_srcset_sticky );
 			        ?>
 
-	                	<li class="col-md-4 col-sm-6 col-xs-12 no-padding">
+	                	<li class="col-lg-4 col-md-6 col-12 no-padding">
 	                		<a class="lightboxgalleryitem" data-group="<?php echo esc_attr( $hongo_popup_id ); ?>"<?php echo sprintf( '%s%s', $hongo_image_lightbox_title, $hongo_image_lightbox_caption ); ?> href="<?php echo esc_url( $hongo_full_url[0] ); ?>">
 		                		<figure>
 			                    	<div class="blog-post-gallery-img">

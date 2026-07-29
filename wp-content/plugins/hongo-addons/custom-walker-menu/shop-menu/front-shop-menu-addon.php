@@ -48,7 +48,7 @@ if( ! class_exists( 'Hongo_Shop_Menu_Walker' ) ) {
 
             if( $depth == 0 ) {
                 if( ! empty( $hongo_mega_menu_section ) ) {
-                    $output .= '<div class="shop-menu-wrap-div dropdown-menu megamenu-content mega-menu collapse mega-menu-full col-md-9 col-xs-12" >';
+                    $output .= '<div class="shop-menu-wrap-div dropdown-menu megamenu-content mega-menu collapse mega-menu-full col-lg-9 col-12" >';
                     $classes[] = 'equalize sm-equalize-auto';
                 }
             }

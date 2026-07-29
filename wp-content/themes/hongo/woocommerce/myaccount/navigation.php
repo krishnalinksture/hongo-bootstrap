@@ -24,7 +24,7 @@ $endpoint_icons = apply_filters( 'hongo_my_account_endpoint_icons', array() );
 do_action( 'woocommerce_before_account_navigation' );
 ?>
 
-<nav class="col-md-3 col-sm-4 col-xs-12 woocommerce-MyAccount-navigation" aria-label="<?php esc_attr_e( 'Account pages', 'hongo' ); ?>">
+<nav class="col-lg-3 col-md-4 col-12 woocommerce-MyAccount-navigation" aria-label="<?php esc_attr_e( 'Account pages', 'hongo' ); ?>">
 	<ul class="alt-font">
 		<?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) { ?>
 			<li class="<?php echo wc_get_account_menu_item_classes( $endpoint ); ?>">
