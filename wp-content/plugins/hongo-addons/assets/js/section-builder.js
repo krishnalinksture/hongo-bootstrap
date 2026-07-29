@@ -306,27 +306,10 @@
             }
         });
 
-        $(document).on('click', '.dropdown > .dropdown-toggle', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-           /*  var $icon = $(this);
-            var $parent = $icon.parent('li'); */
-
-            if ($(this).parent('li').hasClass('open')) { $(this).parent('li').removeClass('open'); $(this).attr('aria-expanded', 'false');
-            } else {
-                $('.dropdown.open').removeClass('open') .find('> .dropdown-toggle') .attr('aria-expanded', 'false');
-                $(this).parent('li').addClass('open');
-                $(this).attr('aria-expanded', 'true');
-            }
-        });
-
         /* Touchstart click */
         $( document ).on( 'touchstart click', 'body', function (e) {
             if ( $(window).width() <= hongoAddons.menu_breakpoint ) {
                 if ( ! $('.navbar-collapse').has(e.target).is('.navbar-collapse') && $('.navbar-collapse').hasClass('show') && !$(e.target).hasClass('navbar-toggle') ) {
-                    $('.navbar-collapse').find('li.open').removeClass('open');
-                    $('.navbar-collapse').find('.dropdown-toggle').attr('aria-expanded', 'false'); 
                     $('.navbar-collapse').collapse('hide');
                 }
             } else {
