@@ -65,7 +65,7 @@ $hongo_logo_light_ratina= get_theme_mod( 'hongo_logo_light_ratina', '' );
                 <!-- end logo -->
                 <!-- accordion-menu -->
                 <div class="col-lg-10 col-md-6 col-6 sm-text-right accordion-menu">
-	                <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#navbar-collapse-toggle-1">
+	                <button type="button" class="navbar-toggle collapsed pull-right" data-bs-toggle="collapse" data-target="#navbar-collapse-toggle-1">
 	                    <span class="sr-only"><?php echo esc_html__( 'Toggle Navigation', 'hongo' ); ?></span>
 	                    <span class="icon-bar"></span>
 	                    <span class="icon-bar"></span>
