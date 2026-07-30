@@ -31064,28 +31064,21 @@ ul.list-style-9 li span {
 }
 
 .tab-style2 .nav-tabs li {
-	border: 1px solid #ebebeb;
-	border-bottom-width: 0;
-	border-right: none;
+	border: 0;
 	border-radius: 0;
 	margin-bottom: 0;
 	display: block;
 	float: left;
 	width: 100%;
 	left: 1px;
-}
-
-.tab-style2 .nav-tabs li:last-child {
-	border-bottom-width: 1px;
-}
-
-.tab-style2 .nav-tabs li.active {
-	z-index: 1;
+	position: relative;
 }
 
 .tab-style2 .nav-tabs li a {
 	background: #f8f8f8;
-	border: none;
+	border: 1px solid #ebebeb;
+	border-bottom-width: 0;
+	border-right: none;
 	color: #575757;
 	font-weight: 500;
 	font-size: 11px;
@@ -31093,17 +31086,22 @@ ul.list-style-9 li span {
 	margin: 0 !important;
 	padding: 14px 25px 13px;
 	border-radius: 0;
+	display: block;
+	position: relative;
+}
+
+.tab-style2 .nav-tabs li:last-child a {
+	border-bottom-width: 1px;
 }
 
 .tab-style2 .nav-tabs li:last-child a {
 	top: 0
 }
 
-.tab-style2 .nav-tabs>li.active>a {
-	border-color: transparent;
-	border: none;
+.tab-style2 .nav-tabs>li>a.active {
 	border-radius: 0;
 	background-color: #ffffff;
+	z-index: 1;
 }
 
 .tab-style2 .nav-tabs>li a img {
@@ -31146,27 +31144,32 @@ ul.list-style-9 li span {
 	padding: 0;
 }
 
-.tab-style3 .nav-tabs li a.active {
-	border-bottom: 1px solid #232323
-}
-
 .tab-style3 .nav-tabs>li>a {
+	border: 0;
 	border-bottom: 1px solid transparent;
+	line-height: 1.42857143;
+	display: block;
+	transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    -webkit-transition: all 0s ease-in-out;
+    -ms-transition: all 0s ease-in-out;
+    -o-transition: all 0s ease-in-out;
 }
 
 .tab-style3 .nav-tabs>li>a,
 .tab-style3 .nav-tabs>li>a:focus,
-.tab-style3 .nav-tabs>li>a.active:hover,
 .tab-style3 .nav-tabs>li>a:hover {
 	background-color: transparent;
 	font-weight: 500;
 	font-size: 12px;
-	border: none;
-	border-bottom: 0;
 	padding: 0;
 	color: #808080;
 	margin: 0;
 	border-radius: 0;
+}
+
+.tab-style3 .nav-tabs li a.active {
+	border-bottom: 1px solid #232323
 }
 
 .tab-style3 .nav-tabs li a.active,
