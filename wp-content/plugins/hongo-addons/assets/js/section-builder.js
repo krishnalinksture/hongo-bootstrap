@@ -1,7 +1,7 @@
 ( function( $ ) {
 
     "use strict";
-    
+
     var $scroll_flag = false;
 
     var isMobile = false;
@@ -57,7 +57,7 @@
                 dropdownCssClass: "search-category-dropdown"
             });
             $( '.product-search-wrap' ).on( 'select2:open', function () {
-                
+
                 $( '.select2-results__options' ).mCustomScrollbar( 'destroy' );
                 setTimeout( function() {
                     $( '.select2-results__options' ).mCustomScrollbar({
@@ -130,16 +130,16 @@
                     $('header').removeClass('left-mobile-menu-open');
                 }
             });
-                        
+
             if( $.inArray( 'sticky-kit', hongoMain.disable_scripts ) < 0 ) {
                 $( '.hongo-main-wrap .header-left-wrapper' ).stick_in_parent({
                     recalc : 1
                 });
             }
-            
+
             /* Left Menu Accordion */
             $( document ).on( 'click', '.hongo-left-menu-wrap li .handler', function() {
-                
+
                 setTimeout( function () {
                     $( '.hongo-main-wrap' ).trigger( 'sticky_kit:recalc' );
                 }, 500);
@@ -180,7 +180,7 @@
                     }
                 }
             });
-            
+
             /* Left Menu Mini Cart Open */
             $( document ).on( 'click', '.hongo-main-wrap .hongo-top-cart-wrapper', function() {
                 if ($(window).width() < 768) {                    
@@ -205,7 +205,7 @@
 
         /* Hamburger menu toggle */
         if( $('.hongo-hamburger-menu').length > 0 ) {
-            
+
             $( document ).on( 'click', '.menu-hamburger-menu-wrap li .menu-dropdown-toggle', function() {
 
                 $(this).parent('li').toggleClass( function() {
@@ -260,7 +260,7 @@
 
         // Parent menu active class added on ready
         $( '.hongo-navigation-menu .menu li, .hongo-shop-dropdown-menu .menu li' ).each(function () {
-            
+
             var _this = $( this );
             if( $( '.menu-item', _this ).hasClass( 'current-menu-item' ) ) {
 
@@ -310,7 +310,6 @@
             }
         });
 
-        
         /* Touchstart click */
         $( document ).on( 'touchstart click', 'body', function (e) {
             if ( $(window).width() <= hongoAddons.menu_breakpoint ) {
@@ -330,7 +329,7 @@
         if( $( '.hongo-navigation-main-wrapper button.toggle-mobile, .hongo-left-menu-wrap button.toggle-mobile' ).length > 0 ) {
 
             $( '.hongo-navigation-main-wrapper .navbar-collapse, .hongo-left-menu-wrap .hongo-left-menu-wrapper' ).on( 'show.bs.collapse', function() {
-                
+
                 $( this ).parent().children( 'button.toggle-mobile' ).addClass( 'active' );
 
             }).on( 'hide.bs.collapse', function() {
@@ -338,11 +337,11 @@
                 $( this ).parent().children( 'button.toggle-mobile' ).removeClass( 'active' );
             });
         }
-        
+
         /* Mini header navigation menu responsive toggle */
         $( '.mini-header-main-wrapper .wp-nav-menu-responsive-button' )
             .on( 'mouseenter', function( e ) {
-                
+
                 e.preventDefault();
 
                 var $parent_obj = $( this ).parent().parent();
@@ -431,7 +430,7 @@
 
         // Hide dropdown menu on scroll
         if( scrollNavPos >= 200 ) {
-            
+
             $( '.header-push-menu-button button' ).removeClass( 'active' );
             $( '.cbp-spmenu' ).removeClass( 'cbp-spmenu-open' );
             setTimeout( function() {
@@ -462,7 +461,7 @@
 
                 /* Mini Header */
                 if( $( '.mini-header-main-wrapper' ).length > 0 ) {
-                    
+
                     var miniHeaderObj = $( '.mini-header-main-wrapper' );
                     mini_header_height = miniHeaderObj.outerHeight();
                     ts_height = ts_height + mini_header_height;
@@ -502,7 +501,7 @@
                     if( miniHeaderObj.hasClass( 'appear-up-scroll' ) ) {
 
                         if( scrollTopPos < lastScroll ) {
-                         
+
                             if( headerAppearFlag ) {
 
                                 aboveHeaderHeight = aboveHeaderHeight + mini_header_height;
@@ -537,7 +536,7 @@
                     } else {
 
                         if( scrollTopPos < lastScroll ) { // Back scroll
-                        
+
                             if( ! headerAppearFlag ) { // Header is not sticky
 
                                 miniHeaderObj.css( 'top', wpadminbarHeight + 'px' );
@@ -590,7 +589,7 @@
                     if( topHeaderObj.hasClass( 'appear-up-scroll' ) ) {
 
                         if( scrollTopPos < lastScroll ) {
-                            
+
                             if( headerAppearFlag ) {
 
                                 aboveHeaderHeight = aboveHeaderHeight + top_header_height;
@@ -601,7 +600,7 @@
                         } else if( scrollTopPos > lastScroll ) {
 
                             if( headerAppearFlag ) {
-                                
+
                                 var positionTop = top_header_height + 1;
                                 if( $( '.header-main-wrapper' ).length > 0 && ! mainHeaderObj.hasClass( 'appear-down-scroll' ) ) {
                                     positionTop = positionTop + main_header_height;
@@ -614,7 +613,7 @@
                     } else if( topHeaderObj.hasClass( 'appear-down-scroll' ) ) {
 
                         if( headerAppearFlag ) {
-                            
+
                             aboveHeaderHeight = aboveHeaderHeight + top_header_height;
                             topHeaderObj.addClass( 'sticky-appear' );
                         }
@@ -622,7 +621,7 @@
                     } else {
 
                         if( scrollTopPos < lastScroll ) {
-                         
+
                             if( ! headerAppearFlag ) {
 
                                 topHeaderObj.css( 'top', wpadminbarHeight + 'px' );
@@ -678,7 +677,7 @@
 
                         } else if( scrollTopPos > lastScroll ) {
                             if( headerAppearFlag ) {
-                              
+
                                 var positionTop = main_header_height + 1;
                                 mainHeaderObj.css( 'top', '-' + ( positionTop ) + 'px' );
                             }
@@ -688,7 +687,7 @@
                     } else if( mainHeaderObj.hasClass( 'appear-down-scroll' ) ) {
 
                         if( headerAppearFlag ) {
-                            
+
                             aboveHeaderHeight = aboveHeaderHeight + main_header_height;
                             mainHeaderObj.addClass( 'sticky-appear' );
                         }
@@ -696,7 +695,7 @@
                     } else {
 
                         if( scrollTopPos < lastScroll ) {
-                         
+
                             if( ! headerAppearFlag ) {
 
                                 mainHeaderObj.css( 'top', wpadminbarHeight + 'px' );
@@ -772,7 +771,7 @@
                     var _this = $( this );
                         _this.addClass( 'on' );
                         _this.siblings( '.on' ).removeClass( 'on' );
-                        
+
                     var windowHeight = $( window ).height();
                         windowHeight = parseInt( windowHeight );
 
@@ -946,7 +945,7 @@
             }
 
         }, 10 );
-            
+
         // Footer sticky
         if( $( '.footer-sticky' ).length > 0 ) {
             // Added class into body while footer sticky is exist
@@ -969,7 +968,7 @@
             $( '.footer-sticky' ).prev().addClass( 'footer-sticky-content' );
             if ( msEdge > 0 || msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) { // If Internet Explorer, return version number // is_safari || 
                 setTimeout( function() {
-                    
+
                     var footer_height = $( '.footer-sticky' ).outerHeight() - 1;
                     if ( $(window).width() > 1024 ) {
 
@@ -977,7 +976,7 @@
                     } else {
                         $( '.footer-sticky-content' ).css( 'margin-bottom', '0px' );
                     }
-                
+
                 }, 10 );
             }
         }
