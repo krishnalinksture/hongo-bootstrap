@@ -83,7 +83,7 @@ if( ! function_exists( 'hongo_addons_script_style' ) ) {
 		 * Load Hongo addons plugin main and other required stylesheet files. 
 		 */
 		if( hongo_load_stylesheet_by_key( 'justifiedGallery' ) ) {
-			wp_register_style( 'justifiedGallery', HONGO_ADDONS_ROOT_DIR.'/assets/css/justifiedGallery.min.css', null, '4.0.4' );
+			wp_register_style( 'justifiedGallery', HONGO_ADDONS_ROOT_DIR.'/assets/css/justifiedGallery.min.css', null, '3.8.1' );
 			wp_enqueue_style( 'justifiedGallery' );
 		}
 
@@ -117,7 +117,7 @@ if( ! function_exists( 'hongo_addons_script_style' ) ) {
 		}
 
 		if( hongo_load_javascript_by_key( 'jquery-justifiedGallery' ) ) {
-			wp_register_script( 'jquery-justifiedGallery', HONGO_ADDONS_ROOT_DIR.'/assets/js/jquery.justifiedGallery.min.js', array( 'jquery' ),'3.8.0',true);
+			wp_register_script( 'jquery-justifiedGallery', HONGO_ADDONS_ROOT_DIR.'/assets/js/jquery.justifiedGallery.min.js', array( 'jquery' ),'3.8.1',true);
 		}
 
 		/*
@@ -283,7 +283,7 @@ add_action( 'hongo_enqueue_scripts_before_main_jquery', 'hongo_addons_script_sty
 if( ! function_exists( 'hongo_addons_load_vc_iframe_js' ) ) :
 	function hongo_addons_load_vc_iframe_js() {
 
-		wp_register_script( 'jquery-justifiedGallery', HONGO_ADDONS_ROOT_DIR.'/assets/js/jquery.justifiedGallery.min.js', array( 'jquery' ),'3.8.0',true);
+		wp_register_script( 'jquery-justifiedGallery', HONGO_ADDONS_ROOT_DIR.'/assets/js/jquery.justifiedGallery.min.js', array( 'jquery' ),'3.8.1',true);
 
 	   	wp_enqueue_script( 'jquery-justifiedGallery' );
 	}
