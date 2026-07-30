@@ -13650,7 +13650,6 @@ li.active .hongo-cb:after {
 /* product category style 1 */
 
 .category-style-1 {
-	display: table;
 	margin: 0;
 }
 
@@ -13733,7 +13732,6 @@ li.active .hongo-cb:after {
 /* product category style 2 */
 
 .category-style-2 {
-	display: table;
 	margin: 0;
 }
 
@@ -13935,7 +13933,6 @@ li.active .hongo-cb:after {
 /* product category style 4 */
 
 .category-style-4 {
-	display: table;
 	margin: 0;
 }
 
@@ -14048,7 +14045,6 @@ li.active .hongo-cb:after {
 /* product category style 5 */
 
 .category-style-5 {
-	display: table;
 	margin: 0;
 }
 
@@ -14162,7 +14158,6 @@ li.active .hongo-cb:after {
 /* product category style 6 */
 
 .category-style-6 {
-	display: table;
 	margin: 0;
 }
 
@@ -14294,7 +14289,6 @@ li.active .hongo-cb:after {
 /* product category style 7 */
 
 .category-style-7 {
-	display: table;
 	margin: 0;
 }
 
@@ -32299,9 +32293,9 @@ blockquote footer:before {
 
 /* contact form style 3 */
 .hongo-contact-form-style-3 {
-	display: inline-block;
+	margin-left: 0;
+	margin-right: 0;
 }
-
 
 .hongo-contact-form-style-3 .wpcf7-text,
 .hongo-contact-form-style-3 .wpcf7-textarea,
@@ -32375,7 +32369,8 @@ blockquote footer:before {
 
 /* contact form style 4 */
 .hongo-contact-form-style-4 {
-	display: inline-block;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 .hongo-contact-form-style-4 .wpcf7-text,
