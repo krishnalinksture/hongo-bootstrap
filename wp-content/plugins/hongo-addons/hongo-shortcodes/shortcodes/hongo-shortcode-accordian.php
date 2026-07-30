@@ -136,23 +136,24 @@ if ( ! function_exists( 'hongo_accordion_shortcode' ) ) {
                             case 'accordion-style-1':
 
                             	if ( $hongo_accordion_title ||  $hongo_content ) {
-                                
-    	                            $output .= '<div class="panel">';
-    	                                $output .= '<div class="panel-heading'. esc_attr( $active ) .'">';
-    	                                    $output .= '<a data-bs-toggle="collapse" data-bs-parent="#'.$hongo_accordion_id.'" href="#accordion-one-link-'.$hongo_accordian_tab.'">';
-    	                                        $output .= '<div class="panel-title'. esc_attr( $font_setting_class_title ) .'">'. $hongo_accordion_title;
-    	                                            $output .= '<span class="pull-right"><i class="'. esc_attr( $icon_class ) .'"></i></span>';
-    	                                        $output .= '</div>';
-    	                                    $output .= '</a>';
-    	                                $output .= '</div>';
-    	                                $output .= '<div id="accordion-one-link-'. esc_attr( $hongo_accordian_tab ) .'" class="panel-collapse collapse'.$accordion_class.'">';
-    	                                    $output .= '<div class="panel-body'. esc_attr( $font_setting_class_content ) .'">';
-    	                                        if ( ! empty( $hongo_content ) ) {
-    	                                            $output .= hongo_remove_wpautop( $hongo_content );
-                                                }
-    	                                    $output .= '</div>';
-    	                                $output .= '</div>';
-    	                            $output .= '</div>';
+                                    $output .= '<div class="accordion">';
+                                        $output .= '<div class="panel">';
+                                            $output .= '<div class="panel-heading'. esc_attr( $active ) .'">';
+                                                $output .= '<a data-bs-toggle="collapse" href="#accordion-one-link-'.$hongo_accordian_tab.'">';
+                                                    $output .= '<div class="panel-title'. esc_attr( $font_setting_class_title ) .'">'. $hongo_accordion_title;
+                                                        $output .= '<span class="pull-right"><i class="'. esc_attr( $icon_class ) .'"></i></span>';
+                                                    $output .= '</div>';
+                                                $output .= '</a>';
+                                            $output .= '</div>';
+                                            $output .= '<div id="accordion-one-link-'. esc_attr( $hongo_accordian_tab ) .'" class="panel-collapse collapse'.$accordion_class.'" data-bs-parent="#'.$hongo_accordion_id.'">';
+                                                $output .= '<div class="panel-body'. esc_attr( $font_setting_class_content ) .'">';
+                                                    if ( ! empty( $hongo_content ) ) {
+                                                        $output .= hongo_remove_wpautop( $hongo_content );
+                                                    }
+                                                $output .= '</div>';
+                                            $output .= '</div>';
+                                        $output .= '</div>';
+                                    $output .= '</div>';
 
                                         ob_start();
                                     ?>
@@ -176,23 +177,24 @@ if ( ! function_exists( 'hongo_accordion_shortcode' ) ) {
                             case 'accordion-style-2':
 
                             	if ( $hongo_accordion_title ||  $hongo_content ) {                                
-
-    	                            $output .= '<div class="panel panel-default">';
-    	                                $output .= '<div class="panel-heading'. esc_attr( $active ) .'" >';
-    	                                    $output .= '<a class="accordion-toggle" data-bs-toggle="collapse" data-bs-parent="#'.$hongo_accordion_id.'" href="#accordion-one-link-'. esc_attr( $hongo_accordian_tab ) .'">';
-    	                                        $output .= '<div class="panel-title'. esc_attr( $font_setting_class_title ) .'">';
-    	                                            $output .= '<span class="accordion-title'. esc_attr( $font_setting_class_title ) .'">'.$hongo_accordion_title.'</span>';
-    	                                                $output .= '<span class="pull-right"><i class="'. esc_attr( $icon_class ).'"></i></span>';
-    	                                        $output .= '</div>';
-    	                                    $output .= '</a>';
-    	                                $output .= '</div>';
-    	                                $output .= '<div id="accordion-one-link-'. esc_attr( $hongo_accordian_tab ) .'" class="panel-collapse collapse'.$accordion_class.'">';
-    	                                    $output .= '<div class="panel-body'. esc_attr(  $font_setting_class_content ).'">';
-    	                                        if ( ! empty( $hongo_content ) ) {
-    	                                            $output .= hongo_remove_wpautop( $hongo_content );
-                                                }
-    	                                    $output .= '</div>';
-    	                                $output .= '</div>';
+                                    $output .= '<div class="accordion">';
+                                        $output .= '<div class="panel panel-default">';
+                                            $output .= '<div class="panel-heading'. esc_attr( $active ) .'" >';
+                                                $output .= '<a class="accordion-toggle" data-bs-toggle="collapse" href="#accordion-one-link-'. esc_attr( $hongo_accordian_tab ) .'">';
+                                                    $output .= '<div class="panel-title'. esc_attr( $font_setting_class_title ) .'">';
+                                                        $output .= '<span class="accordion-title'. esc_attr( $font_setting_class_title ) .'">'.$hongo_accordion_title.'</span>';
+                                                            $output .= '<span class="pull-right"><i class="'. esc_attr( $icon_class ).'"></i></span>';
+                                                    $output .= '</div>';
+                                                $output .= '</a>';
+                                            $output .= '</div>';
+                                            $output .= '<div id="accordion-one-link-'. esc_attr( $hongo_accordian_tab ) .'" class="panel-collapse collapse'.$accordion_class.'" data-bs-parent="#'.$hongo_accordion_id.'">';
+                                                $output .= '<div class="panel-body'. esc_attr(  $font_setting_class_content ).'">';
+                                                    if ( ! empty( $hongo_content ) ) {
+                                                        $output .= hongo_remove_wpautop( $hongo_content );
+                                                    }
+                                                $output .= '</div>';
+                                            $output .= '</div>';
+                                        $output .= '</div>';
     	                            $output .= '</div>';
 
                                         ob_start();
@@ -217,22 +219,23 @@ if ( ! function_exists( 'hongo_accordion_shortcode' ) ) {
                             case 'accordion-style-3':
 
                             	if ( $hongo_accordion_title ||  $hongo_content ) {                                
-                                    
-    	                            $output .= '<div class="panel">';
-    	                                $output .= '<div class="panel-heading'. esc_attr( $active ) .'">';
-    	                                    $output .= '<a data-bs-toggle="collapse" data-bs-parent="#'. esc_attr( $hongo_accordion_id ) .'" href="#accordion-one-link-'. esc_attr( $hongo_accordian_tab ) .'">';
-    	                                        $output .= '<div class="panel-title'. esc_attr( $font_setting_class_title ).'">'. $hongo_accordion_title;
-    	                                            $output .= '<span class="pull-right"><i class="'. esc_attr( $icon_class ).'"></i></span>';
-    	                                        $output .= '</div>';
-    	                                    $output .= '</a>';
-    	                                $output .= '</div>';
-    	                                $output .= '<div id="accordion-one-link-'. esc_attr( $hongo_accordian_tab ) .'" class="panel-collapse collapse'.$accordion_class.'">';
-    	                                    $output .= '<div class="panel-body'. esc_attr( $font_setting_class_content ).'">';
-    	                                        if ( ! empty( $hongo_content ) ) {
-    	                                            $output .= hongo_remove_wpautop( $hongo_content );
-                                                }
-    	                                    $output .= '</div>';
-    	                                $output .= '</div>';
+                                    $output .= '<div class="accordion">';
+                                        $output .= '<div class="panel">';
+                                            $output .= '<div class="panel-heading'. esc_attr( $active ) .'">';
+                                                $output .= '<a data-bs-toggle="collapse" href="#accordion-one-link-'. esc_attr( $hongo_accordian_tab ) .'">';
+                                                    $output .= '<div class="panel-title'. esc_attr( $font_setting_class_title ).'">'. $hongo_accordion_title;
+                                                        $output .= '<span class="pull-right"><i class="'. esc_attr( $icon_class ).'"></i></span>';
+                                                    $output .= '</div>';
+                                                $output .= '</a>';
+                                            $output .= '</div>';
+                                            $output .= '<div id="accordion-one-link-'. esc_attr( $hongo_accordian_tab ) .'" class="panel-collapse collapse'.$accordion_class.'" data-bs-parent="#'. esc_attr( $hongo_accordion_id ) .'">';
+                                                $output .= '<div class="panel-body'. esc_attr( $font_setting_class_content ).'">';
+                                                    if ( ! empty( $hongo_content ) ) {
+                                                        $output .= hongo_remove_wpautop( $hongo_content );
+                                                    }
+                                                $output .= '</div>';
+                                            $output .= '</div>';
+                                        $output .= '</div>';
     	                            $output .= '</div>';
 
                                         ob_start();
@@ -262,20 +265,21 @@ if ( ! function_exists( 'hongo_accordion_shortcode' ) ) {
                                 }
 
                                 if ( $hongo_accordion_title ||  $hongo_content ) {                                
-
-                                    $output .= '<div class="panel panel-default">';
-                                        $output .= '<div class="panel-heading'. esc_attr( $active ).'" >';
-                                            $output .= '<a class="accordion-toggle" data-bs-toggle="collapse" data-bs-parent="#'. esc_attr( $hongo_accordion_id ) .'" href="#accordion-one-link-'. esc_attr( $hongo_accordian_tab ) .'" >';                                            
-                                                $output .= '<div class="panel-title'. esc_attr( $font_setting_class_title ) .'">'. $hongo_accordion_title;
-                                                    $output .= '<span class="pull-right"><i class="'. esc_attr( $icon_class ).'"></i></span>';
+                                    $output .= '<div class="accordion">';
+                                        $output .= '<div class="panel panel-default">';
+                                            $output .= '<div class="panel-heading'. esc_attr( $active ).'" >';
+                                                $output .= '<a class="accordion-toggle" data-bs-toggle="collapse" href="#accordion-one-link-'. esc_attr( $hongo_accordian_tab ) .'" >';                                            
+                                                    $output .= '<div class="panel-title'. esc_attr( $font_setting_class_title ) .'">'. $hongo_accordion_title;
+                                                        $output .= '<span class="pull-right"><i class="'. esc_attr( $icon_class ).'"></i></span>';
+                                                    $output .= '</div>';
+                                                $output .= '</a>';
+                                            $output .= '</div>';
+                                            $output .= '<div id="accordion-one-link-'. esc_attr( $hongo_accordian_tab ).'" class="panel-collapse collapse'.$accordion_class.'" data-bs-parent="#'. esc_attr( $hongo_accordion_id ) .'">';
+                                                $output .= '<div class="panel-body'. esc_attr( $font_setting_class_content ) .'">';
+                                                    if ( ! empty( $hongo_content ) ) {
+                                                        $output .= hongo_remove_wpautop( $hongo_content );
+                                                    }
                                                 $output .= '</div>';
-                                            $output .= '</a>';
-                                        $output .= '</div>';
-                                        $output .= '<div id="accordion-one-link-'. esc_attr( $hongo_accordian_tab ).'" class="panel-collapse collapse'.$accordion_class.'">';
-                                            $output .= '<div class="panel-body'. esc_attr( $font_setting_class_content ) .'">';
-                                                if ( ! empty( $hongo_content ) ) {
-                                                    $output .= hongo_remove_wpautop( $hongo_content );
-                                                }
                                             $output .= '</div>';
                                         $output .= '</div>';
                                     $output .= '</div>';
