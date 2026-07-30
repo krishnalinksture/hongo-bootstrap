@@ -27073,7 +27073,6 @@ button.mfp-close:active {
 	background-color: transparent;
 	padding: 0;
 	margin: 0 0 20px 0;
-	;
 	font-weight: 400;
 	color: #232323
 }
@@ -27143,13 +27142,13 @@ button.mfp-close:active {
 }
 
 .accordion-style-4.panel-group .panel-heading,
-.accordion-style-4.panel-group .panel:last-child .panel-heading.active-accordion {
+.accordion-style-4.panel-group .accordion:last-child .panel-heading.active-accordion {
 	border: 0px;
 	border-bottom: 1px solid #e4e4e4;
 	background: transparent;
 }
 
-.accordion-style-4.panel-group .panel:last-child .panel-heading {
+.accordion-style-4.panel-group .accordion:last-child .panel-heading {
 	border-bottom: 0
 }
 
@@ -32004,6 +32003,11 @@ blockquote footer:before {
 	font-weight: 400;
 	line-height: 18px;
 	margin-bottom: 0;
+}
+
+.testimonial-slider-style-1 .swiper-slide > * {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 /* testimonial style 2 */
