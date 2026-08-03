@@ -96,8 +96,9 @@ switch( $hongo_product_archive_layout_setting ) {
 			do_action( 'hongo_shop_content_part_start' );
 		break;
 	case 'hongo_layout_right_sidebar':
-		?>
-			<div class="col-12 hongo-content-left-part hongo-shop-content-part<?php echo esc_attr( $hongo_product_sidebar_class ); ?>">
+		?>	
+			<div class="row">
+				<div class="col-12 hongo-content-left-part hongo-shop-content-part<?php echo esc_attr( $hongo_product_sidebar_class ); ?>">
 		<?php
 			do_action( 'hongo_shop_content_part_start' );
 		break;

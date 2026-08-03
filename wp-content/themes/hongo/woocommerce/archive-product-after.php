@@ -99,6 +99,7 @@ switch ($hongo_product_archive_layout_setting) {
 					<?php hongo_page_sidebar_style( $hongo_product_archive_left_sidebar ); ?>
 				</div>
 			</div>
+			</div>
 		<?php
 		break;
 	case 'hongo_layout_right_sidebar':
