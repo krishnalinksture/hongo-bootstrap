@@ -8865,7 +8865,7 @@
     .tab-style2 .nav-tabs {
         padding-right: 15px;
     }
-    .tab-style2 .nav-tabs li {
+    .tab-style2 .nav-tabs li a {
         border-right: 1px solid #ebebeb;
     }
     .tab-style2 .nav-tabs li a {
@@ -8873,6 +8873,9 @@
     }
     /* tab style style 3 */
     .tab-style3 .nav-tabs li {
+        width: 100%;
+    }
+    .tab-style3 .nav-tabs li a {
         width: 100%;
         margin: 0 0 12px;
         border-bottom: 1px solid rgba(69, 69, 69, 0.60);
