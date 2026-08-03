@@ -141,7 +141,7 @@ if ( ! function_exists( 'hongo_hamburger_navigation_menu_shortcode' ) ) {
 
         $output .= '<div class="hongo-hamburger-menu '.$hongo_navigation_hamburger_menu_uniq_class.'">';
             $output .= '<div class="menu-wrap full-screen">';
-                $output .= '<div class="animation-box">';
+                $output .= '<div class="animation-box row ms-0 me-0">';
 
                     // Navigation Menu
                     if ( ! empty( $hongo_menu_select ) && class_exists( 'Hongo_Hamburger_Menu_Walker' ) ) {
