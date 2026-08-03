@@ -96,7 +96,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			$hongo_page_class	.= ( $hongo_page_widget_style ) ? ' hongo-' . $hongo_page_widget_style : '';
 			?>
 				</div>
-				<div id="secondary" class="col-lg-3 col-md-4 col-12 sidebar hongo-page-sidebar hongo-blog-sidebar<?php echo esc_attr( $hongo_page_class ); ?>" itemtype="http://schema.org/WPSideBar" itemscope="itemscope" role="complementary">
+				<div id="secondary" class="col-lg-3 col-md-4 col-12 sidebar hongo-page-sidebar hongo-blog-sidebar<?php echo esc_attr( $hongo_page_class ); ?> order-md-1" itemtype="http://schema.org/WPSideBar" itemscope="itemscope" role="complementary">
 					<?php
 						do_action( 'hongo_sidebar_content_start' );
 
