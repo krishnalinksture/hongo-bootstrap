@@ -551,6 +551,12 @@
     .woocommerce .container .hongo-content-left-part ul.products.hongo-shop-boxed.hongo-shop-col-4 li.product .product-buttons-wrap {
         bottom: 15px;
     }
+
+    /* left and right sidebar overlay */
+    .hongo-product-common-sidebar-left-overlay,
+    .hongo-product-common-sidebar-right-overlay {
+        display: none;
+    }
 }
 
 @media (min-width: 1420px) {

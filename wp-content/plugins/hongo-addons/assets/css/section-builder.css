@@ -4099,6 +4099,7 @@ nav.navbar.hongo-hamburger-menu .row>div:first-child {
 	margin: 0;
 	top: 0;
 	background-color: transparent;
+	float: left;
 }
 .hongo-hamburger-menu .menu-item .dropdown-menu .menu-item .dropdown-menu {
 	padding-left: 15px !important
@@ -4146,7 +4147,8 @@ nav.navbar.hongo-hamburger-menu .row>div:first-child {
 	line-height: 20px;
 	padding: 5px 15px;
 	font-weight: 500;
-	color: #808080
+	color: #808080;
+	display: block;
 }
 .menu-content-inner-wrap ul .menu-item.current-menu-ancestor>a,
 .menu-content-inner-wrap ul .menu-item.current-menu-item>a,
