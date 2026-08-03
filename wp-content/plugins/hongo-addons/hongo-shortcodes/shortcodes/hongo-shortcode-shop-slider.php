@@ -282,11 +282,11 @@ if ( ! function_exists( 'hongo_shop_slider_shortcode' ) ) {
 
 			    	if ( $slide_direction == 'vertical' ) {
 			    		if ( ! empty( $hongo_pagination_color ) ) {
-			    			$hongo_featured_array[] =  '.'.$hongo_slider_id.'.swiper-container-vertical.'.$show_pagination_style.' .swiper-pagination-bullets .swiper-pagination-bullet{ color: '.$hongo_pagination_color.' }';
+			    			$hongo_featured_array[] =  '.'.$hongo_slider_id.'.swiper-vertical.'.$show_pagination_style.' .swiper-pagination-bullets .swiper-pagination-bullet{ color: '.$hongo_pagination_color.' }';
 			    		}
 			    		if ( ! empty( $hongo_active_pagination_color ) ) {
-			    			$hongo_featured_array[] =  '.'.$hongo_slider_id.'.swiper-container-vertical.'.$show_pagination_style.' .swiper-pagination-bullets .swiper-pagination-bullet-active{ color:'.$hongo_active_pagination_color.' }';
-				    		$hongo_featured_array[] =  '.'.$hongo_slider_id.'.swiper-container-vertical.'.$show_pagination_style.' .swiper-pagination-bullets .swiper-pagination-bullet-active:after{ background-color:'.$hongo_active_pagination_color.' }';
+			    			$hongo_featured_array[] =  '.'.$hongo_slider_id.'.swiper-vertical.'.$show_pagination_style.' .swiper-pagination-bullets .swiper-pagination-bullet-active{ color:'.$hongo_active_pagination_color.' }';
+				    		$hongo_featured_array[] =  '.'.$hongo_slider_id.'.swiper-vertical.'.$show_pagination_style.' .swiper-pagination-bullets .swiper-pagination-bullet-active:after{ background-color:'.$hongo_active_pagination_color.' }';
 			    		}
 			    	} else{
 
@@ -306,12 +306,12 @@ if ( ! function_exists( 'hongo_shop_slider_shortcode' ) ) {
 
 		        	if ( ! empty( $hongo_pagination_color ) ) {
 		        		$hongo_featured_array[] =  '.'.$hongo_slider_id.' .swiper-pagination-bullet{ '.$hongo_pagination_color.' }';
-		        		$hongo_featured_array[] =  '.'.$hongo_slider_id.'.swiper-container-vertical .swiper-pagination-bullet{ '.$hongo_pagination_color.' }';
+		        		$hongo_featured_array[] =  '.'.$hongo_slider_id.'.swiper-vertical .swiper-pagination-bullet{ '.$hongo_pagination_color.' }';
 		        	}
 
 		        	if ( ! empty( $hongo_active_pagination_color ) ) {
 			    		$hongo_featured_array[] =  '.'.$hongo_slider_id.' .swiper-pagination-bullet-active{ '.$hongo_active_pagination_color.' }';
-			    		$hongo_featured_array[] =  '.'.$hongo_slider_id.'.swiper-container-vertical .swiper-pagination-bullet-active{ '.$hongo_active_pagination_color.' }';
+			    		$hongo_featured_array[] =  '.'.$hongo_slider_id.'.swiper-vertical .swiper-pagination-bullet-active{ '.$hongo_active_pagination_color.' }';
 			    	}
 		        }
 		    }

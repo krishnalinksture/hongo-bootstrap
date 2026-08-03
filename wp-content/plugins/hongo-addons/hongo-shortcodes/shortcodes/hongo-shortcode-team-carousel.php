@@ -97,7 +97,7 @@ if ( ! function_exists( 'hongo_team_member_slider_shortcode' ) ) {
 
 		        	if ( ! empty( $hongo_pagination_color ) ) {
 		        		$hongo_featured_array[] =  '.'.$hongo_slider_id.'.'.$hongo_show_pagination_style. ' .swiper-pagination-bullet{ background-color: '.$hongo_pagination_color.' }';
-		        		$hongo_featured_array[] =  '.'.$hongo_slider_id.'.swiper-container-vertical.'.$hongo_show_pagination_style. ' .swiper-pagination-bullet{ '.$hongo_pagination_color.' }';
+		        		$hongo_featured_array[] =  '.'.$hongo_slider_id.'.swiper-vertical.'.$hongo_show_pagination_style. ' .swiper-pagination-bullet{ '.$hongo_pagination_color.' }';
 		        	}
 
 		        	if ( ! empty( $hongo_active_pagination_color ) ) {
