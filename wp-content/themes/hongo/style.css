@@ -174,6 +174,7 @@ select,
 
 .input-group .form-control {
 	margin-bottom: 0;
+	width: 100%;
 }
 
 select {
@@ -572,7 +573,23 @@ div.wpcf7-validation-errors {
 
 .alert-dismissable .close,
 .alert-dismissible .close {
-	top: 1px
+	top: 1px;
+	position: relative;
+	float: right;
+	font-size: 21px;
+    color: inherit;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+	line-height: 1;
+}
+
+.alert-dismissable .close:focus,
+.alert-dismissible .close:hover,
+.alert-dismissable .close:focus,
+.alert-dismissible .close:hover {
+    filter: alpha(opacity=70);
+    opacity: .7;
 }
 
 .stock {
@@ -946,6 +963,19 @@ section,
 	right: -10px;
 	font-weight: 100;
 	color: #fff;
+	opacity: 1;
+}
+
+.woocommerce-message .close:focus,
+.woocommerce-error .close:focus,
+.woocommerce-info .close:focus,
+.woocommerce-warning .close:focus,
+.woocommerce-message .close:hover,
+.woocommerce-error .close:hover,
+.woocommerce-info .close:hover,
+.woocommerce-warning .close:hover {
+    filter: alpha(opacity=50);
+    opacity: .5;
 }
 
 .woocommerce-message::before,
@@ -1098,6 +1128,12 @@ section,
 	opacity: .6;
 }
 
+.alert-message-style-1 .close:focus,
+.alert-message-style-1 .close:hover {
+	filter: alpha(opacity=90);
+    opacity: .9;
+}
+
 .alert-message-style-1.alert-info span {
 	background-color: #4278bb;
 }
@@ -1132,6 +1168,12 @@ section,
 	opacity: .6;
 }
 
+.alert-message-style-2 .close:focus,
+.alert-message-style-2 .close:hover {
+	filter: alpha(opacity=90);
+    opacity: .9;
+}
+
 .alert-message-style-2:before,
 .alert-message-style-2:after {
 	display: none
@@ -1149,6 +1191,13 @@ section,
 	font-weight: 900;
 	opacity: .6;
 	top: 0px;
+	right: -21px;
+}
+
+.alert-message-style-3 .close:focus,
+.alert-message-style-3 .close:hover {
+	filter: alpha(opacity=90);
+    opacity: .9;
 }
 
 .alert-message-style-3:before,
@@ -1321,6 +1370,10 @@ p.demo_store a {
 	color: #232323;
     background-color: transparent;
     border-color: #232323;
+}
+
+.btn {
+	margin-bottom: 0;
 }
 
 .woocommerce #respond input#submit.alt.disabled,
@@ -7350,7 +7403,8 @@ li.active .hongo-cb:after {
 	margin-top: 28px;
 }
 
-.hongo-content-newsletter-2 input {
+.hongo-content-newsletter-2 input,
+.hongo-content-newsletter-2 input:focus {
 	border: 0;
 	border-radius: 50px !important;
 	color: #898989;
@@ -7763,24 +7817,24 @@ li.active .hongo-cb:after {
 /* newsletter content style 6 */
 
 .hongo-content-newsletter-6 .newsletter-sub-title { 
-        background-color: #000000;
-        padding: 4px 20px;
-        display: inline-block;
-        color: #fff;
-        font-size: 13px;
-        font-weight: 500;
-        letter-spacing: 1px;
-        margin-bottom: 20px;
+	background-color: #000000;
+	padding: 4px 20px;
+	display: inline-block;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
 }
 .hongo-content-newsletter-6 .newsletter-title {
-        font-size: 48px;
-        line-height: 55px;
-        color: #232323;
-        font-weight: 300;
-        margin-bottom: 30px;
+	font-size: 48px;
+	line-height: 55px;
+	color: #232323;
+	font-weight: 300;
+	margin-bottom: 30px;
 }
 .hongo-content-newsletter-6 .newsletter-form-wrap {
-        margin: 0 auto;
+	margin: 0 auto;
 }
 .hongo-content-newsletter-6 .btn,
 .hongo-content-newsletter-6 .btn:active:focus,
@@ -7794,34 +7848,34 @@ li.active .hongo-cb:after {
 	min-width: 54px;
 	color: #000;
 	font-size: 14px;
-        border-radius: 0 5px 5px 0;
+	border-radius: 0 5px 5px 0;
 }
 .hongo-content-newsletter-6 .btn:hover i{
 	opacity: 0.8;
 }
 .hongo-content-newsletter-6 .input-group {
-        width: 100%;
+	width: 100%;
 }
 .hongo-content-newsletter-6 .input-group-btn {
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: auto;
-        z-index: 4;
-        height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: auto;
+	z-index: 4;
+	height: 100%;
 }
 .hongo-content-newsletter-6 .btn i {
 	margin: 0;
 	font-family: 'simple-line-icons';
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        color: #fff;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #fff;
 }
 .hongo-content-newsletter-6 .btn .fa-arrow-right:before {
 	content: "\e086";
@@ -7829,19 +7883,24 @@ li.active .hongo-cb:after {
 .hongo-content-newsletter-6 .input-group .form-control {
 	height: 45px;
 	padding-right: 54px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, .1);
-        border-radius: 5px;
-        border: 0;
+	box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+	border-radius: 5px;
+	border: 0;
 }
 .hongo-content-newsletter-6 .btn span {
 	display: none;
+}
+
+.hongo-content-newsletter-6 .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+	border-radius: 6px;
 }
 
 /* newsletter style 1 */
 
 .newsletter-style-1.textwidget {
 	width: 53%;
-	position: relative
+	position: relative;
+	margin-left: -2px;
 }
 
 .newsletter-style-1.textwidget.hide-text .btn {
@@ -9330,7 +9389,7 @@ li.active .hongo-cb:after {
 .hongo_widget_products_carousel .swiper-button-next,
 .hongo-product-lists-widget-wrap .swiper-button-next,
 .hongo-woocommerce-product-lists.hongo-product-lists-slider .swiper-button-next {
-	right: 0;
+	right: 1px;
 }
 
 .hongo_widget_products_carousel .swiper-button-prev,
@@ -26932,12 +26991,11 @@ button.mfp-close:active {
 	border: 0px;
 	border-bottom: 1px solid #ededed;
 	background-color: #fff;
-	;
 	padding: 0;
 	margin: 0;
 }
 
-.accordion-style-1.panel-group .panel:last-child {
+.accordion-style-1.panel-group .accordion:last-child .panel {
 	border-bottom: 0;
 }
 
@@ -32093,6 +32151,11 @@ blockquote footer:before {
 	margin: 0 1px;
 }
 
+.testimonial-slider-style-2 .swiper-slide > * {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 /* testimonial style 3 */
 
 .testimonial-slider-style-3 .testimonial-content-wrap {
@@ -32177,6 +32240,11 @@ blockquote footer:before {
 
 .testimonial-slider-style-3 .swiper-wrapper.equalize .swiper-slide>div .testimonial-content-wrap {
 	height: 100%;
+}
+
+.testimonial-slider-style-3 .swiper-slide > * {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 /* ===================================

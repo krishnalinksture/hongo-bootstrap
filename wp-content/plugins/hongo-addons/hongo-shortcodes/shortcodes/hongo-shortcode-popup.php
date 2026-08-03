@@ -285,7 +285,7 @@ if ( ! function_exists( 'hongo_popup_shortcode' ) ) {
                     }
 
                     // Popup modal content
-                    $output .= '<div id="modal-popup-'.$hongo_popup_form_id.'" class="'.esc_attr( $animation_dialog ).esc_attr( $hongo_width ).esc_attr( $hongo_offset ).' hongo-popup-simple-modal mfp-hide center-col bg-white text-center">';
+                    $output .= '<div id="modal-popup-'.$hongo_popup_form_id.'" class="'.esc_attr( $animation_dialog ).esc_attr( $hongo_width ).esc_attr( $hongo_offset ).' hongo-popup-simple-modal mfp-hide center-col bg-white text-center position-relative">';
 
                         $hongo_inside_popup_title = ! empty( $hongo_inside_popup_title ) ? str_replace( '||', '<br />', $hongo_inside_popup_title ) : '';
                         if( $hongo_inside_popup_title ){
