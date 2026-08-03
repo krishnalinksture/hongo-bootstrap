@@ -79,7 +79,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			/* if WooCommerce plugin is activated */
 			$hongo_page_class = ( hongo_is_woocommerce_activated() && is_account_page() ) ? ' pull-right' : ' pull-right hongo-page-content-area';
 			?>
-				<div class="col-lg-9 col-md-8 col-12 hongo-content-right-part<?php echo esc_attr( $hongo_page_class ); ?>">
+				<div class="col-lg-9 col-md-8 col-12 hongo-content-right-part<?php echo esc_attr( $hongo_page_class ); ?> order-md-2">
 		    <?php
 			break;
 		case 'hongo_layout_right_sidebar':
