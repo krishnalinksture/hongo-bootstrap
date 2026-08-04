@@ -2109,7 +2109,7 @@
             $( '.product-buttons-wrap' ).each( function( i ) {
 
                 var tooltip_pos = $( this ).attr( 'data-tooltip-position' );
-                if( tooltip_pos != '' && tooltip_pos != undefined ) { // Check tooltip position
+                if( tooltip_pos != '' && tooltip_pos != undefined ) {
 
                     $(this).find('a i').each(function () {
                         new bootstrap.Tooltip(this, {
