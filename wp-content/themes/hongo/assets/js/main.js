@@ -2111,7 +2111,15 @@
                 var tooltip_pos = $( this ).attr( 'data-tooltip-position' );
                 if( tooltip_pos != '' && tooltip_pos != undefined ) { // Check tooltip position
 
-                    $( this ).find('a i').attr( 'data-placement', tooltip_pos ).tooltip();
+                    $(this).find('a i')
+                    .tooltip({
+                        placement: tooltip_pos
+                    })
+                    .on('shown.bs.tooltip', function () {
+                        var tooltipId = $(this).attr('aria-describedby');
+                        var tooltip = document.getElementById(tooltipId);
+                        this.after(tooltip);
+                    });
                 }
             });
         }
