@@ -140,7 +140,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 						$post_format = get_post_format( get_the_ID() );
 					?>
 						<div <?php echo sprintf( '%s', $hongo_post_classes ); ?>>
-							<div class="equalize sm-equalize-auto width-100">
+							<div class="align-items-stretch width-100 row ms-0 me-0">
 								<?php if ( ! post_password_required() && $blog_thumbnail == 1 && has_post_thumbnail() ) { ?>
 									<?php $flag = 1; ?>				
 									<div class="blog-image col-lg-5">

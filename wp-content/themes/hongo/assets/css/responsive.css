@@ -552,8 +552,7 @@
         bottom: 15px;
     }
 
-    /* left and right sidebar overlay */
-    .hongo-product-common-sidebar-left-overlay,
+    /* right sidebar overlay */
     .hongo-product-common-sidebar-right-overlay {
         display: none;
     }
@@ -766,17 +765,6 @@
         width: 700px;
     }
     /* both sidebar */
-    .both-sidebar-wrap {
-        width: 100%;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -moz-flex;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-flow: row wrap;
-        flex-flow: row wrap;
-    }
     .both-sidebar-wrap .both-sidebar-left {
         order: 1;
         -webkit-order: 1;
@@ -853,6 +841,16 @@
     }
     .sidebar .navbar-form .form-control {
         z-index: inherit
+    }
+
+    /* both sidebar */
+    .both-sidebar-wrap {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .both-sidebar-wrap > div {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 

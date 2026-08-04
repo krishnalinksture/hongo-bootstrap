@@ -74,7 +74,7 @@ if( $hongo_show_description_archive == '1' && get_the_archive_description() ) {
 							<div class="blog-posts hongo-blog-common blog-archive-unique-1 <?php echo esc_attr( $blog_style ) . esc_attr( $infinite_scroll_main_class ); ?>" data-col="<?php echo esc_attr( $blog_column ); ?>" data-uniqueid="blog-archive-unique-1">
 						<?php } else { ?>
 							<div class="blog-posts <?php echo esc_attr( $blog_style ); ?>" data-col="<?php echo esc_attr( $blog_column ); ?>">
-								<ul class="post-grid hongo-blog-common blog-archive-unique-1<?php echo esc_attr( $infinite_scroll_main_class ) . esc_attr( $hongo_general_archive_type_gutter ); ?>" data-uniqueid="blog-archive-unique-1">
+								<ul class="row me-0 ms-0 post-grid hongo-blog-common blog-archive-unique-1<?php echo esc_attr( $infinite_scroll_main_class ) . esc_attr( $hongo_general_archive_type_gutter ); ?>" data-uniqueid="blog-archive-unique-1">
 									<li class="grid-sizer<?php echo esc_attr( $class_column ); ?>"></li>
 						<?php } ?>
 

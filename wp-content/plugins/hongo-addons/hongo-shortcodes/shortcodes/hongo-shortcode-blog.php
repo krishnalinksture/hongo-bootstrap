@@ -377,7 +377,7 @@ if ( ! function_exists( 'hongo_blog_shortcode' ) ) {
 
                         $output .= '<li class="grid-item blog-post blog-post-content pull-left blog-style1-'.$hongo_blog_style1.esc_attr( $hongo_animation_style ).esc_attr( $class_column ).esc_attr( $hongo_post_classes_infinite_scroll ).esc_attr( $no_img_class ).esc_attr( $filter_class ).'"'.$hongo_animation_delay_attr.$hongo_animation_duration_attr.'>';
                             $output .= '<div '.$hongo_post_classes.'>';
-                                $output .= '<div class="equalize sm-equalize-auto width-100">';
+                                $output .= '<div class="align-items-stretch width-100 row ms-0 me-0">';
                                     if ( ! post_password_required() && $hongo_show_post_thumbnail == 1 && has_post_thumbnail() ) {
                                         $flag = 1;
                                         $output .= '<div class="blog-image col-lg-5">';

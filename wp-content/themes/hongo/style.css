@@ -4559,6 +4559,10 @@ ul .grid-sizer {
 	font-size: 10px;
 }
 
+.tooltip.show {
+	opacity: 1;
+}
+
 .tooltip.in {
 	filter: alpha(opacity=1);
 	opacity: 1;
@@ -4599,6 +4603,24 @@ ul .grid-sizer {
 
 .tooltip.bottom-right .tooltip-arrow {
 	border-bottom-color: #1b1b1b
+}
+
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before, .bs-tooltip-top .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before, .bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #1b1b1b
+}
+
+.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before, .bs-tooltip-end .tooltip-arrow::before {
+    border-right-color: #1b1b1b
+}
+
+.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before, .bs-tooltip-bottom .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before, .bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: #1b1b1b
+}
+
+.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before, .bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: #1b1b1b
 }
 
 .bs-tooltip-auto[data-popper-placement^=left],
@@ -24489,7 +24511,7 @@ hongo-swatch.disable:hover {
 	padding: 0 !important;
 	height: auto !important;
 	margin-bottom: 30px !important;
-        overflow: hidden;
+    overflow: hidden;
 }
 
 .hongo-off-canvas-filter-sidebar .mCustomScrollBox {
@@ -24723,6 +24745,19 @@ hongo-swatch.disable:hover {
 
 .sidebar .widget_rss ul li {
 	margin-bottom: 18px;
+}
+
+/* both sidebar */
+.both-sidebar-wrap {
+	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
 }
 
 /* ===================================
@@ -26284,15 +26319,15 @@ button.mfp-close:active {
 }
 
 .hongo-blog-styles .page-load-status {
-        margin-top: 30px;
-        clear: both;
-        float: left;
-        width: 100%;    
+	margin-top: 30px;
+	clear: both;
+	float: left;
+	width: 100%;    
 }
 
 .page-load-status {
 	margin-top: 30px;
-        clear: both;
+	clear: both;
 }
 
 .infinite-scroll-request.loading {
@@ -26477,7 +26512,7 @@ button.mfp-close:active {
 .single-post .blog-image {
 	clear: both;
 	margin-bottom: 25px;
-        text-align: center;
+    text-align: center;
 }
 
 .blog-image.hongo-post-format-wrap,
