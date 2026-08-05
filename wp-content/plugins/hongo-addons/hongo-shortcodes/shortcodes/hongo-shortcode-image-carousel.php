@@ -253,7 +253,7 @@ if ( ! function_exists( 'hongo_image_carousel_shortcode' ) ) {
 			                                        $output .= '<div class="gallery-hover-main text-center">';
 			                                            $output .= '<div class="gallery-hover-box">';
 			                                                $output .= '<div class="gallery-hover-content">';
-			                                                    $output .= '<i class="ti-zoom-in text-white"></i>';
+			                                                    $output .= '<i class="ti-zoom-in text-white-alt"></i>';
 																$zoom_text = ( ! empty( $zoom_text ) ) ? $zoom_text : '';
 																if ( ! empty( $zoom_text ) ) {
 			                                                    	$output .= '<span class="alt-font'.$hongo_font_zoom_text_class.'">'. $zoom_text .'</span>';
