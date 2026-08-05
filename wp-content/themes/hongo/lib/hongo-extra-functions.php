@@ -1021,7 +1021,7 @@ if ( ! function_exists( 'hongo_related_posts' ) ) {
                     echo '<span class="related-post-general-title alt-font">'.esc_html( $hongo_related_posts_title ).'</span>';
                 echo '</div>';
             }
-            echo '<ul class="post-grid">';
+            echo '<ul class="post-grid row">';
                 echo '<li class="grid-sizer"></li>';
                 while ( $recent_post->have_posts() ) {
                     

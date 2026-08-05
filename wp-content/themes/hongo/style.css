@@ -7909,7 +7909,6 @@ li.active .hongo-cb:after {
 .newsletter-style-1.textwidget {
 	width: 53%;
 	position: relative;
-	margin-left: -2px;
 }
 
 .newsletter-style-1.textwidget.hide-text .btn {
@@ -26278,6 +26277,11 @@ button.mfp-close:active {
 .hongo-layout-right-sidebar.hongo-content-left-part {
 	padding-right: 45px;
 	padding-left: 15px;
+}
+
+.hongo-layout-right-sidebar.hongo-content-left-part > [class*="col-"] {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .hongo-layout-left-sidebar.hongo-content-right-part {
