@@ -97,7 +97,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
                 /* Check post tags, comment link and like */
                 ?>
-                <div class="row">
+                <div class="row ms-0 me-0">
                     <?php
                     if( $hongo_enable_tags == 1 ) {
                         if ( 'post' == get_post_type() && ( $hongo_enable_share == 1 || $hongo_enable_like == 1 ) ) {
