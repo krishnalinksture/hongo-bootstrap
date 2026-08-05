@@ -2514,6 +2514,7 @@
         margin-right: 7px;
         display: inline-block;
         vertical-align: middle;
+        margin-top: -2px;
     }
     .hongo-shop-sidebar-link-wrap {
         float: left;

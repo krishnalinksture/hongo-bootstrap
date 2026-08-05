@@ -4878,7 +4878,7 @@ header .woocommerce.widget_shopping_cart ul.cart_list .blockUI.blockOverlay::bef
 a.active .hongo-cb:after,
 li.active .hongo-cb:after,
 li a:hover .hongo-cb:after {
-	font-family: Font Awesome\ 5 Free;
+	font-family: Font Awesome\ 7 Free;
 	font-size: 8px;
 	content: "\f00c";
 	position: absolute;
@@ -19532,7 +19532,7 @@ hongo-swatch.disable:hover {
 }
 
 .hongo-attribute-filter .hongo-attribute-color.active:after {
-	font-family: Font Awesome\ 5 Free;
+	font-family: Font Awesome\ 7 Free;
 	font-size: 10px;
 	content: "\f00c";
 	position: absolute;
@@ -19547,7 +19547,7 @@ hongo-swatch.disable:hover {
 }
 
 .hongo-attribute-filter .hongo-attribute-color.disable:after {
-	font-family: Font Awesome\ 5 Free;
+	font-family: Font Awesome\ 7 Free;
 	font-size: 11px;
 	content: "\f00d";
 	position: absolute;
@@ -23715,7 +23715,7 @@ hongo-swatch.disable:hover {
 
 .attribute-round-link:hover .attribute-color-filter:after,
 .sidebar ul li.active .attribute-color-filter:after {
-	font-family: Font Awesome\ 5 Free;
+	font-family: Font Awesome\ 7 Free;
 	font-size: 8px;
 	content: "\f00c";
 	position: absolute;
@@ -24639,7 +24639,7 @@ hongo-swatch.disable:hover {
 }
 
 .sidebar .hongo-twitter-wrapper ul li span a.hongo-twitter-feed:before {
-	font-family: Font Awesome\ 5 Brands;
+	font-family: Font Awesome\ 7 Brands;
 	content: "\f099";
 	font-weight: 500;
 	color: #2e94eb;
@@ -33587,7 +33587,7 @@ blockquote footer:before {
 }
 
 .woocommerce-account .woocommerce .woocommerce-pagination a.woocommerce-button--next:after {
-	font-family: "Font Awesome 5 Free";
+	font-family: "Font Awesome 7 Free";
 	content: "\f105";
 	position: absolute;
 	right: 0;
@@ -33596,7 +33596,7 @@ blockquote footer:before {
 }
 
 .woocommerce-account .woocommerce .woocommerce-pagination a.woocommerce-button--previous:before {
-	font-family: "Font Awesome 5 Free";
+	font-family: "Font Awesome 7 Free";
 	content: "\f104";
 	position: absolute;
 	left: 0;

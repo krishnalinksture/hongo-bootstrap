@@ -88,7 +88,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	    header .nav .mega-menu-main-wrapper, .simple-dropdown .simple-menu, ul.sub-menu { position: static !important; height: 0 !important; width: 100% !important; left: inherit !important; right: inherit !important; padding: 0 !important; }
 	    ul.sub-menu { opacity: 1 !important; visibility: visible !important;}
 	    .mega-menu-main-wrapper section { padding: 0 !important; left: 0 !important; margin: 0 !important; width: 100% !important; }
-	    header .container { width: 100%; }
+	    header .container { width: 100%; max-width: 100%; }
 	    .mega-menu-main-wrapper { opacity: 1 !important; visibility: visible !important;}
 	    header .header-main-wrapper > div > section.hongo-stretch-content-fluid { padding: 0; }
 	    header .mini-header-main-wrapper > div > section.hongo-stretch-content-fluid { padding: 0; }
