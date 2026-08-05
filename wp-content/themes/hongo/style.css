@@ -822,6 +822,11 @@ h6 {
 	position: relative;
 }
 
+.row>.vc_column_container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 body.overflow-y-hidden {
 	height: 100%;
 }
@@ -4603,24 +4608,6 @@ ul .grid-sizer {
 
 .tooltip.bottom-right .tooltip-arrow {
 	border-bottom-color: #1b1b1b
-}
-
-.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before, .bs-tooltip-top .tooltip-arrow::before,
-.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before, .bs-tooltip-top .tooltip-arrow::before {
-    border-top-color: #1b1b1b
-}
-
-.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before, .bs-tooltip-end .tooltip-arrow::before {
-    border-right-color: #1b1b1b
-}
-
-.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before, .bs-tooltip-bottom .tooltip-arrow::before,
-.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before, .bs-tooltip-bottom .tooltip-arrow::before {
-    border-bottom-color: #1b1b1b
-}
-
-.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before, .bs-tooltip-start .tooltip-arrow::before {
-    border-left-color: #1b1b1b
 }
 
 .bs-tooltip-auto[data-popper-placement^=left],
