@@ -75,7 +75,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 		case 'hongo_layout_left_sidebar':
 			?>
 				</div>
-				<div id="secondary" class="col-lg-3 col-md-12 col-12 sidebar hongo-post-sidebar hongo-blog-sidebar<?php echo esc_attr( $hongo_post_sidebar_class ); ?>" itemtype="http://schema.org/WPSideBar" itemscope="itemscope" role="complementary">
+				<div id="secondary" class="col-lg-3 col-md-12 col-12 sidebar order-md-2 hongo-post-sidebar hongo-blog-sidebar<?php echo esc_attr( $hongo_post_sidebar_class ); ?>" itemtype="http://schema.org/WPSideBar" itemscope="itemscope" role="complementary">
 					<?php
 						do_action( 'hongo_sidebar_content_start' );
 

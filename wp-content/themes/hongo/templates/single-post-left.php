@@ -72,7 +72,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	switch( $hongo_single_post_layout_setting ) {
 		case 'hongo_layout_left_sidebar':
 			?>
-				<div class="col-lg-9 col-md-12 col-12 hongo-layout-left-sidebar pull-right no-padding-right hongo-content-right-part">
+				<div class="col-lg-9 col-md-12 col-12 order-md-2 hongo-layout-left-sidebar pull-right no-padding-right hongo-content-right-part">
 			<?php
 			break;
 		case 'hongo_layout_right_sidebar':
