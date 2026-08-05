@@ -82,7 +82,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			'comment_notes_after'	=> '',
 			'class_submit'			=> 'btn btn-dark-gray btn-small hongo-comment-button',
 			'submit_button'			=> '<input name="%1$s" type="submit" id="%2$s" class="%3$s" value="%4$s" />',
-			'submit_field'			=> '<div class="col-lg-12 col-md-12 col-12 form-submit">%1$s %2$s</div>',
+			'submit_field'			=> '<div class="col-lg-12 col-md-12 col-12 form-submit">%1$s %2$s</div>' . $close_div ,
 			'logged_in_as'			=> '<p class="logged-in-as col-lg-12">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>', 'hongo' ), esc_url( admin_url( 'profile.php' ) ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
 		) );
 	?>
