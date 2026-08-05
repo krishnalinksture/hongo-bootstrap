@@ -56,11 +56,12 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 		$html_req	= '';
 		$html5		= 'html5' === $args['format'];
 		$fields		= array(
-			'author'=> '<div class="col-lg-4 col-md-12 col-12"><input id="author" placeholder="'.esc_attr__( 'Name*', 'hongo' ).'" class="input-field comment-fields" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" ' . $aria_req . $html_req . ' /></div>',
+			'author'=> '<div class="row"><div class="col-lg-4 col-md-12 col-12"><input id="author" placeholder="'.esc_attr__( 'Name*', 'hongo' ).'" class="input-field comment-fields" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" ' . $aria_req . $html_req . ' /></div>',
 			'email'	=> '<div class="col-lg-4 col-md-12 col-12"><input id="email" placeholder="'.esc_attr__( 'Email*', 'hongo' ).'" class="input-field comment-fields" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '"' . $aria_req . $html_req  . ' /></div>',
 			'url'	=> '<div class="col-lg-4 col-md-12 col-12"><input id="url" placeholder="'.esc_attr__( 'Website', 'hongo' ).'" class="input-field comment-fields" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" /></div>',
 		);
 		$fields 	= apply_filters( 'comment_form_default_fields', $fields );
+		$close_div = '</div>';
 
 		// To provide filter for change comment text
 		$comment_placeholder_field	= apply_filters( 'comment_placeholder_field', __( 'Enter your comment here..', 'hongo' ) );
