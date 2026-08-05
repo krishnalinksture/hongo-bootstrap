@@ -96,35 +96,39 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                 );                
 
                 /* Check post tags, comment link and like */
-                if( $hongo_enable_tags == 1 ) {
-                    if ( 'post' == get_post_type() && ( $hongo_enable_share == 1 || $hongo_enable_like == 1 ) ) {
-                        $tags_list = get_the_tag_list();
-                        
-                        if ( $tags_list ) {
-                            printf( '<div class="col-lg-7 col-md-6 col-12 xs-text-center tagcloud">%1$s</div>',
-                                $tags_list
-                            );
+                ?>
+                <div class="row">
+                    <?php
+                    if( $hongo_enable_tags == 1 ) {
+                        if ( 'post' == get_post_type() && ( $hongo_enable_share == 1 || $hongo_enable_like == 1 ) ) {
+                            $tags_list = get_the_tag_list();
+                            
+                            if ( $tags_list ) {
+                                printf( '<div class="col-lg-7 col-md-6 col-12 xs-text-center tagcloud">%1$s</div>',
+                                    $tags_list
+                                );
+                            }
                         }
                     }
-                }
 
-                if( $hongo_enable_share == 1 || $hongo_enable_like == 1 ) {
-            ?>        
-                    <div class="col-lg-5 col-md-6 col-12 xs-text-center hongo-post-detail-icon alt-font pull-right">
-                        <?php
-                            if( $hongo_enable_share == 1 && function_exists( 'hongo_single_post_share_shortcode' ) ) {
-                                echo do_shortcode( "[hongo_single_post_share]" );
-                            }
-                            if( $hongo_enable_like == 1 && function_exists( 'hongo_get_simple_likes_button' ) ) {
-                        ?>
-                            <div class="hongo-blog-detail-like">
-                                <ul class="extra-small-icon">
-                                    <li><?php echo hongo_get_simple_likes_button( get_the_ID() ); ?></li>
-                                </ul>
-                            </div>
-                        <?php } ?>
-                    </div>
-                <?php } ?>
+                    if( $hongo_enable_share == 1 || $hongo_enable_like == 1 ) {
+                    ?>        
+                        <div class="col-lg-5 col-md-6 col-12 xs-text-center hongo-post-detail-icon alt-font pull-right">
+                            <?php
+                                if( $hongo_enable_share == 1 && function_exists( 'hongo_single_post_share_shortcode' ) ) {
+                                    echo do_shortcode( "[hongo_single_post_share]" );
+                                }
+                                if( $hongo_enable_like == 1 && function_exists( 'hongo_get_simple_likes_button' ) ) {
+                            ?>
+                                <div class="hongo-blog-detail-like">
+                                    <ul class="extra-small-icon">
+                                        <li><?php echo hongo_get_simple_likes_button( get_the_ID() ); ?></li>
+                                    </ul>
+                                </div>
+                            <?php } ?>
+                        </div>
+                    <?php } ?>
+                </div>
                 <?php if( $hongo_enable_navigation_link ) { // Next Previous Navigation Post Link ?>
                     <div class="col-lg-12 col-md-12 col-12 navigation-link-wrap">
                         <?php hongo_single_post_navigation(); ?>
