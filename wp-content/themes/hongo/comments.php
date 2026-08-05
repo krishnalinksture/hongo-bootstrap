@@ -61,7 +61,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			'url'	=> '<div class="col-lg-4 col-md-12 col-12"><input id="url" placeholder="'.esc_attr__( 'Website', 'hongo' ).'" class="input-field comment-fields" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" /></div>',
 		);
 		$fields 	= apply_filters( 'comment_form_default_fields', $fields );
-		$close_div = '</div>';
+		$close_div = get_edit_user_link() ? '' : '</div>';
 
 		// To provide filter for change comment text
 		$comment_placeholder_field	= apply_filters( 'comment_placeholder_field', __( 'Enter your comment here..', 'hongo' ) );
