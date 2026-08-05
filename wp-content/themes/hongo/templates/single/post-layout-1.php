@@ -140,7 +140,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                     } 
                 ?>
                 <?php if( $hongo_enable_related_posts == 1 ) { /* Check if related post hide or show */ ?>
-                    <div class="col-mdlg-12 col-md-12 col-12 hongo-related-posts hongo-blog-grid hongo-blog-styles">
+                    <div class="col-lg-12 col-md-12 col-12 hongo-related-posts hongo-blog-grid hongo-blog-styles">
                         <?php hongo_related_posts( get_the_ID() ); ?>
                     </div>
                 <?php } ?>

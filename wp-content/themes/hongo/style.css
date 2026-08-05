@@ -2336,6 +2336,10 @@ p.demo_store a {
 	color: #fff;
 }
 
+.text-white-alt {
+	color: #fff;
+}
+
 .text-black {
 	color: #000;
 }
@@ -24111,11 +24115,11 @@ hongo-swatch.disable:hover {
 	border: 0;
 	background-color: transparent;
 	padding: 10px 15px 10px 10px;
-	z-index: 3;
+	z-index: 4;
 }
 
 .sidebar .input-group-btn:last-child>.btn {
-	z-index: 3;
+	z-index: 4;
 }
 
 .sidebar .navbar-form button:active {
@@ -26282,6 +26286,7 @@ button.mfp-close:active {
 .hongo-layout-right-sidebar.hongo-content-left-part > [class*="col-"] {
 	padding-left: 15px;
 	padding-right: 15px;
+	clear: both;
 }
 
 .hongo-layout-left-sidebar.hongo-content-right-part {
@@ -26402,6 +26407,7 @@ button.mfp-close:active {
 
 .navigation-link-wrap {
 	margin-top: 50px;
+	display: inline-block;
 }
 
 .navigation-link-wrap .blog-nav-link {
@@ -26835,12 +26841,17 @@ button.mfp-close:active {
 	margin: 0 -15px;
 }
 
-.comment-form>div {
+.comment-form > .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.comment-form .row>div {
 	padding: 0 15px;
 	margin-bottom: 20px;
 }
 
-.comment-form>div.form-submit {
+.comment-form .row>div.form-submit {
 	text-align: center;
 	margin-bottom: 10px;
 }

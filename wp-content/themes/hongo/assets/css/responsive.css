@@ -10489,10 +10489,10 @@
     .single-post .single-comment-layout-2 .hongo-comment-form .comment-form {
         padding: 30px 15px;
     }
-    .comment-form>div {
+    .comment-form .row>div {
         margin-bottom: 15px;
     }
-    .comment-form>div:last-child {
+    .comment-form .row>div:last-child {
         margin-bottom: 0;
     }
     .comment-respond .comment-form .comment-form-cookies-consent {
