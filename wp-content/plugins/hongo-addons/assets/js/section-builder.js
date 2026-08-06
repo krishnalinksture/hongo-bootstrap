@@ -313,6 +313,7 @@
         $(document).on('click', '.dropdown > .dropdown-toggle', function (e) {
             e.preventDefault();
             e.stopPropagation();
+            var $li = $(this).parent('li');
 
             if ($(this).parent('li').hasClass('open')) { 
                 $(this).parent('li').removeClass('open'); $(this).attr('aria-expanded', 'false');
@@ -320,6 +321,17 @@
                 $('.dropdown.open').removeClass('open') .find('> .dropdown-toggle') .attr('aria-expanded', 'false');
                 $(this).parent('li').addClass('open');
                 $(this).attr('aria-expanded', 'true');
+
+                // Move the clicked menu item to the top
+                var $scrollContainer = $li.closest('.hongo-navigation-menu');
+
+                 if ( $scrollContainer.length ) {
+                    window.requestAnimationFrame(function () {
+                        var liTop = $li.offset().top;
+                        var containerTop = $scrollContainer.offset().top;
+                        $scrollContainer.scrollTop( $scrollContainer + ( liTop - containerTop ) );
+                    });
+                }
             }
         });
 
