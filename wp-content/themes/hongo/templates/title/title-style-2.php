@@ -16,7 +16,7 @@ echo '<section class="hongo-main-title-wrap bg-dark-gray cover-background' . esc
 	if( $hongo_title != '' || ( $hongo_enable_subtitle != '0' && $hongo_title_subtitle ) || ( $hongo_enable_breadcrumb == 1 && $hongo_breadcrumb_position == 'title-area' ) ) {
 	?>
 		<div class="<?php echo esc_attr( $container_style ); ?>">
-			<div class="row equalize sm-equalize-auto">
+			<div class="row align-items-stretch">
 				<div class="col-xl-5 col-lg-6 col-md-12 col-12 display-table text-left sm-text-center">
 					<?php if( $hongo_enable_breadcrumb == 1 && $hongo_breadcrumb_position == 'title-area' ) { ?>
 						<div class="display-table-cell vertical-align-middle breadcrumb alt-font">
