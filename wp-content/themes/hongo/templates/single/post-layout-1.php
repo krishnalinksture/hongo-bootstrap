@@ -113,7 +113,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
                     if( $hongo_enable_share == 1 || $hongo_enable_like == 1 ) {
                     ?>        
-                        <div class="col-lg-5 col-md-6 col-12 xs-text-center hongo-post-detail-icon alt-font pull-right">
+                        <div class="col-lg-5 col-md-6 col-12 xs-text-center hongo-post-detail-icon alt-font pull-right ms-auto">
                             <?php
                                 if( $hongo_enable_share == 1 && function_exists( 'hongo_single_post_share_shortcode' ) ) {
                                     echo do_shortcode( "[hongo_single_post_share]" );
