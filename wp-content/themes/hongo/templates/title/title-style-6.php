@@ -49,7 +49,7 @@ echo '<section class="hongo-main-title-wrap bg-very-light-gray bg-opacity-color'
 	<?php } ?>
 </section>
 <?php if( $hongo_enable_breadcrumb == 1 && $hongo_breadcrumb_position == 'after-title-area'  ) { ?>
-	<section class="padding-20px-tb border-bottom border-color-extra-light-gray hongo-main-breadcrumb<?php echo esc_attr( $hongo_breadcrumb_class ); ?>">
+	<section class="padding-20px-tb border-bottom-alt border-color-extra-light-gray hongo-main-breadcrumb<?php echo esc_attr( $hongo_breadcrumb_class ); ?>">
 		<div class="<?php echo esc_attr( $container_style ); ?>">
 			<div class="row">
 				<div class="col-lg-12 display-table">
