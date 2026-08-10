@@ -27613,6 +27613,7 @@ button.mfp-close:active {
 .call-to-action-style-4 .action-button {
 	display: table-cell;
 	vertical-align: middle;
+	white-space: nowrap;
 }
 
 .text-right .call-to-action-style-4 {
@@ -27649,6 +27650,7 @@ button.mfp-close:active {
 .call-to-action-style-5 .btn {
 	display: table-cell;
 	vertical-align: middle;
+	white-space: nowrap;
 }
 
 .text-right .call-to-action-style-5 {

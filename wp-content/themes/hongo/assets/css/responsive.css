@@ -7179,6 +7179,17 @@
     .swiper-horizontal .swiper-button-prev {
         left: 15px;
     }
+    .hongo_widget_products_carousel .swiper-button-next,
+    .hongo-product-lists-widget-wrap .swiper-button-next,
+    .hongo-woocommerce-product-lists.hongo-product-lists-slider .swiper-button-next {
+        right: 1px;
+    }
+    .hongo_widget_products_carousel .swiper-button-prev,
+    .hongo-product-lists-widget-wrap .swiper-button-prev,
+    .hongo-woocommerce-product-lists.hongo-product-lists-slider .swiper-button-prev {
+        right: 15px;
+        left: inherit;
+    }
 
     /* ----- testimonial style  ----- */
     /* testimonial style 1 */
