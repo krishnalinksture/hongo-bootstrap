@@ -26283,7 +26283,8 @@ button.mfp-close:active {
 	padding-left: 15px;
 }
 
-.hongo-layout-right-sidebar.hongo-content-left-part > [class*="col-"] {
+.hongo-layout-right-sidebar.hongo-content-left-part > [class*="col-"],
+.hongo-layout-left-sidebar.hongo-content-right-part > [class*="col-"] {
 	padding-left: 15px;
 	padding-right: 15px;
 	clear: both;
@@ -26919,6 +26920,12 @@ button.mfp-close:active {
 	padding-left: 0;
 	padding-right: 0;
 	margin-top: 70px;
+}
+
+.hongo-layout-right-sidebar.hongo-content-left-part > [class*="col-"].hongo-related-posts,
+.hongo-layout-left-sidebar.hongo-content-right-part > [class*="col-"].hongo-related-posts {
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .hongo-related-posts .related-post-general-title {
