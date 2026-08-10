@@ -21,7 +21,7 @@ echo '<section class="hongo-main-title-wrap bg-dark-gray cover-background' . esc
 					<?php if( $hongo_title != '' ) { ?>
 						<div class="display-table-cell vertical-align-middle text-left sm-text-center">
 							<?php if( $hongo_title && $hongo_enable_title_heading == '1' ) { ?>
-								<h1 class="alt-font hongo-main-title text-white<?php echo esc_attr( $hongo_title_text_transform ) . esc_attr( $hongo_title_class ); ?>"><?php echo sprintf( '%s', $hongo_title ); ?></h1>
+								<h1 class="alt-font hongo-main-title text-white-alt<?php echo esc_attr( $hongo_title_text_transform ) . esc_attr( $hongo_title_class ); ?>"><?php echo sprintf( '%s', $hongo_title ); ?></h1>
 							<?php } ?>
 						</div>
 					<?php } ?>
