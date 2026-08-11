@@ -6,10 +6,7 @@
  */
 ?>
 <?php
-if ( function_exists( 'vc_add_shortcode_param' ) ) {
 
-    vc_add_shortcode_param( 'hongo_multiple_select_dropdown', 'hongo_multiple_select_dropdown' );
-}
 if ( ! function_exists( 'hongo_multiple_select_dropdown' ) ) {
 
     function hongo_multiple_select_dropdown( $settings, $value ) {
@@ -43,4 +40,9 @@ if ( ! function_exists( 'hongo_multiple_select_dropdown' ) ) {
 
         return $output;
     }
+}
+
+if ( function_exists( 'vc_add_shortcode_param' ) ) {
+
+    vc_add_shortcode_param( 'hongo_multiple_select_dropdown', 'hongo_multiple_select_dropdown' );
 }

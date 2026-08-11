@@ -5,10 +5,7 @@
  * @package Hongo
  */
 
-if ( function_exists( 'vc_add_shortcode_param' ) ) {
-    
-    vc_add_shortcode_param( 'hongo_icon', 'hongo_icon_shortcode', HONGO_ADDONS_ROOT_DIR . '/hongo-shortcodes/js/custom.js' );
-}
+
 
 if ( ! function_exists( 'hongo_icon_shortcode' ) ) {
     function hongo_icon_shortcode( $settings, $value ) {
@@ -132,4 +129,9 @@ if ( ! function_exists( 'hongo_icon_shortcode' ) ) {
 
         return $output;
     }
+}
+
+if ( function_exists( 'vc_add_shortcode_param' ) ) {
+    
+    vc_add_shortcode_param( 'hongo_icon', 'hongo_icon_shortcode', HONGO_ADDONS_ROOT_DIR . '/hongo-shortcodes/js/custom.js' );
 }

@@ -21,7 +21,7 @@ $hongo_header_stick_full_width = array(
                     esc_html__( 'Off', 'hongo-addons') => '0', 
                     esc_html__( 'On', 'hongo-addons') => '1'
                 ),
-    'std' => '',
+    'std' => '0',
     'description' => esc_html__( 'This settings is used for header builder.', 'hongo-addons' ),
 );
 $hongo_footer_style = array(

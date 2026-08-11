@@ -6,10 +6,7 @@
  */
 ?>
 <?php
-if ( function_exists( 'vc_add_shortcode_param' ) ) {
 
-    vc_add_shortcode_param( 'hongo_multiple_product_tab', 'multiple_product_tab');
-}
 if ( ! function_exists( 'multiple_product_tab' ) ) {
 
     function multiple_product_tab($settings, $value) {
@@ -37,4 +34,9 @@ if ( ! function_exists( 'multiple_product_tab' ) ) {
        
         return $output;
     }
+}
+
+if ( function_exists( 'vc_add_shortcode_param' ) ) {
+
+    vc_add_shortcode_param( 'hongo_multiple_product_tab', 'multiple_product_tab');
 }

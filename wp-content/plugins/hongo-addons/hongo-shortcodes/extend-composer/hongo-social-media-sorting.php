@@ -7,11 +7,6 @@
 ?>
 <?php
 
-if ( function_exists( 'vc_add_shortcode_param' ) ) {
-    
-    vc_add_shortcode_param( 'hongo_custom_social_sorting', 'hongo_custom_social_sorting_settings_field', HONGO_ADDONS_ROOT_DIR . '/hongo-shortcodes/js/custom.js' );
-}
-
 if ( ! function_exists( 'hongo_custom_social_sorting_settings_field' ) ) {
     function hongo_custom_social_sorting_settings_field( $settings, $value ) {
 
@@ -41,4 +36,9 @@ if ( ! function_exists( 'hongo_custom_social_sorting_settings_field' ) ) {
 
         return $output;
     }
+}
+
+if ( function_exists( 'vc_add_shortcode_param' ) ) {
+    
+    vc_add_shortcode_param( 'hongo_custom_social_sorting', 'hongo_custom_social_sorting_settings_field', HONGO_ADDONS_ROOT_DIR . '/hongo-shortcodes/js/custom.js' );
 }

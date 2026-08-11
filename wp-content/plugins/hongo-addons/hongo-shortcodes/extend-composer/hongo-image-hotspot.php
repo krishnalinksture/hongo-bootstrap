@@ -6,10 +6,7 @@
  */
 ?>
 <?php
-if ( function_exists( 'vc_add_shortcode_param' ) ) {
 
-	vc_add_shortcode_param( 'hongo_image_hotspot', 'hongo_image_hotspot', HONGO_ADDONS_ROOT_DIR . '/hongo-shortcodes/js/image-hotspot/backend/hongo-hotspot-script.js' );
-}
 if ( ! function_exists( 'hongo_image_hotspot' ) ) {
 
 	function hongo_image_hotspot( $settings, $value ) {
@@ -26,4 +23,9 @@ if ( ! function_exists( 'hongo_image_hotspot' ) ) {
 	   
 	    return $output;
 	}
+}
+
+if ( function_exists( 'vc_add_shortcode_param' ) ) {
+
+	vc_add_shortcode_param( 'hongo_image_hotspot', 'hongo_image_hotspot', HONGO_ADDONS_ROOT_DIR . '/hongo-shortcodes/js/image-hotspot/backend/hongo-hotspot-script.js' );
 }

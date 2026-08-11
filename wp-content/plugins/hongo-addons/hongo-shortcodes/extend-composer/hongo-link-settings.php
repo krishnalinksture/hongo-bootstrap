@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
 
-vc_add_shortcode_param('hongo_link', 'hongo_link_form_field', HONGO_ADDONS_ROOT_DIR . '/hongo-shortcodes/js/link-setting.js' );
+
 
 if ( ! function_exists( 'hongo_link_form_field' ) ) {
 	
@@ -16,3 +16,5 @@ if ( ! function_exists( 'hongo_link_form_field' ) ) {
 		       . '</div>';
 	}
 }
+
+vc_add_shortcode_param('hongo_link', 'hongo_link_form_field', HONGO_ADDONS_ROOT_DIR . '/hongo-shortcodes/js/link-setting.js' );

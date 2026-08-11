@@ -6,10 +6,7 @@
  */
 ?>
 <?php 
-if ( function_exists( 'vc_add_shortcode_param' ) ) {
 
-    vc_add_shortcode_param( 'hongo_custom_switch_option', 'hongo_custom_switch_option_settings_field', HONGO_ADDONS_ROOT_DIR . '/hongo-shortcodes/js/switch-optins.js');
-}
 
 if ( ! function_exists( 'hongo_custom_switch_option_settings_field' ) ) {
     function hongo_custom_switch_option_settings_field( $settings, $value ) {
@@ -60,4 +57,9 @@ if ( ! function_exists( 'hongo_custom_switch_option_settings_field' ) ) {
 
         return $output;
     }
+}
+
+if ( function_exists( 'vc_add_shortcode_param' ) ) {
+
+    vc_add_shortcode_param( 'hongo_custom_switch_option', 'hongo_custom_switch_option_settings_field', HONGO_ADDONS_ROOT_DIR . '/hongo-shortcodes/js/switch-optins.js');
 }

@@ -6,11 +6,6 @@
  */
 ?>
 <?php 
-if ( function_exists( 'vc_add_shortcode_param' ) ) {
-
-	vc_add_shortcode_param( 'hongo_preview_image', 'hongo_custom_slider_image_settings_field', HONGO_ADDONS_ROOT_DIR . '/hongo-shortcodes/js/custom.js');
-}
-
 if ( ! function_exists( 'hongo_custom_slider_image_settings_field' ) ) {
     function hongo_custom_slider_image_settings_field( $settings, $value ) {
 
@@ -24,4 +19,9 @@ if ( ! function_exists( 'hongo_custom_slider_image_settings_field' ) ) {
 
         return $output;
     }
+}
+
+if ( function_exists( 'vc_add_shortcode_param' ) ) {
+
+	vc_add_shortcode_param( 'hongo_preview_image', 'hongo_custom_slider_image_settings_field', HONGO_ADDONS_ROOT_DIR . '/hongo-shortcodes/js/custom.js');
 }
