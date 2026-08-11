@@ -553,7 +553,8 @@
     }
 
     /* right sidebar overlay */
-    .hongo-product-common-sidebar-right-overlay {
+    .hongo-product-common-sidebar-right-overlay,
+    .hongo-product-common-sidebar-left-overlay {
         display: none;
     }
 }
@@ -9079,6 +9080,8 @@
     .both-sidebar-wrap .both-content-center,
     .both-sidebar-wrap .hongo-layout-both-sidebar {
         margin-bottom: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .both-sidebar-wrap .both-sidebar-left {
         margin-bottom: 40px;
