@@ -9086,6 +9086,12 @@
     .both-sidebar-wrap .both-sidebar-left {
         margin-bottom: 40px;
     }
+    .single-product .hongo-single-product-main-wrap .container .both-sidebar-wrap,
+    .single-product .hongo-single-product-main-wrap .container-fluid .both-sidebar-wrap,
+    .single-product .hongo-single-product-main-wrap .container-fluid-with-padding .both-sidebar-wrap {
+        padding-left: 0;
+        padding-right: 0;
+    }
     /* ----- fancy text box style  ----- */
     /* fancy text box style 1 */
     .fancy-text-box-style-1 .content {
