@@ -2114,7 +2114,6 @@
                     $(this).find('a i').each(function () {
                         new bootstrap.Tooltip(this, {
                             placement: tooltip_pos,
-                            container: this.parentElement
                         });
                     });
                 }
