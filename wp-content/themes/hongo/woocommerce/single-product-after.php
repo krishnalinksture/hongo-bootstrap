@@ -91,7 +91,7 @@ switch ($hongo_single_product_layout_setting) {
 		?>
 			</div>
 			<div class="hongo-product-common-sidebar-left-overlay"></div>
-			<div id="secondary" class="sidebar hongo-product-sidebar hongo-woocommerce-sidebar hongo-product-common-sidebar-left<?php echo esc_attr( $hongo_product_sidebar_class ); ?>" itemtype="http://schema.org/WPSideBar" itemscope="itemscope" role="complementary">
+			<div id="secondary" class="sidebar order-lg-1 hongo-product-sidebar hongo-woocommerce-sidebar hongo-product-common-sidebar-left<?php echo esc_attr( $hongo_product_sidebar_class ); ?>" itemtype="http://schema.org/WPSideBar" itemscope="itemscope" role="complementary">
 				<a class="hongo-close-left-sidebar sidebar-close" href="javascript:void(0);">X</a>
 					<div class="hongo-product-common-sidebar-left-wrap">
 						<?php hongo_page_sidebar_style( $hongo_single_product_left_sidebar ); ?>

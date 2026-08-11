@@ -33,7 +33,7 @@ switch( $hongo_single_product_layout_setting ) {
 		break;
 	case 'hongo_layout_left_sidebar':
 		?>
-			<div class="col-12 pull-right hongo-full-width-no-padding hongo-content-right-part<?php echo esc_attr( $hongo_product_sidebar_class ); ?>">
+			<div class="col-12 order-lg-2 pull-right hongo-full-width-no-padding hongo-content-right-part<?php echo esc_attr( $hongo_product_sidebar_class ); ?>">
 				<div class="hongo-sidebar-btn-wrap">
 					<div class="hongo-left-common-sidebar-link alt-font">
 						<?php $hongo_single_left_sidebar_text = apply_filters( 'hongo_single_left_sidebar_text', esc_html__( 'Show Sidebar', 'hongo' ) ); ?>
