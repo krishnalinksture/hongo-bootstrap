@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 // Return if use is not logged in
 if ( ! is_admin() ) { return; }
 
-define( 'HONGO_PLUGINS_URI', 'http://api.themezaa.com/hongo/plugins/' );
+define( 'HONGO_PLUGINS_URI', 'https://api.themezaa.com/hongo/plugins/' );
 define( 'HONGO_PLUGINS_CURRENT_USER_URI', HONGO_PLUGINS_URI . HONGO_THEME_VERSION );
 
 require_once HONGO_THEME_TGM . '/class-tgm-plugin-activation.php';

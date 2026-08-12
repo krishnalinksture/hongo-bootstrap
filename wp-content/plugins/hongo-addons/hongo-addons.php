@@ -94,7 +94,7 @@ if( ! class_exists('Hongo_Addons') ) {
 
 				$hongo_addons_version           = get_plugin_data( HONGO_ADDONS_ROOT.'/hongo-addons.php', $markup = true, $translate = true );
 				$hongo_addons_current_version   = $hongo_addons_version['Version'];
-				$hongo_addons_remote_path       = 'http://api.themezaa.com/hongo/update.php';
+				$hongo_addons_remote_path       = 'https://api.themezaa.com/hongo/update.php';
 				$hongo_addons_slug              = plugin_basename( __FILE__ );
 				new hongo_addons_plugin_update( $hongo_addons_current_version, $hongo_addons_remote_path, $hongo_addons_slug );
 			}

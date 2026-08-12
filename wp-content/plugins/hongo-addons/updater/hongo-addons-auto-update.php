@@ -56,7 +56,7 @@ if( ! class_exists( 'hongo_addons_plugin_update' ) ) {
 		}
 
 		public function hongo_addons_getRemote_information() {
-			$hongo_addons_info_request = wp_remote_get( 'http://api.themezaa.com/hongo/data.json' );
+			$hongo_addons_info_request = wp_remote_get( 'https://api.themezaa.com/hongo/data.json' );
 			if ( ! is_wp_error( $hongo_addons_info_request ) || wp_remote_retrieve_response_code( $hongo_addons_info_request ) === 200 ) {
 				return json_decode( $hongo_addons_info_request['body'] );
 			}
