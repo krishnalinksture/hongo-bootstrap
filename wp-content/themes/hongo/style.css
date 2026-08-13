@@ -27000,6 +27000,10 @@ button.mfp-close:active {
 	margin: 0 10px;
 }
 
+.hongo-sidebar-style-2.sidebar .widget .newsletter-style-1 {
+	width: 100%;
+}
+
 .hongo-sidebar-style-1.sidebar .widget_hongo_social_widget ul {
 	padding: 0;
 	margin: 0;
