@@ -1757,7 +1757,7 @@
                         $blog_filter.imagesLoaded(function () {
                             $('.hongo-blog-filter-wrap').each(function() {
                                 if( $('#'+ $(this).attr( 'data-id' )+' > li.active > a').attr( 'data-id' ) != '' ){
-                                    var blog_filter = $('.'+$(this).find('li.filter-tab.active a').attr( 'data-id' ));                                
+                                    var blog_filter = $('.'+$(this).find('li.filter-tab.active a').attr( 'data-id' ));
                                     var data_id = $('#'+ $(this).find('li.filter-tab.active a').attr( 'data-id' )).find('li.filter-tab.active a').attr('data-filter');
                                     var blog_selector = data_id;
                                     blog_filter.isotope({
@@ -1768,7 +1768,7 @@
                                             columnWidth: '.grid-sizer'
                                         },
                                         filter: blog_selector
-                                    }); 
+                                    });
                                 }
                             });
                         });
@@ -2141,7 +2141,15 @@
         /*Single Product variable swatch tooltip*/
         if( $( '.hongo-swatch' ).length > 0 ){
 
-            $( '.hongo-swatch' ).tooltip();
+            $( '.hongo-swatch' ).each(function () {
+                var tooltip_pos = $( this ).attr( 'data-placement' );
+                var tooltip_title = $( this ).attr( 'data-original-title' );
+
+                new bootstrap.Tooltip( this, {
+                    title: tooltip_title,
+                    placement: tooltip_pos || 'top'
+                });
+            });
         } 
 
         /* Empty Cart Message */
