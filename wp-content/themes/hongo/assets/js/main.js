@@ -181,7 +181,15 @@
                     // Tooltip
                     $( '.woocommerce-product-gallery__trigger' ).attr( 'data-original-title', hongoMain.zoom_tooltip_text );
                     $( '.woocommerce-product-gallery__trigger' ).attr( 'data-placement', 'left' );
-                    $( '.woocommerce-product-gallery__trigger' ).tooltip();
+                    $( '.woocommerce-product-gallery__trigger' ).each(function () {
+                        var product_gallery_tooltip = $( this ).attr( 'data-placement' );
+                        var tooltip_title = $( this ).attr( 'data-original-title' );
+
+                        new bootstrap.Tooltip( this, {
+                            title: tooltip_title,
+                            placement: product_gallery_tooltip || 'top'
+                        });
+                    });
                 }
             }
         }
@@ -393,7 +401,15 @@
         if( $( '.hongo-single-product-360-button' ).length > 0 && $.inArray( 'threesixty', hongoMain.disable_scripts ) < 0 ) {
 
             /*Single Product 360 Rotation tooltip*/
-            $( '.hongo-single-product-360-button' ).tooltip();
+            $( '.hongo-single-product-360-button' ).each(function () {
+                var threesixty_rotation_tooltip = $( this ).attr( 'data-placement' );
+                var tooltip_title = $( this ).attr( 'data-original-title' );
+
+                new bootstrap.Tooltip( this, {
+                    title: tooltip_title,
+                    placement: threesixty_rotation_tooltip || 'top'
+                });
+            });
 
             var all_images  = $( '.hongo-single-product-360-button' ).attr( 'data-images' ),
                 height      = $( '.hongo-single-product-360-button' ).attr( 'data-height' ),
@@ -566,11 +582,14 @@
                 }
 
                 $( button ).parents().find( '.product-buttons-wrap' ).each( function( i ) {
-
                     var tooltip_pos = $( this ).attr( 'data-tooltip-position' );
                     if( tooltip_pos != '' && tooltip_pos != undefined ) { // Check tooltip position
 
-                        $( this ).find('a.added_to_cart i').attr( 'data-placement', tooltip_pos ).tooltip();
+                        $(this).find('a.added_to_cart i').each(function () {
+                            new bootstrap.Tooltip(this, {
+                                placement: tooltip_pos,
+                            });
+                        });
                     }
                 });
             }
@@ -2108,12 +2127,12 @@
 
             $( '.product-buttons-wrap' ).each( function( i ) {
 
-                var tooltip_pos = $( this ).attr( 'data-tooltip-position' );
-                if( tooltip_pos != '' && tooltip_pos != undefined ) {
+                var product_btn_tooltip = $( this ).attr( 'data-tooltip-position' );
+                if( product_btn_tooltip != '' && product_btn_tooltip != undefined ) {
 
                     $(this).find('a i').each(function () {
                         new bootstrap.Tooltip(this, {
-                            placement: tooltip_pos,
+                            placement: product_btn_tooltip,
                         });
                     });
                 }
@@ -2121,33 +2140,61 @@
         }
 
         /* Tooltip for all tooltips */
-        if( $( '.hongo-tooltip' ).length > 0 ) {
+        if ( $( '.hongo-tooltip' ).length > 0 ) {
 
-            $( '.hongo-tooltip' ).tooltip();
+            $( '.hongo-tooltip' ).each( function () {
+                var $this = $( this );
+                var tooltip_title = $this.attr( 'data-original-title' );
+                var tooltip_placement = $this.attr( 'data-placement' );
+
+                if ( tooltip_title ) {
+                    new bootstrap.Tooltip( this, {
+                        title: tooltip_title,
+                        placement: tooltip_placement || 'top'
+                    });
+                }
+            });
+
         }
 
         /*Single Product video tooltip*/
         if( $( '.hongo-single-product-video' ).length > 0 ) {
 
-            $( '.hongo-single-product-video' ).tooltip();
+            $( '.hongo-single-product-video' ).each(function () {
+                var single_product_video_tooltip = $( this ).attr( 'data-placement' );
+                var tooltip_title = $( this ).attr( 'data-original-title' );
+
+                new bootstrap.Tooltip( this, {
+                    title: tooltip_title,
+                    placement: single_product_video_tooltip || 'top'
+                });
+            });
         }
 
         /*Single Product video tooltip*/
         if( $( '.hongo-single-product-video-play-button' ).length > 0 ) {
 
-            $( '.hongo-single-product-video-play-button' ).tooltip();
+            $( '.hongo-single-product-video-play-button' ).each(function () {
+                var play_btn_video_tooltip = $( this ).attr( 'data-placement' );
+                var tooltip_title = $( this ).attr( 'data-original-title' );
+
+                new bootstrap.Tooltip( this, {
+                    title: tooltip_title,
+                    placement: play_btn_video_tooltip || 'top'
+                });
+            });
         }
 
         /*Single Product variable swatch tooltip*/
         if( $( '.hongo-swatch' ).length > 0 ){
 
             $( '.hongo-swatch' ).each(function () {
-                var tooltip_pos = $( this ).attr( 'data-placement' );
+                var swatch_tooltip_pos = $( this ).attr( 'data-placement' );
                 var tooltip_title = $( this ).attr( 'data-original-title' );
 
                 new bootstrap.Tooltip( this, {
                     title: tooltip_title,
-                    placement: tooltip_pos || 'top'
+                    placement: swatch_tooltip_pos || 'top'
                 });
             });
         } 
@@ -2534,11 +2581,17 @@
             /* Refresh Tooltip after product filter Function */
             function refreshProductTooltip( response ) {
 
-                var tooltip_pos = $( response ).find( '.product-buttons-wrap' ).attr( 'data-tooltip-position' );
-                if( tooltip_pos != '' && tooltip_pos != undefined ) { // Check tooltip position
+                $( '.product-buttons-wrap' ).each( function( i ) {
+                    var tooltip_pos = $( response ).find( '.product-buttons-wrap' ).attr( 'data-tooltip-position' );
+                    if( tooltip_pos != '' && tooltip_pos != undefined ) { // Check tooltip position
 
-                    $('.product-buttons-wrap a i').attr( 'data-placement', tooltip_pos ).tooltip();
-                }
+                        $(this).find('a i').each(function () {
+                            new bootstrap.Tooltip(this, {
+                                placement: tooltip_pos,
+                            });
+                        });
+                    }
+                });
             }
 
             /* Refresh Columns after product filter Function */
