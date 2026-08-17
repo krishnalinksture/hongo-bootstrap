@@ -37,7 +37,7 @@ if ( ! function_exists( 'hongo_alert_message_shortcode' ) ) {
 		$hongo_highliget_title = ( $hongo_highliget_title ) ? $hongo_highliget_title : '';
 		$hongo_subtitle = ( $hongo_subtitle ) ? ( $hongo_subtitle ) : '';
 		( $hongo_text_transform ) ? $classes[] = $hongo_text_transform : '';
-		$show_close_button = ( $show_close_button == 1 ) ? '<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>' : '';
+		$show_close_button = ( $show_close_button == 1 ) ? '<a href="#" class="close" data-bs-dismiss="alert" aria-label="close">×</a>' : '';
 		( $hongo_enable_message_alternate_font == 1 ) ? $classes[] = 'alt-font' : '';
 
 		if( $hongo_alert_message_premade_style == 'alert-message-style-4' ) {
