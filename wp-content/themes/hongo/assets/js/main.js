@@ -2124,9 +2124,7 @@
 
         /* Product Tooltip */
         if( $( '.product-buttons-wrap' ).length > 0 ) {
-
             $( '.product-buttons-wrap' ).each( function( i ) {
-
                 var product_btn_tooltip = $( this ).attr( 'data-tooltip-position' );
                 if( product_btn_tooltip != '' && product_btn_tooltip != undefined ) {
 
@@ -2141,7 +2139,6 @@
 
         /* Tooltip for all tooltips */
         if ( $( '.hongo-tooltip' ).length > 0 ) {
-
             $( '.hongo-tooltip' ).each( function () {
                 var $this = $( this );
                 var tooltip_title = $this.attr( 'data-original-title' );
@@ -2154,12 +2151,10 @@
                     });
                 }
             });
-
         }
 
         /*Single Product video tooltip*/
         if( $( '.hongo-single-product-video' ).length > 0 ) {
-
             $( '.hongo-single-product-video' ).each(function () {
                 var single_product_video_tooltip = $( this ).attr( 'data-placement' );
                 var tooltip_title = $( this ).attr( 'data-original-title' );
@@ -2173,7 +2168,6 @@
 
         /*Single Product video tooltip*/
         if( $( '.hongo-single-product-video-play-button' ).length > 0 ) {
-
             $( '.hongo-single-product-video-play-button' ).each(function () {
                 var play_btn_video_tooltip = $( this ).attr( 'data-placement' );
                 var tooltip_title = $( this ).attr( 'data-original-title' );
@@ -2187,7 +2181,6 @@
 
         /*Single Product variable swatch tooltip*/
         if( $( '.hongo-swatch' ).length > 0 ){
-
             $( '.hongo-swatch' ).each(function () {
                 var swatch_tooltip_pos = $( this ).attr( 'data-placement' );
                 var tooltip_title = $( this ).attr( 'data-original-title' );

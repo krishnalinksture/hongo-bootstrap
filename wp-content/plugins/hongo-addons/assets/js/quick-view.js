@@ -59,8 +59,18 @@
 
                             // Tooltip
                             if( $( '.hongo-tooltip' ).length > 0 ) {
-           
-                                $( '.hongo-tooltip' ).tooltip();
+                                $( '.hongo-tooltip' ).each( function () {
+                                    var $this = $( this );
+                                    var tooltip_title = $this.attr( 'data-original-title' );
+                                    var tooltip_placement = $this.attr( 'data-placement' );
+
+                                    if ( tooltip_title ) {
+                                        new bootstrap.Tooltip( this, {
+                                            title: tooltip_title,
+                                            placement: tooltip_placement || 'top'
+                                        });
+                                    }
+                                });
                             }
 
                             // Open popup for quick view product details
