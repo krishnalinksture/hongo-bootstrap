@@ -20,7 +20,7 @@
     /* Search Icon */
     $( document ).on( 'click', '.search_icon_button', function() {
 
-        var dest = $(this).parent().find(".search_icon_text").val();
+        var dest = $(".search_icon_text").val();
 
         $( this ).parents( '.edit_form_line' ).find( '.hongo_icon_preview' ).removeClass( 'hide' );
         if( dest != '' && dest != undefined ) {
@@ -44,27 +44,27 @@
     });
 
     /* jQuery Click Event For Icon */
-    $(document).on('click', '.hongo_icon_preview', function() {
+   $(document).on('click', '.hongo_icon_preview', function (e) {
+        e.preventDefault();
+        var $this = $(this);
 
-          var $this = $(this);
+            if ($this.hasClass('active_icon')) {
 
-          if ($this.hasClass('active_icon')) {
+                $this.removeClass('active_icon');
+                $this.parent().parent().find('.hongo_icon_field').val('');
 
-              $this.removeClass('active_icon');
-              $this.parent().parent().find('.hongo_icon_field').val('');
+            } else {
 
-          } else {
+                $('.hongo_icon_preview').removeClass('active_icon');
 
-              $('.hongo_icon_preview').removeClass('active_icon');
+                setTimeout(function() {
+                    $this.addClass('active_icon');
+                }, 100);
 
-              setTimeout(function() {
-                  $this.addClass('active_icon');
-              }, 100);
+                var selectedIcon = $this.children().data('name');
 
-              var selectedIcon = $this.children().data('name');
-
-              $this.parent().parent().find('.hongo_icon_field').val(selectedIcon);
-          }
+                $this.parent().parent().find('.hongo_icon_field').val(selectedIcon);
+            }
       });
 
     /* Row parallax hide block */
