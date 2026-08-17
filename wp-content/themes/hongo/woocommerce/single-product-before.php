@@ -60,7 +60,7 @@ switch( $hongo_single_product_layout_setting ) {
 					<div class="hongo-sidebar-btn-wrap">
 						<div class="hongo-left-common-sidebar-link alt-font">
 							<?php $hongo_single_left_sidebar_text = apply_filters( 'hongo_single_left_sidebar_text', esc_html__( 'Show Sidebar', 'hongo' ) ); ?>
-							<i class="fa-solid fa-bars"></i><?php sprintf( '%s', $hongo_single_left_sidebar_text ); ?>
+							<i class="fa-solid fa-bars"></i><?php echo sprintf( '%s', $hongo_single_left_sidebar_text ); ?>
 						</div>
 						<div class="hongo-right-common-sidebar-link alt-font">
 							<?php $hongo_single_right_sidebar_text = apply_filters( 'hongo_single_right_sidebar_text', esc_html__( 'Show Sidebar', 'hongo' ) ); ?>
