@@ -24848,6 +24848,7 @@ button.mfp-close:active {
 	font-size: 18px;
 	font-family: 'themify';
 	color: #fff;
+	border: 0;
 }
 
 .mfp-arrow-left:before {
@@ -24856,6 +24857,7 @@ button.mfp-close:active {
 	font-size: 18px;
 	font-family: 'themify';
 	color: #fff;
+	border: 0;
 }
 
 .mfp-bottom-bar {
@@ -27476,11 +27478,13 @@ button.mfp-close:active {
 	display: none
 }
 
-.brand-style-slider-1 .swiper-button-prev {
+.brand-style-slider-1 .swiper-button-prev,
+.brand-style-slider-1.swiper-horizontal .swiper-button-prev {
 	left: 0;
 }
 
-.brand-style-slider-1 .swiper-button-next {
+.brand-style-slider-1 .swiper-button-next,
+.brand-style-slider-1.swiper-horizontal .swiper-button-next {
 	right: 0;
 }
 

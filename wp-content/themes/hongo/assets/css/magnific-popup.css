@@ -181,13 +181,13 @@ button::-moz-focus-inner {
     position: absolute;
     margin: 0;
     top: 50%;
-    margin-top: -55px;
+    margin-top: -45px;
     padding: 0;
     width: 90px;
-    height: 110px;
+    height: 90px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 .mfp-arrow:active {
-    margin-top: -54px; }
+    margin-top: -45px; }
 .mfp-arrow:hover, .mfp-arrow:focus {
     opacity: 1;
     filter: alpha(opacity=100); }
