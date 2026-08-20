@@ -322,7 +322,7 @@ vc_map(
 		    array(
 		        'type' => 'column_offset',
 		        'heading' => esc_html__( 'Responsiveness', 'hongo-addons' ),
-		        'param_name' => 'hongo_offset',
+		        'param_name' => 'offset',
 		        'group' => esc_html__( 'Responsive Options', 'hongo-addons' ),
 		        'description' => esc_html__( 'Adjust column for different screen sizes. Control width, offset and visibility settings.', 'hongo-addons' ),
 		        'dependency'  => array( 'element' => 'hongo_popup_type', 'value' => array('popup-form-1','modal-popup') ),

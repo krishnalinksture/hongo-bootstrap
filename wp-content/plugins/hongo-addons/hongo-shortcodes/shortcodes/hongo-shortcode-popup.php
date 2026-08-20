@@ -51,7 +51,7 @@ if ( ! function_exists( 'hongo_popup_shortcode' ) ) {
                 'hongo_font_content_setting' => '',
 
                 'hongo_width' => '',
-                'hongo_offset' => '',
+                'offset' => '',
             ), $atts ) );
 
         $output = $hongo_button_style_class = $hongo_button_class = $custom_icon_image = '';
@@ -95,7 +95,7 @@ if ( ! function_exists( 'hongo_popup_shortcode' ) ) {
         }
 
         // Column Offset and sm width
-        $hongo_offset = ( $hongo_offset ) ? ' '. str_replace( 'vc_', '', $hongo_offset ) : '';
+        $offset = ( $offset ) ? ' '. str_replace( 'vc_', '', $offset ) : '';
         
         if($hongo_width != ''){
             $hongo_width = explode('/', $hongo_width);
@@ -113,17 +113,17 @@ if ( ! function_exists( 'hongo_popup_shortcode' ) ) {
             case 'popup-form-1':
 
                 $hongo_width = ! empty( $hongo_width ) ? $hongo_width : '';
-                $hongo_offset = ! empty( $hongo_offset ) ? $hongo_offset : ' col-xl-3 col-lg-6 col-md-7 col-11';
+                $offset = ! empty( $offset ) ? $offset : ' col-xl-3 col-lg-6 col-md-7 col-11';
 
                 // Icon Width
                 if( ! empty( $custom_icon_max_width ) && $hongo_custom_icon == 1 ) {
                     $hongo_featured_array[] = '.popup-with-form img { max-width:'. $custom_icon_max_width .' }'; 
                 }
 
-                if( strchr( $hongo_offset,'col-xs' ) ) {
-                    $hongo_offset = $hongo_offset;
+                if( strchr( $offset,'col-xs' ) ) {
+                    $offset = $offset;
                 } else {
-                    $hongo_offset = $hongo_offset." col-xs-mobile-fullwidth";
+                    $offset = $offset." col-xs-mobile-fullwidth";
                 }
 
                 $contact_form = do_shortcode( '[contact-form-7 id='.$hongo_contact_forms_shortcode.']' );
@@ -197,7 +197,7 @@ if ( ! function_exists( 'hongo_popup_shortcode' ) ) {
                     }
 
                     // Popup modal content
-                    $output .= '<div id="popup-form-'.$hongo_popup_form_id.'" class="'.esc_attr( $hongo_width ).esc_attr( $hongo_offset ).' hongo-popup-contact-form mfp-hide center-col bg-white">';
+                    $output .= '<div id="popup-form-'.$hongo_popup_form_id.'" class="'.esc_attr( $hongo_width ).esc_attr( $offset ).' hongo-popup-contact-form mfp-hide center-col bg-white">';
                         $output .= $contact_form;
                     $output .= '</div>';
                 }
@@ -206,7 +206,7 @@ if ( ! function_exists( 'hongo_popup_shortcode' ) ) {
             case 'modal-popup':
 
                 $hongo_width = ! empty( $hongo_width ) ? $hongo_width : '';
-                $hongo_offset = ! empty( $hongo_offset ) ? $hongo_offset : ' col-xl-3 col-lg-6 col-md-7 col-11';
+                $offset = ! empty( $offset ) ? $offset : ' col-xl-3 col-lg-6 col-md-7 col-11';
 
                 $animation_dialog = ! empty( $hongo_popup_animation_effect ) ? 'zoom-anim-dialog ' : '';
 
@@ -285,7 +285,7 @@ if ( ! function_exists( 'hongo_popup_shortcode' ) ) {
                     }
 
                     // Popup modal content
-                    $output .= '<div id="modal-popup-'.$hongo_popup_form_id.'" class="'.esc_attr( $animation_dialog ).esc_attr( $hongo_width ).esc_attr( $hongo_offset ).' hongo-popup-simple-modal mfp-hide center-col bg-white text-center position-relative">';
+                    $output .= '<div id="modal-popup-'.$hongo_popup_form_id.'" class="'.esc_attr( $animation_dialog ).esc_attr( $hongo_width ).esc_attr( $offset ).' hongo-popup-simple-modal mfp-hide center-col bg-white text-center position-relative">';
 
                         $hongo_inside_popup_title = ! empty( $hongo_inside_popup_title ) ? str_replace( '||', '<br />', $hongo_inside_popup_title ) : '';
                         if( $hongo_inside_popup_title ){
