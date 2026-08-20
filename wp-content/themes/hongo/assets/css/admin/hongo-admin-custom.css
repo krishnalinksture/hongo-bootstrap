@@ -1230,6 +1230,15 @@ ul.hongo-switch-option li.hongo-switch-option {
     margin-bottom: 10px !important;
 }
 
+.vc_element_label + .edit-form-info,
+.wpb_element_label + .edit-form-info {
+    margin-bottom: 10px;
+}
+
+.wpb_el_type_colorpicker .wpb-param-heading .wpb_element_label {
+    margin-bottom: 0 !important;
+}
+
 .vc_css-editor .vc_settings label {
     margin-bottom: 5px;
     margin-top: 15px;
