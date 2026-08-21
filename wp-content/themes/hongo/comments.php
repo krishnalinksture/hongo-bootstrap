@@ -61,7 +61,6 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			'url'	=> '<div class="col-lg-4 col-md-12 col-12"><input id="url" placeholder="'.esc_attr__( 'Website', 'hongo' ).'" class="input-field comment-fields" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" /></div>',
 		);
 		$fields 	= apply_filters( 'comment_form_default_fields', $fields );
-		$close_div = get_edit_user_link() ? '' : '</div>';
 
 		// To provide filter for change comment text
 		$comment_placeholder_field	= apply_filters( 'comment_placeholder_field', __( 'Enter your comment here..', 'hongo' ) );
@@ -82,8 +81,8 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			'comment_notes_after'	=> '',
 			'class_submit'			=> 'btn btn-dark-gray btn-small hongo-comment-button',
 			'submit_button'			=> '<input name="%1$s" type="submit" id="%2$s" class="%3$s" value="%4$s" />',
-			'submit_field'			=> '<div class="col-lg-12 col-md-12 col-12 form-submit">%1$s %2$s</div>' . $close_div ,
-			'logged_in_as'			=> '<p class="logged-in-as col-lg-12">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>', 'hongo' ), esc_url( admin_url( 'profile.php' ) ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
+			'submit_field'			=> '<div class="col-lg-12 col-md-12 col-12 form-submit">%1$s %2$s</div></div>',
+			'logged_in_as'			=> '<div class="row"><p class="logged-in-as col-lg-12">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>', 'hongo' ), esc_url( admin_url( 'profile.php' ) ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
 		) );
 	?>
 </div>
