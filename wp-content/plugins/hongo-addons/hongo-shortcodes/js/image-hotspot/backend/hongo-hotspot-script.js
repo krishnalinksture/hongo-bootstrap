@@ -1,78 +1,215 @@
-( function( $ ) {
-	"use strict";
+(function($) {
 
-	// VC Image Hotspot parameter js
+	'use strict';
+
 	vc.atts.hongo_image_hotspot = {
 
-		init: function ( param, $field ) {
+		init: function( param, $field ) {
 
-			if ( !$field.prev().data( 'vc-shortcode-param-name' ) || $field.prev().data( 'vc-shortcode-param-name' ) !== 'image' ) {
-				return false;
+			var $imageParam = $field.prev();
+			var lastImageId = '';
+
+			/*
+			 * Get current image ID from WPBakery.
+			 */
+			function getImageId() {
+
+				var $input = $imageParam.find('input[name="image"]');
+
+				if ( ! $input.length ) {
+					return '';
+				}
+
+				return $input.val() || '';
 			}
 
-			var imgSrc = '',
-				$imgInput = $field.prev().find( 'input[name="image"]' ),
-				previewImage = function() {
-					/*
-					 * NEW WPBakery:
-					 * Image is stored as background-image
-					 * instead of <img src="">
-					 */
-					var $image = $field.prev().find( '.gallery_widget_attached_image' );
 
-					if ( $image.length > 0 ) {
+			/*
+			 * Get WordPress image URL from attachment ID.
+			 */
+			function loadImage( imageId ) {
 
-						var backgroundImage = $image.css( 'background-image' );
+				if ( ! imageId ) {
+					return;
+				}
 
-						if ( backgroundImage && backgroundImage !== 'none') {
+				/*
+				 * Make sure WordPress media API exists.
+				 */
+				if ( typeof wp === 'undefined' || typeof wp.media === 'undefined' ) {
+					return;
+				}
 
-							var match = backgroundImage.match( /url\(["']?(.*?)["']?\)/);
+				/*
+				 * Get attachment.
+				 */
+				var attachment = wp.media.attachment(imageId);
 
-							if ( match && match[1] ) {
-								imgSrc = match[1];
-							}
-						}
+				/*
+				 * Fetch attachment data.
+				 */
+				attachment.fetch().done(function() {
 
-						/*
-						 * Fallback for old WPBakery.
-						 */
-						if ( !imgSrc ) {
-							imgSrc = $field.prev().find( 'img' ).attr( 'src' ) || '';
-						}
+					var imgSrc = attachment.get('url');
 
-						if ( imgSrc ) {
-
-							imgSrc = imgSrc.replace( '-150x150','' );
-
-							var id = $field.find( '.hongo_hotspot_var' ).attr( 'id' );
-
-							if ( $field.find( 'img.hongo-hotspot-image' ).length > 0 ) {
-
-								$field.find( 'img.hongo-hotspot-image' ).attr( 'src', imgSrc );
-							} else {
-								$field.find( '.hongo-hotspot-image-holder' ).append( '<img src="' + imgSrc + '" alt="Preview image" class="hongo-hotspot-image" />' );
-							}
-
-							$field.find( '.hongo-hotspot-image-holder' ).hotspot({
-								mode: 'admin',
-								LS_Variable: '#' + id,
-								done_btnClass: 'btn btn-success hongo_addons_done',
-								remove_btnClass: 'btn button-primary hongo_addons_remove',
-								sync_btnClass: 'btn btn-info hongo_addons_server',
-								popupTitle: $field.find( '.hongo-hotspot-image-holder' ).data('popup-title') ? $field.find( '.hongo-hotspot-image-holder' ).data( 'popup-title' ) : 'Save',
-								saveText: $field.find( '.hongo-hotspot-image-holder' ).data('save-text') ? $field.find( '.hongo-hotspot-image-holder' ).data('save-text') : 'Save',
-								closeText: $field.find( '.hongo-hotspot-image-holder' ).data('close-text') ? $field.find( '.hongo-hotspot-image-holder' ).data('close-text') : 'Close',
-								dataStuff: [ { 'property': 'Product', 'default': '' }, { 'property': 'Position', 'default': '' } ]
-							});
-						}
+					if ( ! imgSrc ) {
+						return;
 					}
-				};
-			previewImage();
 
-			$imgInput.change( function() {
-				previewImage();
-			} );
-		},
+					/*
+					 * Update hotspot image.
+					 */
+					updateHotspotImage(imgSrc);
+
+				});
+
+			}
+
+
+			/*
+			 * Put image into hotspot.
+			 */
+			function updateHotspotImage(imgSrc) {
+
+				var $holder = $field.find( '.hongo-hotspot-image-holder' );
+
+				if (!$holder.length) {
+					return;
+				}
+
+
+				var $image = $holder.find( 'img.hongo-hotspot-image');
+
+				if ($image.length) {
+					/*
+					 * Existing image.
+					 */
+					$image.attr(
+						'src',
+						imgSrc
+					);
+
+				} else {
+					/*
+					 * Create image.
+					 */
+					$image = $('<img>', {
+						src: imgSrc,
+						alt: 'Preview image',
+						class: 'hongo-hotspot-image'
+					});
+
+					$holder.empty().append($image);
+
+				}
+
+
+				/*
+				 * Initialize hotspot plugin.
+				 */
+				initHotspot();
+
+			}
+
+
+			/*
+			 * Initialize your existing hotspot plugin.
+			 */
+			function initHotspot() {
+
+				var $holder = $field.find( '.hongo-hotspot-image-holder' );
+
+				if (!$holder.length) {
+					return;
+				}
+
+				var id = $field.find( '.hongo_hotspot_var' ).attr('id');
+
+				$holder.hotspot({
+
+					mode: 'admin',
+
+					LS_Variable: '#' + id,
+
+					done_btnClass:
+						'btn btn-success hongo_addons_done',
+
+					remove_btnClass:
+						'btn button-primary hongo_addons_remove',
+
+					sync_btnClass:
+						'btn btn-info hongo_addons_server',
+
+					popupTitle:
+						$holder.data('popup-title') ||
+						'Save',
+
+					saveText:
+						$holder.data('save-text') ||
+						'Save',
+
+					closeText:
+						$holder.data('close-text') ||
+						'Close',
+
+					dataStuff: [
+						{
+							property: 'Product',
+							default: ''
+						},
+						{
+							property: 'Position',
+							default: ''
+						}
+					]
+
+				});
+
+			}
+
+			/*
+			 * Check image ID.
+			 */
+			function checkImage() {
+
+				var imageId = getImageId();
+				if (imageId === lastImageId) {
+					return;
+				}
+
+				lastImageId = imageId;
+
+				if (imageId) {
+					loadImage(imageId);
+				}
+			}
+
+			/*
+			 * Check existing image.
+			 */
+			checkImage();
+
+			/*
+			 * WPBakery sometimes changes the hidden
+			 * input without triggering change.
+			 */
+			setInterval(function() {
+
+				checkImage();
+
+			}, 300);
+
+
+			/*
+			 * Also listen for normal change.
+			 */
+			$imageParam.on(
+				'change',
+				'input[name="image"]',
+				function() {
+					checkImage();
+				}
+			);
+		}
 	};
-
-} )( jQuery );
+})(jQuery);
