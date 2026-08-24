@@ -18,7 +18,7 @@ echo '<section class="hongo-main-title-wrap bg-very-light-gray' . esc_attr( $hon
 
 	if( $hongo_title != '' || ( $hongo_enable_subtitle != '0' && $hongo_title_subtitle ) || ( $hongo_enable_breadcrumb == 1 && $hongo_breadcrumb_position == 'title-area' ) || $hongo_enable_title_heading == '1' ) {
 	?>
-		<div class="<?php esc_attr( $container_style ); ?>">
+		<div class="<?php echo esc_attr( $container_style ); ?>">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-12 display-table<?php echo esc_attr( $content_height_class ); ?>">
 					<div class="display-table-cell vertical-align-middle<?php echo esc_attr( $alignment_class ); ?>">
