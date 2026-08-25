@@ -1235,7 +1235,8 @@ ul.hongo-switch-option li.hongo-switch-option {
     margin-bottom: 10px;
 }
 
-.wpb_el_type_colorpicker .wpb-param-heading .wpb_element_label {
+.wpb_el_type_colorpicker .wpb-param-heading .wpb_element_label,
+.vc_settings .wpb-color-picker-wrapper .wpb_element_label {
     margin-bottom: 0 !important;
 }
 

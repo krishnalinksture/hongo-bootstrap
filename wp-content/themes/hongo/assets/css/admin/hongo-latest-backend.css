@@ -44,9 +44,14 @@
 	line-height: 18px;
 }
 
+.hongo-find-icon-wrap input[type="text"].search_icon_text {
+    width: 194px;
+}
+
 .edit_form_line input[type="text"],
 .edit_form_line input[type="number"],
-.wp-core-ui select[multiple] {
+.wp-core-ui select[multiple],
+.edit_form_line .hongo_multiple_select_dropdown {
 	width: 100%;
 }
 
