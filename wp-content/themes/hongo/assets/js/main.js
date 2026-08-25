@@ -2183,7 +2183,7 @@
         if( $( '.hongo-swatch' ).length > 0 ){
             $( '.hongo-swatch' ).each(function () {
                 var swatch_tooltip_pos = $( this ).attr( 'data-placement' );
-                var tooltip_title = $( this ).attr( 'data-original-title' );
+                var tooltip_title = $( this ).attr( 'data-original-title' ) || '';
 
                 new bootstrap.Tooltip( this, {
                     title: tooltip_title,
