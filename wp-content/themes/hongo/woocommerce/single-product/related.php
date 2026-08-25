@@ -94,13 +94,13 @@ if ( $related_products ) :
 						<div class="swiper-button-next swiper-next"><i class="fa-solid fa-chevron-right"></i></div>
 		    			<div class="swiper-button-prev swiper-prev"><i class="fa-solid fa-chevron-left"></i></div>
 		    		<?php
-		    			$slider_config .= "navigation: { nextEl: '.swiper-next', prevEl: '.swiper-prev', },";
+		    			$slider_config .= "navigation: { nextEl: '#hongo-related-products .swiper-next', prevEl: '#hongo-related-products .swiper-prev', },";
 		    		 } ?>	
 	    			<!--Pagination -->
 	    			<?php if( $hongo_single_product_enable_related_pagination == '1' ){ ?>
 	    				<div class="swiper-pagination swiper-pagination-related"></div>
 	    			<?php 
-	    				$slider_config .= "pagination: { el: '.swiper-pagination-related',type: 'bullets', clickable: true },";
+	    				$slider_config .= "pagination: { el: '#hongo-related-products .swiper-pagination-related',type: 'bullets', clickable: true },";
 	    			} ?>
 				</div>
 			<?php } ?>
@@ -119,7 +119,7 @@ if ( $related_products ) :
         ( $autoloop == 1 ) ? $slider_config .= 'loop: true,' : '';
 
 		ob_start(); ?>
-			$( '#hongo-related-products' ).addClass( 'swiper' ); $( '#hongo-related-products .products' ).addClass( 'swiper-wrapper' ); $( '#hongo-related-products .product' ).addClass( 'swiper-slide' ); var hongo_related_products = new Swiper('#hongo-related-products', { <?php echo sprintf( '%s', $slider_config ); ?> }); $( document ).on( 'click', '.hongo-tabs a', function () { setTimeout(function () { hongo_related_products.update(); }, 300 ); });
+			if ( $( '#hongo-related-products' ).length && ! $( '#hongo-related-products' ).hasClass( 'swiper-initialized' ) ) { $( '#hongo-related-products' ).addClass( 'swiper' ); $( '#hongo-related-products .products' ).addClass( 'swiper-wrapper' ); $( '#hongo-related-products .product' ).addClass( 'swiper-slide' ); var hongo_up_sell_products = new Swiper('#hongo-related-products', { <?php echo sprintf( '%s', $slider_config ); ?> }); $( document ).on( 'click', '.hongo-tabs a', function () { setTimeout(function () { hongo_up_sell_products.update(); }, 300 ); }); }
 		<?php 
 		$hongo_slider_script .= ob_get_contents();
 		ob_end_clean();			

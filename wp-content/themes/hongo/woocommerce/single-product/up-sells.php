@@ -90,7 +90,7 @@ if ( $upsells ) :
 						<div class="swiper-button-next swiper-next"><i class="fa-solid fa-chevron-right"></i></div>
 		    			<div class="swiper-button-prev swiper-prev"><i class="fa-solid fa-chevron-left"></i></div>
 		    		<?php
-		    			$slider_config .= "navigation: { nextEl: '.swiper-next', prevEl: '.swiper-prev', },";
+		    			$slider_config .= "navigation: { nextEl: '#hongo-up-sells-products .swiper-next', prevEl: '#hongo-up-sells-products .swiper-prev', },";
 		    		 } ?>
 	    			
 	    			<!--Pagination -->
@@ -98,7 +98,7 @@ if ( $upsells ) :
 	    				<div class="swiper-pagination"></div>
 
 	    			<?php 
-	    				$slider_config .= "pagination: { el: '.swiper-pagination',type: 'bullets', clickable: true },";
+	    				$slider_config .= "pagination: { el: '#hongo-up-sells-products .swiper-pagination',type: 'bullets', clickable: true },";
 	    			} ?>
 				</div>
 			<?php } ?>
@@ -118,7 +118,7 @@ if ( $upsells ) :
         ( $autoloop == 1 ) ? $slider_config .= 'loop: true,' : '';
 
 		ob_start(); ?>
-			$( '#hongo-up-sells-products' ).addClass( 'swiper' ); $( '#hongo-up-sells-products .products' ).addClass( 'swiper-wrapper' ); $( '#hongo-up-sells-products .product' ).addClass( 'swiper-slide' ); var hongo_up_sell_products = new Swiper('#hongo-up-sells-products', { <?php echo sprintf( '%s', $slider_config ); ?> }); $( document ).on( 'click', '.hongo-tabs a', function () { setTimeout(function () { hongo_up_sell_products.update(); }, 300 ); });
+			if ( $( '#hongo-up-sells-products' ).length && ! $( '#hongo-up-sells-products' ).hasClass( 'swiper-initialized' ) ) { $( '#hongo-up-sells-products' ).addClass( 'swiper' ); $( '#hongo-up-sells-products .products' ).addClass( 'swiper-wrapper' ); $( '#hongo-up-sells-products .product' ).addClass( 'swiper-slide' ); var hongo_up_sell_products = new Swiper('#hongo-up-sells-products', { <?php echo sprintf( '%s', $slider_config ); ?> }); $( document ).on( 'click', '.hongo-tabs a', function () { setTimeout(function () { hongo_up_sell_products.update(); }, 300 ); }); }
 		<?php 
 			$hongo_slider_script .= ob_get_contents();
 			ob_end_clean();
