@@ -44,6 +44,11 @@
 	line-height: 18px;
 }
 
+.edit_form_line input[type="text"],
+.edit_form_line input[type="number"] {
+	width: 100%;
+}
+
 .vc_ui-panel .wp-color-result:focus:after,
 .vc_ui-panel .wp-color-result:hover:after {
 	border: none;
