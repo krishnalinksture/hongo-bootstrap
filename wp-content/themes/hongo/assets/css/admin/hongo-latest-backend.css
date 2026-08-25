@@ -45,7 +45,8 @@
 }
 
 .edit_form_line input[type="text"],
-.edit_form_line input[type="number"] {
+.edit_form_line input[type="number"],
+.wp-core-ui select[multiple] {
 	width: 100%;
 }
 
