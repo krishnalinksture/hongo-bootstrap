@@ -89,3 +89,11 @@
 .wp-customizer .alpha-color-picker-wrap .wp-picker-container .wp-color-result.button {
 	min-height: 25px;
 }
+
+.vc_media-xs .vc_css-editor .vc_layout-onion.vc_col-xs-7 {
+    width: 58.33333333%;
+}
+
+.vc_media-xs .vc_css-editor .vc_layout-onion.vc_col-xs-7:after {
+	display: none;
+}

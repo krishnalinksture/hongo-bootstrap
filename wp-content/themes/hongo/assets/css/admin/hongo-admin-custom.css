@@ -1245,6 +1245,10 @@ ul.hongo-switch-option li.hongo-switch-option {
     margin-top: 15px;
 }
 
+.vc_css-editor .hongo-inner-wrap .vc_settings label {
+    margin-top: 15px;
+}
+
 .edit_form_line .vc_param_group-list .wpb_vc_row.vc_param_group-collapsed .vc_param_group-controls .column_toggle .vc-c-icon-arrow_drop_down:before {
     content: "\e5c7";
 }
