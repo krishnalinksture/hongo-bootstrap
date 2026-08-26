@@ -185,7 +185,7 @@ if ( ! function_exists( 'hongo_image_carousel_shortcode' ) ) {
 
 		$swiper_config['slidesPerView'] = intval( $slides_per_view_mobile );
         
-        $swiper_config['breakpoints'] = array( '768' => array( 'slidesPerView' => intval( $slides_per_view_tablet ) ), '992' => array( 'slidesPerView' => intval( $slides_per_view_mini_desktop ) ), '1200' => array( 'slidesPerView' => intval( $slides_per_view_desktop ) ) );
+        $swiper_config['breakpoints'] = array( '768' => array( 'slidesPerView' => intval( $slides_per_view_tablet ) ), '992' => array( 'slidesPerView' => intval( $slides_per_view_mini_desktop ) ), '1200' => array( 'slidesPerView' => $slides_per_view_desktop ) );
 
         if ( $autoloop == 1 ) { 
         	$swiper_config['loop'] = true;
