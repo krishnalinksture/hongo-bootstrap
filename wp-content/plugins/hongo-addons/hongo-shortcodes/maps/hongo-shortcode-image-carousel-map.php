@@ -248,7 +248,7 @@ vc_map(
                 ),
                 'std' => '1',
                 'description' => esc_html__( 'Select ON to show pagination in slider', 'hongo-addons' ),
-                'dependency'  => array( 'element' => 'image_gallery_type', 'value' => array( 'image-carousel-style-1','image-carousel-style-2','image-carousel-style-3' )),
+                'dependency'  => array( 'element' => 'image_gallery_type', 'value' => array( 'image-carousel-style-1','image-carousel-style-2' )),
             ),
             array(
                 'type' => 'dropdown',
@@ -292,7 +292,7 @@ vc_map(
                 ),
                 'group' => esc_html__( 'Slider Configuration', 'hongo-addons' ),
                 'std' => '1',
-                'dependency'  => array( 'element' => 'image_gallery_type', 'value' => array( 'image-carousel-style-1','image-carousel-style-2','image-carousel-style-3' )),
+                'dependency'  => array( 'element' => 'image_gallery_type', 'value' => array( 'image-carousel-style-1','image-carousel-style-2')),
                 'description' => esc_html__( 'Select ON to show navigation in slider', 'hongo-addons' ),
             ),
             array(

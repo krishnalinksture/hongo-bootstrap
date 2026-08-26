@@ -393,24 +393,6 @@ if ( ! function_exists( 'hongo_image_carousel_shortcode' ) ) {
 			                    }
 
 			                $output .= '</div>';
-
-			                // Navigation
-	                		if ( $hongo_show_navigation == 1 ) {
-
-		                        // Navigation color
-		                        if ( ! empty( $hongo_navigation_color ) ) {
-		                            $hongo_featured_array[] =  '.'.$hongo_slider_id.' .swiper-button-next i,.'.$hongo_slider_id. ' .swiper-button-prev i{ color:'.$hongo_navigation_color.'; }';
-		                        }
-
-	                			$output .= '<div class="swiper-button-next"><i class="fa-solid fa-chevron-right swiper-next-'.$navigation_unique_id.'"></i></div><div class="swiper-button-prev"><i class="fa-solid fa-chevron-left swiper-prev-'.$navigation_unique_id.'"></i></div>';
-	                		}
-
-				        	// Pagination
-						    if ( $hongo_show_pagination == 1 ) {
-	                    		$class_name = 'swiper-pagination-' . $hongo_slider_id;
-	                    		$output .= '<div class="swiper-pagination ' . esc_attr( $class_name ) . esc_attr( $pagination_style_class ) . '"></div>';
-	                		}
-
 			            $output .= '</div>';
 			        $output .= '</div>';
 			    }			    
