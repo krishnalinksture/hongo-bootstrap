@@ -11637,6 +11637,10 @@ li.active .hongo-cb:after {
 	min-height: 48px;
 }
 
+.hongo-404-content-wrap .input-group-btn button:active {
+	color: #888787;
+}
+
 .hongo-404-content-wrap h2 {
 	font-size: 100px;
 	display: block;
