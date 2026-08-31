@@ -462,6 +462,11 @@
         font-size: 10px;
         line-height: 10px;
     }
+
+    /* Breadcrumb */
+    .hongo-main-breadcrumb .breadcrumb {
+        display: inline;
+    }
 }
 
 @media (min-width: 1200px) {
