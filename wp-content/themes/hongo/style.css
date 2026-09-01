@@ -36799,3 +36799,10 @@ header .nav>li.wpml-ls-current-language>a .menu-hover-line:after {
 .woocommerce-cart .cart-collaterals .cart_totals table td .woocommerce-shipping-calculator .shipping-calculator-form p .button {
 	margin-top: 0;
 }
+
+/* Scroll Behavior */
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: auto;
+    }
+}
