@@ -8727,7 +8727,7 @@ li.active .hongo-cb:after {
 	font-size: 40px;
 	line-height: 40px;
 	margin: 0 auto;
-	width: 35%;
+	width: 58.5%;
 	color: #ffffff;
 	letter-spacing: -1px;
 }
@@ -9022,7 +9022,6 @@ li.active .hongo-cb:after {
 
 .hongo-main-breadcrumb .breadcrumb {
 	margin: 0;
-	display: inline;
 }
 
 /* breadcrumb product details */
@@ -11636,6 +11635,10 @@ li.active .hongo-cb:after {
 	padding: 10px;
 	font-size: 16px;
 	min-height: 48px;
+}
+
+.hongo-404-content-wrap .input-group-btn button:active {
+	color: #888787;
 }
 
 .hongo-404-content-wrap h2 {
@@ -36795,4 +36798,11 @@ header .nav>li.wpml-ls-current-language>a .menu-hover-line:after {
 
 .woocommerce-cart .cart-collaterals .cart_totals table td .woocommerce-shipping-calculator .shipping-calculator-form p .button {
 	margin-top: 0;
+}
+
+/* Scroll Behavior */
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: auto;
+    }
 }
