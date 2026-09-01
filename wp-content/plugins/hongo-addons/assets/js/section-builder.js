@@ -353,16 +353,16 @@
         });
 
         /* Mobile menu button click active class */
-        if( $( '.hongo-navigation-main-wrapper button.toggle-mobile, .hongo-left-menu-wrap button.toggle-mobile' ).length > 0 ) {
+        if ( $('.hongo-navigation-main-wrapper button.toggle-mobile, .hongo-left-menu-wrap button.toggle-mobile').length > 0 ) {
 
-            $( '.hongo-navigation-main-wrapper .navbar-collapse, .hongo-left-menu-wrap .hongo-left-menu-wrapper' ).on( 'show.bs.collapse', function() {
-
-                $( this ).parent().children( 'button.toggle-mobile' ).addClass( 'active' );
-
-            }).on( 'hide.bs.collapse', function() {
-
-                $( this ).parent().children( 'button.toggle-mobile' ).removeClass( 'active' );
-            });
+            $('.hongo-navigation-main-wrapper .navbar-collapse, .hongo-left-menu-wrap .hongo-left-menu-wrapper').attr('aria-expanded', 'false').on('show.bs.collapse', function() {
+                $(this).attr('aria-expanded', 'true');
+                $(this).parent().children('button.toggle-mobile').addClass( 'active' );
+            }).on('hide.bs.collapse', function() {
+                $(this).attr('aria-expanded', 'false');
+                $(this).css('height', '0px');
+                $(this).parent().children('button.toggle-mobile').removeClass('active');
+            })
         }
 
         /* Mini header navigation menu responsive toggle */
@@ -469,9 +469,9 @@
 
                 $( '.hongo-navigation-main-wrapper .navbar-toggle' ).addClass( 'collapsed' );
             }
-            if( $( '.hongo-navigation-main-wrapper .navbar-collapse.collapse' ).hasClass( 'in' ) ) {
+            if( $( '.hongo-navigation-main-wrapper .navbar-collapse.collapse' ).hasClass( 'show' ) ) {
 
-                $( '.hongo-navigation-main-wrapper .navbar-collapse.collapse' ).removeClass( 'in' );
+                $( '.hongo-navigation-main-wrapper .navbar-collapse.collapse' ).removeClass( 'show' );
             }
             $( '.hongo-navigation-main-wrapper button.toggle-mobile' ).removeClass( 'active' );
         }
