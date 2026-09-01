@@ -2154,15 +2154,28 @@
         }
 
         /*Single Product video tooltip*/
-        if( $( '.hongo-single-product-video' ).length > 0 ) {
-            $( '.hongo-single-product-video' ).each(function () {
-                var single_product_video_tooltip = $( this ).attr( 'data-placement' );
-                var tooltip_title = $( this ).attr( 'data-original-title' );
+        if ( $( '.hongo-single-product-video' ).length > 0 ) {
+            $( '.hongo-single-product-video' ).each( function () {
+
+                var $this = $( this );
+                var single_product_video_tooltip = $this.attr( 'data-placement' );
+                var tooltip_title = $this.attr( 'data-original-title' );
+
+                // Bootstrap 5 tooltip requires a valid title.
+                if ( ! tooltip_title ) {
+                    tooltip_title = $this.attr( 'title' );
+                }
+
+                // Do not initialize tooltip if no title is available.
+                if ( ! tooltip_title ) {
+                    return;
+                }
 
                 new bootstrap.Tooltip( this, {
                     title: tooltip_title,
                     placement: single_product_video_tooltip || 'top'
                 });
+
             });
         }
 
