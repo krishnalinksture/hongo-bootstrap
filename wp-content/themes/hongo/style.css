@@ -1383,6 +1383,18 @@ p.demo_store a {
     border-color: #232323;
 }
 
+.btn-check:checked+.btn-white,
+.btn-white.active,
+.btn-white.show,
+.btn-white:first-child:active,
+:not(.btn-check)+.btn-white:active,
+.btn-white:hover,
+.btn-white:focus-visible {
+	color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+
 .btn {
 	margin-bottom: 0;
 }
