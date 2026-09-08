@@ -74,7 +74,7 @@ if (! class_exists('hongo_latest_post_widget')) {
 				echo '<ul class="latest-post hongo-latest-blog-widget latest-post-style-2">';
 					foreach ( $hongo_recent_posts as $recent_post ) {
 						$recent_post_id = $recent_post->ID;
-						$border_class = ( $hongo_enable_bottom_border == 'on' ) ? ' class="border-bottom"' : '';						
+						$border_class = ( $hongo_enable_bottom_border == 'on' ) ? ' class="border-bottom-alt"' : '';						
 						$post_thumbnail_id = get_post_thumbnail_id( $recent_post_id );
 						$image = wp_get_attachment_image( $post_thumbnail_id, 'hongo-popular-posts-thumb' );
                         echo '<li'.$border_class.'>';
