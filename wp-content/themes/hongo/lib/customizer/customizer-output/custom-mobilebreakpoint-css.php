@@ -67,7 +67,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         .navbar-toggle.toggle-mobile.active span:nth-child(4) { top: 8px; width: 0; left: 0; right: 0; opacity: 0; }
 	    
 	    /* navigation */
-	    .navbar-collapse.collapse { display: none !important; height: auto!important; width: 100%; margin: 0; position: absolute; top: 100%; }
+	    .navbar-collapse.collapse { display: none !important; width: 100%; margin: 0; position: absolute; top: 100%; }
 	    .navbar-collapse.collapse.in, .navbar-collapse.collapse.show { display: block !important; overflow-y: hidden !important; }
 	    .navbar-collapse { max-height: 400px; overflow-y: hidden !important; left: 0; padding: 0; position: absolute; top: 100%; width: 100%; border-top: 0; } 
 	    header .nav { float: none !important; padding-left: 0; padding-right: 0; margin: 0px 0; width: 100%; text-align: left; background-color: rgba(23,23,23,1) !important; }

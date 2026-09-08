@@ -352,18 +352,39 @@
             }
         });
 
-        /* Mobile menu button click active class */
         if ( $('.hongo-navigation-main-wrapper button.toggle-mobile, .hongo-left-menu-wrap button.toggle-mobile').length > 0 ) {
 
-            $('.hongo-navigation-main-wrapper .navbar-collapse, .hongo-left-menu-wrap .hongo-left-menu-wrapper').attr('aria-expanded', 'false').on('show.bs.collapse', function() {
+            var $mobileMenu = $('.hongo-navigation-main-wrapper .navbar-collapse, .hongo-left-menu-wrap .hongo-left-menu-wrapper');
+
+            // Set menu state when opened
+            $mobileMenu.on('show.bs.collapse', function () {
                 $(this).attr('aria-expanded', 'true');
-                $(this).parent().children('button.toggle-mobile').addClass( 'active' );
-            }).on('hide.bs.collapse', function() {
+                $(this).parent().children('button.toggle-mobile').addClass('active');
+            });
+
+            // Reset menu state when closed
+            $mobileMenu.on('hidden.bs.collapse', function () {
                 $(this).attr('aria-expanded', 'false');
                 $(this).css('height', '0px');
                 $(this).parent().children('button.toggle-mobile').removeClass('active');
-            })
+            });
+
+            // Close menu when clicking outside
+            $(document).on('click', function (e) {
+                if (
+                    !$(e.target).closest(
+                        '.hongo-navigation-main-wrapper .navbar-collapse, ' +
+                        '.hongo-navigation-main-wrapper button.toggle-mobile, ' +
+                        '.hongo-left-menu-wrap .hongo-left-menu-wrapper, ' +
+                        '.hongo-left-menu-wrap button.toggle-mobile'
+                    ).length
+                ) {
+                    $mobileMenu.filter('.show').collapse('hide');
+                }
+            });
+
         }
+
 
         /* Mini header navigation menu responsive toggle */
         $( '.mini-header-main-wrapper .wp-nav-menu-responsive-button' )
