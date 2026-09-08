@@ -20909,6 +20909,7 @@ hongo-swatch.disable:hover {
 	-webkit-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
+	display: flex;
 }
 
 .sticky-add-to-cart-wrapper:hover {
