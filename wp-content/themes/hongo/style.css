@@ -23980,11 +23980,11 @@ hongo-swatch.disable:hover {
 	padding-bottom: 0 !important;
 }
 
-.hongo-sidebar-style-2.sidebar .latest-post.hongo-latest-blog-widget li.border-bottom {
+.hongo-sidebar-style-2.sidebar .latest-post.hongo-latest-blog-widget li.border-bottom-alt {
 	border-bottom: 1px solid #e8e8e8;
 }
 
-.hongo-sidebar-style-2.sidebar .latest-post.hongo-latest-blog-widget li.border-bottom:last-child {
+.hongo-sidebar-style-2.sidebar .latest-post.hongo-latest-blog-widget li.border-bottom-alt:last-child {
 	border-bottom: 0;
 	margin-bottom: 0;
 }
