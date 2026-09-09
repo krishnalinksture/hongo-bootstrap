@@ -3284,13 +3284,23 @@
     /* Equalize Function */
     function equalizeHeight() {
         if( $('.equalize').length > 0 && $.inArray( 'equalize', hongoMain.disable_scripts ) < 0 ) {
-            setTimeout(function () {
-                $('.equalize').equalize({equalize: 'outerHeight', reset: true});
+            $('.equalize').each(function () {
 
-                if( $('.inner-match-height').length > 0 ) {
-                    $('.equalize').equalize({equalize: 'outerHeight', children: '.inner-match-height', reset: true});
-                }
-            }, 100 );
+                var $this = $(this);
+
+                // Reset previous inline heights
+                $this.find('.inner-match-height').css('height', '');
+
+                // Force layout recalculation
+                $this[0].offsetHeight;
+
+                // Equalize children
+                $this.equalize({
+                    equalize: 'outerHeight',
+                    children: '.inner-match-height',
+                    reset: true
+                });
+            });
         }
     }
 
