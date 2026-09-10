@@ -105,7 +105,7 @@
                                             }, 100 );
 
                                             //Zoom Disable
-                                            $( '.woocommerce-product-gallery__image' ).attr( 'style',  'pointer-events:none !important' );
+                                            // $( '.woocommerce-product-gallery__image' ).attr( 'style',  'pointer-events:none !important' );
 
                                             // Quick view product details open popup trigger
                                             $( document.body ).trigger( 'hongo_quick_view_product_details_open_popup' );
