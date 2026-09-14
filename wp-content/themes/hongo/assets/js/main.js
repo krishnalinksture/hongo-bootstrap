@@ -2131,6 +2131,8 @@
                     $(this).find('a i').each(function () {
                         new bootstrap.Tooltip(this, {
                             placement: product_btn_tooltip,
+                            container: this.parentElement,
+                            boundary: 'clippingParents'
                         });
                     });
                 }
@@ -2594,6 +2596,8 @@
                         $(this).find('a i').each(function () {
                             new bootstrap.Tooltip(this, {
                                 placement: tooltip_pos,
+                                container: this.parentElement,
+                                boundary: 'clippingParents'
                             });
                         });
                     }
