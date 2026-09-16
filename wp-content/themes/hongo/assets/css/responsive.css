@@ -7179,11 +7179,13 @@
     }
     /* swiper next prev button */
     .swiper-button-next,
-    .swiper-horizontal .swiper-button-next {
+    .swiper-horizontal .swiper-button-next,
+    .swiper-horizontal + .swiper-button-next {
         right: 15px;
     }
     .swiper-button-prev,
-    .swiper-horizontal .swiper-button-prev {
+    .swiper-horizontal .swiper-button-prev,
+    .swiper-horizontal + .swiper-button-prev {
         left: 15px;
     }
     .hongo_widget_products_carousel .swiper-button-next,

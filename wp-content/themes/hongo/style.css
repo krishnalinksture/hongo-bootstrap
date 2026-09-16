@@ -9409,12 +9409,14 @@ li.active .hongo-cb:after {
 	right: 50px;
 }
 
-.swiper-horizontal .swiper-button-prev {
+.swiper-horizontal .swiper-button-prev,
+.swiper-horizontal + .swiper-button-prev {
 	left: 50px;
 	margin-top: 0;
 }
 
-.swiper-horizontal .swiper-button-next {
+.swiper-horizontal .swiper-button-next,
+.swiper-horizontal + .swiper-button-next {
     right: 50px;
 	margin-top: 0;
 }
