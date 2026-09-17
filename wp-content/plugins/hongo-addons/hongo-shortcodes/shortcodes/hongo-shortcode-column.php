@@ -100,11 +100,6 @@ if ( ! function_exists( 'hongo_column' ) ) {
 		! empty( $desktop_height ) ? $style_array[] = "min-height: ".$desktop_height.";" : '';
 
 		// Column Offset and sm width
-		// strchr( $offset, 'col-xs' ) ? '' : $classes[] = "col-xs-mobile-fullwidth";
-		// $width = wpb_translateColumnWidthToSpan( $width );
-		// $classes[] = $width = vc_column_offset_class_merge( $offset, $width );
-
-		// Column Offset and sm width
 		strchr( $offset, 'col-xs' ) ? '' : $classes[] = "col-xs-mobile-fullwidth";
 
 		$width = wpb_translateColumnWidthToSpan( $width );
