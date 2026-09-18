@@ -18737,8 +18737,22 @@ li.active .hongo-cb:after {
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
-.woocommerce ul.products.hongo-shop-boxed li.product:hover .product-buttons-wrap a .tooltip-arrow {
+.woocommerce ul.products.hongo-shop-boxed li.product:hover .product-buttons-wrap a .tooltip-arrow,
+.woocommerce ul.products.hongo-shop-boxed li.product:hover .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
+.woocommerce ul.products.hongo-shop-boxed li.product:hover .bs-tooltip-top .tooltip-arrow::before {
 	border-top-color: #fff;
+}
+.woocommerce ul.products.hongo-shop-boxed li.product:hover .bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before,
+.woocommerce ul.products.hongo-shop-boxed li.product:hover .bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: #fff;
+}
+.woocommerce ul.products.hongo-shop-boxed li.product:hover .bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before,
+.woocommerce ul.products.hongo-shop-boxed li.product:hover .bs-tooltip-end .tooltip-arrow::before {
+    border-right-color: #fff;
+}
+.woocommerce ul.products.hongo-shop-boxed li.product:hover .bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before,
+.woocommerce ul.products.hongo-shop-boxed li.product:hover .bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: #fff;
 }
 .woocommerce ul.products.hongo-shop-boxed li.product .product-buttons-wrap a:nth-child(1),
 .woocommerce ul.products.hongo-shop-boxed li.product:hover .product-buttons-wrap a:nth-child(1) {
