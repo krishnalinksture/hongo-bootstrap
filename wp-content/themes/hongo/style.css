@@ -4104,6 +4104,10 @@ ul .grid-sizer {
 
 /* justified gallery */
 
+.justified-gallery>a>.jg-caption.jg-caption-visible{
+    display: none !important;
+}
+
 .justified-gallery>a>.caption,
 .justified-gallery>div>.caption,
 .justified-gallery>figure>.caption {
