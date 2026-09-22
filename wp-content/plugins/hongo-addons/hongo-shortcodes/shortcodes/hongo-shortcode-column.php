@@ -101,17 +101,8 @@ if ( ! function_exists( 'hongo_column' ) ) {
 
 		// Column Offset and sm width
 		strchr( $offset, 'col-xs' ) ? '' : $classes[] = "col-xs-mobile-fullwidth";
-
 		$width = wpb_translateColumnWidthToSpan( $width );
-
-		if ( ! empty( $offset ) ) {
-			$offset = preg_replace( '/(?<=\d\/\d)(?=vc_col-)/', ' ', $offset );
-			$offset = preg_replace( '/(?<=\d\/\d)(?=\d\/\d)/', ' ', $offset );
-
-			$classes[] = $offset;
-		}
-
-		$classes[] = $width;
+		$classes[] = $width = vc_column_offset_class_merge( $offset, $width );
 
 		$desktop_clear_both = ! empty( $desktop_clear_both ) ? $classes[] = $desktop_clear_both : '';
 		$desktop_mini_clear_both = ! empty( $desktop_mini_clear_both ) ? $classes[] = $desktop_mini_clear_both : '';
