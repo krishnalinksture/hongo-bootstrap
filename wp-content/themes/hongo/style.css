@@ -450,6 +450,10 @@ a img.aligncenter {
 	text-align: left;
 }
 
+.text-justify {
+	text-align: justify;
+}
+
 /* captions */
 
 .wp-caption {
