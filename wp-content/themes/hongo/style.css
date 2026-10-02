@@ -15996,6 +15996,7 @@ li.active .hongo-cb:after {
 	-moz-box-shadow: 0 0 6px -2px rgba(0, 0, 0, .7);
 	-webkit-box-shadow: 0 0 6px -2px rgba(0, 0, 0, .7);
 	box-shadow: 0 0 6px -2px rgba(0, 0, 0, .7);
+	z-index: 3;
 }
 
 .woocommerce ul.products.hongo-shop-classic li.product .product-buttons-wrap a:nth-child(1) {
