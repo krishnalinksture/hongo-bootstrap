@@ -187,7 +187,9 @@
 
                         new bootstrap.Tooltip( this, {
                             title: tooltip_title,
-                            placement: product_gallery_tooltip || 'top'
+                            placement: product_gallery_tooltip || 'top',
+                            container: this.parentElement,
+                            boundary: 'clippingParents'
                         });
                     });
                 }
@@ -407,7 +409,9 @@
 
                 new bootstrap.Tooltip( this, {
                     title: tooltip_title,
-                    placement: threesixty_rotation_tooltip || 'top'
+                    placement: threesixty_rotation_tooltip || 'top',
+                    container: this.parentElement,
+                    boundary: 'clippingParents'
                 });
             });
 
@@ -588,6 +592,8 @@
                         $(this).find('a.added_to_cart i').each(function () {
                             new bootstrap.Tooltip(this, {
                                 placement: tooltip_pos,
+                                container: this.parentElement,
+                                boundary: 'clippingParents'
                             });
                         });
                     }
@@ -2149,7 +2155,9 @@
                 if ( tooltip_title ) {
                     new bootstrap.Tooltip( this, {
                         title: tooltip_title,
-                        placement: tooltip_placement || 'top'
+                        placement: tooltip_placement || 'top',
+                        container: this.parentElement,
+                        boundary: 'clippingParents'
                     });
                 }
             });
@@ -2175,7 +2183,9 @@
 
                 new bootstrap.Tooltip( this, {
                     title: tooltip_title,
-                    placement: single_product_video_tooltip || 'top'
+                    placement: single_product_video_tooltip || 'top',
+                    container: this.parentElement,
+                    boundary: 'clippingParents'
                 });
 
             });
@@ -2189,7 +2199,9 @@
 
                 new bootstrap.Tooltip( this, {
                     title: tooltip_title,
-                    placement: play_btn_video_tooltip || 'top'
+                    placement: play_btn_video_tooltip || 'top',
+                    container: this.parentElement,
+                    boundary: 'clippingParents'
                 });
             });
         }
@@ -2202,7 +2214,9 @@
 
                 new bootstrap.Tooltip( this, {
                     title: tooltip_title,
-                    placement: swatch_tooltip_pos || 'top'
+                    placement: swatch_tooltip_pos || 'top',
+                    container: this.parentElement,
+                    boundary: 'clippingParents'
                 });
             });
         } 
